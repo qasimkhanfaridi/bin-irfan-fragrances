@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bin Irfan Fragrance | The Essence of Royal Luxury - Coming Soon</title>
+  <meta name="description" content="Bin Irfan Fragrance - Exclusive artisanal perfumes, royal attars, and luxury impressions crafted with mastery. Our digital boutique is launching soon." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient background glow effects -->
+  <div class="ambient-glow top-left"></div>
+  <div class="ambient-glow bottom-right"></div>
+  <div class="mist-overlay"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="brand-logo">
+        <span class="arabic-sub">بن عرفان للعطور</span>
+        <h1 class="logo-title">BIN IRFAN</h1>
+        <span class="logo-tagline">FRAGRANCES</span>
+      </div>
+      <div class="nav-actions">
+        <a href="https://wa.me/923169699892?text=Hello%20Bin%20Irfan%20Fragrance,%20I%20want%20to%20inquire%20about%20your%20luxury%20scents" target="_blank" class="btn btn-outline-gold">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp Inquiry
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Hero Section -->
+  <main class="hero-section">
+    <div class="container hero-grid">
+      <!-- Left Content Column -->
+      <div class="hero-content">
+        <div class="badge-pill">
+          <span class="pulse-dot"></span> Official Boutique Launching Soon
+        </div>
+        
+        <h2 class="hero-title">
+          Unveil The Power of <span class="gold-gradient-text">Signature Scent</span>
+        </h2>
+        
+        <p class="hero-desc">
+          Step into a world of pure artisanal perfumery, lasting projections, and royal heritage. From deep Parisian ouds to velvety floral impressions, Bin Irfan Fragrance crafts olfactory masterpieces that leave an indelible memory.
+        </p>
+
+        <!-- Countdown Timer -->
+        <div class="countdown-wrapper">
+          <p class="countdown-label">GRAND DIGITAL OPENING IN</p>
+          <div class="timer" id="countdown-timer">
+            <div class="time-block">
+              <span class="time-num" id="days">14</span>
+              <span class="time-text">Days</span>
+            </div>
+            <span class="time-sep">:</span>
+            <div class="time-block">
+              <span class="time-num" id="hours">08</span>
+              <span class="time-text">Hours</span>
+            </div>
+            <span class="time-sep">:</span>
+            <div class="time-block">
+              <span class="time-num" id="minutes">45</span>
+              <span class="time-text">Mins</span>
+            </div>
+            <span class="time-sep">:</span>
+            <div class="time-block">
+              <span class="time-num" id="seconds">20</span>
+              <span class="time-text">Secs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIP Access Form -->
+        <div class="notify-card">
+          <h3 class="notify-title">Join the VIP Private List</h3>
+          <p class="notify-subtitle">Get exclusive launch discounts, sample discovery sets, and early access.</p>
+          <form id="subscribe-form" class="subscribe-form">
+            <div class="input-group">
+              <i class="fa-regular fa-envelope input-icon"></i>
+              <input type="email" id="subscriber-email" placeholder="Enter your email address..." required />
+            </div>
+            <button type="submit" class="btn btn-gold">
+              <span>Notify Me</span> <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+          <div id="form-success" class="form-alert success-msg" style="display: none;">
+            <i class="fa-solid fa-circle-check"></i> Welcome to the VIP Circle! You will be notified the moment we launch.
+          </div>
+        </div>
+
+        <!-- Features Mini Badges -->
+        <div class="features-row">
+          <div class="feature-item">
+            <i class="fa-solid fa-award"></i>
+            <span>Pure Extrait De Parfum</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>12+ Hour Beast Projection</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>Nationwide Delivery</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual Column -->
+      <div class="hero-visual">
+        <div class="image-showcase-frame">
+          <div class="gold-border-glow"></div>
+          <img src="assets/hero-bottle.jpg" alt="Bin Irfan Fragrance - Luxury Perfume Bottle" class="featured-image" id="preview-image" />
+          
+          <div class="floating-badge top-badge">
+            <i class="fa-solid fa-sparkles"></i> Handcrafted Blends
+          </div>
+
+          <div class="floating-badge bottom-badge">
+            <i class="fa-solid fa-crown"></i> Royal Impressions & Attars
+          </div>
+        </div>
+
+        <!-- Thumbnail selector -->
+        <div class="thumbnail-strip">
+          <button class="thumb-btn active" onclick="switchImage('assets/hero-bottle.jpg', this)">
+            <img src="assets/hero-bottle.jpg" alt="Hero Bottle" />
+            <span>Black Edition</span>
+          </button>
+          <button class="thumb-btn" onclick="switchImage('assets/story-mist.jpg', this)">
+            <img src="assets/story-mist.jpg" alt="Story Mist" />
+            <span>Oud Al Sultan</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Physical Boutique & Heritage Bar -->
+  <section class="heritage-bar">
+    <div class="container heritage-container">
+      <div class="heritage-info">
+        <i class="fa-solid fa-location-dot gold-icon"></i>
+        <div>
+          <h4>Visit Our Boutique</h4>
+          <p>Shop #6, Malik Dilawar Plaza, Chowk Shadi Peer, Hashtnagri, Peshawar</p>
+        </div>
+      </div>
+      <div class="heritage-info">
+        <i class="fa-solid fa-phone gold-icon"></i>
+        <div>
+          <h4>Direct Concierge</h4>
+          <p><a href="tel:+923169699892">+92 316 9699892</a></p>
+        </div>
+      </div>
+      <div class="heritage-socials">
+        <h4>Follow Our Journey:</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/binirfanfragrances/reels/" target="_blank" title="Instagram Reels" class="social-btn">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@binirfanfragrances" target="_blank" title="TikTok" class="social-btn">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://wa.me/923169699892" target="_blank" title="WhatsApp Chat" class="social-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank" title="Facebook Page" class="social-btn">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; <span id="current-year">2026</span> Bin Irfan Fragrance. All rights reserved.</p>
+      <p class="footer-note">Crafted for perfume connoisseurs who refuse to blend in.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
