@@ -112,7 +112,7 @@ export const PackagingPage: React.FC = () => {
               </div>
               <div className="text-[9px] text-brand-cream/60 pt-1">
                 <p>Shop #6, Malik Dilawar Plaza, Hashtnagri, Peshawar</p>
-                <p>Customer Care: +92 316 9699892</p>
+                <p>Customer Care: +92 321 5186400</p>
               </div>
             </div>
           </div>

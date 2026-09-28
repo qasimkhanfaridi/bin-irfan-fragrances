@@ -24,7 +24,7 @@ export const FAQPage: React.FC = () => {
     },
     {
       q: 'How do I place an order directly on WhatsApp?',
-      a: 'You can tap any "Order on WhatsApp" button across our website. Our system automatically formats a pre-filled WhatsApp message containing your selected perfume name, size, quantity, and price, sending it straight to our official concierge (+92 316 9699892).'
+      a: 'You can tap any "Order on WhatsApp" button across our website. Our system automatically formats a pre-filled WhatsApp message containing your selected perfume name, size, quantity, and price, sending it straight to our official concierge (+92 321 5186400).'
     },
     {
       q: 'Are your impression fragrances identical to the original designer brands?',
@@ -95,13 +95,13 @@ export const FAQPage: React.FC = () => {
           Our fragrance concierge in Peshawar is available 7 days a week to assist you with scent recommendations.
         </p>
         <a
-          href="https://wa.me/923169699892?text=Hello%20Bin%20Irfan%20Fragrance,%20I%20have%20a%20question!"
+          href="https://wa.me/923215186400?text=Hello%20Bin%20Irfan%20Fragrance,%20I%20have%20a%20question!"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-900/40 border border-emerald-500/40 text-emerald-300 text-xs font-bold uppercase tracking-wider hover:bg-emerald-800/50 transition-all shadow-md"
         >
           <MessageCircle className="w-4 h-4 text-emerald-400" />
-          <span>Ask on WhatsApp (+92 316 9699892)</span>
+          <span>Ask on WhatsApp (+92 321 5186400)</span>
         </a>
       </div>
     </div>

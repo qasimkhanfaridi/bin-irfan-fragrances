@@ -65,7 +65,7 @@ export const ProductDetailPage: React.FC = () => {
   const relatedProducts = PRODUCTS.filter(p => p.id !== product.id).slice(0, 4);
 
   return (
-    <div className="min-h-screen py-8 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div className="min-h-screen pt-6 pb-24 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       
       {/* Breadcrumbs */}
       <nav className="flex items-center gap-2 text-xs text-brand-cream/60 mb-8 overflow-x-auto whitespace-nowrap">
@@ -384,6 +384,37 @@ export const ProductDetailPage: React.FC = () => {
           {relatedProducts.map(p => (
             <ProductCard key={p.id} product={p} />
           ))}
+        </div>
+      </div>
+
+      {/* Sticky Mobile Action Bar (< sm) */}
+      <div className="fixed bottom-0 inset-x-0 z-40 bg-brand-dark/95 backdrop-blur-md border-t border-brand-gold/30 p-3 shadow-2xl flex sm:hidden items-center justify-between gap-3">
+        <div className="flex flex-col flex-shrink-0">
+          <span className="text-[10px] text-brand-gold font-bold uppercase tracking-wider">
+            {selectedSize} • Extrait
+          </span>
+          <span className="font-serif text-base font-bold text-brand-gold-light leading-tight">
+            {formatPrice(selectedVariant.pricePKR)}
+          </span>
+        </div>
+        <div className="flex items-center gap-2 flex-1 justify-end">
+          <button
+            onClick={handleAddToCart}
+            className="py-2.5 px-3 rounded-xl bg-brand-dark-surface border border-brand-gold/40 text-brand-gold-light hover:text-white text-xs font-semibold flex items-center justify-center gap-1.5 transition-all"
+            aria-label="Add to Bag"
+          >
+            <ShoppingBag className="w-4 h-4 text-brand-gold" />
+            <span>Bag</span>
+          </button>
+          <a
+            href={generateWhatsAppLink(product, selectedSize, quantity)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 py-2.5 px-3 rounded-xl bg-emerald-950/80 border border-emerald-500/60 text-emerald-300 hover:text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-lg whitespace-nowrap"
+          >
+            <MessageCircle className="w-4 h-4 text-emerald-400" />
+            <span>Order WhatsApp</span>
+          </a>
         </div>
       </div>
     </div>

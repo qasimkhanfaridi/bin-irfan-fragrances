@@ -339,7 +339,7 @@ export const AdminOrdersPage: React.FC = () => {
                   <p className="font-bold">Bin Irfan Fragrance</p>
                   <p>Shop #6, Malik Dilawar Plaza</p>
                   <p>Hashtnagri, Peshawar</p>
-                  <p>Phone: +92 316 9699892</p>
+                  <p>Phone: +92 321 5186400</p>
                 </div>
               </div>
 

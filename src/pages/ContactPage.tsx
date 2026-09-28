@@ -16,7 +16,7 @@ export const ContactPage: React.FC = () => {
       setSubmitted(true);
       // Generate WhatsApp inquiry URL with the submitted message
       const msg = `Hello Bin Irfan Fragrance, this is ${formData.name} (${formData.phone}). ${formData.message}`;
-      window.open(`https://wa.me/923169699892?text=${encodeURIComponent(msg)}`, '_blank');
+      window.open(`https://wa.me/923215186400?text=${encodeURIComponent(msg)}`, '_blank');
     }
   };
 
@@ -61,8 +61,8 @@ export const ContactPage: React.FC = () => {
                 <Phone className="w-5 h-5 text-emerald-400 flex-shrink-0" />
                 <div>
                   <strong className="text-brand-cream block mb-0.5">Direct WhatsApp / Call</strong>
-                  <a href="tel:+923169699892" className="text-brand-gold-light hover:underline font-semibold">
-                    +92 316 9699892
+                  <a href="tel:+923215186400" className="text-brand-gold-light hover:underline font-semibold">
+                    +92 321 5186400
                   </a>
                 </div>
               </div>
@@ -90,13 +90,13 @@ export const ContactPage: React.FC = () => {
             </div>
 
             <a
-              href="https://wa.me/923169699892?text=Hello%20Bin%20Irfan%20Fragrance,%20I%20have%20an%20inquiry%20regarding%20your%20perfume%20collection."
+              href="https://wa.me/923215186400?text=Hello%20Bin%20Irfan%20Fragrance,%20I%20have%20an%20inquiry%20regarding%20your%20perfume%20collection."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full py-3.5 px-4 rounded-xl bg-emerald-950/50 border border-emerald-500/50 hover:bg-emerald-900/60 text-emerald-300 text-xs font-bold uppercase tracking-widest transition-all flex items-center justify-center gap-2 shadow-lg"
             >
               <MessageCircle className="w-4 h-4 text-emerald-400" />
-              <span>Chat Directly on WhatsApp</span>
+              <span>Chat Directly on WhatsApp (+92 321 5186400)</span>
             </a>
           </div>
         </div>

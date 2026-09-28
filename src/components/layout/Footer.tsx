@@ -56,11 +56,11 @@ export const Footer: React.FC = () => {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="https://wa.me/923169699892"
+                href="https://wa.me/923215186400"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-brand-gold/30 flex items-center justify-center text-emerald-400 hover:text-white hover:bg-emerald-700 hover:border-emerald-700 transition-all"
-                title="WhatsApp Direct"
+                title="WhatsApp Direct (+92 321 5186400)"
               >
                 <Phone className="w-4 h-4" />
               </a>
@@ -196,7 +196,9 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-1.5">
                 <Phone className="w-3.5 h-3.5 text-brand-gold flex-shrink-0" />
-                <span>+92 316 9699892</span>
+                <a href="tel:+923215186400" className="hover:text-brand-gold-light transition-colors">
+                  +92 321 5186400
+                </a>
               </div>
             </div>
           </div>

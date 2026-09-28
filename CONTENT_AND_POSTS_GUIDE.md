@@ -35,7 +35,7 @@
   At Bin Irfan Fragrance, we brew Extrait De Parfum formulations designed for 12+ hours of beast projection and undeniable compliments. 
 
   🔥 Launching online soon! Early orders open via WhatsApp.
-  📲 WhatsApp to order: +92 316 9699892
+  📲 WhatsApp to order: +92 321 5186400
   📍 Visit: Shop #6, Malik Dilawar Plaza, Hashtnagri, Peshawar
 
   #BinIrfanFragrance #LuxuryPerfume #OudLovers #PerfumesPakistan #ExtraitDeParfum #PakistaniBrand #Attar #FragranceTikTok
@@ -70,7 +70,7 @@
   3️⃣ Royal Oud & Woody
 
   📦 Nationwide cash on delivery available.
-  📲 Inquire now: WhatsApp +92 316 9699892
+  📲 Inquire now: WhatsApp +92 321 5186400
 
   #BinIrfanFragrance #ScentOfTheDay #PerfumeCollection #FragranceLover #Peshawar #Karachi #Lahore #FragranceAddict
   ```
@@ -94,7 +94,7 @@
   Every bottle of Bin Irfan Fragrance is hand-inspected, packed with care, and shipped directly to your doorstep.
 
   🚚 Fast Nationwide Delivery across Pakistan.
-  🔗 Visit our bio link or WhatsApp +92 316 9699892 to claim yours.
+  🔗 Visit our bio link or WhatsApp +92 321 5186400 to claim yours.
 
   #BinIrfanFragrance #ASMRPacking #SmallBusinessPakistan #PerfumeUnboxing #LuxuryLifestyle #PackagingDesign
   ```
@@ -116,7 +116,7 @@
 
   👉 Join the VIP early list on our website or tap the link in bio.
   📍 Shop #6, Malik Dilawar Plaza, Chowk Shadi Peer, Hashtnagri, Peshawar.
-  📞 Contact / WhatsApp: +92 316 9699892
+  📞 Contact / WhatsApp: +92 321 5186400
 
   #BinIrfanFragrance #ComingSoon #LuxuryScents #PerfumeLover #FragrancePakistan #OudLovers #ArtisanalPerfumery
   ```
@@ -157,7 +157,7 @@
   🪵 Heart: Smoky Cedarwood, Rose Absolute
   ✨ Base: Cambodian Oud, Amber, White Musk
 
-  Ready to upgrade your collection? Send a direct DM or WhatsApp +92 316 9699892 for orders.
+  Ready to upgrade your collection? Send a direct DM or WhatsApp +92 321 5186400 for orders.
 
   #OudAlSultan #BinIrfanFragrance #OudPerfume #NicheFragrance #RoyalScents #PeshawarPerfumes
   ```

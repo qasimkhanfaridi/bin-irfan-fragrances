@@ -70,7 +70,7 @@ if (subscribeForm) {
       setTimeout(() => {
         const joinWhatsApp = confirm("Thank you for subscribing! Would you also like to join our VIP WhatsApp broadcast for direct launch offers?");
         if (joinWhatsApp) {
-          window.open('https://wa.me/923169699892?text=Hi%20Bin%20Irfan%20Fragrance,%20I%20just%20subscribed%20with%20email:%20' + encodeURIComponent(email) + '%20-%20Please%20add%20me%20to%20VIP%20broadcast!', '_blank');
+          window.open('https://wa.me/923215186400?text=Hi%20Bin%20Irfan%20Fragrance,%20I%20just%20subscribed%20with%20email:%20' + encodeURIComponent(email) + '%20-%20Please%20add%20me%20to%20VIP%20broadcast!', '_blank');
         }
       }, 800);
     }

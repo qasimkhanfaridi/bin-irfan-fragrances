@@ -190,7 +190,7 @@ export const PackagingShowcaseSection: React.FC = () => {
                   </div>
                   <div className="pt-2 text-[10px] text-brand-cream/60">
                     <p>Shop #6, Malik Dilawar Plaza, Hashtnagri, Peshawar</p>
-                    <p>Customer Care: +92 316 9699892 • Made in Pakistan</p>
+                    <p>Customer Care: +92 321 5186400 • Made in Pakistan</p>
                   </div>
                 </div>
               )}

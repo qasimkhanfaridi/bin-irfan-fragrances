@@ -48,7 +48,7 @@ export const PolicyPages: React.FC = () => {
           <ul className="list-disc pl-5 space-y-1.5">
             <li>The item must be reported within 7 days of receiving the package.</li>
             <li>Due to hygiene and the volatile nature of luxury fragrance oils, opened or heavily sprayed bottles cannot be returned for a cash refund unless proven defective by our quality team.</li>
-            <li>To initiate an exchange, simply message our boutique on WhatsApp at +92 316 9699892 with a photo/video of the issue.</li>
+            <li>To initiate an exchange, simply message our boutique on WhatsApp at +92 321 5186400 with a photo/video of the issue.</li>
           </ul>
         </div>
       )

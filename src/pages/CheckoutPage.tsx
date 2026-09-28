@@ -101,7 +101,7 @@ export const CheckoutPage: React.FC = () => {
             Thank You, {completedOrder.name}!
           </h1>
           <p className="text-xs sm:text-sm text-brand-cream/70 font-light max-w-md mx-auto">
-            Your order details have been sent directly to the official **Bin Irfan Fragrance** WhatsApp (+92 316 9699892) for immediate confirmation.
+            Your order details have been sent directly to the official **Bin Irfan Fragrance** WhatsApp (+92 321 5186400) for immediate confirmation.
           </p>
         </div>
 
@@ -149,7 +149,7 @@ export const CheckoutPage: React.FC = () => {
             className="w-full py-4 px-4 rounded-xl bg-emerald-950/50 border border-emerald-500/60 hover:bg-emerald-900/60 text-emerald-300 text-xs font-bold uppercase tracking-widest transition-all flex items-center justify-center gap-2 shadow-lg"
           >
             <MessageCircle className="w-5 h-5 text-emerald-400" />
-            <span>Open WhatsApp Chat (+92 316 9699892)</span>
+            <span>Open WhatsApp Chat (+92 321 5186400)</span>
           </a>
 
           <Link
@@ -347,7 +347,7 @@ export const CheckoutPage: React.FC = () => {
                 <span>Orders arrive in 2–4 business days with Cash on Delivery</span>
               </p>
               <p className="text-[10px] text-brand-cream/40">
-                Official Boutique Concierge: +92 316 9699892
+                Official Boutique Concierge: +92 321 5186400
               </p>
             </div>
           </div>

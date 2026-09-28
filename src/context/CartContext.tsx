@@ -40,7 +40,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const [currency, setCurrency] = useState<CurrencyCode>('PKR');
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
-  const whatsappNumber = '923169699892'; // Bin Irfan Official Contact
+  const whatsappNumber = '923215186400'; // Bin Irfan Official Contact (+92 321 5186400)
 
   useEffect(() => {
     try {
