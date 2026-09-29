@@ -1,63 +1,63 @@
 import React from 'react';
-import { Award, PackageCheck, Flame, Compass } from 'lucide-react';
+import { Award, PackageCheck, Flame, ShieldCheck } from 'lucide-react';
 
 export const WhyBinIrfan: React.FC = () => {
   const pillars = [
     {
       icon: Award,
-      title: 'AUTHENTIC EXPERIENCE',
-      description: 'Carefully selected fragrance profiles designed with deep notes and masterfully balanced accords.'
+      title: '35% EXTRAIT DE PARFUM',
+      description: 'Formulated with ultra-high pure fragrance oil concentrations, delivering 12–16+ hours of projection that outlasts standard department store EDTs.'
     },
     {
       icon: PackageCheck,
-      title: 'PREMIUM PRESENTATION',
-      description: 'Designed to look as good as they smell. Elegant heavy flacons with unified luxury branding.'
+      title: 'LUXURY PRESENTATION',
+      description: 'Presented in heavy faceted crystal flacons with magnetic gold caps and soft-blue embossed rigid gift packaging ready for royal gifting.'
     },
     {
       icon: Flame,
-      title: 'CRAFTED WITH CARE',
-      description: 'Meticulous attention to fragrance maceration, pure Extrait concentrations, and atomization performance.'
+      title: 'PRECIOUS RAW ESSENCES',
+      description: 'Carefully sourced French floral absolutes, aged Cambodian agarwood, and velvety ambers, masterfully macerated for maximum olfactory depth.'
     },
     {
-      icon: Compass,
-      title: 'MADE FOR YOUR SIGNATURE',
-      description: 'Scents crafted to express individuality, leave a memorable impression, and command quiet respect.'
+      icon: ShieldCheck,
+      title: 'NATIONWIDE COD & EXCHANGE',
+      description: 'Delivered directly to your doorstep across Pakistan in 2–4 business days with Cash on Delivery and a 7-day hassle-free exchange policy.'
     }
   ];
 
   return (
-    <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-        <span className="text-xs uppercase tracking-[0.3em] text-brand-gold font-bold">
+    <section className="py-20 sm:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
+        <span className="text-xs uppercase tracking-[0.3em] text-brand-blue font-bold">
           The Mark of Distinction
         </span>
-        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-cream uppercase tracking-tight">
-          WHY BIN IRFAN FRAGRANCE
+        <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-blue-deep tracking-tight">
+          Why Choose Bin Irfan
         </h2>
-        <div className="w-12 h-0.5 bg-brand-gold mx-auto mt-2" />
+        <div className="w-14 h-0.5 bg-brand-blue mx-auto mt-2" />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
         {pillars.map((item, idx) => {
           const Icon = item.icon;
           return (
             <div
               key={idx}
-              className="p-8 rounded-2xl bg-brand-dark-card border border-brand-gold/15 hover:border-brand-gold/50 transition-all duration-300 hover:shadow-luxury group flex flex-col justify-between"
+              className="p-7 sm:p-8 rounded-3xl bg-white border border-brand-blue-soft hover:border-brand-blue/50 transition-all duration-300 shadow-luxury-card hover:shadow-luxury-hover group flex flex-col justify-between"
             >
               <div className="space-y-4">
-                <div className="w-12 h-12 rounded-xl bg-brand-ruby/30 border border-brand-gold/30 flex items-center justify-center text-brand-gold group-hover:scale-110 group-hover:bg-brand-ruby/50 transition-all">
+                <div className="w-12 h-12 rounded-2xl bg-brand-blue-soft border border-brand-blue-light/60 flex items-center justify-center text-brand-blue-dark group-hover:scale-110 group-hover:bg-brand-blue-dark group-hover:text-white transition-all shadow-xs">
                   <Icon className="w-6 h-6" />
                 </div>
-                <h3 className="font-serif text-lg font-bold text-brand-cream tracking-wide">
+                <h3 className="font-serif text-base sm:text-lg font-bold text-brand-blue-deep tracking-wide">
                   {item.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-brand-cream/70 leading-relaxed font-light">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   {item.description}
                 </p>
               </div>
-              <div className="pt-6 border-t border-brand-gold/10 mt-6 flex items-center gap-2">
-                <span className="text-[10px] uppercase tracking-widest text-brand-gold/60 font-semibold">
+              <div className="pt-5 border-t border-brand-blue-soft mt-5 flex items-center gap-2">
+                <span className="text-[10px] uppercase tracking-widest text-brand-blue font-bold">
                   Standard {idx + 1}
                 </span>
               </div>

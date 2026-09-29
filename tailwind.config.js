@@ -8,31 +8,44 @@ export default {
     extend: {
       colors: {
         brand: {
-          ruby: {
-            DEFAULT: '#7A142A',
-            dark: '#460914',
-            deep: '#2D050C',
-            light: '#9C1D36',
-            glow: 'rgba(122, 20, 42, 0.4)'
+          // Soft Luxury Blue Spectrum (Clean, Light, Elegant)
+          blue: {
+            DEFAULT: '#5B8FB9',      // Soft luxury azure blue
+            soft: '#F0F6FB',         // Ultra-soft icy blue tint for section backgrounds
+            ice: '#E6F0F8',          // Pale soft blue for card hover/borders
+            light: '#C7DEF0',        // Sky powder blue for light badges
+            medium: '#7EA8CF',       // Refined cornflower blue
+            dark: '#1E3A5F',         // Classic navy slate for primary buttons & contrast text
+            deep: '#0F2035',         // Midnight navy for high-contrast luxury headings
+            navy: '#162840',         // Rich dark blue accent
           },
+          // Crisp Whites & Porcelains
+          light: {
+            DEFAULT: '#FFFFFF',
+            surface: '#F8FAFC',      // Crisp porcelain surface
+            card: '#FFFFFF',         // Bright clean card
+            border: 'rgba(91, 143, 185, 0.18)',
+            borderStrong: 'rgba(30, 58, 95, 0.25)'
+          },
+          // Prestige Champagne Gold accents from original Bin Irfan logo
           gold: {
             DEFAULT: '#C5A059',
             metallic: '#D4AF37',
-            light: '#F3E5AB',
+            light: '#F5EEDB',
             dark: '#9A741E',
-            glow: 'rgba(212, 175, 55, 0.3)'
+            glow: 'rgba(212, 175, 55, 0.25)'
           },
-          dark: {
-            DEFAULT: '#0E0C0D',
-            surface: '#151214',
-            card: '#1B1719',
-            cardHover: '#231E20',
-            border: 'rgba(212, 175, 55, 0.18)'
+          // Slate typography colors for clean readability
+          slate: {
+            DEFAULT: '#1E293B',
+            muted: '#64748B',
+            light: '#94A3B8'
           },
-          cream: {
-            DEFAULT: '#FAF8F5',
-            soft: '#F3EFE9',
-            muted: '#E6DFD5'
+          // Emerald for WhatsApp & COD trust badges
+          emerald: {
+            DEFAULT: '#059669',
+            dark: '#064E3B',
+            light: '#D1FAE5'
           }
         }
       },
@@ -46,9 +59,10 @@ export default {
         ultra: '.3em'
       },
       boxShadow: {
-        'gold-glow': '0 0 25px rgba(212, 175, 55, 0.25)',
-        'ruby-glow': '0 0 30px rgba(122, 20, 42, 0.35)',
-        'luxury': '0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.1)'
+        'soft-blue': '0 10px 30px -10px rgba(91, 143, 185, 0.2)',
+        'luxury-card': '0 4px 20px -2px rgba(15, 32, 53, 0.06), 0 0 1px 1px rgba(91, 143, 185, 0.12)',
+        'luxury-hover': '0 20px 35px -8px rgba(30, 58, 95, 0.12), 0 0 1px 1px rgba(91, 143, 185, 0.25)',
+        'gold-glow': '0 0 20px rgba(197, 160, 89, 0.3)'
       }
     },
   },

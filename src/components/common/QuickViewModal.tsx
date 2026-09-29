@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Product } from '../../types/product';
 import { useCart } from '../../context/CartContext';
 import { X, ShoppingBag, MessageCircle, Star, ShieldCheck, ArrowRight } from 'lucide-react';
-import { NotePyramid } from './NotePyramid';
 
 interface QuickViewModalProps {
   product: Product;
@@ -12,7 +11,7 @@ interface QuickViewModalProps {
 }
 
 export const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, isOpen, onClose }) => {
-  const [selectedSize, setSelectedSize] = useState<'50ml' | '100ml'>(product.defaultSize);
+  const [selectedSize, setSelectedSize] = useState<string>(product.defaultSize);
   const [quantity, setQuantity] = useState(1);
   const { addToCart, formatPrice, generateWhatsAppLink } = useCart();
 
@@ -28,91 +27,91 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, isOpen,
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
       {/* Backdrop */}
-      <div className="fixed inset-0 bg-black/85 backdrop-blur-md" onClick={onClose} />
+      <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm" onClick={onClose} />
 
       {/* Modal Card */}
-      <div className="relative w-full max-w-4xl bg-brand-dark-card border border-brand-gold/30 rounded-3xl shadow-luxury overflow-hidden z-10 max-h-[90vh] flex flex-col md:flex-row">
+      <div className="relative w-full max-w-4xl bg-white border border-brand-blue-soft rounded-3xl shadow-2xl overflow-hidden z-10 max-h-[90vh] flex flex-col md:flex-row">
         
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 p-2 rounded-full bg-brand-dark/80 text-brand-cream/70 hover:text-white hover:bg-brand-ruby transition-colors border border-brand-gold/20"
+          className="absolute top-4 right-4 z-20 p-2 rounded-full bg-brand-blue-soft text-brand-blue-dark hover:bg-brand-blue-light transition-colors"
         >
           <X className="w-5 h-5" />
         </button>
 
         {/* Product Image Gallery */}
-        <div className="w-full md:w-1/2 bg-brand-dark/90 p-6 flex flex-col justify-center items-center relative">
-          <div className="w-full aspect-square max-w-sm rounded-2xl overflow-hidden border border-brand-gold/20 shadow-2xl">
+        <div className="w-full md:w-1/2 bg-brand-blue-soft/30 p-6 flex flex-col justify-center items-center relative">
+          <div className="w-full aspect-square max-w-sm rounded-2xl overflow-hidden border border-brand-blue-soft shadow-md bg-white">
             <img
               src={product.image}
               alt={product.name}
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="mt-4 flex items-center gap-2 text-xs text-brand-gold/80">
-            <ShieldCheck className="w-4 h-4 text-brand-gold" />
-            <span>Pure Extrait De Parfum • Guaranteed Beast Projection</span>
+          <div className="mt-4 flex items-center gap-2 text-xs text-brand-blue-dark font-medium">
+            <ShieldCheck className="w-4 h-4 text-brand-blue" />
+            <span>Pure Extrait De Parfum • Guaranteed 12+ Hour Sillage</span>
           </div>
         </div>
 
         {/* Product Details & Actions */}
-        <div className="w-full md:w-1/2 p-6 sm:p-8 flex flex-col justify-between overflow-y-auto max-h-[85vh]">
+        <div className="w-full md:w-1/2 p-6 sm:p-8 flex flex-col justify-between overflow-y-auto max-h-[85vh] bg-white">
           <div className="space-y-4">
             {/* Family & Rating */}
             <div className="flex items-center justify-between">
-              <span className="text-xs uppercase tracking-widest text-brand-gold font-semibold">
+              <span className="text-xs uppercase tracking-widest text-brand-blue font-bold">
                 {product.fragranceFamily}
               </span>
-              <div className="flex items-center gap-1 text-amber-400 text-xs">
+              <div className="flex items-center gap-1 text-amber-500 text-xs">
                 <Star className="w-3.5 h-3.5 fill-current" />
-                <span className="font-bold text-brand-cream">{product.rating}</span>
-                <span className="text-brand-cream/40">({product.reviewsCount} reviews)</span>
+                <span className="font-bold text-slate-800">{product.rating}</span>
+                <span className="text-slate-400">({product.reviewsCount} reviews)</span>
               </div>
             </div>
 
             {/* Title */}
             <div>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-brand-cream leading-tight">
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-brand-blue-deep leading-tight">
                 {product.name}
               </h3>
               {product.arabicName && (
-                <span className="font-arabic text-brand-gold-light/60 text-sm">{product.arabicName}</span>
+                <span className="font-arabic text-brand-blue-dark/60 text-sm block mt-0.5">{product.arabicName}</span>
               )}
             </div>
 
             {/* Price */}
             <div className="flex items-baseline gap-3">
-              <span className="font-serif text-2xl font-bold text-brand-gold-light">
+              <span className="font-serif text-2xl font-bold text-brand-blue-deep">
                 {formatPrice(variant.pricePKR)}
               </span>
               {variant.compareAtPKR && (
-                <span className="text-sm text-brand-cream/40 line-through">
+                <span className="text-sm text-slate-400 line-through">
                   {formatPrice(variant.compareAtPKR)}
                 </span>
               )}
             </div>
 
             {/* Short Desc */}
-            <p className="text-sm text-brand-cream/70 leading-relaxed">
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
               {product.shortDescription}
             </p>
 
             {/* Size Selector */}
             <div className="space-y-2">
-              <label className="text-xs font-semibold uppercase tracking-wider text-brand-gold-light block">
+              <label className="text-xs font-bold uppercase tracking-wider text-brand-blue-dark block">
                 Select Flacon Size:
               </label>
-              <div className="flex gap-3">
+              <div className="flex gap-2.5 flex-wrap">
                 {product.variants.map(v => (
                   <button
                     key={v.size}
                     type="button"
                     onClick={() => setSelectedSize(v.size)}
-                    className={`flex-1 py-2.5 px-4 rounded-xl border text-xs font-semibold transition-all ${
+                    className={`flex-1 py-2 px-3 rounded-xl border text-xs font-bold transition-all ${
                       selectedSize === v.size
-                        ? 'bg-brand-ruby text-white border-brand-gold shadow-ruby-glow'
-                        : 'bg-brand-dark/50 text-brand-cream/70 border-brand-gold/20 hover:border-brand-gold/40'
+                        ? 'bg-brand-blue-dark text-white border-brand-blue-dark shadow-xs'
+                        : 'bg-brand-blue-soft text-slate-700 border-brand-blue-soft hover:border-brand-blue-light'
                     }`}
                   >
                     {v.size} — {formatPrice(v.pricePKR)}
@@ -122,21 +121,21 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, isOpen,
             </div>
 
             {/* Quantity Selector */}
-            <div className="flex items-center gap-4 pt-2">
-              <span className="text-xs uppercase tracking-wider text-brand-gold-light font-semibold">Quantity:</span>
-              <div className="flex items-center border border-brand-gold/30 rounded-xl overflow-hidden bg-brand-dark">
+            <div className="flex items-center gap-4 pt-1">
+              <span className="text-xs uppercase tracking-wider text-brand-blue-dark font-bold">Quantity:</span>
+              <div className="flex items-center border border-brand-blue-soft rounded-xl overflow-hidden bg-brand-blue-soft/50">
                 <button
                   type="button"
                   onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                  className="px-3 py-1.5 text-brand-cream/70 hover:text-white hover:bg-brand-ruby/40 text-sm"
+                  className="px-3 py-1.5 text-slate-600 hover:text-brand-blue-dark hover:bg-brand-blue-light/50 text-sm font-bold"
                 >
                   -
                 </button>
-                <span className="px-4 py-1.5 text-xs font-bold text-brand-cream">{quantity}</span>
+                <span className="px-4 py-1.5 text-xs font-bold text-slate-900">{quantity}</span>
                 <button
                   type="button"
                   onClick={() => setQuantity(quantity + 1)}
-                  className="px-3 py-1.5 text-brand-cream/70 hover:text-white hover:bg-brand-ruby/40 text-sm"
+                  className="px-3 py-1.5 text-slate-600 hover:text-brand-blue-dark hover:bg-brand-blue-light/50 text-sm font-bold"
                 >
                   +
                 </button>
@@ -145,13 +144,13 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, isOpen,
           </div>
 
           {/* Action Buttons */}
-          <div className="space-y-3 pt-6 border-t border-brand-gold/15 mt-6">
-            <div className="flex flex-col sm:flex-row gap-3">
+          <div className="space-y-3 pt-6 border-t border-brand-blue-soft mt-6">
+            <div className="flex flex-col sm:flex-row gap-2.5">
               <button
                 onClick={handleAddToCart}
-                className="flex-1 py-3 px-5 rounded-xl bg-gradient-to-r from-brand-ruby to-brand-ruby-light hover:from-brand-ruby-light hover:to-brand-ruby text-white text-xs font-bold uppercase tracking-widest transition-all shadow-ruby-glow flex items-center justify-center gap-2"
+                className="flex-1 py-3 px-4 rounded-xl bg-brand-blue-dark hover:bg-brand-blue-navy text-white text-xs font-bold uppercase tracking-wider transition-all shadow-xs flex items-center justify-center gap-2"
               >
-                <ShoppingBag className="w-4 h-4" />
+                <ShoppingBag className="w-4 h-4 text-brand-gold" />
                 <span>Add to Bag</span>
               </button>
 
@@ -159,9 +158,9 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, isOpen,
                 href={generateWhatsAppLink(product, selectedSize, quantity)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 py-3 px-5 rounded-xl bg-emerald-900/40 border border-emerald-500/50 hover:bg-emerald-800/60 text-emerald-300 text-xs font-bold uppercase tracking-widest transition-all flex items-center justify-center gap-2 shadow-lg"
+                className="flex-1 py-3 px-4 rounded-xl bg-emerald-50 border border-emerald-300 hover:bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-xs"
               >
-                <MessageCircle className="w-4 h-4 text-emerald-400" />
+                <MessageCircle className="w-4 h-4 text-emerald-600" />
                 <span>Order on WhatsApp</span>
               </a>
             </div>
@@ -170,7 +169,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, isOpen,
               <Link
                 to={`/shop/${product.slug}`}
                 onClick={onClose}
-                className="text-xs text-brand-gold hover:text-brand-gold-light inline-flex items-center gap-1 font-semibold"
+                className="text-xs text-brand-blue hover:text-brand-blue-dark inline-flex items-center gap-1 font-bold tracking-wide"
               >
                 <span>View Full Fragrance Notes & Details</span>
                 <ArrowRight className="w-3.5 h-3.5" />

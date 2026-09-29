@@ -1,6 +1,7 @@
 import { Product } from '../types/product';
 
 export const PRODUCTS: Product[] = [
+  // 1. Black Oud
   {
     id: 'black-oud',
     name: 'Black Oud',
@@ -23,15 +24,19 @@ export const PRODUCTS: Product[] = [
       { size: '100ml', pricePKR: 5950, compareAtPKR: 7000, sku: 'BIF-BO-100' }
     ],
     image: '/products/black_oud.jpg',
-    gallery: ['/products/black_oud.jpg', '/products/story-mist.jpg', '/products/royal_amber.jpg'],
+    gallery: ['/products/black_oud.jpg', '/products/box_packaging.jpg', '/products/royal_amber.jpg'],
     rating: 4.9,
     reviewsCount: 142,
     isBestSeller: true,
     isFeatured: true,
     inStock: true,
     accentColor: '#171314',
-    collectionId: 'oud-collection'
+    collectionId: 'oud-collection',
+    gender: 'men',
+    category: 'perfume'
   },
+
+  // 2. Dunhill Desire
   {
     id: 'dunhill-desire',
     name: 'Dunhill Desire',
@@ -54,15 +59,19 @@ export const PRODUCTS: Product[] = [
       { size: '100ml', pricePKR: 5250, compareAtPKR: 6400, sku: 'BIF-DD-100' }
     ],
     image: '/products/royal_amber.jpg',
-    gallery: ['/products/royal_amber.jpg', '/products/black_oud.jpg'],
+    gallery: ['/products/royal_amber.jpg', '/products/box_packaging.jpg', '/products/black_oud.jpg'],
     rating: 4.8,
     reviewsCount: 88,
     isBestSeller: true,
     inStock: true,
     accentColor: '#7A142A',
     collectionId: 'signature-collection',
+    gender: 'men',
+    category: 'perfume',
     impressionNote: 'Artisanal impression formulated by Bin Irfan Fragrance. Independent creation inspired by the olfactory style of classic British red aromatics.'
   },
+
+  // 3. Paradise (Featuring new crystal sapphire photography)
   {
     id: 'paradise',
     name: 'Paradise',
@@ -84,15 +93,20 @@ export const PRODUCTS: Product[] = [
       { size: '50ml', pricePKR: 3250, compareAtPKR: 3900, sku: 'BIF-PAR-50' },
       { size: '100ml', pricePKR: 4950, compareAtPKR: 5800, sku: 'BIF-PAR-100' }
     ],
-    image: '/products/blue_night.jpg',
-    gallery: ['/products/blue_night.jpg', '/products/story-mist.jpg'],
-    rating: 4.7,
-    reviewsCount: 64,
+    image: '/products/paradise_sapphire.jpg',
+    gallery: ['/products/paradise_sapphire.jpg', '/products/lifestyle_spritz.jpg', '/products/blue_night.jpg'],
+    rating: 4.9,
+    reviewsCount: 114,
+    isBestSeller: true,
     isNew: true,
     inStock: true,
-    accentColor: '#1A365D',
-    collectionId: 'fresh-collection'
+    accentColor: '#5B8FB9',
+    collectionId: 'fresh-collection',
+    gender: 'unisex',
+    category: 'perfume'
   },
+
+  // 4. Creed Aventus
   {
     id: 'creed-aventus',
     name: 'Creed Aventus',
@@ -115,88 +129,137 @@ export const PRODUCTS: Product[] = [
       { size: '100ml', pricePKR: 6250, compareAtPKR: 7500, sku: 'BIF-AV-100' }
     ],
     image: '/products/blue_night.jpg',
-    gallery: ['/products/blue_night.jpg', '/products/black_oud.jpg'],
+    gallery: ['/products/blue_night.jpg', '/products/black_oud.jpg', '/products/box_packaging.jpg'],
     rating: 4.9,
     reviewsCount: 195,
     isBestSeller: true,
     isFeatured: true,
     inStock: true,
-    accentColor: '#1F2937',
-    collectionId: 'luxury-collection',
-    impressionNote: 'Independent artisanal impression crafted by Bin Irfan Fragrance. No affiliation with or endorsement by Creed SAS.'
+    accentColor: '#1A365D',
+    collectionId: 'signature-collection',
+    gender: 'men',
+    category: 'perfume',
+    impressionNote: 'Artisanal master impression by Bin Irfan Fragrance. Inspired by classic French imperial aromatic compositions.'
   },
+
+  // 5. Baccarat Rouge 540
   {
-    id: 'creed-aventus-intense',
-    name: 'Creed Aventus Intense',
-    arabicName: 'أفينتوس المركز',
-    slug: 'creed-aventus-intense',
-    tagline: 'Deepened smoke, amplified birch, and beast-mode ambroxan',
-    fragranceFamily: 'Chypre & Smoky',
-    shortDescription: 'A darker, richer concentration of the legendary chypre DNA with intensified charred woods and ambergris.',
-    description: 'For those who demand uncompromising performance. Aventus Intense takes the signature smoky pineapple signature and amplifies the dark birchwood, raw ambergris, and cistus resin to create a 35% Extrait concentration that commands attention across the largest ballrooms.',
-    scentCharacter: 'Intense, Deep, Charred, Beast-Mode',
-    bestFor: ['Night Out', 'Cold Weather', 'VIP Gatherings', 'Memorable Impressions'],
-    longevity: '16 - 20 Hours',
-    projection: 'Beast Mode',
-    topNotes: ['Dark Pineapple Nectar', 'Sunlit Bergamot', 'Pink Peppercorn'],
-    heartNotes: ['Charred Birch Tar', 'Intense Patchouli', 'French Cypress'],
-    baseNotes: ['Black Ambergris', 'Smoked Leather', 'Cedar Resin', 'White Musk'],
+    id: 'baccarat-rouge-540',
+    name: 'Baccarat Rouge 540',
+    arabicName: 'روغ ٥٤٠ الكريستالي',
+    slug: 'baccarat-rouge-540',
+    tagline: 'Luminous saffron, crystal ambergris, and sweet toasted spun sugar',
+    fragranceFamily: 'Floral Oriental',
+    shortDescription: 'A celestial, poetic blend of saffron blossoms, sparkling jasmine, and warm amberwood.',
+    description: 'An ethereal creation that floats around the wearer like a golden halo. Bin Irfan’s impression delivers the hypnotic sweetness of caramelized amberwood, Egyptian grandiflorum jasmine, and precious saffron, resulting in an intoxicating trail that turns heads endlessly.',
+    scentCharacter: 'Ethereal, Luminous, Sweet Amber, Magnetic',
+    bestFor: ['Luxury Soirees', 'Romantic Dinners', 'Special Occasions', 'All Seasons'],
+    longevity: '14 - 18 Hours',
+    projection: 'Nuclear / Scent Trail King',
+    topNotes: ['Saffron Blossom', 'Bitter Almond from Morocco', 'Blood Orange Zest'],
+    heartNotes: ['Egyptian Jasmine Grandiflorum', 'Warm Cedarwood'],
+    baseNotes: ['Ambergris Resin', 'Mineral Woods', 'Spun Sugar', 'Cashmere Musk'],
     defaultSize: '50ml',
     variants: [
-      { size: '50ml', pricePKR: 4250, compareAtPKR: 5200, sku: 'BIF-AVI-50' },
-      { size: '100ml', pricePKR: 6750, compareAtPKR: 8200, sku: 'BIF-AVI-100' }
+      { size: '50ml', pricePKR: 3950, compareAtPKR: 4800, sku: 'BIF-BR-50' },
+      { size: '100ml', pricePKR: 6250, compareAtPKR: 7500, sku: 'BIF-BR-100' }
     ],
-    image: '/products/black_oud.jpg',
-    gallery: ['/products/black_oud.jpg', '/products/blue_night.jpg'],
-    rating: 5.0,
-    reviewsCount: 112,
+    image: '/products/royal_amber.jpg',
+    gallery: ['/products/royal_amber.jpg', '/products/lifestyle_spritz.jpg', '/products/box_packaging.jpg'],
+    rating: 4.9,
+    reviewsCount: 178,
+    isBestSeller: true,
     isFeatured: true,
     inStock: true,
-    accentColor: '#111827',
+    accentColor: '#991B1B',
     collectionId: 'luxury-collection',
-    impressionNote: 'Independent artisanal creation by Bin Irfan Fragrance. Pure Extrait formulation inspired by royal smoky aventus accords.'
+    gender: 'women',
+    category: 'perfume',
+    impressionNote: 'Artisanal impression formulated by Bin Irfan Fragrance. Independent creation inspired by French crystal perfumery.'
   },
+
+  // 6. Sauvage
   {
-    id: 'royal-oud',
-    name: 'Royal Oud',
-    arabicName: 'العود الملكي',
-    slug: 'royal-oud',
-    tagline: 'Refined Parisian luxury meets timeless Arabian royalty',
-    fragranceFamily: 'Woody & Oud',
-    shortDescription: 'An ultra-smooth, aristocratic blend of spicy angelica, galbanum, cedar, and velvety royal agarwood.',
-    description: 'Unlike heavy medicinal ouds, Royal Oud represents the height of aristocratic refinement. Warm sandalwood and spicy angelica seeds wrap around a heart of pure Lebanese cedar, finished with a whisper of royal agarwood that smells like old money and tailored cashmere.',
-    scentCharacter: 'Aristocratic, Silky, Dignified, Warm',
-    bestFor: ['Executive Meetings', 'Weddings', 'Formal Dinners', 'Autumn Elegance'],
-    longevity: '12 - 16 Hours',
-    projection: 'Polite yet Persistent',
-    topNotes: ['Calabrian Lemon', 'Pink Berry', 'Sicilian Bergamot'],
-    heartNotes: ['Lebanese Cedar', 'Galbanum Root', 'Spicy Angelica'],
-    baseNotes: ['Precious Indian Agarwood', 'Royal Sandalwood', 'Tonkin Musk'],
+    id: 'sauvage-dior',
+    name: 'Sauvage',
+    arabicName: 'سوفاج البري',
+    slug: 'sauvage-dior',
+    tagline: 'Raw, noble freshness driven by Calabrian bergamot and spicy ambroxan',
+    fragranceFamily: 'Aromatic Fougere',
+    shortDescription: 'A radical masculine freshness anchored by radiant citrus and warm, woody ambroxan.',
+    description: 'The epitome of raw masculine allure. Begins with crisp, sun-drenched Calabrian bergamot infused with spicy Sichuan pepper, before giving way to a noble heart of lavender, geranium, and a powerful, magnetic ambroxan trail.',
+    scentCharacter: 'Crisp, Spicy, Modern, Irresistible',
+    bestFor: ['Daily Wear', 'Gym & Sports', 'Office Executive', 'Club & Nights Out'],
+    longevity: '11 - 14 Hours',
+    projection: 'Heavy & Radiating',
+    topNotes: ['Calabrian Bergamot', 'Spicy Sichuan Pepper', 'Reggio Mandarin'],
+    heartNotes: ['Provence Lavender', 'Pink Pepper', 'Elemi Resin', 'Geranium'],
+    baseNotes: ['Precious Ambroxan', 'Cedarwood', 'Labdanum', 'Vetiver'],
     defaultSize: '50ml',
     variants: [
-      { size: '50ml', pricePKR: 4150, compareAtPKR: 5000, sku: 'BIF-RO-50' },
-      { size: '100ml', pricePKR: 6450, compareAtPKR: 7800, sku: 'BIF-RO-100' }
+      { size: '50ml', pricePKR: 3450, compareAtPKR: 4200, sku: 'BIF-SV-50' },
+      { size: '100ml', pricePKR: 5250, compareAtPKR: 6400, sku: 'BIF-SV-100' }
+    ],
+    image: '/products/blue_night.jpg',
+    gallery: ['/products/blue_night.jpg', '/products/black_oud.jpg'],
+    rating: 4.8,
+    reviewsCount: 134,
+    isBestSeller: true,
+    inStock: true,
+    accentColor: '#1E293B',
+    collectionId: 'fresh-collection',
+    gender: 'men',
+    category: 'perfume',
+    impressionNote: 'Artisanal impression by Bin Irfan Fragrance. Inspired by classic French fresh-spicy aromatic perfumery.'
+  },
+
+  // 7. Tobacco Vanille
+  {
+    id: 'tobacco-vanille',
+    name: 'Tobacco Vanille',
+    arabicName: 'تبغ وفانيلا الملكي',
+    slug: 'tobacco-vanille',
+    tagline: 'Opulent warm tobacco leaf, creamy vanilla bean, and sweet dried fruits',
+    fragranceFamily: 'Oriental & Amber',
+    shortDescription: 'An opulent, warm embrace of cured English pipe tobacco, sweet tonka, and Madagascar vanilla.',
+    description: 'Evoking the cozy grandeur of a private gentleman’s club in London. This decadent scent combines cured tobacco leaf with aromatic spices, rich cocoa, tonka bean, and velvety vanilla, drying down into sweet wood sap and dried fruit accords.',
+    scentCharacter: 'Opulent, Warm, Decadent, Aristocratic',
+    bestFor: ['Winter Nights', 'Formal Dinners', 'Chilly Evenings', 'Intimate Gatherings'],
+    longevity: '14 - 18 Hours',
+    projection: 'Heavy & Enveloping',
+    topNotes: ['Aromatic Tobacco Leaf', 'Spiced Cinnamon Bark', 'Star Anise'],
+    heartNotes: ['Tonka Bean', 'Tobacco Blossom', 'Bourbon Vanilla', 'Rich Cacao'],
+    baseNotes: ['Dried Sweet Fruit Accord', 'Sweet Wood Sap', 'Ambergris'],
+    defaultSize: '50ml',
+    variants: [
+      { size: '50ml', pricePKR: 3850, compareAtPKR: 4600, sku: 'BIF-TV-50' },
+      { size: '100ml', pricePKR: 5950, compareAtPKR: 7200, sku: 'BIF-TV-100' }
     ],
     image: '/products/royal_amber.jpg',
     gallery: ['/products/royal_amber.jpg', '/products/black_oud.jpg'],
     rating: 4.9,
-    reviewsCount: 76,
-    isBestSeller: true,
+    reviewsCount: 108,
+    isFeatured: true,
     inStock: true,
-    accentColor: '#C5A059',
-    collectionId: 'oud-collection'
+    accentColor: '#78350F',
+    collectionId: 'signature-collection',
+    gender: 'unisex',
+    category: 'perfume',
+    impressionNote: 'Artisanal luxury impression formulated by Bin Irfan Fragrance.'
   },
+
+  // 8. Blue Night
   {
     id: 'blue-night',
     name: 'Blue Night',
     arabicName: 'ليلة زرقاء',
     slug: 'blue-night',
-    tagline: 'Deep sensual incense, fresh mint, and dark nocturnal woods',
-    fragranceFamily: 'Aromatic Fougere',
-    shortDescription: 'An intoxicating blue fragrance combining invigorating peppermint with smoldering incense and cedar.',
-    description: 'Crafted for the modern gentleman who moves in the shadows with confidence. Blue Night blends a sparkling citrus-mint opening with a heart of spicy ginger and nutmeg, settling into a dark, seductive smoky incense and sandalwood base that lingers until the dawn.',
-    scentCharacter: 'Seductive, Cool, Nocturnal, Mysterious',
-    bestFor: ['Nightclubs', 'Late Night Dates', 'City Walks', 'Year-Round'],
+    tagline: 'Mysterious evening woods, crisp mint, and frankincense smoke',
+    fragranceFamily: 'Woody & Oud',
+    shortDescription: 'Deep oceanic notes blended with frosted mint, smoky incense, and dark ambergris.',
+    description: 'Blue Night evokes the silent elegance of an midnight sky over desert dunes. Opens with crystalline spearmint and pink pepper, deepening into smoky frankincense, dark cedarwood, and rich labdanum.',
+    scentCharacter: 'Seductive, Cool-Smoky, Modern, Mysterious',
+    bestFor: ['Night Out', 'Special Occasions', 'Dinner Dates', 'All Seasons'],
     longevity: '11 - 13 Hours',
     projection: 'Strong & Alluring',
     topNotes: ['Frosted Peppermint', 'Grapefruit Zest', 'Pink Pepper'],
@@ -208,43 +271,18 @@ export const PRODUCTS: Product[] = [
       { size: '100ml', pricePKR: 5250, compareAtPKR: 6300, sku: 'BIF-BN-100' }
     ],
     image: '/products/blue_night.jpg',
-    gallery: ['/products/blue_night.jpg', '/products/story-mist.jpg'],
+    gallery: ['/products/blue_night.jpg', '/products/paradise_sapphire.jpg'],
     rating: 4.8,
     reviewsCount: 93,
     isBestSeller: true,
     inStock: true,
     accentColor: '#1E3A8A',
-    collectionId: 'fresh-collection'
+    collectionId: 'fresh-collection',
+    gender: 'men',
+    category: 'perfume'
   },
-  {
-    id: 'amber-noir',
-    name: 'Amber Noir',
-    arabicName: 'العنبر الأسود',
-    slug: 'amber-noir',
-    tagline: 'Golden resin, smoky vanilla, and seductive velvet shadows',
-    fragranceFamily: 'Oriental & Amber',
-    shortDescription: 'A rich, decadent elixir of aged amber resin, Madagascar vanilla bean, and toasted roasted tonka.',
-    description: 'Amber Noir is liquid warmth in a bottle. Rich, dense, and luxuriously sweet without being cloying, this perfume marries golden amber crystals with toasted tonka bean, balsamic resins, and dark cocoa hints for a fragrance that feels like an embrace.',
-    scentCharacter: 'Warm, Gourmand, Velvet, Hypnotic',
-    bestFor: ['Winter Evenings', 'Romantic Dinners', 'Cozy Nights', 'Festive Celebrations'],
-    longevity: '13 - 16 Hours',
-    projection: 'Radiating & Enveloping',
-    topNotes: ['Cardamom Pods', 'Sweet Mandarin', 'Cinnamon Bark'],
-    heartNotes: ['Smoked Benzoin', 'Roasted Tonka Bean', 'Spanish Cistus'],
-    baseNotes: ['Golden Amber Resin', 'Bourbon Vanilla', 'Sandalwood', 'Patchouli'],
-    defaultSize: '50ml',
-    variants: [
-      { size: '50ml', pricePKR: 3650, compareAtPKR: 4400, sku: 'BIF-AN-50' },
-      { size: '100ml', pricePKR: 5650, compareAtPKR: 6800, sku: 'BIF-AN-100' }
-    ],
-    image: '/products/royal_amber.jpg',
-    gallery: ['/products/royal_amber.jpg', '/products/black_oud.jpg'],
-    rating: 4.9,
-    reviewsCount: 68,
-    inStock: true,
-    accentColor: '#D97706',
-    collectionId: 'signature-collection'
-  },
+
+  // 9. Imperial Musk
   {
     id: 'imperial-musk',
     name: 'Imperial Musk',
@@ -272,8 +310,12 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 82,
     inStock: true,
     accentColor: '#9CA3AF',
-    collectionId: 'signature-collection'
+    collectionId: 'signature-collection',
+    gender: 'unisex',
+    category: 'perfume'
   },
+
+  // 10. Velvet Rose
   {
     id: 'velvet-rose',
     name: 'Velvet Rose',
@@ -282,7 +324,7 @@ export const PRODUCTS: Product[] = [
     tagline: 'Decadent Damask rose petals, smoked praline, and seductive oud',
     fragranceFamily: 'Floral Oriental',
     shortDescription: 'A dark, hypnotic bouquet of deep crimson Damask roses draped over smoked clove, roasted praline, and agarwood.',
-    description: 'Velvet Rose redefines the rose genre. Far from a simple garden flower, this is a nocturnal, gothic, decadent rose steeped in roasted sweet praline, warm spicy cloves, and smoldering agarwood. A unisex masterpiece that turns heads wherever you step.',
+    description: 'Velvet Rose redefines the rose genre. Far from a simple garden flower, this is a nocturnal, gothic, decadent rose steeped in roasted sweet praline, warm spicy cloves, and smoldering agarwood. A feminine and unisex masterpiece that turns heads wherever you step.',
     scentCharacter: 'Hypnotic, Sweet-Spicy, Dark Floral, Magnetic',
     bestFor: ['Evening Parties', 'Weddings', 'Cooler Weather', 'Daring Connoisseurs'],
     longevity: '13 - 17 Hours',
@@ -295,13 +337,162 @@ export const PRODUCTS: Product[] = [
       { size: '50ml', pricePKR: 3750, compareAtPKR: 4500, sku: 'BIF-VR-50' },
       { size: '100ml', pricePKR: 5850, compareAtPKR: 6900, sku: 'BIF-VR-100' }
     ],
-    image: '/products/story-mist.jpg',
-    gallery: ['/products/story-mist.jpg', '/products/black_oud.jpg'],
+    image: '/products/box_packaging.jpg',
+    gallery: ['/products/box_packaging.jpg', '/products/black_oud.jpg'],
     rating: 4.9,
     reviewsCount: 79,
     isFeatured: true,
     inStock: true,
     accentColor: '#9C1D36',
-    collectionId: 'luxury-collection'
+    collectionId: 'luxury-collection',
+    gender: 'women',
+    category: 'perfume'
+  },
+
+  // ----------------------------------------------------
+  // HIGH-CONVERTING BUNDLES & DISCOVERY SETS (Fumer Labs Inspired)
+  // ----------------------------------------------------
+
+  // 11. The Royal Trio Bundle
+  {
+    id: 'royal-trio-bundle',
+    name: 'The Royal Trio (Pack of 3 × 100ml)',
+    arabicName: 'المجموعة الملكية الثلاثية',
+    slug: 'royal-trio-bundle',
+    tagline: 'Three full-size 100ml flacons of Bin Irfan top masterpieces',
+    fragranceFamily: 'Woody & Oud',
+    shortDescription: 'The ultimate luxury collector pack. 3 full-size 100ml Extrait De Parfum flacons: Black Oud, Creed Aventus & Dunhill Desire in a presentation gift box.',
+    description: 'Curated for fragrance connoisseurs and discerning gift-givers, The Royal Trio gathers our three most requested signature flacons into an exquisite presentation box. Each 100ml bottle delivers 35% pure Extrait De Parfum concentration for all-day projection and luxury sillage.',
+    scentCharacter: 'Commanding, Versatile, Regal, Irresistible',
+    bestFor: ['Gifting', 'Collector Rotation', 'Wedding Presents', 'Signature Year-Round Wardrobe'],
+    longevity: '14 - 18 Hours',
+    projection: 'Heavy / Room Filler',
+    topNotes: ['Assam Agarwood', 'French Pineapple', 'Red Apple & Saffron'],
+    heartNotes: ['Turkish Rose', 'Smoked Birch', 'Patchouli & Teakwood'],
+    baseNotes: ['Cambodian Oud', 'Oakmoss', 'Golden Amber & Vanilla'],
+    defaultSize: '3 x 100ml',
+    variants: [
+      { size: '3 x 100ml', pricePKR: 14850, compareAtPKR: 18500, sku: 'BIF-BUN-TRIO' }
+    ],
+    image: '/products/royal_trio_bundle.jpg',
+    gallery: ['/products/royal_trio_bundle.jpg', '/products/box_packaging.jpg', '/products/lifestyle_spritz.jpg'],
+    rating: 5.0,
+    reviewsCount: 84,
+    isBestSeller: true,
+    isFeatured: true,
+    isNew: true,
+    inStock: true,
+    collectionId: 'bundles-collection',
+    gender: 'men',
+    category: 'bundle',
+    bundleItems: ['Black Oud (100ml)', 'Creed Aventus (100ml)', 'Dunhill Desire (100ml)'],
+    savingsPercentage: 20,
+    badge: 'Save ₨ 3,650 • Best Value'
+  },
+
+  // 12. Explorer Discovery Kit
+  {
+    id: 'explorer-discovery-kit',
+    name: 'Explorer Discovery Kit (5 × 10ml)',
+    arabicName: 'مجموعة الاستكشاف الفاخرة',
+    slug: 'explorer-discovery-kit',
+    tagline: '5 travel-ready atomizers in a luxury slide-drawer presentation box',
+    fragranceFamily: 'Fresh & Citrus',
+    shortDescription: 'Explore the art of scent before committing to a full flacon. 5 x 10ml deluxe spray atomizers nestled in a soft-blue & gold velvet drawer.',
+    description: 'Discover your signature scent with Bin Irfan Fragrance Explorer Kit. Featuring 5 x 10ml travel-size atomizers crafted with the identical 35% Extrait De Parfum concentration. Includes Black Oud, Paradise, Dunhill Desire, Creed Aventus, and Imperial Musk.',
+    scentCharacter: 'Discovery, Multi-faceted, Travel-Friendly, Sublime',
+    bestFor: ['First Time Buyers', 'Travel & Pocket Carry', 'Luxury Gift', 'Scent Layering'],
+    longevity: '12 - 16 Hours',
+    projection: 'All-Day Projection',
+    topNotes: ['Crisp Bergamot', 'Sea Salt', 'Blackcurrant', 'Saffron'],
+    heartNotes: ['Turkish Rose', 'Lotus Flower', 'Birchwood', 'Orris Root'],
+    baseNotes: ['Oud Wood', 'Cashmere Musk', 'Amber Resin', 'Sandalwood'],
+    defaultSize: '5 x 10ml',
+    variants: [
+      { size: '5 x 10ml', pricePKR: 3450, compareAtPKR: 4500, sku: 'BIF-BUN-EXP5' }
+    ],
+    image: '/products/discovery_explorer_kit.jpg',
+    gallery: ['/products/discovery_explorer_kit.jpg', '/products/paradise_sapphire.jpg', '/products/box_packaging.jpg'],
+    rating: 4.9,
+    reviewsCount: 112,
+    isBestSeller: true,
+    isFeatured: true,
+    isNew: true,
+    inStock: true,
+    collectionId: 'bundles-collection',
+    gender: 'unisex',
+    category: 'discovery-set',
+    bundleItems: ['Black Oud (10ml)', 'Paradise (10ml)', 'Dunhill Desire (10ml)', 'Creed Aventus (10ml)', 'Imperial Musk (10ml)'],
+    savingsPercentage: 23,
+    badge: 'Top Gift Pick • Save 23%'
+  },
+
+  // 13. Prestige His & Hers Duo
+  {
+    id: 'prestige-his-hers-duo',
+    name: 'Prestige His & Hers Duo (2 × 50ml)',
+    arabicName: 'ثنائي الهيبة للأزواج',
+    slug: 'prestige-his-hers-duo',
+    tagline: 'The perfect aromatic harmony for couples — Black Oud & Baccarat Rouge 540',
+    fragranceFamily: 'Oriental & Amber',
+    shortDescription: 'Two iconic master fragrances in one luxury pairing. One bold & masculine, one intoxicating & crystalline.',
+    description: 'A masterfully paired luxury gift set for the sophisticated couple. Contains 1 x 50ml Black Oud (rich Assam agarwood, Turkish rose, and leather) and 1 x 50ml Baccarat Rouge 540 (luminous saffron, jasmine, and caramelized amberwood).',
+    scentCharacter: 'Complementary, Luxurious, Sensual, Unforgettable',
+    bestFor: ['Anniversary Gifts', 'Couples', 'Festive Celebrations', 'Special Moments'],
+    longevity: '14 - 18 Hours',
+    projection: 'Heavy & Long Lasting',
+    topNotes: ['Assam Agarwood', 'Blood Orange', 'Precious Saffron'],
+    heartNotes: ['Turkish Rose', 'Egyptian Jasmine', 'Cedarwood'],
+    baseNotes: ['Amber Resin', 'Spun Sugar', 'Cashmere Musk'],
+    defaultSize: '2 x 50ml',
+    variants: [
+      { size: '2 x 50ml', pricePKR: 6950, compareAtPKR: 8500, sku: 'BIF-BUN-HH2' }
+    ],
+    image: '/products/royal_trio_bundle.jpg',
+    gallery: ['/products/royal_trio_bundle.jpg', '/products/box_packaging.jpg'],
+    rating: 4.9,
+    reviewsCount: 56,
+    isBestSeller: true,
+    inStock: true,
+    collectionId: 'bundles-collection',
+    gender: 'unisex',
+    category: 'bundle',
+    bundleItems: ['Black Oud (50ml)', 'Baccarat Rouge 540 (50ml)'],
+    savingsPercentage: 18,
+    badge: 'Save ₨ 1,550 • Couples Choice'
+  },
+
+  // 14. Summer Fresh Aquatic Duo
+  {
+    id: 'summer-aquatic-duo',
+    name: 'Summer Fresh Aquatic Duo (2 × 50ml)',
+    arabicName: 'ثنائي الانتعاش الصيفي',
+    slug: 'summer-aquatic-duo',
+    tagline: 'The ultimate cool, refreshing heatwave defense — Paradise & Blue Night',
+    fragranceFamily: 'Fresh & Citrus',
+    shortDescription: 'Two ultra-fresh, sparkling aquatic extracts designed to beat the subcontinental heat with 10+ hour radiance.',
+    description: 'Engineered specifically for warm days and humid evenings. This duo combines the oceanic sea salt and lotus blossom of Paradise with the frosted peppermint and smoked incense of Blue Night for all-day crisp elegance.',
+    scentCharacter: 'Invigorating, Crisp, Oceanic, Uplifting',
+    bestFor: ['Daily Summer Wear', 'Gym & Outdoors', 'Office Days', 'Weekend Getaways'],
+    longevity: '10 - 13 Hours',
+    projection: 'Radiant & Energizing',
+    topNotes: ['Sea Salt Breeze', 'Calabrian Lemon', 'Frosted Peppermint'],
+    heartNotes: ['Dewy Lotus Flower', 'Jasmine', 'Pink Pepper'],
+    baseNotes: ['White Cashmere Musk', 'Cedarwood', 'Clean Driftwood'],
+    defaultSize: '2 x 50ml',
+    variants: [
+      { size: '2 x 50ml', pricePKR: 5950, compareAtPKR: 7500, sku: 'BIF-BUN-SUM2' }
+    ],
+    image: '/products/paradise_sapphire.jpg',
+    gallery: ['/products/paradise_sapphire.jpg', '/products/lifestyle_spritz.jpg'],
+    rating: 4.8,
+    reviewsCount: 42,
+    inStock: true,
+    collectionId: 'bundles-collection',
+    gender: 'unisex',
+    category: 'bundle',
+    bundleItems: ['Paradise (50ml)', 'Blue Night (50ml)'],
+    savingsPercentage: 20,
+    badge: 'Save ₨ 1,550 • Summer Special'
   }
 ];

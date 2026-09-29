@@ -25,7 +25,7 @@ export const App: React.FC = () => {
     <CartProvider>
       <WishlistProvider>
         <Router>
-          <div className="flex flex-col min-h-screen bg-brand-dark text-brand-cream selection:bg-brand-ruby selection:text-brand-gold-light">
+          <div className="flex flex-col min-h-screen bg-brand-light-bg text-brand-slate-900 selection:bg-brand-blue-600 selection:text-white">
             <AnnouncementBar />
             <Navbar />
             <CartDrawer />

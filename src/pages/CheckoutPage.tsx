@@ -9,8 +9,6 @@ import {
   ShieldCheck,
   ShoppingBag,
   MapPin,
-  Phone,
-  User,
   Sparkles
 } from 'lucide-react';
 
@@ -30,7 +28,7 @@ export const CheckoutPage: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "WhatsApp Express Checkout | Bin Irfan Fragrance";
+    document.title = "Direct WhatsApp Checkout | Bin Irfan Fragrance";
   }, []);
 
   const shippingFee = cartTotalPKR >= 5000 || cart.length === 0 ? 0 : 250;
@@ -88,54 +86,54 @@ export const CheckoutPage: React.FC = () => {
 
   if (isOrdered && completedOrder) {
     return (
-      <div className="min-h-screen py-16 px-4 sm:px-6 max-w-xl mx-auto text-center space-y-6">
-        <div className="w-20 h-20 mx-auto rounded-full bg-emerald-950/70 border-2 border-emerald-500/60 flex items-center justify-center text-emerald-400 shadow-xl">
+      <div className="min-h-screen bg-brand-light-bg py-16 px-4 sm:px-6 max-w-xl mx-auto text-center space-y-6">
+        <div className="w-20 h-20 mx-auto rounded-full bg-emerald-50 border-2 border-emerald-500 flex items-center justify-center text-emerald-600 shadow-soft">
           <CheckCircle2 className="w-10 h-10" />
         </div>
 
         <div className="space-y-2">
-          <span className="text-xs uppercase tracking-[0.25em] text-brand-gold font-bold">
-            Order Dispatched to WhatsApp
+          <span className="text-xs uppercase tracking-[0.25em] text-brand-blue-700 font-bold bg-brand-blue-50 border border-brand-blue-200/60 px-3 py-1 rounded-full">
+            Order Sent to Official WhatsApp
           </span>
-          <h1 className="font-serif text-3xl sm:text-4xl font-bold text-brand-cream">
+          <h1 className="font-serif text-3xl sm:text-4xl font-bold text-brand-slate-900">
             Thank You, {completedOrder.name}!
           </h1>
-          <p className="text-xs sm:text-sm text-brand-cream/70 font-light max-w-md mx-auto">
-            Your order details have been sent directly to the official **Bin Irfan Fragrance** WhatsApp (+92 321 5186400) for immediate confirmation.
+          <p className="text-xs sm:text-sm text-brand-slate-600 max-w-md mx-auto">
+            Your order details have been forwarded to the official <strong>Bin Irfan Fragrance</strong> concierge (+92 321 5186400) for instant dispatch confirmation.
           </p>
         </div>
 
         {/* Order Receipt Box */}
-        <div className="p-6 rounded-2xl bg-brand-dark-card border border-brand-gold/30 text-left space-y-3 text-xs sm:text-sm shadow-luxury">
-          <div className="flex justify-between border-b border-brand-gold/15 pb-2">
-            <span className="text-brand-cream/60">Order Reference:</span>
-            <span className="font-mono font-bold text-brand-gold-light">{completedOrder.ref}</span>
+        <div className="p-6 sm:p-8 rounded-3xl bg-white border border-brand-slate-200/80 text-left space-y-3.5 text-xs sm:text-sm shadow-soft">
+          <div className="flex justify-between border-b border-brand-slate-100 pb-2.5">
+            <span className="text-brand-slate-500">Order Reference:</span>
+            <span className="font-mono font-bold text-brand-blue-900">{completedOrder.ref}</span>
           </div>
 
-          <div className="flex justify-between border-b border-brand-gold/15 pb-2">
-            <span className="text-brand-cream/60">Payment Method:</span>
-            <span className="font-semibold text-emerald-400">Cash on Delivery (COD)</span>
+          <div className="flex justify-between border-b border-brand-slate-100 pb-2.5">
+            <span className="text-brand-slate-500">Payment Mode:</span>
+            <span className="font-bold text-emerald-600">Cash on Delivery (COD)</span>
           </div>
 
-          <div className="flex justify-between border-b border-brand-gold/15 pb-2">
-            <span className="text-brand-cream/60">Delivery To:</span>
-            <span className="text-brand-cream text-right">{completedOrder.address}, {completedOrder.city}</span>
+          <div className="flex justify-between border-b border-brand-slate-100 pb-2.5">
+            <span className="text-brand-slate-500">Delivery Address:</span>
+            <span className="text-brand-slate-900 font-medium text-right">{completedOrder.address}, {completedOrder.city}</span>
           </div>
 
           {/* Items */}
-          <div className="py-2 border-b border-brand-gold/15 space-y-1.5">
-            <span className="text-brand-gold font-bold text-xs uppercase tracking-wider block">Items:</span>
+          <div className="py-2.5 border-b border-brand-slate-100 space-y-2">
+            <span className="text-brand-blue-900 font-bold text-xs uppercase tracking-wider block">Items:</span>
             {completedOrder.items.map((it: any, idx: number) => (
-              <div key={idx} className="flex justify-between text-xs text-brand-cream/80">
+              <div key={idx} className="flex justify-between text-xs text-brand-slate-700">
                 <span>{it.product.name} ({it.size}) × {it.quantity}</span>
-                <span className="font-mono">{formatPrice(it.pricePKR * it.quantity)}</span>
+                <span className="font-mono font-bold">{formatPrice(it.pricePKR * it.quantity)}</span>
               </div>
             ))}
           </div>
 
           <div className="flex justify-between pt-1 font-bold">
-            <span className="text-brand-cream">Total Payable (COD):</span>
-            <span className="font-serif text-lg text-brand-gold-light">
+            <span className="text-brand-slate-900">Total Payable (COD):</span>
+            <span className="font-serif text-xl text-brand-blue-900">
               {formatPrice(completedOrder.total)}
             </span>
           </div>
@@ -146,15 +144,15 @@ export const CheckoutPage: React.FC = () => {
             href={completedOrder.waUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full py-4 px-4 rounded-xl bg-emerald-950/50 border border-emerald-500/60 hover:bg-emerald-900/60 text-emerald-300 text-xs font-bold uppercase tracking-widest transition-all flex items-center justify-center gap-2 shadow-lg"
+            className="w-full py-4 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-widest transition-all flex items-center justify-center gap-2 shadow-md"
           >
-            <MessageCircle className="w-5 h-5 text-emerald-400" />
+            <MessageCircle className="w-5 h-5" />
             <span>Open WhatsApp Chat (+92 321 5186400)</span>
           </a>
 
           <Link
             to="/shop"
-            className="inline-block text-xs uppercase tracking-wider text-brand-gold hover:text-brand-gold-light font-semibold pt-2"
+            className="inline-block text-xs uppercase tracking-wider text-brand-blue-700 hover:text-brand-blue-900 font-bold pt-2"
           >
             &larr; Return to Fragrance Catalogue
           </Link>
@@ -165,13 +163,13 @@ export const CheckoutPage: React.FC = () => {
 
   if (cart.length === 0) {
     return (
-      <div className="min-h-screen py-24 text-center max-w-md mx-auto space-y-4 px-4">
-        <div className="w-16 h-16 mx-auto rounded-full bg-brand-dark border border-brand-gold/30 flex items-center justify-center text-brand-gold/60">
+      <div className="min-h-screen bg-brand-light-bg py-24 text-center max-w-md mx-auto space-y-4 px-4">
+        <div className="w-16 h-16 mx-auto rounded-full bg-brand-blue-50 border border-brand-blue-100 flex items-center justify-center text-brand-blue-500">
           <ShoppingBag className="w-8 h-8" />
         </div>
-        <h2 className="font-serif text-2xl font-bold text-brand-cream">Your Bag Is Empty</h2>
-        <p className="text-xs text-brand-cream/60">Please choose a fragrance before placing your WhatsApp order.</p>
-        <Link to="/shop" className="inline-block px-6 py-2.5 rounded-xl bg-brand-ruby text-white text-xs font-bold uppercase">
+        <h2 className="font-serif text-2xl font-bold text-brand-slate-900">Your Bag Is Empty</h2>
+        <p className="text-xs text-brand-slate-500">Please choose a fragrance before placing your WhatsApp order.</p>
+        <Link to="/shop" className="inline-block px-6 py-2.5 rounded-xl bg-brand-blue-600 text-white text-xs font-bold uppercase shadow-md">
           Discover Fragrances
         </Link>
       </div>
@@ -179,19 +177,19 @@ export const CheckoutPage: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto space-y-10">
+    <div className="min-h-screen bg-brand-light-bg py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto space-y-10">
       
       {/* Title */}
       <div className="text-center max-w-xl mx-auto space-y-2">
-        <span className="text-xs uppercase tracking-[0.25em] text-brand-gold font-bold inline-flex items-center gap-1.5">
+        <span className="text-xs uppercase tracking-[0.25em] text-brand-blue-700 font-bold bg-brand-blue-50 border border-brand-blue-200/60 px-3 py-1 rounded-full inline-flex items-center gap-1.5">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>Direct WhatsApp Order (No Account Needed)</span>
+          <span>Express WhatsApp Checkout (No Account Needed)</span>
         </span>
-        <h1 className="font-serif text-3xl sm:text-4xl font-bold text-brand-cream uppercase tracking-tight">
-          COMPLETE YOUR ORDER
+        <h1 className="font-serif text-3xl sm:text-4xl font-bold text-brand-slate-900 tracking-tight">
+          Complete Your Order
         </h1>
-        <p className="text-xs text-brand-cream/60">
-          Enter your delivery details. Clicking place order sends your order directly to our official WhatsApp.
+        <p className="text-xs text-brand-slate-500">
+          Enter your delivery details below. Clicking "Place Order" transmits your order directly to our official WhatsApp.
         </p>
       </div>
 
@@ -199,20 +197,20 @@ export const CheckoutPage: React.FC = () => {
         
         {/* Left Form: Delivery Details */}
         <div className="lg:col-span-7 space-y-6">
-          <div className="p-6 sm:p-8 rounded-3xl bg-brand-dark-card border border-brand-gold/25 space-y-6 shadow-luxury">
-            <div className="flex items-center justify-between pb-3 border-b border-brand-gold/15">
-              <h3 className="font-serif text-xl font-bold text-brand-cream flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-brand-gold" />
+          <div className="p-6 sm:p-8 rounded-3xl bg-white border border-brand-slate-200/80 space-y-6 shadow-soft">
+            <div className="flex items-center justify-between pb-3 border-b border-brand-slate-100">
+              <h3 className="font-serif text-xl font-bold text-brand-slate-900 flex items-center gap-2">
+                <MapPin className="w-5 h-5 text-brand-blue-600" />
                 <span>Delivery Address in Pakistan</span>
               </h3>
-              <span className="text-[10px] text-emerald-400 uppercase font-semibold tracking-wider">
-                Cash on Delivery (COD)
+              <span className="text-xs text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full font-bold">
+                Cash on Delivery
               </span>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="text-xs font-semibold uppercase tracking-wider text-brand-gold block mb-1.5">
+                <label className="text-xs font-bold uppercase tracking-wider text-brand-slate-700 block mb-1.5">
                   Your Full Name *
                 </label>
                 <input
@@ -221,43 +219,43 @@ export const CheckoutPage: React.FC = () => {
                   placeholder="e.g. Qasim Khan"
                   value={formData.fullName}
                   onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                  className="w-full bg-brand-dark border border-brand-gold/30 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-cream placeholder-brand-cream/40 focus:border-brand-gold outline-none"
+                  className="w-full bg-brand-light-bg border border-brand-slate-200 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-slate-900 placeholder-brand-slate-400 focus:border-brand-blue-500 outline-none"
                 />
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="text-xs font-semibold uppercase tracking-wider text-brand-gold block mb-1.5">
+                  <label className="text-xs font-bold uppercase tracking-wider text-brand-slate-700 block mb-1.5">
                     WhatsApp Phone Number *
                   </label>
                   <input
                     type="tel"
                     required
-                    placeholder="e.g. 0300 1234567"
+                    placeholder="e.g. 0321 5186400"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full bg-brand-dark border border-brand-gold/30 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-cream placeholder-brand-cream/40 focus:border-brand-gold outline-none"
+                    className="w-full bg-brand-light-bg border border-brand-slate-200 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-slate-900 placeholder-brand-slate-400 focus:border-brand-blue-500 outline-none"
                   />
                 </div>
 
                 <div>
-                  <label className="text-xs font-semibold uppercase tracking-wider text-brand-gold block mb-1.5">
+                  <label className="text-xs font-bold uppercase tracking-wider text-brand-slate-700 block mb-1.5">
                     City *
                   </label>
                   <input
                     type="text"
                     required
-                    placeholder="e.g. Rawalpindi, Peshawar, Lahore..."
+                    placeholder="e.g. Lahore, Karachi, Islamabad..."
                     value={formData.city}
                     onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                    className="w-full bg-brand-dark border border-brand-gold/30 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-cream placeholder-brand-cream/40 focus:border-brand-gold outline-none"
+                    className="w-full bg-brand-light-bg border border-brand-slate-200 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-slate-900 placeholder-brand-slate-400 focus:border-brand-blue-500 outline-none"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="text-xs font-semibold uppercase tracking-wider text-brand-gold block mb-1.5">
-                  Complete Delivery Address *
+                <label className="text-xs font-bold uppercase tracking-wider text-brand-slate-700 block mb-1.5">
+                  Complete Street Address *
                 </label>
                 <textarea
                   rows={2}
@@ -265,20 +263,20 @@ export const CheckoutPage: React.FC = () => {
                   placeholder="House / Flat #, Street #, Sector / Area, Landmark"
                   value={formData.address}
                   onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                  className="w-full bg-brand-dark border border-brand-gold/30 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-cream placeholder-brand-cream/40 focus:border-brand-gold outline-none resize-none"
+                  className="w-full bg-brand-light-bg border border-brand-slate-200 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-slate-900 placeholder-brand-slate-400 focus:border-brand-blue-500 outline-none resize-none"
                 />
               </div>
 
               <div>
-                <label className="text-xs font-semibold uppercase tracking-wider text-brand-gold block mb-1.5">
-                  Special Note (Optional)
+                <label className="text-xs font-bold uppercase tracking-wider text-brand-slate-700 block mb-1.5">
+                  Delivery Notes (Optional)
                 </label>
                 <input
                   type="text"
-                  placeholder="e.g. Urgent gift delivery, call before arrival"
+                  placeholder="e.g. Urgent gift delivery, call upon arrival"
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  className="w-full bg-brand-dark border border-brand-gold/30 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-cream placeholder-brand-cream/40 focus:border-brand-gold outline-none"
+                  className="w-full bg-brand-light-bg border border-brand-slate-200 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-slate-900 placeholder-brand-slate-400 focus:border-brand-blue-500 outline-none"
                 />
               </div>
             </div>
@@ -287,27 +285,27 @@ export const CheckoutPage: React.FC = () => {
 
         {/* Right Column: Order Summary & Place Order */}
         <div className="lg:col-span-5 space-y-6">
-          <div className="p-6 sm:p-8 rounded-3xl bg-brand-dark-card border border-brand-gold/30 space-y-6 shadow-luxury sticky top-28">
-            <h3 className="font-serif text-xl font-bold text-brand-cream pb-3 border-b border-brand-gold/15">
+          <div className="p-6 sm:p-8 rounded-3xl bg-white border border-brand-slate-200/80 space-y-6 shadow-soft sticky top-28">
+            <h3 className="font-serif text-xl font-bold text-brand-slate-900 pb-3 border-b border-brand-slate-100">
               Order Summary
             </h3>
 
             {/* Items */}
-            <div className="space-y-3 max-h-56 overflow-y-auto pr-1 divide-y divide-brand-gold/10">
+            <div className="space-y-3 max-h-56 overflow-y-auto pr-1 divide-y divide-brand-slate-100">
               {cart.map(item => (
                 <div key={item.id} className="pt-2 flex items-center justify-between text-xs">
                   <div className="flex items-center gap-3">
                     <img
                       src={item.product.image}
                       alt={item.product.name}
-                      className="w-11 h-11 rounded-lg object-cover border border-brand-gold/20"
+                      className="w-11 h-11 rounded-xl object-cover border border-brand-slate-100"
                     />
                     <div>
-                      <p className="font-bold text-brand-cream">{item.product.name}</p>
-                      <p className="text-brand-gold text-[11px]">{item.size} × {item.quantity}</p>
+                      <p className="font-bold text-brand-slate-900">{item.product.name}</p>
+                      <p className="text-brand-blue-700 text-[11px] font-medium">{item.size} × {item.quantity}</p>
                     </div>
                   </div>
-                  <span className="font-serif font-bold text-brand-gold-light">
+                  <span className="font-serif font-bold text-brand-slate-900">
                     {formatPrice(item.pricePKR * item.quantity)}
                   </span>
                 </div>
@@ -315,39 +313,39 @@ export const CheckoutPage: React.FC = () => {
             </div>
 
             {/* Calculations */}
-            <div className="space-y-2 text-xs text-brand-cream/80 pt-4 border-t border-brand-gold/15">
+            <div className="space-y-2 text-xs text-brand-slate-600 pt-4 border-t border-brand-slate-100">
               <div className="flex justify-between">
                 <span>Subtotal:</span>
-                <span className="font-semibold text-brand-cream">{formatPrice(cartTotalPKR)}</span>
+                <span className="font-bold text-brand-slate-900">{formatPrice(cartTotalPKR)}</span>
               </div>
               <div className="flex justify-between">
                 <span>Nationwide Courier:</span>
-                <span className="font-semibold text-brand-gold-light">
+                <span className="font-bold text-brand-blue-700">
                   {shippingFee === 0 ? 'FREE' : formatPrice(shippingFee)}
                 </span>
               </div>
-              <div className="flex justify-between text-base font-bold pt-3 border-t border-brand-gold/20 text-brand-cream">
+              <div className="flex justify-between text-base font-bold pt-3 border-t border-brand-slate-200 text-brand-slate-900">
                 <span>Total Payable (COD):</span>
-                <span className="font-serif text-2xl text-brand-gold-light">{formatPrice(grandTotal)}</span>
+                <span className="font-serif text-2xl text-brand-blue-900">{formatPrice(grandTotal)}</span>
               </div>
             </div>
 
             {/* Primary Order Button */}
             <button
               type="submit"
-              className="w-full py-4 rounded-xl bg-emerald-950/60 border border-emerald-500/60 hover:bg-emerald-900/80 text-emerald-300 text-xs font-bold uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-2 group"
+              className="w-full py-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-widest transition-all shadow-md flex items-center justify-center gap-2 group"
             >
-              <MessageCircle className="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform" />
+              <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform" />
               <span>Place Order via WhatsApp</span>
             </button>
 
-            <div className="text-[11px] text-center text-brand-cream/60 space-y-1.5 pt-1">
-              <p className="flex items-center justify-center gap-1.5 text-emerald-400 font-semibold">
+            <div className="text-[11px] text-center text-brand-slate-500 space-y-1.5 pt-1">
+              <p className="flex items-center justify-center gap-1.5 text-emerald-700 font-semibold">
                 <CheckCircle2 className="w-3.5 h-3.5" />
                 <span>Orders arrive in 2–4 business days with Cash on Delivery</span>
               </p>
-              <p className="text-[10px] text-brand-cream/40">
-                Official Boutique Concierge: +92 321 5186400
+              <p className="text-[10px] text-brand-slate-400">
+                Official Concierge: +92 321 5186400
               </p>
             </div>
           </div>

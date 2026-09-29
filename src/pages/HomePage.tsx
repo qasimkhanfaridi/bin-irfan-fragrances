@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 import { HeroSection } from '../components/home/HeroSection';
+import { CategoryPillsSection } from '../components/home/CategoryPillsSection';
+import { BundlesShowcaseSection } from '../components/home/BundlesShowcaseSection';
+import { BestSellersCarousel } from '../components/home/BestSellersCarousel';
 import { BrandStatement } from '../components/home/BrandStatement';
 import { FeaturedCollection } from '../components/home/FeaturedCollection';
-import { BestSellersCarousel } from '../components/home/BestSellersCarousel';
-import { WhyBinIrfan } from '../components/home/WhyBinIrfan';
 import { PackagingShowcaseSection } from '../components/home/PackagingShowcaseSection';
+import { WhyBinIrfan } from '../components/home/WhyBinIrfan';
 import { CustomerReviews } from '../components/home/CustomerReviews';
 import { InstagramSection } from '../components/home/InstagramSection';
 
@@ -17,8 +19,10 @@ export const HomePage: React.FC = () => {
   return (
     <div className="space-y-0">
       <HeroSection />
-      <BrandStatement />
+      <CategoryPillsSection />
+      <BundlesShowcaseSection />
       <BestSellersCarousel />
+      <BrandStatement />
       <FeaturedCollection />
       <PackagingShowcaseSection />
       <WhyBinIrfan />

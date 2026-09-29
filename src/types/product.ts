@@ -13,7 +13,7 @@ export interface FragranceNote {
 }
 
 export interface ProductVariant {
-  size: '50ml' | '100ml';
+  size: '50ml' | '100ml' | string;
   pricePKR: number;
   compareAtPKR?: number;
   sku: string;
@@ -36,7 +36,7 @@ export interface Product {
   heartNotes: string[];
   baseNotes: string[];
   variants: ProductVariant[];
-  defaultSize: '50ml' | '100ml';
+  defaultSize: '50ml' | '100ml' | string;
   image: string;
   gallery: string[];
   rating: number;
@@ -48,12 +48,17 @@ export interface Product {
   accentColor?: string;
   collectionId: string;
   impressionNote?: string;
+  gender?: 'men' | 'women' | 'unisex';
+  category?: 'perfume' | 'bundle' | 'discovery-set';
+  bundleItems?: string[];
+  savingsPercentage?: number;
+  badge?: string;
 }
 
 export interface CartItem {
   id: string;
   product: Product;
-  size: '50ml' | '100ml';
+  size: '50ml' | '100ml' | string;
   pricePKR: number;
   quantity: number;
 }
@@ -91,7 +96,7 @@ export interface Review {
 export interface OrderItem {
   productId: string;
   productName: string;
-  size: '50ml' | '100ml';
+  size: string;
   price: number;
   quantity: number;
   image: string;

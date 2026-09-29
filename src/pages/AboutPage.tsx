@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Sparkles, MapPin, Award, Heart, ShieldCheck, Flame } from 'lucide-react';
+import { Sparkles, MapPin, Award, Heart, ShieldCheck, Flame, Phone } from 'lucide-react';
 
 export const AboutPage: React.FC = () => {
   useEffect(() => {
@@ -8,58 +8,76 @@ export const AboutPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-24">
+    <div className="min-h-screen bg-brand-light-bg py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-24">
       
       {/* Hero Narrative */}
       <div className="text-center max-w-3xl mx-auto space-y-6">
-        <span className="text-xs uppercase tracking-[0.3em] text-brand-gold font-bold inline-flex items-center gap-2">
-          <Sparkles className="w-3.5 h-3.5" />
+        <div className="flex justify-center">
+          <img
+            src="/brand/logo.jpg"
+            alt="Bin Irfan Seal"
+            className="w-20 h-20 rounded-full border-2 border-brand-gold shadow-md object-cover"
+          />
+        </div>
+        <span className="text-xs uppercase tracking-[0.3em] text-brand-blue-700 font-bold bg-brand-blue-50 border border-brand-blue-200/60 px-3.5 py-1 rounded-full inline-flex items-center gap-2">
+          <Sparkles className="w-3.5 h-3.5 text-brand-gold-dark" />
           <span>The Bin Irfan Heritage</span>
         </span>
-        <h1 className="font-serif text-4xl sm:text-6xl font-bold text-brand-cream uppercase tracking-tight">
+        <h1 className="font-serif text-4xl sm:text-6xl font-bold text-brand-slate-900 tracking-tight">
           CRAFTING OLFACTORY IDENTITY
         </h1>
-        <div className="w-16 h-0.5 bg-brand-gold mx-auto" />
-        <p className="font-serif italic text-lg sm:text-xl text-brand-gold-light/90 font-light leading-relaxed">
+        <div className="w-20 h-0.5 bg-brand-gold mx-auto" />
+        <p className="font-serif italic text-lg sm:text-xl text-brand-slate-600 font-light leading-relaxed">
           "A scent is more than an accessory. It is an unseen garment that introduces your character before you speak, and lingers with honor after you depart."
         </p>
       </div>
 
       {/* Origin Story Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-6 space-y-6 text-sm text-brand-cream/80 leading-relaxed font-light">
-          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-cream tracking-wide">
-            Born in the Ancient Heart of Peshawar
-          </h2>
+        <div className="lg:col-span-6 space-y-6 text-sm text-brand-slate-600 leading-relaxed">
+          <div className="inline-block">
+            <span className="text-xs uppercase tracking-wider text-brand-blue-700 font-bold">
+              Atelier Origins
+            </span>
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-slate-900 tracking-tight mt-1">
+              Born in the Ancient Heart of Peshawar
+            </h2>
+          </div>
           <p>
-            Established in the historic trading corridors of Peshawar, Pakistan, <strong>Bin Irfan Fragrance</strong> began with a single conviction: fragrance connoisseurs in Pakistan deserve the grandeur of international French niche perfumery without compromise.
+            Established in the historic trading corridors of Peshawar, Pakistan, <strong>Bin Irfan Fragrance</strong> began with a single conviction: fragrance connoisseurs across Pakistan deserve the grandeur and sillage of international French niche perfumery without compromise.
           </p>
           <p>
-            We set out to master the delicate art of fragrance formulation—infusing high percentages of pure perfume oils (35% Extrait concentration) with aged Cambodian agarwood, velvety Damascus rose, and pristine Mediterranean citrus chords.
+            We set out to master the delicate art of fragrance formulation—infusing ultra-high percentages of pure perfume essences (35% Extrait de Parfum concentration) with aged Cambodian agarwood, velvety Damascus rose, and pristine Mediterranean citrus chords.
           </p>
           <p>
-            Every bottle is hand-poured, macerated to peak olfactory maturation, and inspected to ensure a scent projection that outlasts long workdays and formal evening banquets.
+            Every flacon is hand-inspected, macerated to peak olfactory maturation, and packaged into our signature white and soft-blue presentation boxes to ensure a presence that commands attention.
           </p>
-          <div className="pt-2 flex items-center gap-3 text-xs text-brand-gold font-semibold">
-            <MapPin className="w-4 h-4 text-brand-gold" />
-            <span>Physical Boutique: Shop #6, Malik Dilawar Plaza, Hashtnagri, Peshawar</span>
+          <div className="pt-3 space-y-2">
+            <div className="flex items-center gap-3 text-xs text-brand-slate-800 font-medium">
+              <MapPin className="w-4 h-4 text-brand-blue-600 flex-shrink-0" />
+              <span>Physical Boutique: Shop #6, Malik Dilawar Plaza, Hashtnagri, Peshawar</span>
+            </div>
+            <div className="flex items-center gap-3 text-xs text-brand-slate-800 font-medium">
+              <Phone className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+              <span>Official Concierge: +92 321 5186400</span>
+            </div>
           </div>
         </div>
 
         <div className="lg:col-span-6 flex justify-center">
-          <div className="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden border-2 border-brand-gold/40 shadow-luxury">
+          <div className="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden border border-brand-slate-200 shadow-luxury group">
             <img
-              src="/products/black_oud.jpg"
-              alt="Bin Irfan Craftsmanship"
-              className="w-full h-full object-cover"
+              src="/products/box_packaging.jpg"
+              alt="Bin Irfan Craftsmanship & Presentation"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-transparent to-transparent" />
-            <div className="absolute bottom-6 inset-x-6 text-center">
-              <span className="font-serif text-lg font-bold text-brand-gold-light block">
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent" />
+            <div className="absolute bottom-6 inset-x-6 text-center text-white">
+              <span className="font-serif text-xl font-bold block">
                 Pure Extrait Formulation
               </span>
-              <span className="text-xs text-brand-cream/60">
-                Peshawar • Nationwide Delivery
+              <span className="text-xs text-slate-200">
+                Peshawar Atelier • Nationwide Express Delivery
               </span>
             </div>
           </div>
@@ -67,28 +85,34 @@ export const AboutPage: React.FC = () => {
       </div>
 
       {/* Values Pillars */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-brand-gold/15">
-        <div className="p-8 rounded-2xl bg-brand-dark-card border border-brand-gold/20 space-y-3">
-          <Award className="w-8 h-8 text-brand-gold mb-2" />
-          <h3 className="font-serif text-xl font-bold text-brand-cream">Potency & Longevity</h3>
-          <p className="text-xs text-brand-cream/70 leading-relaxed font-light">
-            We formulate exclusively at Extrait de Parfum strength (35% oil concentration) to ensure that your scent maintains its character without fading in high humidity or heat.
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-brand-slate-200">
+        <div className="p-8 rounded-3xl bg-white border border-brand-slate-200/80 shadow-soft space-y-3">
+          <div className="w-12 h-12 rounded-2xl bg-brand-blue-50 flex items-center justify-center text-brand-blue-600 mb-2">
+            <Award className="w-6 h-6" />
+          </div>
+          <h3 className="font-serif text-xl font-bold text-brand-slate-900">Potency & Longevity</h3>
+          <p className="text-xs text-brand-slate-500 leading-relaxed">
+            We formulate exclusively at Extrait de Parfum strength (35% oil concentration) to ensure that your scent maintains its majestic character without fading in high humidity or heat.
           </p>
         </div>
 
-        <div className="p-8 rounded-2xl bg-brand-dark-card border border-brand-gold/20 space-y-3">
-          <Heart className="w-8 h-8 text-brand-ruby-light mb-2" />
-          <h3 className="font-serif text-xl font-bold text-brand-cream">Artisanal Respect</h3>
-          <p className="text-xs text-brand-cream/70 leading-relaxed font-light">
-            Whether creating our proprietary dark agarwoods or honoring classic global compositions, each blend is crafted with genuine passion and olfactory precision.
+        <div className="p-8 rounded-3xl bg-white border border-brand-slate-200/80 shadow-soft space-y-3">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-amber-600 mb-2">
+            <Sparkles className="w-6 h-6" />
+          </div>
+          <h3 className="font-serif text-xl font-bold text-brand-slate-900">Artisanal Respect</h3>
+          <p className="text-xs text-brand-slate-500 leading-relaxed">
+            Whether creating proprietary dark agarwoods or honoring classic global compositions, each blend is crafted with genuine passion, proper maceration, and olfactory precision.
           </p>
         </div>
 
-        <div className="p-8 rounded-2xl bg-brand-dark-card border border-brand-gold/20 space-y-3">
-          <ShieldCheck className="w-8 h-8 text-brand-gold mb-2" />
-          <h3 className="font-serif text-xl font-bold text-brand-cream">Transparent Sourcing</h3>
-          <p className="text-xs text-brand-cream/70 leading-relaxed font-light">
-            We avoid misleading laboratory claims. We deliver honest craftsmanship, exquisite heavy flacons, and personalized client care directly from our boutique.
+        <div className="p-8 rounded-3xl bg-white border border-brand-slate-200/80 shadow-soft space-y-3">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center text-emerald-600 mb-2">
+            <ShieldCheck className="w-6 h-6" />
+          </div>
+          <h3 className="font-serif text-xl font-bold text-brand-slate-900">Direct Pakistan Delivery</h3>
+          <p className="text-xs text-brand-slate-500 leading-relaxed">
+            Direct dispatch with Cash on Delivery nationwide. Fast 2–4 business days delivery to Karachi, Lahore, Islamabad, Peshawar, Rawalpindi, and every corner of Pakistan.
           </p>
         </div>
       </div>

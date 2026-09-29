@@ -5,21 +5,14 @@ import { getOrders, updateOrderStatus, deleteOrder } from '../utils/orders';
 import {
   Package,
   Search,
-  Filter,
   Eye,
   MessageCircle,
   Printer,
   Trash2,
   CheckCircle2,
   Clock,
-  Truck,
   X,
-  ArrowUpDown,
-  Download,
-  ShieldCheck,
-  MapPin,
-  Phone,
-  Mail
+  Download
 } from 'lucide-react';
 
 export const AdminOrdersPage: React.FC = () => {
@@ -87,34 +80,34 @@ export const AdminOrdersPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-8">
+    <div className="min-h-screen bg-brand-light-bg py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-8">
       
       {/* Dashboard Top Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-brand-gold/20">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-brand-slate-200">
         <div>
-          <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-brand-gold font-bold mb-1">
-            <Package className="w-4 h-4" />
+          <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-brand-blue-700 font-bold mb-1">
+            <Package className="w-4 h-4 text-brand-blue-600" />
             <span>Store Operations Portal</span>
           </div>
-          <h1 className="font-serif text-2xl sm:text-4xl font-bold text-brand-cream">
+          <h1 className="font-serif text-2xl sm:text-4xl font-bold text-brand-slate-900">
             Boutique Orders Dashboard
           </h1>
-          <p className="text-xs text-brand-cream/60">
-            Real-time orders received from your online boutique and WhatsApp store.
+          <p className="text-xs text-brand-slate-500">
+            Real-time orders received from your online boutique and WhatsApp storefront.
           </p>
         </div>
 
         <div className="flex items-center gap-3">
           <button
             onClick={exportCSV}
-            className="px-4 py-2 rounded-xl bg-brand-dark-surface border border-brand-gold/30 hover:border-brand-gold text-brand-gold-light text-xs font-semibold flex items-center gap-2 transition-all"
+            className="px-4 py-2 rounded-xl bg-white border border-brand-slate-200 hover:border-brand-slate-300 text-brand-slate-700 text-xs font-semibold flex items-center gap-2 transition-all shadow-sm"
           >
             <Download className="w-3.5 h-3.5" />
             <span>Export CSV</span>
           </button>
           <Link
             to="/shop"
-            className="px-4 py-2 rounded-xl bg-brand-ruby hover:bg-brand-ruby-light text-white text-xs font-semibold flex items-center gap-2 transition-all shadow-ruby-glow"
+            className="px-4 py-2 rounded-xl bg-brand-blue-600 hover:bg-brand-blue-700 text-white text-xs font-semibold flex items-center gap-2 transition-all shadow-sm"
           >
             <span>View Storefront</span>
           </Link>
@@ -123,51 +116,51 @@ export const AdminOrdersPage: React.FC = () => {
 
       {/* Metrics Row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="p-5 rounded-2xl bg-brand-dark-card border border-brand-gold/20 flex flex-col justify-between">
-          <span className="text-xs text-brand-cream/60 uppercase tracking-wider font-semibold">Total Orders</span>
+        <div className="p-5 rounded-2xl bg-white border border-brand-slate-200/80 shadow-soft flex flex-col justify-between">
+          <span className="text-xs text-brand-slate-500 uppercase tracking-wider font-semibold">Total Orders</span>
           <div className="flex items-baseline justify-between mt-2">
-            <span className="font-serif text-3xl font-bold text-brand-cream">{orders.length}</span>
-            <Package className="w-5 h-5 text-brand-gold" />
+            <span className="font-serif text-3xl font-bold text-brand-slate-900">{orders.length}</span>
+            <Package className="w-5 h-5 text-brand-blue-600" />
           </div>
         </div>
 
-        <div className="p-5 rounded-2xl bg-brand-dark-card border border-brand-gold/20 flex flex-col justify-between">
-          <span className="text-xs text-brand-cream/60 uppercase tracking-wider font-semibold">Total Revenue (PKR)</span>
+        <div className="p-5 rounded-2xl bg-white border border-brand-slate-200/80 shadow-soft flex flex-col justify-between">
+          <span className="text-xs text-brand-slate-500 uppercase tracking-wider font-semibold">Total Revenue (PKR)</span>
           <div className="flex items-baseline justify-between mt-2">
-            <span className="font-serif text-2xl font-bold text-brand-gold-light">
+            <span className="font-serif text-2xl font-bold text-brand-blue-900">
               ₨ {totalRevenue.toLocaleString()}
             </span>
-            <span className="text-xs text-emerald-400 font-bold">100% COD / Web</span>
+            <span className="text-xs text-emerald-600 font-bold">100% COD / Web</span>
           </div>
         </div>
 
-        <div className="p-5 rounded-2xl bg-brand-dark-card border border-brand-gold/20 flex flex-col justify-between">
-          <span className="text-xs text-brand-cream/60 uppercase tracking-wider font-semibold">Pending Dispatches</span>
+        <div className="p-5 rounded-2xl bg-white border border-brand-slate-200/80 shadow-soft flex flex-col justify-between">
+          <span className="text-xs text-brand-slate-500 uppercase tracking-wider font-semibold">Pending Dispatches</span>
           <div className="flex items-baseline justify-between mt-2">
-            <span className="font-serif text-3xl font-bold text-amber-400">{pendingCount}</span>
-            <Clock className="w-5 h-5 text-amber-400" />
+            <span className="font-serif text-3xl font-bold text-amber-600">{pendingCount}</span>
+            <Clock className="w-5 h-5 text-amber-500" />
           </div>
         </div>
 
-        <div className="p-5 rounded-2xl bg-brand-dark-card border border-brand-gold/20 flex flex-col justify-between">
-          <span className="text-xs text-brand-cream/60 uppercase tracking-wider font-semibold">Delivered Orders</span>
+        <div className="p-5 rounded-2xl bg-white border border-brand-slate-200/80 shadow-soft flex flex-col justify-between">
+          <span className="text-xs text-brand-slate-500 uppercase tracking-wider font-semibold">Delivered Orders</span>
           <div className="flex items-baseline justify-between mt-2">
-            <span className="font-serif text-3xl font-bold text-emerald-400">{deliveredCount}</span>
-            <CheckCircle2 className="w-5 h-5 text-emerald-400" />
+            <span className="font-serif text-3xl font-bold text-emerald-600">{deliveredCount}</span>
+            <CheckCircle2 className="w-5 h-5 text-emerald-500" />
           </div>
         </div>
       </div>
 
       {/* Filter and Search Bar */}
-      <div className="p-4 rounded-2xl bg-brand-dark-card border border-brand-gold/20 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="p-4 rounded-2xl bg-white border border-brand-slate-200/80 shadow-soft flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="relative w-full md:w-80">
-          <Search className="w-4 h-4 absolute left-3 top-3 text-brand-gold/60" />
+          <Search className="w-4 h-4 absolute left-3 top-3 text-brand-slate-400" />
           <input
             type="text"
             placeholder="Search by Order ID, Customer, Phone, City..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full bg-brand-dark border border-brand-gold/20 rounded-xl py-2 pl-9 pr-3 text-xs text-brand-cream placeholder-brand-cream/40 focus:border-brand-gold outline-none"
+            className="w-full bg-brand-light-bg border border-brand-slate-200 rounded-xl py-2 pl-9 pr-3 text-xs text-brand-slate-900 placeholder-brand-slate-400 focus:border-brand-blue-500 outline-none"
           />
         </div>
 
@@ -178,8 +171,8 @@ export const AdminOrdersPage: React.FC = () => {
               onClick={() => setStatusFilter(st)}
               className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all ${
                 statusFilter === st
-                  ? 'bg-brand-ruby text-white border border-brand-gold/50 shadow-sm'
-                  : 'bg-brand-dark text-brand-cream/60 border border-brand-gold/15 hover:border-brand-gold/40'
+                  ? 'bg-brand-blue-600 text-white shadow-sm'
+                  : 'bg-brand-light-bg text-brand-slate-600 border border-brand-slate-200 hover:text-brand-slate-900'
               }`}
             >
               {st}
@@ -189,10 +182,10 @@ export const AdminOrdersPage: React.FC = () => {
       </div>
 
       {/* Orders Table */}
-      <div className="bg-brand-dark-card rounded-3xl border border-brand-gold/20 overflow-hidden shadow-luxury">
+      <div className="bg-white rounded-3xl border border-brand-slate-200/80 shadow-soft overflow-hidden">
         <div className="overflow-x-auto">
-          <table className="w-full text-left text-xs text-brand-cream/80">
-            <thead className="bg-brand-dark-surface border-b border-brand-gold/15 text-[11px] uppercase tracking-wider text-brand-gold font-bold">
+          <table className="w-full text-left text-xs text-brand-slate-700">
+            <thead className="bg-brand-light-bg/80 border-b border-brand-slate-200 text-[11px] uppercase tracking-wider text-brand-slate-600 font-bold">
               <tr>
                 <th className="py-3.5 px-4">Order ID</th>
                 <th className="py-3.5 px-4">Date</th>
@@ -204,59 +197,59 @@ export const AdminOrdersPage: React.FC = () => {
                 <th className="py-3.5 px-4 text-right">Actions</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-brand-gold/10">
+            <tbody className="divide-y divide-brand-slate-100">
               {filteredOrders.length === 0 ? (
                 <tr>
-                  <td colSpan={8} className="py-12 text-center text-brand-cream/50">
+                  <td colSpan={8} className="py-12 text-center text-brand-slate-400">
                     No orders match your search criteria.
                   </td>
                 </tr>
               ) : (
                 filteredOrders.map(order => (
-                  <tr key={order.id} className="hover:bg-brand-dark/50 transition-colors">
-                    <td className="py-3.5 px-4 font-mono font-bold text-brand-gold-light">
+                  <tr key={order.id} className="hover:bg-slate-50/80 transition-colors">
+                    <td className="py-3.5 px-4 font-mono font-bold text-brand-blue-900">
                       {order.id}
                     </td>
-                    <td className="py-3.5 px-4 text-brand-cream/60 text-[11px]">
+                    <td className="py-3.5 px-4 text-brand-slate-500 text-[11px]">
                       {order.date}
                     </td>
                     <td className="py-3.5 px-4">
-                      <div className="font-bold text-brand-cream capitalize">{order.customerName}</div>
-                      <div className="text-[11px] text-brand-cream/60">{order.city} • {order.phone}</div>
+                      <div className="font-bold text-brand-slate-900 capitalize">{order.customerName}</div>
+                      <div className="text-[11px] text-brand-slate-500">{order.city} • {order.phone}</div>
                     </td>
                     <td className="py-3.5 px-4">
                       {order.items.length === 0 ? (
-                        <span className="text-brand-cream/40">Custom inquiry</span>
+                        <span className="text-brand-slate-400">Custom inquiry</span>
                       ) : (
                         <div className="space-y-0.5">
                           {order.items.map((it, idx) => (
-                            <span key={idx} className="block text-[11px] text-brand-cream/80">
+                            <span key={idx} className="block text-[11px] text-brand-slate-700">
                               {it.productName} ({it.size}) × {it.quantity}
                             </span>
                           ))}
                         </div>
                       )}
                     </td>
-                    <td className="py-3.5 px-4 font-serif font-bold text-brand-gold-light">
+                    <td className="py-3.5 px-4 font-serif font-bold text-brand-slate-900">
                       ₨ {order.total.toLocaleString()}
                     </td>
-                    <td className="py-3.5 px-4 uppercase text-[10px] font-semibold text-brand-cream/70">
+                    <td className="py-3.5 px-4 uppercase text-[10px] font-semibold text-brand-slate-500">
                       {order.paymentMethod}
                     </td>
                     <td className="py-3.5 px-4">
                       <select
                         value={order.status}
                         onChange={(e) => handleStatusChange(order.id, e.target.value as any)}
-                        className={`text-[11px] font-bold rounded-lg px-2 py-1 border outline-none cursor-pointer ${
+                        className={`text-[11px] font-bold rounded-lg px-2.5 py-1 border outline-none cursor-pointer ${
                           order.status === 'Pending'
-                            ? 'bg-amber-950/40 text-amber-300 border-amber-500/40'
+                            ? 'bg-amber-50 text-amber-800 border-amber-300'
                             : order.status === 'Confirmed'
-                            ? 'bg-blue-950/40 text-blue-300 border-blue-500/40'
+                            ? 'bg-blue-50 text-blue-800 border-blue-300'
                             : order.status === 'Dispatched'
-                            ? 'bg-purple-950/40 text-purple-300 border-purple-500/40'
+                            ? 'bg-purple-50 text-purple-800 border-purple-300'
                             : order.status === 'Delivered'
-                            ? 'bg-emerald-950/40 text-emerald-300 border-emerald-500/40'
-                            : 'bg-red-950/40 text-red-300 border-red-500/40'
+                            ? 'bg-emerald-50 text-emerald-800 border-emerald-300'
+                            : 'bg-rose-50 text-rose-800 border-rose-300'
                         }`}
                       >
                         <option value="Pending">Pending</option>
@@ -269,7 +262,7 @@ export const AdminOrdersPage: React.FC = () => {
                     <td className="py-3.5 px-4 text-right space-x-2">
                       <button
                         onClick={() => setSelectedOrder(order)}
-                        className="p-1.5 rounded-lg bg-brand-dark border border-brand-gold/25 hover:border-brand-gold text-brand-gold transition-colors inline-flex"
+                        className="p-1.5 rounded-lg bg-brand-light-bg border border-brand-slate-200 hover:border-brand-blue-400 text-brand-blue-700 transition-colors inline-flex"
                         title="View Full Order & Dispatch Slip"
                       >
                         <Eye className="w-3.5 h-3.5" />
@@ -278,14 +271,14 @@ export const AdminOrdersPage: React.FC = () => {
                         href={`https://wa.me/${order.phone.replace(/[^0-9]/g, '')}?text=Hello%20${encodeURIComponent(order.customerName)},%20this%20is%20Bin%20Irfan%20Fragrance%20regarding%20your%20order%20${order.id}.`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-1.5 rounded-lg bg-emerald-950/50 border border-emerald-500/40 text-emerald-400 hover:text-white hover:bg-emerald-800 transition-colors inline-flex"
+                        className="p-1.5 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-600 hover:bg-emerald-100 transition-colors inline-flex"
                         title="Chat with Customer on WhatsApp"
                       >
                         <MessageCircle className="w-3.5 h-3.5" />
                       </a>
                       <button
                         onClick={() => handleDelete(order.id)}
-                        className="p-1.5 rounded-lg bg-brand-dark border border-red-500/30 text-red-400 hover:bg-red-950/50 transition-colors inline-flex"
+                        className="p-1.5 rounded-lg bg-rose-50 border border-rose-200 text-rose-600 hover:bg-rose-100 transition-colors inline-flex"
                         title="Delete Order"
                       >
                         <Trash2 className="w-3.5 h-3.5" />
@@ -301,41 +294,41 @@ export const AdminOrdersPage: React.FC = () => {
 
       {/* Selected Order Detail & Courier Invoice Modal */}
       {selectedOrder && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
-          <div className="relative w-full max-w-2xl bg-brand-dark-card border border-brand-gold/40 rounded-3xl p-6 sm:p-8 shadow-luxury max-h-[90vh] overflow-y-auto space-y-6">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-md">
+          <div className="relative w-full max-w-2xl bg-white border border-brand-slate-200 rounded-3xl p-6 sm:p-8 shadow-2xl max-h-[90vh] overflow-y-auto space-y-6">
             
-            <div className="flex items-center justify-between pb-4 border-b border-brand-gold/20">
+            <div className="flex items-center justify-between pb-4 border-b border-brand-slate-100">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full border border-brand-gold overflow-hidden">
                   <img src="/brand/logo.jpg" alt="Logo" className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-lg font-bold text-brand-cream">
+                  <h3 className="font-serif text-lg font-bold text-brand-slate-900">
                     Dispatch Slip • {selectedOrder.id}
                   </h3>
-                  <p className="text-[11px] text-brand-gold">Bin Irfan Fragrance • Peshawar</p>
+                  <p className="text-[11px] text-brand-blue-700 font-semibold">Bin Irfan Fragrance • Peshawar Atelier</p>
                 </div>
               </div>
               <button
                 onClick={() => setSelectedOrder(null)}
-                className="p-1.5 rounded-full text-brand-cream/60 hover:text-white"
+                className="p-1.5 rounded-full text-brand-slate-400 hover:text-brand-slate-700 hover:bg-brand-slate-100 transition-colors"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
 
             {/* Courier Dispatch Invoice Layout */}
-            <div className="p-6 rounded-2xl bg-brand-dark border border-brand-gold/20 space-y-4 text-xs font-mono text-brand-cream">
-              <div className="flex justify-between border-b border-brand-gold/15 pb-3">
+            <div className="p-6 rounded-2xl bg-brand-light-bg border border-brand-slate-200 space-y-4 text-xs font-mono text-brand-slate-800">
+              <div className="flex justify-between border-b border-brand-slate-200 pb-3">
                 <div>
-                  <strong className="text-brand-gold block uppercase font-sans">SHIP TO (RECEIVER):</strong>
+                  <strong className="text-brand-blue-900 block uppercase font-sans">SHIP TO (RECEIVER):</strong>
                   <p className="text-sm font-bold capitalize">{selectedOrder.customerName}</p>
                   <p>{selectedOrder.address}</p>
                   <p>{selectedOrder.city}, Pakistan</p>
-                  <p className="text-brand-gold-light mt-1">Phone: {selectedOrder.phone}</p>
+                  <p className="text-brand-blue-700 font-semibold mt-1">Phone: {selectedOrder.phone}</p>
                 </div>
                 <div className="text-right">
-                  <strong className="text-brand-gold block uppercase font-sans">SENDER:</strong>
+                  <strong className="text-brand-blue-900 block uppercase font-sans">SENDER:</strong>
                   <p className="font-bold">Bin Irfan Fragrance</p>
                   <p>Shop #6, Malik Dilawar Plaza</p>
                   <p>Hashtnagri, Peshawar</p>
@@ -344,8 +337,8 @@ export const AdminOrdersPage: React.FC = () => {
               </div>
 
               {/* Items List */}
-              <div className="space-y-2 py-2 border-b border-brand-gold/15">
-                <strong className="text-brand-gold uppercase font-sans block text-[11px]">PARCEL CONTENTS:</strong>
+              <div className="space-y-2 py-2 border-b border-brand-slate-200">
+                <strong className="text-brand-blue-900 uppercase font-sans block text-[11px]">PARCEL CONTENTS:</strong>
                 {selectedOrder.items.map((it, idx) => (
                   <div key={idx} className="flex justify-between">
                     <span>• {it.productName} ({it.size}) × {it.quantity}</span>
@@ -357,11 +350,11 @@ export const AdminOrdersPage: React.FC = () => {
               {/* Total & Payment */}
               <div className="flex justify-between items-center pt-1 font-bold text-sm">
                 <span>TOTAL COD CASH TO COLLECT:</span>
-                <span className="font-serif text-lg text-emerald-400">₨ {selectedOrder.total.toLocaleString()}</span>
+                <span className="font-serif text-lg text-emerald-700">₨ {selectedOrder.total.toLocaleString()}</span>
               </div>
 
               {selectedOrder.notes && (
-                <div className="pt-2 border-t border-brand-gold/10 text-[11px] text-brand-cream/60">
+                <div className="pt-2 border-t border-brand-slate-200 text-[11px] text-brand-slate-500">
                   <strong>Delivery Instructions:</strong> {selectedOrder.notes}
                 </div>
               )}
@@ -371,7 +364,7 @@ export const AdminOrdersPage: React.FC = () => {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-2">
               <button
                 onClick={() => window.print()}
-                className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-brand-dark-surface border border-brand-gold/30 hover:border-brand-gold text-brand-gold-light text-xs font-semibold flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-brand-light-bg border border-brand-slate-200 hover:bg-brand-slate-100 text-brand-slate-800 text-xs font-semibold flex items-center justify-center gap-2 shadow-sm"
               >
                 <Printer className="w-4 h-4" />
                 <span>Print Courier Slip</span>
@@ -382,7 +375,7 @@ export const AdminOrdersPage: React.FC = () => {
                   href={`https://wa.me/${selectedOrder.phone.replace(/[^0-9]/g, '')}?text=Hello%20${encodeURIComponent(selectedOrder.customerName)},%20your%20order%20${selectedOrder.id}%20from%20Bin%20Irfan%20Fragrance%20is%20${encodeURIComponent(selectedOrder.status)}.`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 sm:flex-none px-5 py-2.5 rounded-xl bg-emerald-950/50 border border-emerald-500/50 hover:bg-emerald-900 text-emerald-300 text-xs font-semibold flex items-center justify-center gap-2"
+                  className="flex-1 sm:flex-none px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold flex items-center justify-center gap-2 shadow-sm"
                 >
                   <MessageCircle className="w-4 h-4" />
                   <span>Message Customer</span>
@@ -390,7 +383,7 @@ export const AdminOrdersPage: React.FC = () => {
 
                 <button
                   onClick={() => setSelectedOrder(null)}
-                  className="px-5 py-2.5 rounded-xl bg-brand-ruby text-white text-xs font-semibold"
+                  className="px-5 py-2.5 rounded-xl bg-brand-slate-900 text-white text-xs font-semibold hover:bg-brand-slate-800"
                 >
                   Close
                 </button>

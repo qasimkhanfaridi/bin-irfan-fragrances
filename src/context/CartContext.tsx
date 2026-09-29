@@ -3,7 +3,7 @@ import { CartItem, Product, CurrencyCode, CurrencyConfig } from '../types/produc
 
 interface CartContextType {
   cart: CartItem[];
-  addToCart: (product: Product, size?: '50ml' | '100ml', quantity?: number) => void;
+  addToCart: (product: Product, size?: string, quantity?: number) => void;
   removeFromCart: (itemId: string) => void;
   updateQuantity: (itemId: string, quantity: number) => void;
   clearCart: () => void;
@@ -50,7 +50,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   }, [cart]);
 
-  const addToCart = (product: Product, size: '50ml' | '100ml' = '50ml', quantity: number = 1) => {
+  const addToCart = (product: Product, size: string = product.defaultSize, quantity: number = 1) => {
     const variant = product.variants.find(v => v.size === size) || product.variants[0];
     const itemId = `${product.id}-${size}`;
 

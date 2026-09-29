@@ -27,29 +27,29 @@ export const CartDrawer: React.FC = () => {
     <div className="fixed inset-0 z-50 overflow-hidden">
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black/85 backdrop-blur-sm transition-opacity"
+        className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity"
         onClick={closeDrawer}
       />
 
       {/* Slide-over panel */}
       <div className="fixed inset-y-0 right-0 max-w-full flex pl-10">
-        <div className="w-screen max-w-md bg-brand-dark-card border-l border-brand-gold/30 shadow-2xl flex flex-col justify-between">
+        <div className="w-screen max-w-md bg-white border-l border-brand-slate-200 shadow-2xl flex flex-col justify-between">
           
           {/* Drawer Header */}
-          <div className="p-6 border-b border-brand-gold/15 bg-brand-dark-surface">
+          <div className="p-6 border-b border-brand-slate-100 bg-brand-light-bg/80">
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <ShoppingBag className="w-5 h-5 text-brand-gold" />
-                <h3 className="font-serif text-lg font-bold text-brand-cream">
+              <div className="flex items-center gap-2.5">
+                <ShoppingBag className="w-5 h-5 text-brand-blue-600" />
+                <h3 className="font-serif text-lg font-bold text-brand-slate-900">
                   Your Fragrance Bag
                 </h3>
-                <span className="text-xs bg-brand-ruby px-2 py-0.5 rounded-full text-white font-semibold">
+                <span className="text-xs bg-brand-blue-600 px-2 py-0.5 rounded-full text-white font-bold">
                   {cartCount}
                 </span>
               </div>
               <button
                 onClick={closeDrawer}
-                className="p-1.5 rounded-full text-brand-cream/60 hover:text-white hover:bg-brand-ruby/40 transition-colors border border-brand-gold/20"
+                className="p-2 rounded-full text-brand-slate-400 hover:text-brand-slate-700 hover:bg-brand-slate-100 transition-colors"
                 aria-label="Close Bag"
               >
                 <X className="w-5 h-5" />
@@ -57,25 +57,25 @@ export const CartDrawer: React.FC = () => {
             </div>
 
             {/* Free Shipping Meter */}
-            <div className="mt-4 pt-3 border-t border-brand-gold/10">
+            <div className="mt-4 pt-3 border-t border-brand-slate-200">
               <div className="flex items-center justify-between text-xs mb-1.5">
-                <span className="flex items-center gap-1.5 text-brand-cream/80">
-                  <Truck className="w-3.5 h-3.5 text-brand-gold" />
+                <span className="flex items-center gap-1.5 text-brand-slate-700">
+                  <Truck className="w-3.5 h-3.5 text-brand-blue-600" />
                   {remainingForFreeShipping === 0 ? (
-                    <span className="text-emerald-400 font-semibold">
-                      🎉 Free Nationwide Shipping Unlocked!
+                    <span className="text-emerald-600 font-bold">
+                      🎉 Free Express Delivery Unlocked!
                     </span>
                   ) : (
                     <span>
-                      Add <strong className="text-brand-gold-light">{formatPrice(remainingForFreeShipping)}</strong> for Free Shipping
+                      Add <strong className="text-brand-blue-700">{formatPrice(remainingForFreeShipping)}</strong> for Free Delivery
                     </span>
                   )}
                 </span>
-                <span className="text-brand-gold font-bold text-[11px]">{progressPercent}%</span>
+                <span className="text-brand-blue-700 font-bold text-[11px]">{progressPercent}%</span>
               </div>
-              <div className="w-full h-1.5 bg-brand-dark rounded-full overflow-hidden border border-brand-gold/20">
+              <div className="w-full h-2 bg-brand-slate-100 rounded-full overflow-hidden border border-brand-slate-200/80">
                 <div
-                  className="h-full bg-gradient-to-r from-brand-gold-dark to-brand-gold transition-all duration-500"
+                  className="h-full bg-gradient-to-r from-brand-blue-400 to-brand-blue-600 transition-all duration-500 rounded-full"
                   style={{ width: `${progressPercent}%` }}
                 />
               </div>
@@ -83,22 +83,22 @@ export const CartDrawer: React.FC = () => {
           </div>
 
           {/* Cart Items List */}
-          <div className="flex-1 overflow-y-auto p-6 space-y-4">
+          <div className="flex-1 overflow-y-auto p-6 space-y-4 bg-brand-light-bg/40">
             {cart.length === 0 ? (
               <div className="text-center py-16 space-y-4">
-                <div className="w-16 h-16 mx-auto rounded-full bg-brand-dark border border-brand-gold/20 flex items-center justify-center text-brand-gold/40">
+                <div className="w-16 h-16 mx-auto rounded-full bg-brand-blue-50 border border-brand-blue-100 flex items-center justify-center text-brand-blue-400">
                   <ShoppingBag className="w-8 h-8" />
                 </div>
-                <h4 className="font-serif text-lg font-bold text-brand-cream">
+                <h4 className="font-serif text-lg font-bold text-brand-slate-900">
                   Your Bag Is Empty
                 </h4>
-                <p className="text-xs text-brand-cream/60 max-w-xs mx-auto">
-                  Explore our royal collection of 35% Extrait De Parfum perfumes to find your signature scent.
+                <p className="text-xs text-brand-slate-500 max-w-xs mx-auto">
+                  Explore our luxury collection of 35% Extrait De Parfum flacons and discovery sets.
                 </p>
                 <Link
                   to="/shop"
                   onClick={closeDrawer}
-                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-brand-ruby hover:bg-brand-ruby-light text-white text-xs font-bold uppercase tracking-wider transition-all shadow-ruby-glow mt-2"
+                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-brand-blue-600 hover:bg-brand-blue-700 text-white text-xs font-bold uppercase tracking-wider transition-all shadow-md mt-2"
                 >
                   <Sparkles className="w-3.5 h-3.5" />
                   <span>Discover Fragrances</span>
@@ -108,12 +108,12 @@ export const CartDrawer: React.FC = () => {
               cart.map((item) => (
                 <div
                   key={item.id}
-                  className="flex gap-4 p-3.5 rounded-xl bg-brand-dark/60 border border-brand-gold/15 relative group"
+                  className="flex gap-4 p-3.5 rounded-2xl bg-white border border-brand-slate-200/80 shadow-soft relative group"
                 >
                   <img
                     src={item.product.image}
                     alt={item.product.name}
-                    className="w-16 h-16 rounded-lg object-cover border border-brand-gold/20 flex-shrink-0"
+                    className="w-16 h-16 rounded-xl object-cover border border-brand-slate-100 flex-shrink-0"
                   />
                   <div className="flex-1 min-w-0 flex flex-col justify-between">
                     <div>
@@ -121,43 +121,43 @@ export const CartDrawer: React.FC = () => {
                         <Link
                           to={`/shop/${item.product.slug}`}
                           onClick={closeDrawer}
-                          className="font-serif text-sm font-bold text-brand-cream hover:text-brand-gold-light truncate block"
+                          className="font-serif text-sm font-bold text-brand-slate-900 hover:text-brand-blue-600 truncate block transition-colors"
                         >
                           {item.product.name}
                         </Link>
                         <button
                           onClick={() => removeFromCart(item.id)}
-                          className="text-brand-cream/40 hover:text-red-400 p-0.5 transition-colors"
+                          className="text-brand-slate-400 hover:text-rose-600 p-0.5 transition-colors"
                           aria-label="Remove item"
                         >
                           <Trash2 className="w-3.5 h-3.5" />
                         </button>
                       </div>
-                      <span className="text-[11px] text-brand-gold font-medium">
+                      <span className="text-[11px] text-brand-blue-700 font-semibold">
                         Flacon: {item.size}
                       </span>
                     </div>
 
-                    <div className="flex items-center justify-between mt-2">
-                      <div className="flex items-center border border-brand-gold/30 rounded-lg overflow-hidden bg-brand-dark text-xs">
+                    <div className="flex items-center justify-between mt-2.5">
+                      <div className="flex items-center border border-brand-slate-200 rounded-lg overflow-hidden bg-brand-light-bg text-xs">
                         <button
                           onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                          className="px-2 py-0.5 text-brand-cream/60 hover:text-white"
+                          className="px-2 py-0.5 text-brand-slate-500 hover:text-brand-slate-900 hover:bg-brand-slate-200 transition-colors"
                         >
                           -
                         </button>
-                        <span className="px-2.5 py-0.5 text-[11px] font-bold text-brand-cream">
+                        <span className="px-2.5 py-0.5 text-[11px] font-bold text-brand-slate-900">
                           {item.quantity}
                         </span>
                         <button
                           onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                          className="px-2 py-0.5 text-brand-cream/60 hover:text-white"
+                          className="px-2 py-0.5 text-brand-slate-500 hover:text-brand-slate-900 hover:bg-brand-slate-200 transition-colors"
                         >
                           +
                         </button>
                       </div>
 
-                      <span className="font-serif text-sm font-bold text-brand-gold-light">
+                      <span className="font-serif text-sm font-bold text-brand-slate-900">
                         {formatPrice(item.pricePKR * item.quantity)}
                       </span>
                     </div>
@@ -169,23 +169,23 @@ export const CartDrawer: React.FC = () => {
 
           {/* Drawer Footer / Checkout */}
           {cart.length > 0 && (
-            <div className="p-6 border-t border-brand-gold/20 bg-brand-dark-surface space-y-4">
-              <div className="space-y-1.5">
-                <div className="flex items-center justify-between text-xs text-brand-cream/70">
+            <div className="p-6 border-t border-brand-slate-200 bg-white space-y-4">
+              <div className="space-y-1.5 text-xs text-brand-slate-600">
+                <div className="flex items-center justify-between">
                   <span>Subtotal</span>
-                  <span className="font-serif font-semibold text-brand-cream">
+                  <span className="font-serif font-bold text-brand-slate-900">
                     {formatPrice(cartTotalPKR)}
                   </span>
                 </div>
-                <div className="flex items-center justify-between text-xs text-brand-cream/70">
-                  <span>Estimated Shipping</span>
-                  <span className="font-semibold text-brand-gold-light">
+                <div className="flex items-center justify-between">
+                  <span>Nationwide Express Delivery</span>
+                  <span className="font-bold text-brand-blue-700">
                     {remainingForFreeShipping === 0 ? 'FREE' : formatPrice(250)}
                   </span>
                 </div>
-                <div className="flex items-center justify-between pt-2 border-t border-brand-gold/15 text-sm font-bold">
-                  <span className="text-brand-cream">Estimated Total</span>
-                  <span className="font-serif text-lg text-brand-gold-light">
+                <div className="flex items-center justify-between pt-2 border-t border-brand-slate-100 text-sm font-bold text-brand-slate-900">
+                  <span>Total</span>
+                  <span className="font-serif text-xl text-brand-blue-900">
                     {formatPrice(cartTotalPKR + (remainingForFreeShipping === 0 ? 0 : 250))}
                   </span>
                 </div>
@@ -198,7 +198,7 @@ export const CartDrawer: React.FC = () => {
                     closeDrawer();
                     navigate('/checkout');
                   }}
-                  className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-brand-ruby to-brand-ruby-light hover:from-brand-ruby-light hover:to-brand-ruby text-white text-xs font-bold uppercase tracking-widest transition-all shadow-ruby-glow flex items-center justify-center gap-2"
+                  className="w-full py-3.5 px-4 rounded-xl bg-brand-blue-600 hover:bg-brand-blue-700 text-white text-xs font-bold uppercase tracking-widest transition-all shadow-md flex items-center justify-center gap-2"
                 >
                   <span>Proceed to Checkout</span>
                   <ArrowRight className="w-4 h-4" />
@@ -209,14 +209,14 @@ export const CartDrawer: React.FC = () => {
                   href={generateCartWhatsAppLink()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3 px-4 rounded-xl bg-emerald-900/40 border border-emerald-500/50 hover:bg-emerald-800/60 text-emerald-300 text-xs font-bold uppercase tracking-widest transition-all flex items-center justify-center gap-2 shadow-lg"
+                  className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-widest transition-all flex items-center justify-center gap-2 shadow-sm"
                 >
-                  <MessageCircle className="w-4 h-4 text-emerald-400" />
+                  <MessageCircle className="w-4 h-4" />
                   <span>Order via WhatsApp (1-Click)</span>
                 </a>
               </div>
 
-              <p className="text-[10px] text-center text-brand-cream/50 pt-1">
+              <p className="text-[10px] text-center text-brand-slate-400 pt-1">
                 🔒 Safe & Secure Checkout • Cash on Delivery Available
               </p>
             </div>

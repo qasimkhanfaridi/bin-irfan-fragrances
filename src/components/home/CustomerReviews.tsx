@@ -1,21 +1,21 @@
 import React from 'react';
 import { REVIEWS } from '../../data/reviews';
-import { Star, CheckCircle, Quote, MessageSquare } from 'lucide-react';
+import { Star, CheckCircle, MessageSquare } from 'lucide-react';
 
 export const CustomerReviews: React.FC = () => {
   return (
-    <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 sm:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Header */}
-      <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-        <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-brand-gold font-semibold">
-          <MessageSquare className="w-3.5 h-3.5" />
+      <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-blue-soft border border-brand-blue-light text-brand-blue-dark text-xs font-bold uppercase tracking-wider">
+          <MessageSquare className="w-3.5 h-3.5 text-brand-gold" />
           <span>Verified Client Impressions</span>
         </div>
-        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-cream uppercase tracking-tight">
-          WORDS FROM CONNOISSEURS
+        <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-blue-deep tracking-tight">
+          Words From Connoisseurs
         </h2>
-        <p className="text-xs text-brand-cream/50 uppercase tracking-widest font-medium">
-          [Customer Reviews — Verified Sample Previews]
+        <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
+          Over 1,200+ verified clients across Pakistan enjoying all-day projection and compliments.
         </p>
       </div>
 
@@ -24,35 +24,35 @@ export const CustomerReviews: React.FC = () => {
         {REVIEWS.map((rev) => (
           <div
             key={rev.id}
-            className="p-6 rounded-2xl bg-brand-dark-card border border-brand-gold/15 flex flex-col justify-between hover:border-brand-gold/40 transition-all duration-300 relative group"
+            className="p-6 sm:p-7 rounded-3xl bg-white border border-brand-blue-soft flex flex-col justify-between hover:border-brand-blue/50 transition-all duration-300 shadow-luxury-card hover:shadow-luxury-hover"
           >
             <div>
               {/* Stars */}
-              <div className="flex items-center gap-1 text-amber-400 mb-3">
+              <div className="flex items-center gap-1 text-amber-500 mb-3.5">
                 {[...Array(rev.rating)].map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-current" />
+                  <Star key={i} className="w-4 h-4 fill-current" />
                 ))}
               </div>
 
               {/* Title & Comment */}
-              <h4 className="font-serif text-base font-bold text-brand-cream mb-2 leading-snug">
+              <h4 className="font-serif text-base font-bold text-brand-blue-deep mb-2 leading-snug">
                 "{rev.title}"
               </h4>
-              <p className="text-xs sm:text-sm text-brand-cream/75 leading-relaxed font-light">
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                 {rev.comment}
               </p>
             </div>
 
             {/* Author & Verification */}
-            <div className="pt-6 border-t border-brand-gold/10 mt-6 flex items-center justify-between text-xs">
+            <div className="pt-5 border-t border-brand-blue-soft mt-5 flex items-center justify-between text-xs">
               <div>
-                <p className="font-semibold text-brand-gold-light flex items-center gap-1">
+                <p className="font-bold text-brand-blue-dark flex items-center gap-1">
                   <span>{rev.author}</span>
-                  <CheckCircle className="w-3 h-3 text-emerald-400" />
+                  <CheckCircle className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
                 </p>
-                <p className="text-[11px] text-brand-cream/40">{rev.location}</p>
+                <p className="text-[11px] text-slate-400 font-medium">{rev.location}</p>
               </div>
-              <span className="text-[10px] text-brand-gold/80 px-2 py-0.5 rounded bg-brand-dark border border-brand-gold/20">
+              <span className="text-[10px] text-brand-blue font-bold px-2.5 py-1 rounded-full bg-brand-blue-soft border border-brand-blue-light/60">
                 {rev.productName}
               </span>
             </div>
