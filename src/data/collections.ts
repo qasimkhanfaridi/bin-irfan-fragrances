@@ -30,7 +30,7 @@ export const COLLECTIONS: Collection[] = [
     title: 'The Fresh Collection',
     subtitle: 'Clean, fresh and energetic.',
     description: 'Crisp aquatic breezes, frosted peppermint, and sparkling Mediterranean citrus designed to invigorate.',
-    image: '/products/story-mist.jpg',
+    image: '/products/paradise_sapphire.jpg',
     badge: 'Daily Vitality'
   }
 ];

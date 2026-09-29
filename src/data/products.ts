@@ -304,8 +304,8 @@ export const PRODUCTS: Product[] = [
       { size: '50ml', pricePKR: 3350, compareAtPKR: 4000, sku: 'BIF-IM-50' },
       { size: '100ml', pricePKR: 5150, compareAtPKR: 6200, sku: 'BIF-IM-100' }
     ],
-    image: '/products/story-mist.jpg',
-    gallery: ['/products/story-mist.jpg', '/products/royal_amber.jpg'],
+    image: '/products/lifestyle_spritz.jpg',
+    gallery: ['/products/lifestyle_spritz.jpg', '/products/royal_amber.jpg'],
     rating: 4.8,
     reviewsCount: 82,
     inStock: true,

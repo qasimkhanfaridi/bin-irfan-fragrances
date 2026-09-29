@@ -42,12 +42,23 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, isOpen,
 
         {/* Product Image Gallery */}
         <div className="w-full md:w-1/2 bg-brand-blue-soft/30 p-6 flex flex-col justify-center items-center relative">
-          <div className="w-full aspect-square max-w-sm rounded-2xl overflow-hidden border border-brand-blue-soft shadow-md bg-white">
+          <div className="relative w-full aspect-square max-w-sm rounded-2xl overflow-hidden border border-brand-blue-soft shadow-md bg-white">
             <img
               src={product.image}
               alt={product.name}
               className="w-full h-full object-cover"
             />
+            {/* Authentic Brand Medallion Atelier Seal */}
+            <div className="absolute bottom-3 right-3 z-10 pointer-events-none opacity-90 flex items-center gap-1.5 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-full border border-brand-gold/60 shadow-sm">
+              <img
+                src="/brand/logo_medallion.png"
+                alt="Official Bin Irfan Medallion"
+                className="w-4 h-4 rounded-full object-cover"
+              />
+              <span className="text-[9px] font-serif font-bold text-slate-900 tracking-wider">
+                BIN IRFAN
+              </span>
+            </div>
           </div>
           <div className="mt-4 flex items-center gap-2 text-xs text-brand-blue-dark font-medium">
             <ShieldCheck className="w-4 h-4 text-brand-blue" />

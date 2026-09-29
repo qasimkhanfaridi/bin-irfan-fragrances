@@ -75,6 +75,15 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             />
           </Link>
 
+          {/* Official Brand Medallion Seal Badge */}
+          <div className="absolute top-3 right-14 z-10 pointer-events-none opacity-85 group-hover:opacity-100 transition-opacity">
+            <img
+              src="/brand/logo_medallion.png"
+              alt="Bin Irfan Authentic Medallion"
+              className="w-7 h-7 drop-shadow-md rounded-full bg-white/40 backdrop-blur-xs p-0.5 border border-brand-gold/70"
+            />
+          </div>
+
           {/* Quick View Overlay Bar */}
           <div className="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 flex gap-2">
             <button

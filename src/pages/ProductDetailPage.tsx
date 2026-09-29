@@ -134,6 +134,18 @@ export const ProductDetailPage: React.FC = () => {
                 <Heart className={`w-4 h-4 ${isWishlisted ? 'fill-current text-rose-600' : ''}`} />
               </button>
             </div>
+
+            {/* Official Brand Medallion Atelier Seal */}
+            <div className="absolute bottom-4 right-4 z-10 pointer-events-none opacity-90 group-hover:opacity-100 transition-opacity flex items-center gap-2 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-full border border-brand-gold/60 shadow-md">
+              <img
+                src="/brand/logo_medallion.png"
+                alt="Official Bin Irfan Medallion"
+                className="w-5 h-5 rounded-full object-cover"
+              />
+              <span className="text-[10px] font-serif font-bold text-slate-900 tracking-wider">
+                BIN IRFAN ATELIER
+              </span>
+            </div>
           </div>
 
           {/* Thumbnails Strip */}
