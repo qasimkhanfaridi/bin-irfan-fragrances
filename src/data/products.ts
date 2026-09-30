@@ -58,8 +58,8 @@ export const PRODUCTS: Product[] = [
       { size: '50ml', pricePKR: 3450, compareAtPKR: 4200, sku: 'BIF-DD-50' },
       { size: '100ml', pricePKR: 5250, compareAtPKR: 6400, sku: 'BIF-DD-100' }
     ],
-    image: '/products/royal_amber.jpg',
-    gallery: ['/products/royal_amber.jpg', '/products/box_packaging.jpg', '/products/black_oud.jpg'],
+    image: '/products/dunhill_desire.jpg',
+    gallery: ['/products/dunhill_desire.jpg', '/products/box_packaging.jpg', '/products/black_oud.jpg'],
     rating: 4.8,
     reviewsCount: 88,
     isBestSeller: true,
@@ -128,8 +128,8 @@ export const PRODUCTS: Product[] = [
       { size: '50ml', pricePKR: 3950, compareAtPKR: 4800, sku: 'BIF-AV-50' },
       { size: '100ml', pricePKR: 6250, compareAtPKR: 7500, sku: 'BIF-AV-100' }
     ],
-    image: '/products/blue_night.jpg',
-    gallery: ['/products/blue_night.jpg', '/products/black_oud.jpg', '/products/box_packaging.jpg'],
+    image: '/products/creed_aventus.jpg',
+    gallery: ['/products/creed_aventus.jpg', '/products/box_packaging.jpg', '/products/black_oud.jpg'],
     rating: 4.9,
     reviewsCount: 195,
     isBestSeller: true,
@@ -164,8 +164,8 @@ export const PRODUCTS: Product[] = [
       { size: '50ml', pricePKR: 3950, compareAtPKR: 4800, sku: 'BIF-BR-50' },
       { size: '100ml', pricePKR: 6250, compareAtPKR: 7500, sku: 'BIF-BR-100' }
     ],
-    image: '/products/royal_amber.jpg',
-    gallery: ['/products/royal_amber.jpg', '/products/lifestyle_spritz.jpg', '/products/box_packaging.jpg'],
+    image: '/products/baccarat_rouge.jpg',
+    gallery: ['/products/baccarat_rouge.jpg', '/products/lifestyle_spritz.jpg', '/products/box_packaging.jpg'],
     rating: 4.9,
     reviewsCount: 178,
     isBestSeller: true,
@@ -200,8 +200,8 @@ export const PRODUCTS: Product[] = [
       { size: '50ml', pricePKR: 3450, compareAtPKR: 4200, sku: 'BIF-SV-50' },
       { size: '100ml', pricePKR: 5250, compareAtPKR: 6400, sku: 'BIF-SV-100' }
     ],
-    image: '/products/blue_night.jpg',
-    gallery: ['/products/blue_night.jpg', '/products/black_oud.jpg'],
+    image: '/products/sauvage.jpg',
+    gallery: ['/products/sauvage.jpg', '/products/box_packaging.jpg'],
     rating: 4.8,
     reviewsCount: 134,
     isBestSeller: true,
@@ -235,8 +235,8 @@ export const PRODUCTS: Product[] = [
       { size: '50ml', pricePKR: 3850, compareAtPKR: 4600, sku: 'BIF-TV-50' },
       { size: '100ml', pricePKR: 5950, compareAtPKR: 7200, sku: 'BIF-TV-100' }
     ],
-    image: '/products/royal_amber.jpg',
-    gallery: ['/products/royal_amber.jpg', '/products/black_oud.jpg'],
+    image: '/products/tobacco_vanille.jpg',
+    gallery: ['/products/tobacco_vanille.jpg', '/products/box_packaging.jpg'],
     rating: 4.9,
     reviewsCount: 108,
     isFeatured: true,
@@ -304,8 +304,8 @@ export const PRODUCTS: Product[] = [
       { size: '50ml', pricePKR: 3350, compareAtPKR: 4000, sku: 'BIF-IM-50' },
       { size: '100ml', pricePKR: 5150, compareAtPKR: 6200, sku: 'BIF-IM-100' }
     ],
-    image: '/products/lifestyle_spritz.jpg',
-    gallery: ['/products/lifestyle_spritz.jpg', '/products/royal_amber.jpg'],
+    image: '/products/imperial_musk.jpg',
+    gallery: ['/products/imperial_musk.jpg', '/products/box_packaging.jpg'],
     rating: 4.8,
     reviewsCount: 82,
     inStock: true,
@@ -337,8 +337,8 @@ export const PRODUCTS: Product[] = [
       { size: '50ml', pricePKR: 3750, compareAtPKR: 4500, sku: 'BIF-VR-50' },
       { size: '100ml', pricePKR: 5850, compareAtPKR: 6900, sku: 'BIF-VR-100' }
     ],
-    image: '/products/box_packaging.jpg',
-    gallery: ['/products/box_packaging.jpg', '/products/black_oud.jpg'],
+    image: '/products/velvet_rose.jpg',
+    gallery: ['/products/velvet_rose.jpg', '/products/box_packaging.jpg'],
     rating: 4.9,
     reviewsCount: 79,
     isFeatured: true,
@@ -448,8 +448,8 @@ export const PRODUCTS: Product[] = [
     variants: [
       { size: '2 x 50ml', pricePKR: 6950, compareAtPKR: 8500, sku: 'BIF-BUN-HH2' }
     ],
-    image: '/products/royal_trio_bundle.jpg',
-    gallery: ['/products/royal_trio_bundle.jpg', '/products/box_packaging.jpg'],
+    image: '/products/prestige_couples_duo.jpg',
+    gallery: ['/products/prestige_couples_duo.jpg', '/products/box_packaging.jpg'],
     rating: 4.9,
     reviewsCount: 56,
     isBestSeller: true,
@@ -483,8 +483,8 @@ export const PRODUCTS: Product[] = [
     variants: [
       { size: '2 x 50ml', pricePKR: 5950, compareAtPKR: 7500, sku: 'BIF-BUN-SUM2' }
     ],
-    image: '/products/paradise_sapphire.jpg',
-    gallery: ['/products/paradise_sapphire.jpg', '/products/lifestyle_spritz.jpg'],
+    image: '/products/summer_fresh_duo.jpg',
+    gallery: ['/products/summer_fresh_duo.jpg', '/products/box_packaging.jpg'],
     rating: 4.8,
     reviewsCount: 42,
     inStock: true,

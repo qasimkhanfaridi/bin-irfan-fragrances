@@ -14,7 +14,7 @@ export const COLLECTIONS: Collection[] = [
     title: 'The Signature Collection',
     subtitle: 'Distinctive fragrances for everyday confidence.',
     description: 'Handcrafted blends that establish your unmistakable identity in boardrooms, casual rendezvous, and special gatherings.',
-    image: '/products/royal_amber.jpg',
+    image: '/products/creed_aventus.jpg',
     badge: 'Customer Favorites'
   },
   {
@@ -22,7 +22,7 @@ export const COLLECTIONS: Collection[] = [
     title: 'The Luxury Collection',
     subtitle: 'Compositions inspired by timeless fragrance styles.',
     description: 'Ultra-concentrated Extrait de Parfum masterworks with multi-layered sillage and 15+ hour beast longevity.',
-    image: '/products/blue_night.jpg',
+    image: '/products/baccarat_rouge.jpg',
     badge: '35% Extrait Strength'
   },
   {
