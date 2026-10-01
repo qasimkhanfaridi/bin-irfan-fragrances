@@ -26,3 +26,4 @@ Thumbs.db
 
 # Backup source assets
 public/*_orig/
+public/products_backup/
