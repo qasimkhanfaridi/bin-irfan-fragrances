@@ -84,33 +84,27 @@ export const HeroSection: React.FC = () => {
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                 />
 
-                {/* Subtle soft vignette */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 via-transparent to-transparent opacity-60" />
-
-                {/* Embedded Official Bin Irfan Logo Medallion */}
-                <div className="absolute top-4 right-4 z-20 w-16 h-16 sm:w-18 sm:h-18 rounded-full overflow-hidden border-2 border-brand-gold shadow-md bg-white">
-                  <img
-                    src="/brand/logo.jpg"
-                    alt="Official Bin Irfan Fragrance Medallion Logo"
-                    className="w-full h-full object-cover"
-                  />
+                {/* Status Badge in top-left */}
+                <div className="absolute top-4 left-4 z-20 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-brand-blue-light/80 shadow-xs flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                  <span className="text-[11px] font-bold tracking-wider uppercase text-brand-blue-deep">Flagship Extrait</span>
                 </div>
 
                 {/* Floating Bottom Card */}
                 <div className="absolute bottom-4 inset-x-4 p-3.5 sm:p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-brand-blue-soft shadow-md flex items-center justify-between">
                   <div>
                     <span className="text-[10px] uppercase tracking-wider text-brand-blue font-bold block">
-                      Signature Flacon
+                      Black Oud Masterpiece
                     </span>
                     <h3 className="font-serif text-sm sm:text-base font-bold text-brand-blue-deep">
                       35% Extrait De Parfum
                     </h3>
                   </div>
                   <Link
-                    to="/shop"
+                    to="/product/black-oud"
                     className="px-4 py-2 rounded-xl bg-brand-blue-dark hover:bg-brand-blue-navy text-white text-[11px] font-bold tracking-wider uppercase transition-colors shadow-xs"
                   >
-                    Shop Scent
+                    Explore Scent
                   </Link>
                 </div>
               </div>
