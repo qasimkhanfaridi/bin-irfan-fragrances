@@ -20,13 +20,15 @@ import { CheckoutPage } from './pages/CheckoutPage';
 import { PolicyPages } from './pages/PolicyPages';
 import { AdminOrdersPage } from './pages/AdminOrdersPage';
 import { TrackOrderPage } from './pages/TrackOrderPage';
+import { LocalStoreRawalpindiPage } from './pages/LocalStoreRawalpindiPage';
+import { MobileStickyBar } from './components/layout/MobileStickyBar';
 
 export const App: React.FC = () => {
   return (
     <CartProvider>
       <WishlistProvider>
         <Router>
-          <div className="flex flex-col min-h-screen bg-brand-light-bg text-brand-slate-900 selection:bg-brand-blue-600 selection:text-white">
+          <div className="flex flex-col min-h-screen bg-brand-light-bg text-brand-slate-900 selection:bg-brand-blue-600 selection:text-white pb-14 lg:pb-0">
             <AnnouncementBar />
             <Navbar />
             <CartDrawer />
@@ -38,6 +40,7 @@ export const App: React.FC = () => {
                 <Route path="/shop/:slug" element={<ProductDetailPage />} />
                 <Route path="/product/:slug" element={<ProductDetailPage />} />
                 <Route path="/collections" element={<CollectionsPage />} />
+                <Route path="/perfume-shop-rawalpindi" element={<LocalStoreRawalpindiPage />} />
                 <Route path="/packaging" element={<PackagingPage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
@@ -49,7 +52,21 @@ export const App: React.FC = () => {
                 <Route path="/admin/orders" element={<AdminOrdersPage />} />
                 <Route path="/policies/:type" element={<PolicyPages />} />
                 
-                {/* Friendly URL Aliases */}
+                {/* Local Rawalpindi & Twin-Cities SEO Shortcuts */}
+                <Route path="/perfumes-in-rawalpindi" element={<Navigate to="/perfume-shop-rawalpindi" replace />} />
+                <Route path="/perfume-rawalpindi" element={<Navigate to="/perfume-shop-rawalpindi" replace />} />
+                <Route path="/rawalpindi" element={<Navigate to="/perfume-shop-rawalpindi" replace />} />
+
+                {/* Scent Family & Category Fast Redirects */}
+                <Route path="/men" element={<Navigate to="/shop?gender=men" replace />} />
+                <Route path="/women" element={<Navigate to="/shop?gender=women" replace />} />
+                <Route path="/unisex" element={<Navigate to="/shop?gender=unisex" replace />} />
+                <Route path="/oud" element={<Navigate to="/shop?family=Woody%20%26%20Oud" replace />} />
+                <Route path="/gift-sets" element={<Navigate to="/shop?category=bundle" replace />} />
+                <Route path="/best-sellers" element={<Navigate to="/shop?filter=bestsellers" replace />} />
+                <Route path="/delivery-information" element={<Navigate to="/policies/shipping" replace />} />
+
+                {/* Friendly Policy & Utility Aliases */}
                 <Route path="/our-story" element={<Navigate to="/about" replace />} />
                 <Route path="/privacy-policy" element={<Navigate to="/policies/privacy" replace />} />
                 <Route path="/shipping-policy" element={<Navigate to="/policies/shipping" replace />} />
@@ -64,6 +81,7 @@ export const App: React.FC = () => {
             </main>
 
             <Footer />
+            <MobileStickyBar />
           </div>
         </Router>
       </WishlistProvider>

@@ -100,26 +100,26 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const generateWhatsAppLink = (product?: Product, size: string = '50ml', quantity: number = 1): string => {
     if (!product) {
-      return `https://wa.me/${whatsappNumber}?text=Hello%20Bin%20Irfan%20Fragrance,%20I%20have%20an%20inquiry%20regarding%20your%20perfumes.`;
+      return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Assalam-o-Alaikum Bin Irfan Fragrances, I would like to inquire about your perfumes and place an order.")}`;
     }
     const variant = product.variants.find(v => v.size === size) || product.variants[0];
-    const msg = `Hello Bin Irfan Fragrance, I want to order ${product.name} ${size} × ${quantity} (${formatPrice(variant.pricePKR * quantity)}). Please confirm availability and delivery details.`;
+    const msg = `Assalam-o-Alaikum, I'm interested in ${product.name} (${size}) × ${quantity} from Bin Irfan Fragrances (${formatPrice(variant.pricePKR * quantity)}).\n\nPlease confirm product availability and delivery charges to my city.`;
     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
   };
 
   const generateCartWhatsAppLink = (customerName: string = '', customerCity: string = ''): string => {
     if (cart.length === 0) {
-      return `https://wa.me/${whatsappNumber}?text=Hello%20Bin%20Irfan%20Fragrance,%20I%20would%20like%20to%20place%20an%20order!`;
+      return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Assalam-o-Alaikum Bin Irfan Fragrances, I would like to place an order via Cash on Delivery.")}`;
     }
     let itemsText = cart.map(i => `• ${i.product.name} (${i.size}) × ${i.quantity} = ${formatPrice(i.pricePKR * i.quantity)}`).join('\n');
-    let msg = `*NEW ORDER - BIN IRFAN FRAGRANCE*\n\nItems:\n${itemsText}\n\n*Total Amount:* ${formatPrice(cartTotalPKR)}`;
+    let msg = `*BIN IRFAN FRAGRANCES — NEW ORDER (COD)*\n\nAssalam-o-Alaikum,\nI would like to confirm my order:\n\n${itemsText}\n\n*Total Amount:* ${formatPrice(cartTotalPKR)}`;
     if (customerName) {
-      msg += `\n*Customer:* ${customerName}`;
+      msg += `\n*Customer Name:* ${customerName}`;
     }
     if (customerCity) {
-      msg += `\n*City / Address:* ${customerCity}`;
+      msg += `\n*City / Delivery Address:* ${customerCity}`;
     }
-    msg += `\n\nPlease confirm my order. Thank you!`;
+    msg += `\n*Payment Mode:* Cash on Delivery (COD)\n\nPlease confirm dispatch details. Thank you!`;
     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
   };
 

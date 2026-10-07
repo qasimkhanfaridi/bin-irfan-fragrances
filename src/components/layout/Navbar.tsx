@@ -33,6 +33,7 @@ export const Navbar: React.FC = () => {
     { label: "Women's", path: '/shop?gender=women' },
     { label: 'Best Sellers', path: '/shop?filter=bestsellers' },
     { label: 'Bundles & Sets', path: '/shop?category=bundle' },
+    { label: 'Rawalpindi Studio', path: '/perfume-shop-rawalpindi' },
     { label: 'Our Story', path: '/about' },
     { label: 'Boutique', path: '/contact' }
   ];

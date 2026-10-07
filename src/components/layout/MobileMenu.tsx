@@ -92,7 +92,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, links }
         {/* Bottom Contact / Direct WhatsApp */}
         <div className="pt-6 border-t border-brand-blue-soft space-y-3.5">
           <a
-            href={`https://wa.me/${whatsappNumber}?text=Hello%20Bin%20Irfan%20Fragrance,%20I%20have%20an%20order%20inquiry!`}
+            href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Assalam-o-Alaikum Bin Irfan Fragrances, I would like to inquire about your perfumes and delivery.")}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-emerald-50 border border-emerald-300 text-emerald-800 font-semibold text-xs tracking-wider uppercase hover:bg-emerald-100 transition-colors shadow-xs"
@@ -104,7 +104,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, links }
           <div className="text-xs text-brand-slate/75 space-y-1.5 px-1">
             <div className="flex items-start gap-2 text-[11px]">
               <MapPin className="w-3.5 h-3.5 text-brand-blue mt-0.5 flex-shrink-0" />
-              <span>Bin Irfan Atelier & Studio, Rawalpindi / Islamabad</span>
+              <span>H3X9+8X4, Dhoke Chiragh Deen, Rawalpindi</span>
             </div>
             <div className="flex items-center gap-2 text-[11px]">
               <Phone className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />

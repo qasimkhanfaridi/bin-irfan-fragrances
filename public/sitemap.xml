@@ -214,6 +214,18 @@
     </image:image>
   </url>
 
+  <!-- Local Studio & Rawalpindi SEO Landing Page -->
+  <url>
+    <loc>https://binirfanfragrances.com/perfume-shop-rawalpindi</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://binirfanfragrances.com/brand/logo.jpg</image:loc>
+      <image:title>Bin Irfan Fragrances Atelier — Rawalpindi Studio</image:title>
+    </image:image>
+  </url>
+
   <!-- Brand & Experience Pages -->
   <url>
     <loc>https://binirfanfragrances.com/about</loc>
@@ -233,7 +245,7 @@
     <loc>https://binirfanfragrances.com/contact</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
 
   <url>
