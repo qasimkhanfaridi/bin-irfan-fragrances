@@ -1,5 +1,5 @@
-# Robots.txt for Bin Irfan Fragrance
-# https://binirfanfragrances.com
+# Robots.txt for Bin Irfan Fragrances
+# https://www.binirfanfragrances.com
 
 User-agent: *
 Allow: /
@@ -14,4 +14,5 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemap declaration
+Sitemap: https://www.binirfanfragrances.com/sitemap.xml
 Sitemap: https://binirfanfragrances.com/sitemap.xml

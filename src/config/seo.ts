@@ -4,7 +4,7 @@ export const getSiteUrl = (): string => {
   if (typeof window !== 'undefined' && window.location.origin) {
     return window.location.origin;
   }
-  return (import.meta as any).env?.VITE_SITE_URL || 'https://binirfanfragrances.com';
+  return (import.meta as any).env?.VITE_SITE_URL || 'https://www.binirfanfragrances.com';
 };
 
 export const DEFAULT_SEO = {
