@@ -19,6 +19,7 @@ import { CartPage } from './pages/CartPage';
 import { CheckoutPage } from './pages/CheckoutPage';
 import { PolicyPages } from './pages/PolicyPages';
 import { AdminOrdersPage } from './pages/AdminOrdersPage';
+import { TrackOrderPage } from './pages/TrackOrderPage';
 
 export const App: React.FC = () => {
   return (
@@ -43,6 +44,7 @@ export const App: React.FC = () => {
                 <Route path="/faq" element={<FAQPage />} />
                 <Route path="/cart" element={<CartPage />} />
                 <Route path="/checkout" element={<CheckoutPage />} />
+                <Route path="/track-order" element={<TrackOrderPage />} />
                 <Route path="/admin" element={<AdminOrdersPage />} />
                 <Route path="/admin/orders" element={<AdminOrdersPage />} />
                 <Route path="/policies/:type" element={<PolicyPages />} />

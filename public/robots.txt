@@ -1,0 +1,17 @@
+# Robots.txt for Bin Irfan Fragrance
+# https://bin-irfan-fragrances.vercel.app
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin/*
+
+# Search engine crawler crawl-delay
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap declaration
+Sitemap: https://bin-irfan-fragrances.vercel.app/sitemap.xml

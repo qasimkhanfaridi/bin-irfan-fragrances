@@ -123,6 +123,12 @@ export const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-2.5 text-sm">
               <li>
+                <Link to="/track-order" className="text-brand-gold hover:text-white transition-colors font-semibold flex items-center gap-1.5">
+                  <span>Track Order / Courier Status</span>
+                  <span className="text-[10px] bg-brand-gold/20 text-brand-gold px-1.5 py-0.5 rounded border border-brand-gold/30">Live</span>
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="hover:text-white transition-colors">
                   Contact Boutique
                 </Link>

@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
 import { CurrencyCode } from '../../types/product';
-import { Sparkles, Phone, ShieldCheck } from 'lucide-react';
+import { Sparkles, Phone, ShieldCheck, Truck } from 'lucide-react';
 
 export const AnnouncementBar: React.FC = () => {
   const { currency, setCurrency, whatsappNumber } = useCart();
@@ -24,8 +25,18 @@ export const AnnouncementBar: React.FC = () => {
           </span>
         </div>
 
-        {/* Right actions: Phone & Currency */}
+        {/* Right actions: Phone & Track Order & Currency */}
         <div className="flex items-center gap-2 sm:gap-3 text-[10px] sm:text-xs flex-shrink-0">
+          <Link
+            to="/track-order"
+            className="hidden sm:flex items-center gap-1 text-brand-blue-light hover:text-white transition-colors"
+          >
+            <Truck className="w-3 h-3 text-brand-gold flex-shrink-0" />
+            <span>Track Order</span>
+          </Link>
+
+          <span className="hidden sm:inline-block text-white/30">•</span>
+
           <a
             href={`https://wa.me/${whatsappNumber}?text=Hello%20Bin%20Irfan%20Fragrance,%20I%20have%20an%20inquiry!`}
             target="_blank"
@@ -33,7 +44,7 @@ export const AnnouncementBar: React.FC = () => {
             className="flex items-center gap-1 text-brand-blue-light hover:text-white transition-colors"
           >
             <Phone className="w-3 h-3 text-emerald-400 flex-shrink-0" />
-            <span className="hidden sm:inline">WhatsApp:</span>
+            <span className="hidden md:inline">WhatsApp:</span>
             <span className="font-semibold tracking-wide whitespace-nowrap">+92 321 5186400</span>
           </a>
 

@@ -22,6 +22,8 @@ import {
   PackageCheck,
   Sparkles
 } from 'lucide-react';
+import { SEOHead } from '../components/common/SEOHead';
+import { getProductSchema } from '../config/seo';
 
 export const ProductDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -69,6 +71,15 @@ export const ProductDetailPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-brand-light-bg pt-6 pb-24 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <SEOHead
+        title={`${product.name} — 35% Extrait De Parfum`}
+        description={`Buy ${product.name} by Bin Irfan Fragrance. ${product.shortDescription || product.tagline} Handcrafted 35% concentration Extrait with 14+ hour longevity. Cash on Delivery across Pakistan.`}
+        keywords={`${product.name}, buy ${product.name} Pakistan, Bin Irfan ${product.name}, ${product.fragranceFamily}, long lasting perfume Pakistan, cash on delivery`}
+        image={product.image}
+        canonicalPath={`/product/${product.slug}`}
+        type="product"
+        schema={getProductSchema(product)}
+      />
       
       {/* Breadcrumbs */}
       <nav className="flex items-center gap-2 text-xs text-brand-slate-500 mb-8 overflow-x-auto whitespace-nowrap">

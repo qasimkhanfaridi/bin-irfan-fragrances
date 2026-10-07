@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MapPin, Phone, Mail, Clock, MessageCircle, Send, CheckCircle2 } from 'lucide-react';
+import { SEOHead } from '../components/common/SEOHead';
+import { getStoreSchema } from '../config/seo';
 
 export const ContactPage: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -7,7 +9,6 @@ export const ContactPage: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Contact Our Boutique | Bin Irfan Fragrance";
   }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -21,6 +22,13 @@ export const ContactPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-brand-light-bg py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
+      <SEOHead
+        title="Contact Boutique & Client Relations"
+        description="Visit our Peshawar flagship boutique or connect directly via WhatsApp (+92 321 5186400) for bespoke fragrance consultations, order inquiries, and deliveries."
+        keywords="contact Bin Irfan, fragrance boutique Peshawar, WhatsApp perfume order, Hashtnagri perfume shop"
+        canonicalPath="/contact"
+        schema={getStoreSchema()}
+      />
       
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto space-y-4">

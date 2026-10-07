@@ -1,14 +1,20 @@
 import React, { useEffect } from 'react';
 import { Sparkles, MapPin, Award, Heart, ShieldCheck, Flame, Phone } from 'lucide-react';
+import { SEOHead } from '../components/common/SEOHead';
 
 export const AboutPage: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Our Story & Heritage | Bin Irfan Fragrance";
   }, []);
 
   return (
     <div className="min-h-screen bg-brand-light-bg py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-24">
+      <SEOHead
+        title="Our Heritage & Artisanal Perfumery"
+        description="Learn about the mastercraft behind Bin Irfan Fragrance. Discover our 35% Extrait De Parfum formulation, Peshawar atelier roots, and commitment to royal ingredients."
+        keywords="Bin Irfan story, artisanal perfumery Pakistan, luxury fragrance Peshawar, Extrait de parfum craftsmanship"
+        canonicalPath="/about"
+      />
       
       {/* Hero Narrative */}
       <div className="text-center max-w-3xl mx-auto space-y-6">

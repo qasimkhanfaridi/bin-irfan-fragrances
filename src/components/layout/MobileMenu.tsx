@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { X, Phone, MapPin, MessageCircle, Heart, ChevronRight, Sparkles } from 'lucide-react';
+import { X, Phone, MapPin, MessageCircle, Heart, ChevronRight, Sparkles, Truck } from 'lucide-react';
 import { useWishlist } from '../../context/WishlistContext';
 import { useCart } from '../../context/CartContext';
 
@@ -76,17 +76,15 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, links }
             ))}
 
             <Link
-              to="/shop?filter=wishlist"
+              to="/track-order"
               onClick={onClose}
-              className="flex items-center justify-between py-3 px-3.5 rounded-xl text-xs font-semibold tracking-wider uppercase text-brand-slate hover:bg-brand-blue-soft hover:text-brand-blue-dark transition-all"
+              className="flex items-center justify-between py-3 px-3.5 rounded-xl text-xs font-semibold tracking-wider uppercase text-brand-blue-700 bg-brand-blue-50/70 hover:bg-brand-blue-100 hover:text-brand-blue-900 transition-all border border-brand-blue-200/50"
             >
               <span className="flex items-center gap-2">
-                <Heart className="w-4 h-4 text-brand-blue-dark" />
-                Wishlist
+                <Truck className="w-4 h-4 text-brand-blue-600" />
+                Track Your Order
               </span>
-              <span className="text-xs bg-brand-blue-dark px-2 py-0.5 rounded-full text-white font-bold">
-                {wishlist.length}
-              </span>
+              <ChevronRight className="w-4 h-4 text-brand-blue-600" />
             </Link>
           </nav>
         </div>

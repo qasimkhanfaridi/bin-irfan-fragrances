@@ -9,15 +9,22 @@ import { PackagingShowcaseSection } from '../components/home/PackagingShowcaseSe
 import { WhyBinIrfan } from '../components/home/WhyBinIrfan';
 import { CustomerReviews } from '../components/home/CustomerReviews';
 import { InstagramSection } from '../components/home/InstagramSection';
+import { SEOHead } from '../components/common/SEOHead';
+import { getStoreSchema } from '../config/seo';
 
 export const HomePage: React.FC = () => {
   useEffect(() => {
-    document.title = "Bin Irfan Fragrance | Artisanal Luxury Perfumes & Royal Attars";
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="space-y-0">
+      <SEOHead
+        title="Luxury Extrait De Parfum & Gift Sets Pakistan"
+        description="Official Bin Irfan Fragrance store. Handcrafted 35% Extrait de Parfum flacons, luxury perfume bundles, long-lasting impressions, and fast nationwide Cash on Delivery (COD) across Pakistan."
+        canonicalPath="/"
+        schema={getStoreSchema()}
+      />
       <HeroSection />
       <CategoryPillsSection />
       <BundlesShowcaseSection />

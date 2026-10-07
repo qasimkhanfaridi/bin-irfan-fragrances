@@ -4,15 +4,21 @@ import { COLLECTIONS } from '../data/collections';
 import { PRODUCTS } from '../data/products';
 import { ProductCard } from '../components/common/ProductCard';
 import { Sparkles, ArrowRight } from 'lucide-react';
+import { SEOHead } from '../components/common/SEOHead';
 
 export const CollectionsPage: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Fragrance Collections | Bin Irfan Fragrance";
   }, []);
 
   return (
     <div className="min-h-screen bg-brand-light-bg py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-20">
+      <SEOHead
+        title="Curated Fragrance Collections"
+        description="Explore the curated collections of Bin Irfan Fragrance: The Oud Collection, The Signature Collection, The Luxury Extrait Series, and The Fresh Collection."
+        keywords="perfume collections Pakistan, Oud collection, luxury extrait collection, fresh aquatic perfumes"
+        canonicalPath="/collections"
+      />
       
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto space-y-4">

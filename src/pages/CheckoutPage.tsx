@@ -11,6 +11,7 @@ import {
   MapPin,
   Sparkles
 } from 'lucide-react';
+import { SEOHead } from '../components/common/SEOHead';
 
 export const CheckoutPage: React.FC = () => {
   const { cart, cartTotalPKR, clearCart, formatPrice, whatsappNumber } = useCart();
@@ -87,6 +88,11 @@ export const CheckoutPage: React.FC = () => {
   if (isOrdered && completedOrder) {
     return (
       <div className="min-h-screen bg-brand-light-bg py-16 px-4 sm:px-6 max-w-xl mx-auto text-center space-y-6">
+        <SEOHead
+          title="Order Confirmed | Bin Irfan Fragrance"
+          description="Your order has been placed with Bin Irfan Fragrance. Track courier dispatch and Cash on Delivery updates."
+          canonicalPath="/checkout"
+        />
         <div className="w-20 h-20 mx-auto rounded-full bg-emerald-50 border-2 border-emerald-500 flex items-center justify-center text-emerald-600 shadow-soft">
           <CheckCircle2 className="w-10 h-10" />
         </div>
@@ -149,6 +155,14 @@ export const CheckoutPage: React.FC = () => {
             <MessageCircle className="w-5 h-5" />
             <span>Open WhatsApp Chat (+92 321 5186400)</span>
           </a>
+
+          <Link
+            to={`/track-order?ref=${completedOrder.ref}`}
+            className="w-full py-3.5 px-4 rounded-xl bg-white border border-brand-blue-300 text-brand-blue-800 hover:bg-brand-blue-50 text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-xs"
+          >
+            <Truck className="w-4 h-4 text-brand-blue-600" />
+            <span>Track Courier Status ({completedOrder.ref})</span>
+          </Link>
 
           <Link
             to="/shop"

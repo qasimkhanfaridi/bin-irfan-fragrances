@@ -5,6 +5,7 @@ import { ProductCard } from '../components/common/ProductCard';
 import { FragranceFamily } from '../types/product';
 import { useWishlist } from '../context/WishlistContext';
 import { Filter, SlidersHorizontal, Sparkles, X, Gift, Flame, Heart } from 'lucide-react';
+import { SEOHead } from '../components/common/SEOHead';
 
 export const ShopPage: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -100,6 +101,12 @@ export const ShopPage: React.FC = () => {
 
   return (
     <div className="min-h-screen py-10 sm:py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <SEOHead
+        title="Shop All Luxury Fragrances & Extrait De Parfum"
+        description="Browse the complete Bin Irfan Fragrance collection. Handcrafted 35% concentration Extrait de Parfum flacons, royal oud, woody, oriental and aquatic perfumes with Cash on Delivery across Pakistan."
+        keywords="shop perfumes online Pakistan, Bin Irfan collection, buy Extrait de parfum, fragrance catalogue Pakistan, perfume COD"
+        canonicalPath="/shop"
+      />
       
       {/* Top Banner */}
       <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12 space-y-3">
