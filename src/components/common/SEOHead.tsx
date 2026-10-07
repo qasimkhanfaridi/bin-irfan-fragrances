@@ -77,17 +77,60 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     }
     canonicalTag.setAttribute('href', canonicalUrl);
 
-    // 6. JSON-LD Structured Data
+    // 6. JSON-LD Structured Data (with BreadcrumbList for Organic Rich Snippets)
+    const breadcrumbList = {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        {
+          '@type': 'ListItem',
+          'position': 1,
+          'name': 'Home',
+          'item': siteUrl
+        },
+        ...(currentPath !== '/' ? [
+          {
+            '@type': 'ListItem',
+            'position': 2,
+            'name': title || 'Page',
+            'item': canonicalUrl
+          }
+        ] : [])
+      ]
+    };
+
+    let finalSchema: any = null;
     if (schema) {
-      let scriptTag = document.getElementById('schema-jsonld') as HTMLScriptElement | null;
-      if (!scriptTag) {
-        scriptTag = document.createElement('script');
-        scriptTag.id = 'schema-jsonld';
-        scriptTag.type = 'application/ld+json';
-        document.head.appendChild(scriptTag);
+      if (Array.isArray(schema)) {
+        finalSchema = {
+          '@context': 'https://schema.org',
+          '@graph': [...schema, breadcrumbList]
+        };
+      } else if (schema['@graph']) {
+        finalSchema = {
+          ...schema,
+          '@graph': [...schema['@graph'], breadcrumbList]
+        };
+      } else {
+        finalSchema = {
+          '@context': 'https://schema.org',
+          '@graph': [schema, breadcrumbList]
+        };
       }
-      scriptTag.textContent = JSON.stringify(schema, null, 2);
+    } else {
+      finalSchema = {
+        '@context': 'https://schema.org',
+        '@graph': [breadcrumbList]
+      };
     }
+
+    let scriptTag = document.getElementById('schema-jsonld') as HTMLScriptElement | null;
+    if (!scriptTag) {
+      scriptTag = document.createElement('script');
+      scriptTag.id = 'schema-jsonld';
+      scriptTag.type = 'application/ld+json';
+      document.head.appendChild(scriptTag);
+    }
+    scriptTag.textContent = JSON.stringify(finalSchema, null, 2);
 
   }, [formattedTitle, description, keywords, canonicalUrl, fullImageUrl, type, schema]);
 

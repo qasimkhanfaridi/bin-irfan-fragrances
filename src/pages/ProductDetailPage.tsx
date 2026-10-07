@@ -20,10 +20,12 @@ import {
   ChevronRight,
   Share2,
   PackageCheck,
-  Sparkles
+  Sparkles,
+  Edit3
 } from 'lucide-react';
 import { SEOHead } from '../components/common/SEOHead';
 import { getProductSchema } from '../config/seo';
+import { WriteReviewModal, UserSubmittedReview } from '../components/common/WriteReviewModal';
 
 export const ProductDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -37,12 +39,31 @@ export const ProductDetailPage: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string>(product.image);
   const [quantity, setQuantity] = useState(1);
   const [copiedLink, setCopiedLink] = useState(false);
+  const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
+  const [userReviews, setUserReviews] = useState<UserSubmittedReview[]>(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem('bin_irfan_customer_reviews') || '[]');
+      return Array.isArray(saved) ? saved.filter((r: any) => r.productId === product.id) : [];
+    } catch {
+      return [];
+    }
+  });
+
+  const handleReviewSubmitted = (newRev: UserSubmittedReview) => {
+    setUserReviews(prev => [newRev, ...prev]);
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = `${product.name} | Bin Irfan Fragrance`;
     setSelectedImage(product.image);
     setSelectedSize(product.defaultSize);
+    try {
+      const saved = JSON.parse(localStorage.getItem('bin_irfan_customer_reviews') || '[]');
+      setUserReviews(Array.isArray(saved) ? saved.filter((r: any) => r.productId === product.id) : []);
+    } catch {
+      setUserReviews([]);
+    }
   }, [product]);
 
   const selectedVariant = product.variants.find(v => v.size === selectedSize) || product.variants[0];
@@ -468,17 +489,63 @@ export const ProductDetailPage: React.FC = () => {
               Real experiences from scent enthusiasts across Pakistan
             </p>
           </div>
-          <div className="flex items-center gap-3">
-            <div className="flex items-center gap-1 text-amber-400">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-current" />
-              ))}
+          <div className="flex flex-wrap items-center gap-4">
+            <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1 text-amber-400">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-current" />
+                ))}
+              </div>
+              <span className="text-sm font-bold text-brand-slate-900">
+                {product.rating} / 5.0 ({product.reviewsCount + userReviews.length} reviews)
+              </span>
             </div>
-            <span className="text-sm font-bold text-brand-slate-900">
-              {product.rating} / 5.0 ({product.reviewsCount} reviews)
-            </span>
+
+            <button
+              onClick={() => setIsReviewModalOpen(true)}
+              className="px-4 py-2 rounded-xl bg-brand-slate-900 hover:bg-brand-slate-800 text-white text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 shadow-xs"
+            >
+              <Edit3 className="w-3.5 h-3.5 text-brand-gold" />
+              <span>Write a Review</span>
+            </button>
           </div>
         </div>
+
+        {/* User Submitted Live Reviews */}
+        {userReviews.length > 0 && (
+          <div className="mb-8 space-y-3">
+            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-800">
+              <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+              <span>Latest Customer Impressions:</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {userReviews.map((rev) => (
+                <div key={rev.id} className="p-6 rounded-2xl bg-emerald-50/50 border border-emerald-200 shadow-soft space-y-3">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-1 text-amber-400">
+                      {[...Array(rev.rating)].map((_, i) => (
+                        <Star key={i} className="w-3.5 h-3.5 fill-current" />
+                      ))}
+                    </div>
+                    <span className="text-[11px] text-emerald-700 font-semibold">{rev.date}</span>
+                  </div>
+                  <p className="text-xs font-semibold text-brand-slate-900">
+                    "{rev.title}"
+                  </p>
+                  <p className="text-xs text-brand-slate-600 leading-relaxed font-light">
+                    {rev.comment}
+                  </p>
+                  <div className="pt-2 border-t border-emerald-100 flex items-center justify-between text-[11px]">
+                    <span className="font-medium text-brand-slate-800">{rev.author} — {rev.location}</span>
+                    <span className="text-emerald-700 font-bold flex items-center gap-1">
+                      <CheckCircle2 className="w-3 h-3" /> Verified Patron
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-6 rounded-2xl bg-white border border-brand-slate-200/80 shadow-soft space-y-3">
@@ -606,6 +673,14 @@ export const ProductDetailPage: React.FC = () => {
           </a>
         </div>
       </div>
+
+      <WriteReviewModal
+        isOpen={isReviewModalOpen}
+        onClose={() => setIsReviewModalOpen(false)}
+        productId={product.id}
+        productName={product.name}
+        onReviewSubmitted={handleReviewSubmitted}
+      />
     </div>
   );
 };
