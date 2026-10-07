@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MapPin, Phone, Mail, Clock, MessageCircle, Send, CheckCircle2 } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageCircle, Send, CheckCircle2, ExternalLink } from 'lucide-react';
 import { SEOHead } from '../components/common/SEOHead';
 import { getStoreSchema } from '../config/seo';
 
@@ -56,11 +56,25 @@ export const ContactPage: React.FC = () => {
             <div className="space-y-4 text-xs sm:text-sm">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-brand-blue-600 flex-shrink-0 mt-0.5" />
-                <div>
-                  <strong className="text-brand-slate-900 block mb-0.5">Rawalpindi Studio</strong>
+                <div className="space-y-1">
+                  <strong className="text-brand-slate-900 block mb-0.5">Rawalpindi Studio & Atelier</strong>
                   <p className="text-brand-slate-600 leading-relaxed font-light">
-                    Bin Irfan Fragrance Atelier & Studio, Rawalpindi / Islamabad, Pakistan
+                    Bin Irfan Fragrance Atelier, Rawalpindi, Punjab, Pakistan
                   </p>
+                  <div className="pt-1 flex flex-wrap items-center gap-2">
+                    <span className="font-mono text-[11px] bg-brand-blue-50 text-brand-blue-900 px-2 py-0.5 rounded border border-brand-blue-200/60 font-semibold">
+                      Plus Code: H3X9+8X4
+                    </span>
+                    <a
+                      href="https://maps.google.com/?q=H3X9%2B8X4+Rawalpindi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-[11px] font-bold text-brand-blue-700 hover:text-brand-blue-900 underline"
+                    >
+                      <span>View on Google Maps</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -177,6 +191,45 @@ export const ContactPage: React.FC = () => {
               )}
             </form>
           </div>
+        </div>
+      </div>
+
+      {/* Google Maps Location Showcase */}
+      <div className="bg-white rounded-3xl border border-brand-slate-200/80 p-6 sm:p-8 shadow-soft space-y-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-brand-slate-100 pb-5">
+          <div>
+            <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-brand-blue-700 font-bold mb-1">
+              <MapPin className="w-4 h-4 text-brand-blue-600" />
+              <span>Google Maps Location</span>
+            </div>
+            <h3 className="font-serif text-xl sm:text-2xl font-bold text-brand-slate-900">
+              Bin Irfan Fragrance Atelier — Rawalpindi
+            </h3>
+            <p className="text-xs text-brand-slate-500 mt-1">
+              Digital Plus Code: <strong className="font-mono text-brand-blue-900">H3X9+8X4 Rawalpindi, Pakistan</strong>
+            </p>
+          </div>
+
+          <a
+            href="https://maps.google.com/?q=H3X9%2B8X4+Rawalpindi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-brand-blue-deep hover:bg-brand-blue-dark text-white text-xs font-bold uppercase tracking-wider transition-all shadow-md self-start sm:self-auto"
+          >
+            <span>Get Directions on Google Maps</span>
+            <ExternalLink className="w-4 h-4" />
+          </a>
+        </div>
+
+        {/* Embedded Map */}
+        <div className="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-brand-slate-200 relative bg-brand-light-bg">
+          <iframe
+            title="Bin Irfan Fragrance Google Map"
+            src="https://maps.google.com/maps?q=H3X9%2B8X4+Rawalpindi&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            className="w-full h-full border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
       </div>
     </div>

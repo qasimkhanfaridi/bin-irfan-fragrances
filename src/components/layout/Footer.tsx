@@ -193,7 +193,15 @@ export const Footer: React.FC = () => {
             <div className="pt-2 text-xs space-y-1.5 text-slate-300/80">
               <div className="flex items-start gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-brand-gold flex-shrink-0 mt-0.5" />
-                <span>Bin Irfan Atelier & Studio, Rawalpindi / Islamabad, Pakistan</span>
+                <a
+                  href="https://maps.google.com/?q=H3X9%2B8X4+Rawalpindi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                  title="Open in Google Maps"
+                >
+                  Bin Irfan Atelier (Plus Code: H3X9+8X4), Rawalpindi, Pakistan
+                </a>
               </div>
               <div className="flex items-center gap-1.5">
                 <Phone className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />

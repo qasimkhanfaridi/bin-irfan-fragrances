@@ -62,9 +62,10 @@ export const getStoreSchema = (siteUrl = getSiteUrl()) => {
         },
         geo: {
           '@type': 'GeoCoordinates',
-          latitude: 33.5651,
-          longitude: 73.0169
+          latitude: 33.5983,
+          longitude: 73.0699
         },
+        hasMap: 'https://maps.google.com/?q=H3X9%2B8X4+Rawalpindi',
         openingHoursSpecification: [
           {
             '@type': 'OpeningHoursSpecification',
