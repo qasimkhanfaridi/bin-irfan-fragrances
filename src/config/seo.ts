@@ -8,13 +8,13 @@ export const getSiteUrl = (): string => {
 };
 
 export const DEFAULT_SEO = {
-  siteName: 'Bin Irfan Fragrance',
-  title: 'Bin Irfan Fragrance | Handcrafted 35% Extrait De Parfum & Royal Attars Pakistan',
-  description: 'Official Bin Irfan Fragrance Pakistan. Handcrafted 35% Extrait de Parfum flacons, luxury perfume bundles, 14+ hour long-lasting impressions, and fast nationwide Cash on Delivery (COD).',
-  keywords: 'Bin Irfan Fragrance, buy perfume Pakistan, Black Oud perfume, Extrait de Parfum Pakistan, long lasting perfumes Rawalpindi, Islamabad fragrance, designer impressions Pakistan, cash on delivery perfume, best fragrance for men, luxury women perfume, order perfume online',
+  siteName: 'Bin Irfan Fragrances',
+  title: 'Bin Irfan Fragrances | Handcrafted 35% Extrait De Parfum & Perfumes Rawalpindi',
+  description: 'Official Bin Irfan Fragrances atelier located at Dhoke Chiragh Deen, Rawalpindi. Handcrafted 35% Extrait de Parfum flacons, luxury perfume bundles, 14+ hour long-lasting projection, and nationwide Cash on Delivery (COD).',
+  keywords: 'Bin Irfan Fragrances, perfume shop Rawalpindi, perfumes in Rawalpindi, Dhoke Chiragh Deen perfume, buy perfume Pakistan, Black Oud perfume, Extrait de Parfum Pakistan, long lasting perfumes Rawalpindi, Islamabad fragrance, designer impressions Pakistan, cash on delivery perfume, best fragrance for men, luxury women perfume, order perfume online',
   defaultImage: '/brand/logo.jpg',
   storeAddress: {
-    streetAddress: 'Bin Irfan Fragrance Atelier & Fragrance Studio',
+    streetAddress: 'H3X9+8X4, Dhoke Chiragh Deen',
     addressLocality: 'Rawalpindi',
     addressRegion: 'Punjab',
     postalCode: '46000',
@@ -40,9 +40,15 @@ export const getStoreSchema = (siteUrl = getSiteUrl()) => {
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'OnlineStore',
+        '@type': 'PerfumeStore',
         '@id': `${siteUrl}/#store`,
-        name: 'Bin Irfan Fragrance',
+        name: 'Bin Irfan Fragrances',
+        alternateName: [
+          'Bin Irfan Fragrances',
+          'Bin Irfan Perfumes Rawalpindi',
+          'بن عرفان پرفیومز'
+        ],
+        disambiguatingDescription: 'Bin Irfan Fragrances is an independent artisanal luxury perfume atelier in Dhoke Chiragh Deen, Rawalpindi, specializing exclusively in 35% Extrait De Parfum flacons and royal attars. Not affiliated with Bin Irfan clothing or garments in Satellite Town.',
         url: siteUrl,
         logo: `${siteUrl}/brand/logo.jpg`,
         image: `${siteUrl}/brand/logo.jpg`,
