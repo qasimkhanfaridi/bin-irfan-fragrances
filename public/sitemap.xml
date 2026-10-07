@@ -3,19 +3,19 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <!-- Homepage -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/</loc>
+    <loc>https://binirfanfragrances.com/</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://bin-irfan-fragrances.vercel.app/brand/logo.jpg</image:loc>
+      <image:loc>https://binirfanfragrances.com/brand/logo.jpg</image:loc>
       <image:title>Bin Irfan Fragrance Official Logo</image:title>
     </image:image>
   </url>
 
   <!-- Shop All / Catalog -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/shop</loc>
+    <loc>https://binirfanfragrances.com/shop</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
@@ -23,7 +23,7 @@
 
   <!-- Collections -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/collections</loc>
+    <loc>https://binirfanfragrances.com/collections</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -31,7 +31,7 @@
 
   <!-- Order Tracking & Status Check (High Intent SEO for Orders) -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/track-order</loc>
+    <loc>https://binirfanfragrances.com/track-order</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
@@ -39,7 +39,7 @@
 
   <!-- Checkout & Direct Ordering -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/checkout</loc>
+    <loc>https://binirfanfragrances.com/checkout</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -48,224 +48,224 @@
   <!-- Individual Products & Extrait De Parfum Flacons -->
   <!-- 1. Black Oud -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/product/black-oud</loc>
+    <loc>https://binirfanfragrances.com/product/black-oud</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://bin-irfan-fragrances.vercel.app/products/black_oud.jpg</image:loc>
+      <image:loc>https://binirfanfragrances.com/products/black_oud.jpg</image:loc>
       <image:title>Black Oud Extrait De Parfum — Bin Irfan Fragrance</image:title>
     </image:image>
   </url>
 
   <!-- 2. Dunhill Desire -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/product/dunhill-desire</loc>
+    <loc>https://binirfanfragrances.com/product/dunhill-desire</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://bin-irfan-fragrances.vercel.app/products/dunhill_desire.jpg</image:loc>
+      <image:loc>https://binirfanfragrances.com/products/dunhill_desire.jpg</image:loc>
       <image:title>Dunhill Desire Extrait De Parfum — Bin Irfan Fragrance</image:title>
     </image:image>
   </url>
 
   <!-- 3. Paradise -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/product/paradise</loc>
+    <loc>https://binirfanfragrances.com/product/paradise</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://bin-irfan-fragrances.vercel.app/products/paradise_sapphire.jpg</image:loc>
+      <image:loc>https://binirfanfragrances.com/products/paradise_sapphire.jpg</image:loc>
       <image:title>Paradise Extrait De Parfum — Bin Irfan Fragrance</image:title>
     </image:image>
   </url>
 
   <!-- 4. Creed Aventus -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/product/creed-aventus</loc>
+    <loc>https://binirfanfragrances.com/product/creed-aventus</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://bin-irfan-fragrances.vercel.app/products/creed_aventus.jpg</image:loc>
+      <image:loc>https://binirfanfragrances.com/products/creed_aventus.jpg</image:loc>
       <image:title>Creed Aventus Extrait De Parfum — Bin Irfan Fragrance</image:title>
     </image:image>
   </url>
 
   <!-- 5. Baccarat Rouge 540 -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/product/baccarat-rouge-540</loc>
+    <loc>https://binirfanfragrances.com/product/baccarat-rouge-540</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://bin-irfan-fragrances.vercel.app/products/baccarat_rouge.jpg</image:loc>
+      <image:loc>https://binirfanfragrances.com/products/baccarat_rouge.jpg</image:loc>
       <image:title>Baccarat Rouge 540 Extrait De Parfum — Bin Irfan Fragrance</image:title>
     </image:image>
   </url>
 
   <!-- 6. Sauvage Dior -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/product/sauvage-dior</loc>
+    <loc>https://binirfanfragrances.com/product/sauvage-dior</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://bin-irfan-fragrances.vercel.app/products/sauvage.jpg</image:loc>
+      <image:loc>https://binirfanfragrances.com/products/sauvage.jpg</image:loc>
       <image:title>Sauvage Dior Extrait De Parfum — Bin Irfan Fragrance</image:title>
     </image:image>
   </url>
 
   <!-- 7. Tobacco Vanille -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/product/tobacco-vanille</loc>
+    <loc>https://binirfanfragrances.com/product/tobacco-vanille</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://bin-irfan-fragrances.vercel.app/products/tobacco_vanille.jpg</image:loc>
+      <image:loc>https://binirfanfragrances.com/products/tobacco_vanille.jpg</image:loc>
       <image:title>Tobacco Vanille Extrait De Parfum — Bin Irfan Fragrance</image:title>
     </image:image>
   </url>
 
   <!-- 8. Blue Night -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/product/blue-night</loc>
+    <loc>https://binirfanfragrances.com/product/blue-night</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://bin-irfan-fragrances.vercel.app/products/blue_night.jpg</image:loc>
+      <image:loc>https://binirfanfragrances.com/products/blue_night.jpg</image:loc>
       <image:title>Blue Night Extrait De Parfum — Bin Irfan Fragrance</image:title>
     </image:image>
   </url>
 
   <!-- 9. Imperial Musk -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/product/imperial-musk</loc>
+    <loc>https://binirfanfragrances.com/product/imperial-musk</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://bin-irfan-fragrances.vercel.app/products/imperial_musk.jpg</image:loc>
+      <image:loc>https://binirfanfragrances.com/products/imperial_musk.jpg</image:loc>
       <image:title>Imperial Musk Extrait De Parfum — Bin Irfan Fragrance</image:title>
     </image:image>
   </url>
 
   <!-- 10. Velvet Rose -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/product/velvet-rose</loc>
+    <loc>https://binirfanfragrances.com/product/velvet-rose</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://bin-irfan-fragrances.vercel.app/products/velvet_rose.jpg</image:loc>
+      <image:loc>https://binirfanfragrances.com/products/velvet_rose.jpg</image:loc>
       <image:title>Velvet Rose Extrait De Parfum — Bin Irfan Fragrance</image:title>
     </image:image>
   </url>
 
   <!-- 11. Royal Trio Bundle -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/product/royal-trio-bundle</loc>
+    <loc>https://binirfanfragrances.com/product/royal-trio-bundle</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://bin-irfan-fragrances.vercel.app/products/bundle_royal_trio.jpg</image:loc>
+      <image:loc>https://binirfanfragrances.com/products/bundle_royal_trio.jpg</image:loc>
       <image:title>Royal Trio Extrait Bundle — Bin Irfan Fragrance</image:title>
     </image:image>
   </url>
 
   <!-- 12. Explorer Discovery Kit -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/product/explorer-discovery-kit</loc>
+    <loc>https://binirfanfragrances.com/product/explorer-discovery-kit</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://bin-irfan-fragrances.vercel.app/products/discovery_set.jpg</image:loc>
+      <image:loc>https://binirfanfragrances.com/products/discovery_set.jpg</image:loc>
       <image:title>Explorer Discovery Set — Bin Irfan Fragrance</image:title>
     </image:image>
   </url>
 
   <!-- 13. Prestige His & Hers Duo -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/product/prestige-his-hers-duo</loc>
+    <loc>https://binirfanfragrances.com/product/prestige-his-hers-duo</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://bin-irfan-fragrances.vercel.app/products/duo_his_hers.jpg</image:loc>
+      <image:loc>https://binirfanfragrances.com/products/duo_his_hers.jpg</image:loc>
       <image:title>Prestige His &amp; Hers Duo — Bin Irfan Fragrance</image:title>
     </image:image>
   </url>
 
   <!-- 14. Summer Aquatic Duo -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/product/summer-aquatic-duo</loc>
+    <loc>https://binirfanfragrances.com/product/summer-aquatic-duo</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://bin-irfan-fragrances.vercel.app/products/duo_fresh.jpg</image:loc>
+      <image:loc>https://binirfanfragrances.com/products/duo_fresh.jpg</image:loc>
       <image:title>Summer Aquatic Duo — Bin Irfan Fragrance</image:title>
     </image:image>
   </url>
 
   <!-- Brand & Experience Pages -->
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/about</loc>
+    <loc>https://binirfanfragrances.com/about</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/packaging</loc>
+    <loc>https://binirfanfragrances.com/packaging</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/contact</loc>
+    <loc>https://binirfanfragrances.com/contact</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/faq</loc>
+    <loc>https://binirfanfragrances.com/faq</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/policies/shipping</loc>
+    <loc>https://binirfanfragrances.com/policies/shipping</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
 
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/policies/returns</loc>
+    <loc>https://binirfanfragrances.com/policies/returns</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
 
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/policies/privacy</loc>
+    <loc>https://binirfanfragrances.com/policies/privacy</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.50</priority>
   </url>
 
   <url>
-    <loc>https://bin-irfan-fragrances.vercel.app/policies/terms</loc>
+    <loc>https://binirfanfragrances.com/policies/terms</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.50</priority>

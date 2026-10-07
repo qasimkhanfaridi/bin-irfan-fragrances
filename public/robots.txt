@@ -1,5 +1,5 @@
 # Robots.txt for Bin Irfan Fragrance
-# https://bin-irfan-fragrances.vercel.app
+# https://binirfanfragrances.com
 
 User-agent: *
 Allow: /
@@ -14,4 +14,4 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemap declaration
-Sitemap: https://bin-irfan-fragrances.vercel.app/sitemap.xml
+Sitemap: https://binirfanfragrances.com/sitemap.xml
