@@ -104,7 +104,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, links }
           <div className="text-xs text-brand-slate/75 space-y-1.5 px-1">
             <div className="flex items-start gap-2 text-[11px]">
               <MapPin className="w-3.5 h-3.5 text-brand-blue mt-0.5 flex-shrink-0" />
-              <span>Shop #6, Malik Dilawar Plaza, Hashtnagri, Peshawar</span>
+              <span>Bin Irfan Atelier & Studio, Rawalpindi / Islamabad</span>
             </div>
             <div className="flex items-center gap-2 text-[11px]">
               <Phone className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />

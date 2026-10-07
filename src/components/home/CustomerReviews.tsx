@@ -15,7 +15,7 @@ export const CustomerReviews: React.FC = () => {
           Words From Connoisseurs
         </h2>
         <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-          Over 1,200+ verified clients across Pakistan enjoying all-day projection and compliments.
+          Real feedback from fragrance enthusiasts across Rawalpindi, Islamabad, Lahore, and Karachi.
         </p>
       </div>
 

@@ -111,7 +111,7 @@ export const PackagingPage: React.FC = () => {
                 <span>EXP: 09/2030</span>
               </div>
               <div className="text-[9px] text-brand-slate-500 pt-1">
-                <p>Shop #6, Malik Dilawar Plaza, Hashtnagri, Peshawar</p>
+                <p>Bin Irfan Fragrance Atelier, Rawalpindi / Islamabad</p>
                 <p>Concierge Care: +92 321 5186400</p>
               </div>
             </div>

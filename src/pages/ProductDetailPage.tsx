@@ -543,7 +543,7 @@ export const ProductDetailPage: React.FC = () => {
               Everyone asked what perfume I was wearing. The dry-down is magnificent. Ordered a second bottle as a gift.
             </p>
             <div className="pt-2 border-t border-brand-slate-100 flex items-center justify-between text-[11px]">
-              <span className="font-medium text-brand-slate-800">Dr. Tariq M. — Peshawar</span>
+              <span className="font-medium text-brand-slate-800">Dr. Tariq M. — Rawalpindi</span>
               <span className="text-emerald-600 font-semibold flex items-center gap-1">
                 <CheckCircle2 className="w-3 h-3" /> Verified Buyer
               </span>

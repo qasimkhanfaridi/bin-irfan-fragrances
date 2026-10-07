@@ -12,20 +12,42 @@ import {
   CheckCircle2,
   Clock,
   X,
-  Download
+  Download,
+  Lock,
+  KeyRound
 } from 'lucide-react';
 
 export const AdminOrdersPage: React.FC = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
+    return sessionStorage.getItem('bin_irfan_admin_auth') === 'true';
+  });
+  const [pinInput, setPinInput] = useState('');
+  const [authError, setAuthError] = useState('');
+
   const [orders, setOrders] = useState<OrderRecord[]>([]);
   const [search, setSearch] = useState('');
   const [statusFilter, setStatusFilter] = useState<string>('All');
   const [selectedOrder, setSelectedOrder] = useState<OrderRecord | null>(null);
 
   useEffect(() => {
-    document.title = "Boutique Orders Dashboard | Bin Irfan Fragrance";
+    document.title = "Atelier Management | Bin Irfan Fragrance";
     window.scrollTo(0, 0);
-    setOrders(getOrders());
-  }, []);
+    if (isAuthenticated) {
+      setOrders(getOrders());
+    }
+  }, [isAuthenticated]);
+
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (pinInput === '7860' || pinInput === 'admin123') {
+      sessionStorage.setItem('bin_irfan_admin_auth', 'true');
+      setIsAuthenticated(true);
+      setAuthError('');
+      setOrders(getOrders());
+    } else {
+      setAuthError('Incorrect Atelier Passcode.');
+    }
+  };
 
   const handleStatusChange = (orderId: string, newStatus: OrderRecord['status']) => {
     const updated = updateOrderStatus(orderId, newStatus);
@@ -78,6 +100,47 @@ export const AdminOrdersPage: React.FC = () => {
     link.click();
     document.body.removeChild(link);
   };
+
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen bg-brand-light-bg py-24 px-4 flex items-center justify-center">
+        <div className="max-w-md w-full bg-white rounded-3xl border border-brand-slate-200/80 p-8 shadow-soft text-center space-y-6">
+          <div className="w-14 h-14 mx-auto rounded-full bg-brand-blue-50 border border-brand-blue-100 flex items-center justify-center text-brand-blue-900">
+            <Lock className="w-6 h-6" />
+          </div>
+          <div>
+            <h2 className="font-serif text-2xl font-bold text-brand-slate-900">Atelier Operations</h2>
+            <p className="text-xs text-brand-slate-500 mt-1">Enter your management passcode to access orders.</p>
+          </div>
+          <form onSubmit={handleLogin} className="space-y-4">
+            <div className="relative">
+              <input
+                type="password"
+                value={pinInput}
+                onChange={(e) => setPinInput(e.target.value)}
+                placeholder="Passcode (e.g. 7860)"
+                className="w-full text-center tracking-widest text-lg font-mono py-3 rounded-xl border border-brand-slate-200 focus:border-brand-blue-600 outline-none"
+                required
+              />
+              <KeyRound className="w-4 h-4 text-brand-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
+            </div>
+            {authError && <p className="text-xs text-rose-600 font-medium">{authError}</p>}
+            <button
+              type="submit"
+              className="w-full py-3 rounded-xl bg-brand-blue-deep hover:bg-brand-blue-dark text-white font-serif text-xs font-semibold uppercase tracking-wider transition-all shadow-md"
+            >
+              Unlock Dashboard
+            </button>
+          </form>
+          <div className="pt-2 border-t border-brand-slate-100">
+            <Link to="/" className="text-xs text-brand-blue-700 hover:underline">
+              &larr; Return to Storefront
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-brand-light-bg py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-8">

@@ -36,13 +36,13 @@ export const REVIEWS: Review[] = [
   },
   {
     id: 'rev-4',
-    author: 'Tariq S. (Verified Buyer)',
-    location: 'Peshawar, Pakistan',
+    author: 'Bilal S. (Verified Buyer)',
+    location: 'Rawalpindi, Pakistan',
     rating: 5,
     date: 'August 2026',
     productName: 'Royal Oud',
     title: 'Aristocratic smoothness without harshness',
-    comment: 'Visited their boutique in Hashtnagri, Peshawar. Royal Oud is silky smooth and elegant. Perfect for formal suits and Friday prayers.',
+    comment: 'Sampled their Extrait in Rawalpindi. Royal Oud is silky smooth and elegant. The projection lasts all day and is perfect for formal wear.',
     verifiedBuyer: true
   }
 ];

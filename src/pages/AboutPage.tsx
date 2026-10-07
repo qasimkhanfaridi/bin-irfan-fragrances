@@ -11,8 +11,8 @@ export const AboutPage: React.FC = () => {
     <div className="min-h-screen bg-brand-light-bg py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-24">
       <SEOHead
         title="Our Heritage & Artisanal Perfumery"
-        description="Learn about the mastercraft behind Bin Irfan Fragrance. Discover our 35% Extrait De Parfum formulation, Peshawar atelier roots, and commitment to royal ingredients."
-        keywords="Bin Irfan story, artisanal perfumery Pakistan, luxury fragrance Peshawar, Extrait de parfum craftsmanship"
+        description="Learn about the mastercraft behind Bin Irfan Fragrance. Discover our 35% Extrait De Parfum formulation, Rawalpindi atelier roots, and commitment to royal ingredients."
+        keywords="Bin Irfan story, artisanal perfumery Pakistan, luxury fragrance Rawalpindi, Islamabad perfume, Extrait de parfum craftsmanship"
         canonicalPath="/about"
       />
       
@@ -46,22 +46,22 @@ export const AboutPage: React.FC = () => {
               Atelier Origins
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-slate-900 tracking-tight mt-1">
-              Born in the Ancient Heart of Peshawar
+              Handcrafted in Rawalpindi, Pakistan
             </h2>
           </div>
           <p>
-            Established in the historic trading corridors of Peshawar, Pakistan, <strong>Bin Irfan Fragrance</strong> began with a single conviction: fragrance connoisseurs across Pakistan deserve the grandeur and sillage of international French niche perfumery without compromise.
+            Founded in Rawalpindi, Pakistan, <strong>Bin Irfan Fragrance</strong> began with a clear mission: fragrance connoisseurs across Pakistan deserve authentic 35% Extrait concentration, multi-layered projection, and pure ingredients without synthetic alcohol harshness or inflated designer markups.
           </p>
           <p>
-            We set out to master the delicate art of fragrance formulation—infusing ultra-high percentages of pure perfume essences (35% Extrait de Parfum concentration) with aged Cambodian agarwood, velvety Damascus rose, and pristine Mediterranean citrus chords.
+            We specialize in crafting artisanal impressions and signature luxury formulations—infusing ultra-high percentages of French and Arabian fragrance oils with aged agarwood, velvety Damascus rose, and pristine Mediterranean citrus chords.
           </p>
           <p>
-            Every flacon is hand-inspected, macerated to peak olfactory maturation, and packaged into our signature white and soft-blue presentation boxes to ensure a presence that commands attention.
+            Every flacon is hand-filled, macerated for maximum longevity, and presented in our signature luxury gift packaging with nationwide Cash on Delivery.
           </p>
           <div className="pt-3 space-y-2">
             <div className="flex items-center gap-3 text-xs text-brand-slate-800 font-medium">
               <MapPin className="w-4 h-4 text-brand-blue-600 flex-shrink-0" />
-              <span>Physical Boutique: Shop #6, Malik Dilawar Plaza, Hashtnagri, Peshawar</span>
+              <span>Studio: Bin Irfan Fragrance Atelier, Rawalpindi / Islamabad, Pakistan</span>
             </div>
             <div className="flex items-center gap-3 text-xs text-brand-slate-800 font-medium">
               <Phone className="w-4 h-4 text-emerald-600 flex-shrink-0" />

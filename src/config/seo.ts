@@ -11,13 +11,13 @@ export const DEFAULT_SEO = {
   siteName: 'Bin Irfan Fragrance',
   title: 'Bin Irfan Fragrance | Handcrafted 35% Extrait De Parfum & Royal Attars Pakistan',
   description: 'Official Bin Irfan Fragrance Pakistan. Handcrafted 35% Extrait de Parfum flacons, luxury perfume bundles, 14+ hour long-lasting impressions, and fast nationwide Cash on Delivery (COD).',
-  keywords: 'Bin Irfan Fragrance, buy perfume Pakistan, Black Oud perfume, Extrait de Parfum Pakistan, long lasting perfumes Peshawar, designer impressions Pakistan, cash on delivery perfume, best fragrance for men, luxury women perfume, order perfume online',
+  keywords: 'Bin Irfan Fragrance, buy perfume Pakistan, Black Oud perfume, Extrait de Parfum Pakistan, long lasting perfumes Rawalpindi, Islamabad fragrance, designer impressions Pakistan, cash on delivery perfume, best fragrance for men, luxury women perfume, order perfume online',
   defaultImage: '/brand/logo.jpg',
   storeAddress: {
-    streetAddress: 'Shop #6, Malik Dilawar Plaza, Chowk Shadi Peer, Hashtnagri, G.T. Road',
-    addressLocality: 'Peshawar',
-    addressRegion: 'Khyber Pakhtunkhwa',
-    postalCode: '25000',
+    streetAddress: 'Bin Irfan Fragrance Atelier & Fragrance Studio',
+    addressLocality: 'Rawalpindi',
+    addressRegion: 'Punjab',
+    postalCode: '46000',
     addressCountry: 'PK'
   },
   contact: {
@@ -26,8 +26,7 @@ export const DEFAULT_SEO = {
     email: 'sulaiman234p@gmail.com'
   },
   social: [
-    'https://www.instagram.com/binirfanfragrances/reels/',
-    'https://tiktok.com/@binirfanfragrances',
+    'https://www.instagram.com/binirfanfragrances/',
     'https://wa.me/923215186400'
   ]
 };
@@ -63,8 +62,8 @@ export const getStoreSchema = (siteUrl = getSiteUrl()) => {
         },
         geo: {
           '@type': 'GeoCoordinates',
-          latitude: 34.0151,
-          longitude: 71.5249
+          latitude: 33.5651,
+          longitude: 73.0169
         },
         openingHoursSpecification: [
           {

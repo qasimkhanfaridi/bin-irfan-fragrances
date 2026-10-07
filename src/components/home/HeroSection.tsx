@@ -18,7 +18,7 @@ export const HeroSection: React.FC = () => {
             {/* Pill Tag */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-brand-blue-light text-brand-blue-dark text-xs font-semibold tracking-wider uppercase shadow-xs">
               <Sparkles className="w-3.5 h-3.5 text-brand-gold" />
-              <span>Peshawar Boutique • Artisanal 35% Extrait De Parfum</span>
+              <span>Rawalpindi Atelier • Artisanal 35% Extrait De Parfum</span>
             </div>
 
             {/* Main Headline */}

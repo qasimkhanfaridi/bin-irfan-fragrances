@@ -48,6 +48,17 @@ export const App: React.FC = () => {
                 <Route path="/admin" element={<AdminOrdersPage />} />
                 <Route path="/admin/orders" element={<AdminOrdersPage />} />
                 <Route path="/policies/:type" element={<PolicyPages />} />
+                
+                {/* Friendly URL Aliases */}
+                <Route path="/our-story" element={<Navigate to="/about" replace />} />
+                <Route path="/privacy-policy" element={<Navigate to="/policies/privacy" replace />} />
+                <Route path="/shipping-policy" element={<Navigate to="/policies/shipping" replace />} />
+                <Route path="/refund-policy" element={<Navigate to="/policies/returns" replace />} />
+                <Route path="/terms" element={<Navigate to="/policies/terms" replace />} />
+                <Route path="/returns" element={<Navigate to="/policies/returns" replace />} />
+                <Route path="/track" element={<Navigate to="/track-order" replace />} />
+                <Route path="/tracking" element={<Navigate to="/track-order" replace />} />
+
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
             </main>

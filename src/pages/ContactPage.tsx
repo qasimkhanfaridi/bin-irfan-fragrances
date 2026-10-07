@@ -23,9 +23,9 @@ export const ContactPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-brand-light-bg py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
       <SEOHead
-        title="Contact Boutique & Client Relations"
-        description="Visit our Peshawar flagship boutique or connect directly via WhatsApp (+92 321 5186400) for bespoke fragrance consultations, order inquiries, and deliveries."
-        keywords="contact Bin Irfan, fragrance boutique Peshawar, WhatsApp perfume order, Hashtnagri perfume shop"
+        title="Contact Atelier & Client Relations"
+        description="Connect with Bin Irfan Fragrance in Rawalpindi or directly via WhatsApp (+92 321 5186400) for bespoke fragrance consultations, order inquiries, and deliveries."
+        keywords="contact Bin Irfan, fragrance boutique Rawalpindi, WhatsApp perfume order, Islamabad perfume"
         canonicalPath="/contact"
         schema={getStoreSchema()}
       />
@@ -40,7 +40,7 @@ export const ContactPage: React.FC = () => {
           VISIT OR CONNECT
         </h1>
         <p className="text-sm text-brand-slate-600 font-light leading-relaxed">
-          Whether you seek a bespoke fragrance consultation, order dispatch tracking, or boutique visits, our concierge team is at your service.
+          Whether you seek a bespoke fragrance consultation, order dispatch tracking, or atelier inquiries, our concierge team is at your service.
         </p>
       </div>
 
@@ -50,16 +50,16 @@ export const ContactPage: React.FC = () => {
         <div className="lg:col-span-5 space-y-6">
           <div className="p-8 rounded-3xl bg-white border border-brand-slate-200/80 space-y-6 shadow-soft">
             <h3 className="font-serif text-xl font-bold text-brand-slate-900">
-              Flagship Boutique
+              Rawalpindi Atelier
             </h3>
 
             <div className="space-y-4 text-xs sm:text-sm">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-brand-blue-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <strong className="text-brand-slate-900 block mb-0.5">Peshawar Boutique</strong>
+                  <strong className="text-brand-slate-900 block mb-0.5">Rawalpindi Studio</strong>
                   <p className="text-brand-slate-600 leading-relaxed font-light">
-                    Shop #6, Malik Dilawar Plaza, Chowk Shadi Peer, Hashtnagri, G.T. Road, Peshawar, Pakistan
+                    Bin Irfan Fragrance Atelier & Studio, Rawalpindi / Islamabad, Pakistan
                   </p>
                 </div>
               </div>
@@ -154,7 +154,7 @@ export const ContactPage: React.FC = () => {
                 <textarea
                   rows={4}
                   required
-                  placeholder="Tell us which scent notes you are looking for or any questions regarding our Peshawar boutique..."
+                  placeholder="Tell us which scent notes you are looking for or any questions regarding our fragrance impressions and delivery..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full bg-brand-light-bg border border-brand-slate-200 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-slate-900 placeholder-brand-slate-400 focus:border-brand-blue-500 outline-none resize-none"

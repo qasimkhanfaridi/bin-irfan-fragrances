@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
                   BIN IRFAN
                 </span>
                 <span className="text-xs uppercase tracking-[0.25em] text-brand-blue-light block">
-                  FRAGRANCE • PESHAWAR
+                  FRAGRANCE • RAWALPINDI
                 </span>
               </div>
             </div>
@@ -153,12 +153,6 @@ export const Footer: React.FC = () => {
                   Privacy Policy
                 </Link>
               </li>
-              <li className="pt-2 border-t border-white/10">
-                <Link to="/admin" className="text-brand-blue-light hover:text-white transition-colors font-semibold flex items-center gap-1.5">
-                  <span>Boutique Orders Portal</span>
-                  <span className="text-[10px] bg-white/20 px-1.5 py-0.5 rounded text-white">Admin</span>
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -199,7 +193,7 @@ export const Footer: React.FC = () => {
             <div className="pt-2 text-xs space-y-1.5 text-slate-300/80">
               <div className="flex items-start gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-brand-gold flex-shrink-0 mt-0.5" />
-                <span>Shop #6, Malik Dilawar Plaza, Chowk Shadi Peer, Hashtnagri, Peshawar</span>
+                <span>Bin Irfan Atelier & Studio, Rawalpindi / Islamabad, Pakistan</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <Phone className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
@@ -214,7 +208,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Copyright & Legal Disclaimer */}
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
           <p>
-            &copy; {new Date().getFullYear()} Bin Irfan Fragrance. All rights reserved. Peshawar, Pakistan.
+            &copy; {new Date().getFullYear()} Bin Irfan Fragrance. All rights reserved. Rawalpindi, Pakistan.
           </p>
           <p className="text-center md:text-right text-[11px] text-slate-400/80 max-w-xl">
             Disclaimer: Product names and olfactory impression references are intended strictly to provide consumers with an understanding of fragrance character and style. Bin Irfan Fragrance has no affiliation with third-party trademark owners.

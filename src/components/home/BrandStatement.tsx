@@ -33,7 +33,7 @@ export const BrandStatement: React.FC = () => {
         </p>
 
         <p className="text-xs uppercase tracking-[0.25em] text-brand-slate/60 pt-2 font-semibold">
-          Artisanal Extrait De Parfum • Crafted in Peshawar • Delivered Nationwide
+          Artisanal Extrait De Parfum • Handcrafted in Rawalpindi • Delivered Nationwide
         </p>
       </div>
     </section>

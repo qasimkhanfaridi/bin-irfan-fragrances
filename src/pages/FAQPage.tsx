@@ -92,7 +92,7 @@ export const FAQPage: React.FC = () => {
           Have an Unanswered Question?
         </h3>
         <p className="text-xs text-brand-slate-500 max-w-md mx-auto">
-          Our fragrance concierge in Peshawar is available 7 days a week to assist you with scent recommendations and custom orders.
+          Our fragrance concierge in Rawalpindi is available 7 days a week to assist you with scent recommendations and custom orders.
         </p>
         <a
           href="https://wa.me/923215186400?text=Hello%20Bin%20Irfan%20Fragrance,%20I%20have%20a%20question!"

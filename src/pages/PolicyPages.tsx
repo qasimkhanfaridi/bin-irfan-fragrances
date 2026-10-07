@@ -20,8 +20,8 @@ export const PolicyPages: React.FC = () => {
           </p>
           <h3 className="font-serif text-lg font-bold text-brand-slate-900 pt-2">Delivery Timelines</h3>
           <ul className="list-disc pl-5 space-y-1.5">
-            <li><strong>Peshawar, Islamabad & Rawalpindi:</strong> 1 – 2 business days.</li>
-            <li><strong>Lahore, Faisalabad & Gujranwala:</strong> 2 – 3 business days.</li>
+            <li><strong>Rawalpindi & Islamabad:</strong> 1 – 2 business days.</li>
+            <li><strong>Lahore, Peshawar, Faisalabad & Gujranwala:</strong> 2 – 3 business days.</li>
             <li><strong>Karachi, Multan & Sindh:</strong> 2 – 4 business days.</li>
             <li><strong>Balochistan, KPK remote & Gilgit-Baltistan:</strong> 3 – 5 business days.</li>
           </ul>
