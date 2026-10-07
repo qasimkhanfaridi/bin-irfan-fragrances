@@ -204,7 +204,7 @@ export const Footer: React.FC = () => {
                   className="hover:text-white transition-colors"
                   title="Rawalpindi Studio (Dhoke Chiragh Deen)"
                 >
-                  Bin Irfan Atelier (Plus Code: H3X9+8X4), Rawalpindi, Pakistan
+                  Bin Irfan Fragrances (Plus Code: H3X9+8X4), Rawalpindi, Pakistan
                 </Link>
               </div>
               <div className="flex items-center gap-1.5">

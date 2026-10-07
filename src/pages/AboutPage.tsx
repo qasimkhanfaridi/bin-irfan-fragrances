@@ -61,7 +61,7 @@ export const AboutPage: React.FC = () => {
           <div className="pt-3 space-y-2">
             <div className="flex items-center gap-3 text-xs text-brand-slate-800 font-medium">
               <MapPin className="w-4 h-4 text-brand-blue-600 flex-shrink-0" />
-              <span>Studio: Bin Irfan Fragrance Atelier, Rawalpindi / Islamabad, Pakistan</span>
+              <span>Studio: Bin Irfan Fragrances, H3X9+8X4, Dhoke Chiragh Deen, Rawalpindi, Pakistan</span>
             </div>
             <div className="flex items-center gap-3 text-xs text-brand-slate-800 font-medium">
               <Phone className="w-4 h-4 text-emerald-600 flex-shrink-0" />
@@ -83,7 +83,7 @@ export const AboutPage: React.FC = () => {
                 Pure Extrait Formulation
               </span>
               <span className="text-xs text-slate-200">
-                Peshawar Atelier • Nationwide Express Delivery
+                Bin Irfan Fragrances Rawalpindi • Nationwide Express Delivery
               </span>
             </div>
           </div>

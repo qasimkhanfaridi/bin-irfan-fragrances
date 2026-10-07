@@ -215,7 +215,7 @@ export const PackagingShowcaseSection: React.FC = () => {
                       <div><span className="text-brand-blue-dark font-bold">EXP:</span> 09/2030</div>
                     </div>
                     <div className="pt-2 text-[10px] text-slate-600">
-                      <p>Bin Irfan Fragrance Atelier, Rawalpindi / Islamabad</p>
+                      <p>Bin Irfan Fragrances, Dhoke Chiragh Deen, Rawalpindi, Pakistan</p>
                       <p>Customer Care: +92 321 5186400 • Made in Pakistan</p>
                     </div>
                   </div>

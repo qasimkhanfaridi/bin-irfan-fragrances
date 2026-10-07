@@ -50,16 +50,16 @@ export const ContactPage: React.FC = () => {
         <div className="lg:col-span-5 space-y-6">
           <div className="p-8 rounded-3xl bg-white border border-brand-slate-200/80 space-y-6 shadow-soft">
             <h3 className="font-serif text-xl font-bold text-brand-slate-900">
-              Rawalpindi Atelier
+              Rawalpindi Fragrance Studio
             </h3>
 
             <div className="space-y-4 text-xs sm:text-sm">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-brand-blue-600 flex-shrink-0 mt-0.5" />
                 <div className="space-y-1">
-                  <strong className="text-brand-slate-900 block mb-0.5">Rawalpindi Studio & Atelier</strong>
+                  <strong className="text-brand-slate-900 block mb-0.5">Bin Irfan Fragrances</strong>
                   <p className="text-brand-slate-600 leading-relaxed font-light">
-                    Bin Irfan Fragrance Atelier, Rawalpindi, Punjab, Pakistan
+                    H3X9+8X4, Dhoke Chiragh Deen, Rawalpindi, 46000, Punjab, Pakistan
                   </p>
                   <div className="pt-1 flex flex-wrap items-center gap-2">
                     <span className="font-mono text-[11px] bg-brand-blue-50 text-brand-blue-900 px-2 py-0.5 rounded border border-brand-blue-200/60 font-semibold">
@@ -203,7 +203,7 @@ export const ContactPage: React.FC = () => {
               <span>Google Maps Location</span>
             </div>
             <h3 className="font-serif text-xl sm:text-2xl font-bold text-brand-slate-900">
-              Bin Irfan Fragrance Atelier — Rawalpindi
+              Bin Irfan Fragrances — Rawalpindi Studio
             </h3>
             <p className="text-xs text-brand-slate-500 mt-1">
               Digital Plus Code: <strong className="font-mono text-brand-blue-900">H3X9+8X4 Rawalpindi, Pakistan</strong>

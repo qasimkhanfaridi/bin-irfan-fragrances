@@ -43,7 +43,7 @@ export const CartPage: React.FC = () => {
       {/* Header */}
       <div className="text-center max-w-xl mx-auto space-y-2">
         <span className="text-xs uppercase tracking-[0.25em] text-brand-blue-700 font-bold bg-brand-blue-50 border border-brand-blue-200/60 px-3 py-1 rounded-full">
-          Bin Irfan Atelier
+          Bin Irfan Fragrances
         </span>
         <h1 className="font-serif text-3xl sm:text-4xl font-bold text-brand-slate-900 tracking-tight">
           Your Fragrance Bag

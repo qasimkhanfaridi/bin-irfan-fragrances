@@ -97,7 +97,7 @@ export const PackagingPage: React.FC = () => {
                 BACK REGULATORY LABEL
               </span>
               <div className="border-b border-brand-slate-200 pb-1.5">
-                <p className="font-bold text-brand-slate-900 font-sans">BIN IRFAN FRAGRANCE ATELIER</p>
+                <p className="font-bold text-brand-slate-900 font-sans">BIN IRFAN FRAGRANCES</p>
                 <p className="text-brand-slate-500">Product: {selectedProduct.name} (50 ML)</p>
               </div>
               <p><strong>Ingredients:</strong> Alcohol Denat., Fragrance (Parfum), Benzyl Benzoate, Linalool, Limonene.</p>
@@ -111,7 +111,7 @@ export const PackagingPage: React.FC = () => {
                 <span>EXP: 09/2030</span>
               </div>
               <div className="text-[9px] text-brand-slate-500 pt-1">
-                <p>Bin Irfan Fragrance Atelier, Rawalpindi / Islamabad</p>
+                <p>Bin Irfan Fragrances, Dhoke Chiragh Deen, Rawalpindi, Pakistan</p>
                 <p>Concierge Care: +92 321 5186400</p>
               </div>
             </div>

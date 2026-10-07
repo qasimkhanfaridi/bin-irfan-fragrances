@@ -175,7 +175,7 @@ export const ProductDetailPage: React.FC = () => {
                 className="w-5 h-5 rounded-full object-cover"
               />
               <span className="text-[10px] font-serif font-bold text-slate-900 tracking-wider">
-                BIN IRFAN ATELIER
+                BIN IRFAN FRAGRANCES
               </span>
             </div>
           </div>

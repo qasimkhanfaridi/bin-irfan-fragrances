@@ -369,7 +369,7 @@ export const AdminOrdersPage: React.FC = () => {
                   <h3 className="font-serif text-lg font-bold text-brand-slate-900">
                     Dispatch Slip • {selectedOrder.id}
                   </h3>
-                  <p className="text-[11px] text-brand-blue-700 font-semibold">Bin Irfan Fragrance • Peshawar Atelier</p>
+                  <p className="text-[11px] text-brand-blue-700 font-semibold">Bin Irfan Fragrances • Rawalpindi Studio</p>
                 </div>
               </div>
               <button
