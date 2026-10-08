@@ -114,7 +114,7 @@ export const getStoreSchema = (siteUrl = getSiteUrl()) => {
         '@type': 'WebSite',
         '@id': `${siteUrl}/#website`,
         url: siteUrl,
-        name: 'Bin Irfan Fragrance',
+        name: 'Bin Irfan Fragrances',
         description: DEFAULT_SEO.description,
         publisher: {
           '@id': `${siteUrl}/#store`
@@ -151,7 +151,7 @@ export const getProductSchema = (product: Product, siteUrl = getSiteUrl()) => {
     mpn: `BIF-${product.id}`,
     brand: {
       '@type': 'Brand',
-      name: 'Bin Irfan Fragrance'
+      name: 'Bin Irfan Fragrances'
     },
     category: product.category === 'bundle' ? 'Perfume Gift Set & Bundle' : 'Extrait De Parfum Perfume',
     aggregateRating: {
@@ -177,7 +177,7 @@ export const getProductSchema = (product: Product, siteUrl = getSiteUrl()) => {
         url: productUrl,
         seller: {
           '@type': 'Organization',
-          name: 'Bin Irfan Fragrance'
+          name: 'Bin Irfan Fragrances'
         },
         shippingDetails: {
           '@type': 'OfferShippingDetails',
@@ -219,11 +219,11 @@ export const getOrderTrackingSchema = (siteUrl = getSiteUrl()) => {
     '@context': 'https://schema.org',
     '@type': 'Service',
     '@id': `${siteUrl}/track-order#service`,
-    name: 'Bin Irfan Fragrance Order Tracking & Courier Status Concierge',
+    name: 'Bin Irfan Fragrances Order Tracking & Courier Status Concierge',
     serviceType: 'Courier Dispatch and Delivery Tracking',
     provider: {
       '@type': 'Organization',
-      name: 'Bin Irfan Fragrance',
+      name: 'Bin Irfan Fragrances',
       url: siteUrl,
       telephone: DEFAULT_SEO.contact.phone
     },
@@ -232,6 +232,6 @@ export const getOrderTrackingSchema = (siteUrl = getSiteUrl()) => {
       name: 'Pakistan'
     },
     termsOfService: `${siteUrl}/policies/shipping`,
-    description: 'Track your Bin Irfan Fragrance parcel delivery and Cash on Delivery courier status across Pakistan with real-time updates and direct WhatsApp support.'
+    description: 'Track your Bin Irfan Fragrances parcel delivery and Cash on Delivery courier status across Pakistan with real-time updates and direct WhatsApp support.'
   };
 };

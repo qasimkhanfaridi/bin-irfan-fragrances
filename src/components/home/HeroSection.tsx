@@ -18,12 +18,15 @@ export const HeroSection: React.FC = () => {
             {/* Pill Tag */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-brand-blue-light text-brand-blue-dark text-xs font-semibold tracking-wider uppercase shadow-xs">
               <Sparkles className="w-3.5 h-3.5 text-brand-gold" />
-              <span>Rawalpindi Atelier • Artisanal 35% Extrait De Parfum</span>
+              <span>Bin Irfan Fragrances • Rawalpindi Studio</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="font-serif text-4xl sm:text-6xl xl:text-7xl font-bold tracking-tight text-brand-blue-deep leading-[1.12]">
-              A Fragrance That <br />
+              <span className="block text-2xl sm:text-3xl xl:text-4xl font-sans font-bold text-brand-gold uppercase tracking-wider mb-2">
+                Bin Irfan Fragrances
+              </span>
+              A Scent That <br />
               <span className="text-blue-gradient">Defines You.</span>
             </h1>
 
@@ -80,7 +83,7 @@ export const HeroSection: React.FC = () => {
                 {/* Hero Bottle Image with smooth hover effect */}
                 <img
                   src="/banners/hero_banner.jpg"
-                  alt="Bin Irfan Fragrance - Artisanal Flacon Collection"
+                  alt="Bin Irfan Fragrances - Artisanal Flacon Collection"
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                 />
 

@@ -25,7 +25,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   const siteUrl = getSiteUrl();
 
   const formattedTitle = title
-    ? `${title} | Bin Irfan Fragrance`
+    ? (title.includes('Bin Irfan Fragrance') ? title : `${title} | Bin Irfan Fragrances`)
     : DEFAULT_SEO.title;
 
   const currentPath = canonicalPath !== undefined ? canonicalPath : location.pathname;
@@ -51,7 +51,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     setMeta('name', 'description', description);
     setMeta('name', 'keywords', keywords);
     setMeta('name', 'robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
-    setMeta('name', 'author', 'Bin Irfan Fragrance');
+    setMeta('name', 'author', 'Bin Irfan Fragrances');
 
     // 3. Open Graph
     setMeta('property', 'og:title', formattedTitle);

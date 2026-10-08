@@ -29,7 +29,7 @@ export const BrandStatement: React.FC = () => {
         <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-brand-blue to-transparent mx-auto" />
 
         <p className="font-serif italic text-lg sm:text-2xl text-brand-blue-dark/90 leading-relaxed font-light px-4">
-          “At Bin Irfan Fragrance, we believe a fragrance is more than a scent. It is an expression of personality, confidence and timeless identity.”
+          “At Bin Irfan Fragrances, we believe a fragrance is more than a scent. It is an expression of personality, confidence and timeless identity.”
         </p>
 
         <p className="text-xs uppercase tracking-[0.25em] text-brand-slate/60 pt-2 font-semibold">
