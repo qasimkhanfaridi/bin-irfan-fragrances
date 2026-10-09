@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ShieldCheck, Truck, RotateCcw, FileText, ChevronRight } from 'lucide-react';
+import { SEOHead } from '../components/common/SEOHead';
 
 export const PolicyPages: React.FC = () => {
   const { type } = useParams<{ type: string }>();
@@ -100,9 +101,31 @@ export const PolicyPages: React.FC = () => {
   const currentPolicy = policies[type as keyof typeof policies] || policies.shipping;
   const Icon = currentPolicy.icon;
 
+  const policySeo: Record<string, { description: string }> = {
+    shipping: {
+      description:
+        'Same-day delivery Rawalpindi & Islamabad. Nationwide courier 2–3 days. Free shipping over ₨5,000. Advance payment only at Bin Irfan Fragrances.'
+    },
+    returns: {
+      description: 'Exchange within 7 days for damaged or incorrect Bin Irfan Fragrances orders.'
+    },
+    privacy: {
+      description: 'How Bin Irfan Fragrances collects and uses customer contact and order information.'
+    },
+    terms: {
+      description: 'Terms for ordering handcrafted perfumes from Bin Irfan Fragrances Pakistan.'
+    }
+  };
+
+  const seoKey = type && policySeo[type] ? type : 'shipping';
+
   return (
     <div className="min-h-screen bg-brand-light-bg py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto space-y-10">
-      
+      <SEOHead
+        title={currentPolicy.title}
+        description={policySeo[seoKey].description}
+        canonicalPath={`/policies/${seoKey}`}
+      />
       {/* Policy Navigation Tabs */}
       <div className="flex flex-wrap gap-2 border-b border-brand-slate-200 pb-4">
         {[

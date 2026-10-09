@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { getSiteUrl, DEFAULT_SEO } from '../../config/seo';
 
@@ -9,6 +9,7 @@ export interface SEOHeadProps {
   image?: string;
   canonicalPath?: string;
   type?: 'website' | 'product' | 'article';
+  robots?: string;
   schema?: Record<string, any> | Array<Record<string, any>>;
 }
 
@@ -19,6 +20,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   image = DEFAULT_SEO.defaultImage,
   canonicalPath,
   type = 'website',
+  robots = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
   schema
 }) => {
   const location = useLocation();
@@ -32,7 +34,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   const canonicalUrl = `${siteUrl}${currentPath === '/' ? '' : currentPath}`;
   const fullImageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`;
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     // 1. Update document title
     document.title = formattedTitle;
 
@@ -50,7 +52,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     // 2. Standard Meta Tags
     setMeta('name', 'description', description);
     setMeta('name', 'keywords', keywords);
-    setMeta('name', 'robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+    setMeta('name', 'robots', robots);
     setMeta('name', 'author', 'Bin Irfan Fragrances');
 
     // 3. Open Graph
@@ -132,7 +134,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     }
     scriptTag.textContent = JSON.stringify(finalSchema, null, 2);
 
-  }, [formattedTitle, description, keywords, canonicalUrl, fullImageUrl, type, schema]);
+  }, [formattedTitle, description, keywords, canonicalUrl, fullImageUrl, type, robots, schema, currentPath, title, siteUrl]);
 
   return null;
 };

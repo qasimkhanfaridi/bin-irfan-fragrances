@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { PRODUCTS } from '../data/products';
 import { Box, Layers, ShieldCheck, QrCode, Copy, CheckCircle2, Sparkles, FileText, Camera } from 'lucide-react';
+import { SEOHead } from '../components/common/SEOHead';
 
 export const PackagingPage: React.FC = () => {
   const [selectedProduct, setSelectedProduct] = useState(PRODUCTS[0]);
@@ -21,7 +22,11 @@ export const PackagingPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-brand-light-bg py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
-      
+      <SEOHead
+        title="Packaging & Craftsmanship"
+        description="Luxury presentation boxes and protective packaging for Bin Irfan Extrait De Parfum flacons and gift sets."
+        canonicalPath="/packaging"
+      />
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto space-y-4">
         <span className="text-xs uppercase tracking-[0.3em] text-brand-blue-700 font-bold bg-brand-blue-50 border border-brand-blue-200/60 px-3.5 py-1 rounded-full inline-flex items-center gap-2">

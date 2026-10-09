@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useParams } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import { WishlistProvider } from './context/WishlistContext';
 import { AnnouncementBar } from './components/layout/AnnouncementBar';
@@ -23,6 +23,11 @@ import { TrackOrderPage } from './pages/TrackOrderPage';
 import { LocalStoreRawalpindiPage } from './pages/LocalStoreRawalpindiPage';
 import { MobileStickyBar } from './components/layout/MobileStickyBar';
 
+const ShopSlugRedirect: React.FC = () => {
+  const { slug } = useParams<{ slug: string }>();
+  return <Navigate to={`/product/${slug ?? ''}`} replace />;
+};
+
 export const App: React.FC = () => {
   return (
     <CartProvider>
@@ -37,7 +42,7 @@ export const App: React.FC = () => {
               <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/shop" element={<ShopPage />} />
-                <Route path="/shop/:slug" element={<ProductDetailPage />} />
+                <Route path="/shop/:slug" element={<ShopSlugRedirect />} />
                 <Route path="/product/:slug" element={<ProductDetailPage />} />
                 <Route path="/collections" element={<CollectionsPage />} />
                 <Route path="/perfume-shop-rawalpindi" element={<LocalStoreRawalpindiPage />} />

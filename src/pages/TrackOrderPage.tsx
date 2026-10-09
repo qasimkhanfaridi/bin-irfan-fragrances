@@ -65,6 +65,7 @@ export const TrackOrderPage: React.FC = () => {
         description="Check real-time delivery status for your Bin Irfan Fragrances order. Same-day express delivery in Rawalpindi & Islamabad and nationwide courier dispatch via Trax & TCS."
         keywords="track perfume order, Bin Irfan order status, perfume courier tracking Pakistan, same day delivery Rawalpindi, TCS perfume delivery, Trax express Pakistan"
         canonicalPath="/track-order"
+        robots="noindex, follow"
         schema={getOrderTrackingSchema()}
       />
 

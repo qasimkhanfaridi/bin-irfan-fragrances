@@ -29,22 +29,6 @@
     <priority>0.90</priority>
   </url>
 
-  <!-- Order Tracking & Status Check (High Intent SEO for Orders) -->
-  <url>
-    <loc>https://www.binirfanfragrances.com/track-order</loc>
-    <lastmod>2026-10-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <!-- Checkout & Direct Ordering -->
-  <url>
-    <loc>https://www.binirfanfragrances.com/checkout</loc>
-    <lastmod>2026-10-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
   <!-- Individual Products & Extrait De Parfum Flacons -->
   <!-- 1. Black Oud -->
   <url>

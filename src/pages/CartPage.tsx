@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { Trash2, ShoppingBag, ArrowRight, MessageCircle, Truck, ShieldCheck, Tag } from 'lucide-react';
+import { SEOHead } from '../components/common/SEOHead';
 
 export const CartPage: React.FC = () => {
   const {
@@ -39,7 +40,7 @@ export const CartPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-brand-light-bg py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-10">
-      
+      <SEOHead title="Shopping bag" description="Review items in your Bin Irfan Fragrances shopping bag." canonicalPath="/cart" robots="noindex, follow" />
       {/* Header */}
       <div className="text-center max-w-xl mx-auto space-y-2">
         <span className="text-xs uppercase tracking-[0.25em] text-brand-blue-700 font-bold bg-brand-blue-50 border border-brand-blue-200/60 px-3 py-1 rounded-full">

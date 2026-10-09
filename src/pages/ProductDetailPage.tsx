@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link, useNavigate, Navigate } from 'react-router-dom';
 import { PRODUCTS } from '../data/products';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
@@ -26,14 +26,23 @@ import {
 import { SEOHead } from '../components/common/SEOHead';
 import { getProductSchema } from '../config/seo';
 import { WriteReviewModal, UserSubmittedReview } from '../components/common/WriteReviewModal';
+import { Product } from '../types/product';
 
 export const ProductDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
+  const product = PRODUCTS.find(p => p.slug === slug);
+
+  if (!product) {
+    return <Navigate to="/shop" replace />;
+  }
+
+  return <ProductDetailView product={product} />;
+};
+
+const ProductDetailView: React.FC<{ product: Product }> = ({ product }) => {
   const navigate = useNavigate();
   const { addToCart, formatPrice, generateWhatsAppLink } = useCart();
   const { toggleWishlist, isInWishlist } = useWishlist();
-
-  const product = PRODUCTS.find(p => p.slug === slug) || PRODUCTS[0];
 
   const [selectedSize, setSelectedSize] = useState<string>(product.defaultSize);
   const [selectedImage, setSelectedImage] = useState<string>(product.image);

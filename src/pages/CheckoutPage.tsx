@@ -100,6 +100,7 @@ export const CheckoutPage: React.FC = () => {
           title="Order Placed — Advance Payment Verification | Bin Irfan Fragrances"
           description="Your order has been placed with Bin Irfan Fragrances. Please submit your advance payment screenshot on WhatsApp to confirm immediate dispatch."
           canonicalPath="/checkout"
+          robots="noindex, follow"
         />
         <div className="w-20 h-20 mx-auto rounded-full bg-emerald-50 border-2 border-emerald-500 flex items-center justify-center text-emerald-600 shadow-soft">
           <CheckCircle2 className="w-10 h-10" />
@@ -221,7 +222,12 @@ export const CheckoutPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-brand-light-bg py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto space-y-10">
-      
+      <SEOHead
+        title="Checkout"
+        description="Complete your Bin Irfan Fragrances order with advance payment via WhatsApp."
+        canonicalPath="/checkout"
+        robots="noindex, follow"
+      />
       {/* Title */}
       <div className="text-center max-w-xl mx-auto space-y-2">
         <span className="text-xs uppercase tracking-[0.25em] text-brand-blue-700 font-bold bg-brand-blue-50 border border-brand-blue-200/60 px-3 py-1 rounded-full inline-flex items-center gap-1.5">

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { HelpCircle, ChevronDown, ChevronUp, Sparkles, MessageCircle } from 'lucide-react';
+import { SEOHead } from '../components/common/SEOHead';
+import { getFaqSchema } from '../config/prerenderMeta';
 
 export const FAQPage: React.FC = () => {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
@@ -42,7 +44,12 @@ export const FAQPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-brand-light-bg py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto space-y-12">
-      
+      <SEOHead
+        title="Frequently Asked Questions"
+        description="Answers about Extrait concentration, advance payment, same-day Rawalpindi delivery, and WhatsApp ordering at Bin Irfan Fragrances."
+        canonicalPath="/faq"
+        schema={getFaqSchema()}
+      />
       {/* Header */}
       <div className="text-center space-y-3">
         <span className="text-xs uppercase tracking-[0.3em] text-brand-blue-700 font-bold bg-brand-blue-50 border border-brand-blue-200/60 px-3.5 py-1 rounded-full inline-flex items-center gap-2">
