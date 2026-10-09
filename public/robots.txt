@@ -15,4 +15,3 @@ Allow: /
 
 # Sitemap declaration
 Sitemap: https://www.binirfanfragrances.com/sitemap.xml
-Sitemap: https://binirfanfragrances.com/sitemap.xml
