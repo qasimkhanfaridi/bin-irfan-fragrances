@@ -7,7 +7,6 @@ import {
   getPrerenderPages,
   type PrerenderPage
 } from '../src/config/prerenderMeta';
-import { postProcessDistHtml } from './html-postprocess';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.join(__dirname, '..', 'dist');
@@ -110,7 +109,7 @@ const applyPageToHtml = (template: string, page: PrerenderPage, siteUrl: string)
     `<div id="root">${page.bodyHtml}\n    </div>`
   );
 
-  return postProcessDistHtml(html);
+  return html;
 };
 
 const main = () => {

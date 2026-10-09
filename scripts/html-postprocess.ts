@@ -1,9 +1,17 @@
+const isAppStylesheet = (linkTag: string): boolean => /href="\/assets\/[^"]+\.css"/.test(linkTag);
+
 /** Reorder CSS before JS, preload stylesheets, and mark styles-ready when CSS loads. */
 export const postProcessDistHtml = (html: string): string => {
   let out = html;
 
-  const stylesheetLinks = [...out.matchAll(/<link rel="stylesheet"[^>]*>/g)].map(m => m[0]);
+  const stylesheetLinks = [...out.matchAll(/<link rel="stylesheet"[^>]*>/g)]
+    .map(m => m[0])
+    .filter(isAppStylesheet);
   if (stylesheetLinks.length === 0) {
+    return out;
+  }
+
+  if (stylesheetLinks.every(link => link.includes('styles-ready') || link.includes("classList.add('styles-ready')"))) {
     return out;
   }
 
