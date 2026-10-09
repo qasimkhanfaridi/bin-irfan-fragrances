@@ -26,6 +26,8 @@ export const DEFAULT_SEO = {
     email: 'sulaiman234p@gmail.com'
   },
   social: [
+    'https://maps.google.com/?cid=4711070535657308662',
+    'https://www.facebook.com/bin.irfan.fragrance/',
     'https://www.instagram.com/binirfanfragrances/',
     'https://wa.me/923215186400'
   ]
@@ -45,7 +47,9 @@ export const getStoreSchema = (siteUrl = getSiteUrl()) => {
         name: 'Bin Irfan Fragrances',
         alternateName: [
           'Bin Irfan Fragrances',
+          'Bin Irfan Fragrance',
           'Bin Irfan Perfumes Rawalpindi',
+          'امپورٹڈ عطریات اور پرفیومز',
           'بن عرفان پرفیومز'
         ],
         disambiguatingDescription: 'Bin Irfan Fragrances is an independent artisanal luxury perfume atelier in Dhoke Chiragh Deen, Rawalpindi, offering same-day delivery in Rawalpindi & Islamabad and specializing exclusively in 35% Extrait De Parfum flacons and royal attars on 100% advance payment. Not affiliated with Bin Irfan clothing or garments in Satellite Town.',
@@ -71,7 +75,7 @@ export const getStoreSchema = (siteUrl = getSiteUrl()) => {
           latitude: 33.5983,
           longitude: 73.0699
         },
-        hasMap: 'https://maps.google.com/?q=H3X9%2B8X4+Rawalpindi',
+        hasMap: 'https://maps.google.com/?cid=4711070535657308662',
         openingHoursSpecification: [
           {
             '@type': 'OpeningHoursSpecification',
@@ -84,8 +88,8 @@ export const getStoreSchema = (siteUrl = getSiteUrl()) => {
               'Saturday',
               'Sunday'
             ],
-            opens: '10:00',
-            closes: '22:00'
+            opens: '08:00',
+            closes: '23:30'
           }
         ],
         sameAs: DEFAULT_SEO.social,

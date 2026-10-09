@@ -268,7 +268,7 @@ export const WriteReviewModal: React.FC<WriteReviewModalProps> = ({
 
                 {/* Post on Google Maps */}
                 <a
-                  href="https://maps.google.com/?q=H3X9%2B8X4+Rawalpindi"
+                  href="https://maps.google.com/?cid=4711070535657308662"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-2.5 px-3 rounded-xl bg-white border border-brand-slate-300 hover:bg-slate-50 text-brand-slate-900 font-bold text-xs flex items-center justify-center gap-2 transition-all"

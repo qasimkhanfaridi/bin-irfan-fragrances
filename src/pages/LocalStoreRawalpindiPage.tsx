@@ -35,14 +35,20 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
       latitude: 33.5983,
       longitude: 73.0699
     },
-    hasMap: 'https://maps.google.com/?q=H3X9%2B8X4+Rawalpindi',
+    hasMap: 'https://maps.google.com/?cid=4711070535657308662',
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-        opens: '10:00',
-        closes: '22:00'
+        opens: '08:00',
+        closes: '23:30'
       }
+    ],
+    sameAs: [
+      'https://maps.google.com/?cid=4711070535657308662',
+      'https://www.facebook.com/bin.irfan.fragrance/',
+      'https://www.instagram.com/binirfanfragrances/',
+      'https://wa.me/923215186400'
     ],
     areaServed: [
       { '@type': 'City', name: 'Rawalpindi' },
@@ -91,7 +97,7 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
             </a>
 
             <a
-              href="https://maps.google.com/?q=H3X9%2B8X4+Rawalpindi"
+              href="https://maps.google.com/?cid=4711070535657308662"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-xs sm:text-sm uppercase tracking-wider transition-all backdrop-blur-sm"

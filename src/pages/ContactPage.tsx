@@ -66,7 +66,7 @@ export const ContactPage: React.FC = () => {
                       Plus Code: H3X9+8X4
                     </span>
                     <a
-                      href="https://maps.google.com/?q=H3X9%2B8X4+Rawalpindi"
+                      href="https://maps.google.com/?cid=4711070535657308662"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-[11px] font-bold text-brand-blue-700 hover:text-brand-blue-900 underline"
@@ -101,10 +101,9 @@ export const ContactPage: React.FC = () => {
               <div className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-brand-gold-dark flex-shrink-0" />
                 <div>
-                  <strong className="text-brand-slate-900 block mb-0.5">Boutique Hours</strong>
+                  <strong className="text-brand-slate-900 block mb-0.5">Studio Hours</strong>
                   <p className="text-brand-slate-600 font-light">
-                    Monday – Saturday: 11:00 AM – 10:00 PM <br />
-                    Sunday: 2:00 PM – 9:00 PM
+                    Monday – Sunday: 8:00 AM – 11:30 PM (All 7 Days)
                   </p>
                 </div>
               </div>
