@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { MapPin, Phone, Mail, Clock, MessageCircle, Send, CheckCircle2, ExternalLink } from 'lucide-react';
 import { SEOHead } from '../components/common/SEOHead';
 import { getStoreSchema } from '../config/seo';
+import { GoogleReviewCTA } from '../components/common/GoogleReviewCTA';
+import { trackEvent } from '../utils/analytics';
 
 export const ContactPage: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -16,6 +18,7 @@ export const ContactPage: React.FC = () => {
     if (formData.name && formData.phone) {
       setSubmitted(true);
       const msg = `Hello Bin Irfan Fragrance, this is ${formData.name} (${formData.phone}). ${formData.message}`;
+      trackEvent('whatsapp_contact_submit');
       window.open(`https://wa.me/923215186400?text=${encodeURIComponent(msg)}`, '_blank');
     }
   };
@@ -42,6 +45,10 @@ export const ContactPage: React.FC = () => {
         <p className="text-sm text-brand-slate-600 font-light leading-relaxed">
           Whether you seek a bespoke fragrance consultation, order dispatch tracking, or atelier inquiries, our concierge team is at your service.
         </p>
+      </div>
+
+      <div className="max-w-xl mx-auto">
+        <GoogleReviewCTA />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">

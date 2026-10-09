@@ -1,5 +1,7 @@
 import { PRODUCTS } from '../data/products';
+import { GUIDES } from '../data/guides';
 import { DEFAULT_SEO, getProductSchema, getStoreSchema } from './seo';
+import { getArticleSchema } from './guideSchema';
 
 export const SITE_URL = 'https://www.binirfanfragrances.com';
 
@@ -40,6 +42,7 @@ const shell = (heading: string, subheading: string, mainHtml: string): string =>
           <a href="/perfume-shop-rawalpindi">Rawalpindi Studio</a>
           <a href="/contact">Contact</a>
           <a href="/faq">FAQ</a>
+          <a href="/guides">Guides</a>
         </nav>
       </main>`;
 
@@ -275,6 +278,43 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
       image: DEFAULT_SEO.defaultImage,
       schema: page.schema,
       bodyHtml: shell(page.heading, page.intro, `<section>${page.extra ?? `<p>${escapeHtml(page.intro)}</p>`}</section>`)
+    });
+  }
+
+  const guideListHtml = GUIDES.map(
+    g =>
+      `<li><a href="/guides/${g.slug}"><strong>${escapeHtml(g.title)}</strong></a> — ${escapeHtml(g.description)}</li>`
+  ).join('\n            ');
+
+  pages.push({
+    path: 'guides',
+    title: 'Fragrance Guides — Extrait, Delivery & Ordering in Pakistan',
+    description:
+      'Expert guides on Extrait de Parfum, same-day perfume delivery in Rawalpindi & Islamabad, oud for men, and WhatsApp ordering from Bin Irfan Fragrances.',
+    keywords: 'perfume guides Pakistan, extrait de parfum guide, Rawalpindi perfume delivery',
+    ogType: 'article',
+    bodyHtml: shell(
+      'Fragrance guides',
+      'Tips for buying perfume in Pakistan',
+      `<section><ul>${guideListHtml}</ul></section>`
+    )
+  });
+
+  for (const guide of GUIDES) {
+    const bodySections = guide.sections
+      .map(
+        s =>
+          `<h2>${escapeHtml(s.heading)}</h2>${s.paragraphs.map(p => `<p>${escapeHtml(p)}</p>`).join('')}`
+      )
+      .join('');
+    pages.push({
+      path: `guides/${guide.slug}`,
+      title: guide.title,
+      description: guide.description,
+      keywords: guide.keywords,
+      ogType: 'article',
+      schema: getArticleSchema(guide),
+      bodyHtml: shell(guide.title, `${guide.readMinutes} min read`, `<section>${bodySections}</section>`)
     });
   }
 

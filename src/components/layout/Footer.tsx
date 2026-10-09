@@ -104,7 +104,7 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/shop/explorer-discovery-kit" className="hover:text-white transition-colors">
+                <Link to="/product/explorer-discovery-kit" className="hover:text-white transition-colors">
                   Explorer Discovery Kit (5x10ml)
                 </Link>
               </li>
@@ -136,6 +136,11 @@ export const Footer: React.FC = () => {
               <li>
                 <Link to="/faq" className="hover:text-white transition-colors">
                   Fragrance FAQ
+                </Link>
+              </li>
+              <li>
+                <Link to="/guides" className="hover:text-white transition-colors">
+                  Perfume Guides &amp; Tips
                 </Link>
               </li>
               <li>

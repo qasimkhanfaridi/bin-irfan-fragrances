@@ -9,6 +9,7 @@ import { PackagingShowcaseSection } from '../components/home/PackagingShowcaseSe
 import { WhyBinIrfan } from '../components/home/WhyBinIrfan';
 import { CustomerReviews } from '../components/home/CustomerReviews';
 import { InstagramSection } from '../components/home/InstagramSection';
+import { GuidesPreviewSection } from '../components/home/GuidesPreviewSection';
 import { SEOHead } from '../components/common/SEOHead';
 import { getStoreSchema } from '../config/seo';
 
@@ -33,6 +34,7 @@ export const HomePage: React.FC = () => {
       <FeaturedCollection />
       <PackagingShowcaseSection />
       <WhyBinIrfan />
+      <GuidesPreviewSection />
       <CustomerReviews />
       <InstagramSection />
     </div>

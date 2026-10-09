@@ -5,6 +5,7 @@ import { PRODUCTS } from '../data/products';
 import { ProductCard } from '../components/common/ProductCard';
 import { SEOHead } from '../components/common/SEOHead';
 import { getSiteUrl } from '../config/seo';
+import { GoogleReviewCTA } from '../components/common/GoogleReviewCTA';
 
 export const LocalStoreRawalpindiPage: React.FC = () => {
   const siteUrl = getSiteUrl();
@@ -125,6 +126,17 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
             </p>
           </div>
         </div>
+      </section>
+
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 pb-8">
+        <GoogleReviewCTA />
+        <p className="text-center text-xs text-brand-slate-500 mt-4">
+          New here? Read our{' '}
+          <Link to="/guides/same-day-perfume-delivery-rawalpindi-islamabad" className="text-brand-blue-700 font-semibold hover:underline">
+            same-day delivery guide
+          </Link>
+          .
+        </p>
       </section>
 
       {/* Studio Location & Map Embed */}

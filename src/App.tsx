@@ -21,7 +21,10 @@ import { PolicyPages } from './pages/PolicyPages';
 import { AdminOrdersPage } from './pages/AdminOrdersPage';
 import { TrackOrderPage } from './pages/TrackOrderPage';
 import { LocalStoreRawalpindiPage } from './pages/LocalStoreRawalpindiPage';
+import { GuidesIndexPage } from './pages/GuidesIndexPage';
+import { GuideArticlePage } from './pages/GuideArticlePage';
 import { MobileStickyBar } from './components/layout/MobileStickyBar';
+import { AnalyticsRouteTracker } from './components/common/AnalyticsRouteTracker';
 
 const ShopSlugRedirect: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -33,6 +36,7 @@ export const App: React.FC = () => {
     <CartProvider>
       <WishlistProvider>
         <Router>
+          <AnalyticsRouteTracker />
           <div className="flex flex-col min-h-screen bg-brand-light-bg text-brand-slate-900 selection:bg-brand-blue-600 selection:text-white pb-14 lg:pb-0">
             <AnnouncementBar />
             <Navbar />
@@ -50,6 +54,8 @@ export const App: React.FC = () => {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/faq" element={<FAQPage />} />
+                <Route path="/guides" element={<GuidesIndexPage />} />
+                <Route path="/guides/:slug" element={<GuideArticlePage />} />
                 <Route path="/cart" element={<CartPage />} />
                 <Route path="/checkout" element={<CheckoutPage />} />
                 <Route path="/track-order" element={<TrackOrderPage />} />
