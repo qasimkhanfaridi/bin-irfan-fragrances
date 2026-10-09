@@ -46,8 +46,8 @@ export const getStoreSchema = (siteUrl = getSiteUrl()) => {
         '@id': `${siteUrl}/#store`,
         name: 'Bin Irfan Fragrances',
         alternateName: [
-          'Bin Irfan Fragrances',
           'Bin Irfan Fragrance',
+          'Bin Irfan Fragrances Rawalpindi',
           'Bin Irfan Perfumes Rawalpindi',
           'امپورٹڈ عطریات اور پرفیومز',
           'بن عرفان پرفیومز'

@@ -20,7 +20,7 @@ export const CartPage: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Shopping Bag | Bin Irfan Fragrance";
+    document.title = "Shopping Bag | Bin Irfan Fragrances";
   }, []);
 
   const freeShippingThreshold = 5000;

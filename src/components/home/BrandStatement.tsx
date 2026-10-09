@@ -9,7 +9,7 @@ export const BrandStatement: React.FC = () => {
         <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-full overflow-hidden border-2 border-brand-gold shadow-md bg-white p-0.5">
           <img
             src="/brand/logo.jpg"
-            alt="Bin Irfan Fragrance Official Seal"
+            alt="Bin Irfan Fragrances Official Seal"
             className="w-full h-full object-cover rounded-full"
           />
         </div>

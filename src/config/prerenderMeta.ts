@@ -26,7 +26,7 @@ const escapeHtml = (value: string): string =>
     .replace(/"/g, '&quot;');
 
 export const formatPageTitle = (title: string): string =>
-  title.includes('Bin Irfan Fragrance') ? title : `${title} | Bin Irfan Fragrances`;
+  title.includes('Bin Irfan Fragrances') ? title : `${title} | Bin Irfan Fragrances`;
 
 const shell = (heading: string, subheading: string, mainHtml: string): string => `
       <header style="padding: 24px; text-align: center; border-bottom: 1px solid #e2e8f0; background: #ffffff;">

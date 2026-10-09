@@ -64,7 +64,7 @@ const ProductDetailView: React.FC<{ product: Product }> = ({ product }) => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = `${product.name} | Bin Irfan Fragrance`;
+    document.title = `${product.name} | Bin Irfan Fragrances`;
     setSelectedImage(product.image);
     setSelectedSize(product.defaultSize);
     try {

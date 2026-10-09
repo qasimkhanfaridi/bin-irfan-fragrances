@@ -17,7 +17,7 @@ export const ContactPage: React.FC = () => {
     e.preventDefault();
     if (formData.name && formData.phone) {
       setSubmitted(true);
-      const msg = `Hello Bin Irfan Fragrance, this is ${formData.name} (${formData.phone}). ${formData.message}`;
+      const msg = `Hello Bin Irfan Fragrances, this is ${formData.name} (${formData.phone}). ${formData.message}`;
       trackEvent('whatsapp_contact_submit');
       window.open(`https://wa.me/923215186400?text=${encodeURIComponent(msg)}`, '_blank');
     }
@@ -27,7 +27,7 @@ export const ContactPage: React.FC = () => {
     <div className="min-h-screen bg-brand-light-bg py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
       <SEOHead
         title="Contact Atelier & Client Relations"
-        description="Connect with Bin Irfan Fragrance in Rawalpindi or directly via WhatsApp (+92 321 5186400) for bespoke fragrance consultations, order inquiries, and deliveries."
+        description="Connect with Bin Irfan Fragrances in Rawalpindi or directly via WhatsApp (+92 321 5186400) for bespoke fragrance consultations, order inquiries, and deliveries."
         keywords="contact Bin Irfan, fragrance boutique Rawalpindi, WhatsApp perfume order, Islamabad perfume"
         canonicalPath="/contact"
         schema={getStoreSchema()}
@@ -192,7 +192,7 @@ export const ContactPage: React.FC = () => {
               {submitted && (
                 <div className="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs flex items-center gap-2 mt-4 font-medium">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                  <span>Connecting to WhatsApp... Thank you for contacting Bin Irfan Fragrance!</span>
+                  <span>Connecting to WhatsApp... Thank you for contacting Bin Irfan Fragrances!</span>
                 </div>
               )}
             </form>
@@ -230,7 +230,7 @@ export const ContactPage: React.FC = () => {
         {/* Embedded Map */}
         <div className="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-brand-slate-200 relative bg-brand-light-bg">
           <iframe
-            title="Bin Irfan Fragrance Google Map"
+            title="Bin Irfan Fragrances Google Map"
             src="https://maps.google.com/maps?q=H3X9%2B8X4+Rawalpindi&t=&z=15&ie=UTF8&iwloc=&output=embed"
             className="w-full h-full border-0"
             loading="lazy"

@@ -1,4 +1,4 @@
-# 🌟 Bin Irfan Fragrance - Social Media Content & Scheduling Master Plan
+# 🌟 Bin Irfan Fragrances - Social Media Content & Scheduling Master Plan
 
 ---
 
@@ -32,7 +32,7 @@
   ```text
   A scent shouldn't introduce you and leave before you do. 👑✨
 
-  At Bin Irfan Fragrance, we brew Extrait De Parfum formulations designed for 12+ hours of beast projection and undeniable compliments. 
+  At Bin Irfan Fragrances, we brew Extrait De Parfum formulations designed for 12+ hours of beast projection and undeniable compliments. 
 
   🔥 Launching online soon! Early orders open via WhatsApp.
   📲 WhatsApp to order: +92 321 5186400
@@ -62,7 +62,7 @@
   ```text
   Your signature scent is your unseen business card. 💼✨
 
-  Whether you want crisp freshness or a dark, mysterious oud that lingers, Bin Irfan Fragrance has crafted the ultimate impressions. 
+  Whether you want crisp freshness or a dark, mysterious oud that lingers, Bin Irfan Fragrances has crafted the ultimate impressions. 
 
   💬 Comment your favorite fragrance family below:
   1️⃣ Fresh & Citrus
@@ -91,7 +91,7 @@
   ```text
   The unboxing experience should feel as royal as the scent inside. 📦👑
 
-  Every bottle of Bin Irfan Fragrance is hand-inspected, packed with care, and shipped directly to your doorstep.
+  Every bottle of Bin Irfan Fragrances is hand-inspected, packed with care, and shipped directly to your doorstep.
 
   🚚 Fast Nationwide Delivery across Pakistan.
   🔗 Visit our bio link or WhatsApp +92 321 5186400 to claim yours.
@@ -110,7 +110,7 @@
   ```text
   Royalty has a new name. ✨
 
-  Crafted from rare essences and aged perfume oils, Bin Irfan Fragrance brings you artisanal perfumes with unforgettable projection. 
+  Crafted from rare essences and aged perfume oils, Bin Irfan Fragrances brings you artisanal perfumes with unforgettable projection. 
 
   Our official digital boutique is launching soon with exclusive opening-week discounts and discovery boxes!
 
@@ -148,7 +148,7 @@
   ```text
   Dark. Mysterious. Unapologetic. 🖤👑
 
-  Meet *Oud Al Sultan* by Bin Irfan Fragrance. A masterfully balanced blend of rich smoky agarwood, warm amber resin, and subtle spiced saffron. 
+  Meet *Oud Al Sultan* by Bin Irfan Fragrances. A masterfully balanced blend of rich smoky agarwood, warm amber resin, and subtle spiced saffron. 
 
   Designed for evening galas, weddings, and cold winter nights where you want your presence remembered long after you walk away.
 

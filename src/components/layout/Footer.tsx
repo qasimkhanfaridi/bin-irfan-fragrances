@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
               <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-brand-gold shadow-md flex-shrink-0 bg-white p-0.5">
                 <img
                   src="/brand/logo.jpg"
-                  alt="Official Bin Irfan Fragrance Logo"
+                  alt="Official Bin Irfan Fragrances Logo"
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
@@ -225,10 +225,10 @@ export const Footer: React.FC = () => {
         {/* Bottom Copyright & Legal Disclaimer */}
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
           <p>
-            &copy; {new Date().getFullYear()} Bin Irfan Fragrance. All rights reserved. Rawalpindi, Pakistan.
+            &copy; {new Date().getFullYear()} Bin Irfan Fragrances. All rights reserved. Rawalpindi, Pakistan.
           </p>
           <p className="text-center md:text-right text-[11px] text-slate-400/80 max-w-xl">
-            Disclaimer: Product names and olfactory impression references are intended strictly to provide consumers with an understanding of fragrance character and style. Bin Irfan Fragrance has no affiliation with third-party trademark owners.
+            Disclaimer: Product names and olfactory impression references are intended strictly to provide consumers with an understanding of fragrance character and style. Bin Irfan Fragrances has no affiliation with third-party trademark owners.
           </p>
         </div>
       </div>

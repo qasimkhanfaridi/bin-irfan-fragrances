@@ -1,5 +1,5 @@
 # 🌐 Custom Domain & E-Commerce Order SEO Guide
-**Bin Irfan Fragrance — Official Production Setup**
+**Bin Irfan Fragrances — Official Production Setup**
 
 This guide provides step-by-step instructions for attaching your custom domain (e.g., `binirfanfragrance.com` or `binirfan.pk`) to the live Vercel deployment, along with instructions to maximize search-engine-driven customer orders via Google Search, Rich Snippets, and WhatsApp conversion.
 
@@ -48,7 +48,7 @@ Search Engine Optimization has been custom-tailored to rank for **high-intent bu
 We have implemented comprehensive Schema.org structured data across the codebase:
 - **`schema.org/Product` + `schema.org/Offer`**:
   - Live on every perfume detail page (`/product/:slug`).
-  - Contains **Price in PKR**, `availability: InStock`, `brand: Bin Irfan Fragrance`, and `aggregateRating` (4.9★ stars).
+  - Contains **Price in PKR**, `availability: InStock`, `brand: Bin Irfan Fragrances`, and `aggregateRating` (4.9★ stars).
   - **Result**: Google search results display the price, star rating, and in-stock badges directly in SERP cards, increasing order click-through rates by up to 300%.
 - **`schema.org/OnlineStore` & `schema.org/LocalBusiness`**:
   - Registered with boutique address: *Shop #6, Malik Dilawar Plaza, Hashtnagri, G.T. Road, Peshawar*.

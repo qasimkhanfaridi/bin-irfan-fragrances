@@ -66,7 +66,7 @@ export const Navbar: React.FC = () => {
                 <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden border-2 border-brand-gold shadow-sm flex-shrink-0 bg-white">
                   <img
                     src="/brand/logo.jpg"
-                    alt="Official Bin Irfan Fragrance Logo"
+                    alt="Official Bin Irfan Fragrances Logo"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>

@@ -11,7 +11,7 @@ export const AboutPage: React.FC = () => {
     <div className="min-h-screen bg-brand-light-bg py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-24">
       <SEOHead
         title="Our Heritage & Artisanal Perfumery"
-        description="Learn about the mastercraft behind Bin Irfan Fragrance. Discover our 35% Extrait De Parfum formulation, Rawalpindi atelier roots, and commitment to royal ingredients."
+        description="Learn about the mastercraft behind Bin Irfan Fragrances. Discover our 35% Extrait De Parfum formulation, Rawalpindi atelier roots, and commitment to royal ingredients."
         keywords="Bin Irfan story, artisanal perfumery Pakistan, luxury fragrance Rawalpindi, Islamabad perfume, Extrait de parfum craftsmanship"
         canonicalPath="/about"
       />

@@ -53,7 +53,7 @@ export const TrackOrderPage: React.FC = () => {
   };
 
   const waTrackUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    `Assalam o Alaikum Bin Irfan Fragrance! I would like to check the dispatch and courier tracking for my order${
+    `Assalam o Alaikum Bin Irfan Fragrances! I would like to check the dispatch and courier tracking for my order${
       orderQuery ? ` (Reference: ${orderQuery})` : ''
     }.`
   )}`;

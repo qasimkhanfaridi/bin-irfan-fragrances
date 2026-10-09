@@ -64,7 +64,7 @@ export const PolicyPages: React.FC = () => {
       content: (
         <div className="space-y-4 text-xs sm:text-sm text-brand-slate-600 leading-relaxed font-light">
           <p>
-            Bin Irfan Fragrance is dedicated to preserving the privacy and security of our clients.
+            Bin Irfan Fragrances is dedicated to preserving the privacy and security of our clients.
           </p>
           <h3 className="font-serif text-lg font-bold text-brand-slate-900 pt-2">Information Collected</h3>
           <p>
@@ -83,11 +83,11 @@ export const PolicyPages: React.FC = () => {
       content: (
         <div className="space-y-4 text-xs sm:text-sm text-brand-slate-600 leading-relaxed font-light">
           <p>
-            Welcome to the official digital boutique of <strong>Bin Irfan Fragrance</strong>. By accessing this website or placing orders via our digital portal or WhatsApp concierge (+92 321 5186400), you agree to these terms.
+            Welcome to the official digital boutique of <strong>Bin Irfan Fragrances</strong>. By accessing this website or placing orders via our digital portal or WhatsApp concierge (+92 321 5186400), you agree to these terms.
           </p>
           <h3 className="font-serif text-lg font-bold text-brand-slate-900 pt-2">Artisanal Formulation Disclaimer</h3>
           <p>
-            Fragrance impression references are provided strictly to assist perfume enthusiasts with scent styles and olfactory profiles. Bin Irfan Fragrance is an independent Pakistani perfumery and has no affiliation with or authorization from original international trademark holders.
+            Fragrance impression references are provided strictly to assist perfume enthusiasts with scent styles and olfactory profiles. Bin Irfan Fragrances is an independent Pakistani perfumery and has no affiliation with or authorization from original international trademark holders.
           </p>
           <h3 className="font-serif text-lg font-bold text-brand-slate-900 pt-2">Pricing & Availability</h3>
           <p>

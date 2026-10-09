@@ -27,7 +27,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   const siteUrl = getSiteUrl();
 
   const formattedTitle = title
-    ? (title.includes('Bin Irfan Fragrance') ? title : `${title} | Bin Irfan Fragrances`)
+    ? (title.includes('Bin Irfan Fragrances') ? title : `${title} | Bin Irfan Fragrances`)
     : DEFAULT_SEO.title;
 
   const currentPath = canonicalPath !== undefined ? canonicalPath : location.pathname;

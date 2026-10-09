@@ -133,7 +133,7 @@ export const PackagingShowcaseSection: React.FC = () => {
               <div className="w-full max-w-md bg-white border border-brand-blue-soft rounded-3xl p-3 shadow-luxury-hover relative overflow-hidden group">
                 <img
                   src="/products/box_packaging.jpg"
-                  alt="Bin Irfan Fragrance Luxury Packaging Presentation"
+                  alt="Bin Irfan Fragrances Luxury Packaging Presentation"
                   className="w-full aspect-square object-cover rounded-2xl group-hover:scale-103 transition-transform duration-700"
                 />
                 <div className="p-4 text-center">

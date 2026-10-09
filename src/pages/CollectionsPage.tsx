@@ -15,7 +15,7 @@ export const CollectionsPage: React.FC = () => {
     <div className="min-h-screen bg-brand-light-bg py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-20">
       <SEOHead
         title="Curated Fragrance Collections"
-        description="Explore the curated collections of Bin Irfan Fragrance: The Oud Collection, The Signature Collection, The Luxury Extrait Series, and The Fresh Collection."
+        description="Explore the curated collections of Bin Irfan Fragrances: The Oud Collection, The Signature Collection, The Luxury Extrait Series, and The Fresh Collection."
         keywords="perfume collections Pakistan, Oud collection, luxury extrait collection, fresh aquatic perfumes"
         canonicalPath="/collections"
       />

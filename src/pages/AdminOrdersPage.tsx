@@ -30,7 +30,7 @@ export const AdminOrdersPage: React.FC = () => {
   const [selectedOrder, setSelectedOrder] = useState<OrderRecord | null>(null);
 
   useEffect(() => {
-    document.title = "Atelier Management | Bin Irfan Fragrance";
+    document.title = "Atelier Management | Bin Irfan Fragrances";
     window.scrollTo(0, 0);
     if (isAuthenticated) {
       setOrders(getOrders());
@@ -392,7 +392,7 @@ export const AdminOrdersPage: React.FC = () => {
                 </div>
                 <div className="text-right">
                   <strong className="text-brand-blue-900 block uppercase font-sans">SENDER:</strong>
-                  <p className="font-bold">Bin Irfan Fragrance</p>
+                  <p className="font-bold">Bin Irfan Fragrances</p>
                   <p>Shop #6, Malik Dilawar Plaza</p>
                   <p>Hashtnagri, Peshawar</p>
                   <p>Phone: +92 321 5186400</p>

@@ -10,7 +10,7 @@ export const PRODUCTS: Product[] = [
     tagline: 'Dark, intoxicating & intensely magnetic',
     fragranceFamily: 'Woody & Oud',
     shortDescription: 'An intense and sophisticated oud fragrance with a warm, mysterious smoky character.',
-    description: 'Black Oud is the crown jewel of Bin Irfan Fragrance. Brewed with high-potency agarwood from Assam and infused with velvety Turkish rose, toasted spices, and rich leather, this fragrance envelops the wearer in an aura of undeniable authority and quiet luxury.',
+    description: 'Black Oud is the crown jewel of Bin Irfan Fragrances. Brewed with high-potency agarwood from Assam and infused with velvety Turkish rose, toasted spices, and rich leather, this fragrance envelops the wearer in an aura of undeniable authority and quiet luxury.',
     scentCharacter: 'Smoky, Balsamic, Opulent, Commanding',
     bestFor: ['Evening Galas', 'Formal Gatherings', 'Winter & Autumn', 'Signature Nights'],
     longevity: '14 - 18 Hours',
@@ -68,7 +68,7 @@ export const PRODUCTS: Product[] = [
     collectionId: 'signature-collection',
     gender: 'men',
     category: 'perfume',
-    impressionNote: 'Artisanal impression formulated by Bin Irfan Fragrance. Independent creation inspired by the olfactory style of classic British red aromatics.'
+    impressionNote: 'Artisanal impression formulated by Bin Irfan Fragrances. Independent creation inspired by the olfactory style of classic British red aromatics.'
   },
 
   // 3. Paradise (Featuring new crystal sapphire photography)
@@ -139,7 +139,7 @@ export const PRODUCTS: Product[] = [
     collectionId: 'signature-collection',
     gender: 'men',
     category: 'perfume',
-    impressionNote: 'Artisanal master impression by Bin Irfan Fragrance. Inspired by classic French imperial aromatic compositions.'
+    impressionNote: 'Artisanal master impression by Bin Irfan Fragrances. Inspired by classic French imperial aromatic compositions.'
   },
 
   // 5. Baccarat Rouge 540
@@ -175,7 +175,7 @@ export const PRODUCTS: Product[] = [
     collectionId: 'luxury-collection',
     gender: 'women',
     category: 'perfume',
-    impressionNote: 'Artisanal impression formulated by Bin Irfan Fragrance. Independent creation inspired by French crystal perfumery.'
+    impressionNote: 'Artisanal impression formulated by Bin Irfan Fragrances. Independent creation inspired by French crystal perfumery.'
   },
 
   // 6. Sauvage
@@ -210,7 +210,7 @@ export const PRODUCTS: Product[] = [
     collectionId: 'fresh-collection',
     gender: 'men',
     category: 'perfume',
-    impressionNote: 'Artisanal impression by Bin Irfan Fragrance. Inspired by classic French fresh-spicy aromatic perfumery.'
+    impressionNote: 'Artisanal impression by Bin Irfan Fragrances. Inspired by classic French fresh-spicy aromatic perfumery.'
   },
 
   // 7. Tobacco Vanille
@@ -245,7 +245,7 @@ export const PRODUCTS: Product[] = [
     collectionId: 'signature-collection',
     gender: 'unisex',
     category: 'perfume',
-    impressionNote: 'Artisanal luxury impression formulated by Bin Irfan Fragrance.'
+    impressionNote: 'Artisanal luxury impression formulated by Bin Irfan Fragrances.'
   },
 
   // 8. Blue Night
@@ -399,7 +399,7 @@ export const PRODUCTS: Product[] = [
     tagline: '5 travel-ready atomizers in a luxury slide-drawer presentation box',
     fragranceFamily: 'Fresh & Citrus',
     shortDescription: 'Explore the art of scent before committing to a full flacon. 5 x 10ml deluxe spray atomizers nestled in a soft-blue & gold velvet drawer.',
-    description: 'Discover your signature scent with Bin Irfan Fragrance Explorer Kit. Featuring 5 x 10ml travel-size atomizers crafted with the identical 35% Extrait De Parfum concentration. Includes Black Oud, Paradise, Dunhill Desire, Creed Aventus, and Imperial Musk.',
+    description: 'Discover your signature scent with Bin Irfan Fragrances Explorer Kit. Featuring 5 x 10ml travel-size atomizers crafted with the identical 35% Extrait De Parfum concentration. Includes Black Oud, Paradise, Dunhill Desire, Creed Aventus, and Imperial Musk.',
     scentCharacter: 'Discovery, Multi-faceted, Travel-Friendly, Sublime',
     bestFor: ['First Time Buyers', 'Travel & Pocket Carry', 'Luxury Gift', 'Scent Layering'],
     longevity: '12 - 16 Hours',

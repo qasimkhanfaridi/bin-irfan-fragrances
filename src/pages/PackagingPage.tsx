@@ -9,7 +9,7 @@ export const PackagingPage: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Packaging & Craftsmanship Blueprint | Bin Irfan Fragrance";
+    document.title = "Packaging & Craftsmanship Blueprint | Bin Irfan Fragrances";
   }, []);
 
   const copyToClipboard = (text: string, id: string) => {
@@ -37,7 +37,7 @@ export const PackagingPage: React.FC = () => {
           PACKAGING DESIGN SYSTEM
         </h1>
         <p className="text-sm text-brand-slate-600 font-light leading-relaxed">
-          The standardized packaging and presentation specifications for Bin Irfan Fragrance. Unified across heavy crystal flacons, metallic labels, rigid boxes, unboxing collateral, and photography guidelines.
+          The standardized packaging and presentation specifications for Bin Irfan Fragrances. Unified across heavy crystal flacons, metallic labels, rigid boxes, unboxing collateral, and photography guidelines.
         </p>
       </div>
 
@@ -244,7 +244,7 @@ export const PackagingPage: React.FC = () => {
         {/* Prompts Accordion / Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {PRODUCTS.map((p) => {
-            const promptText = `Luxury commercial perfume product photography for Bin Irfan Fragrance ${p.name}, premium heavy crystal perfume bottle and matching luxury packaging box, preserve the exact Bin Irfan Fragrance logo with metallic gold and soft blue accents, ${p.scentCharacter.toLowerCase()} ambiance, bright white marble podium background with soft morning lighting, realistic glass reflections, premium fragrance advertising photography, sharp product details, photorealistic 8k, no people, no distorted text.`;
+            const promptText = `Luxury commercial perfume product photography for Bin Irfan Fragrances ${p.name}, premium heavy crystal perfume bottle and matching luxury packaging box, preserve the exact Bin Irfan Fragrances logo with metallic gold and soft blue accents, ${p.scentCharacter.toLowerCase()} ambiance, bright white marble podium background with soft morning lighting, realistic glass reflections, premium fragrance advertising photography, sharp product details, photorealistic 8k, no people, no distorted text.`;
 
             return (
               <div

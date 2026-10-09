@@ -21,7 +21,7 @@ export const ShopPage: React.FC = () => {
 
   // Sync with URL query parameters
   useEffect(() => {
-    document.title = "Shop All Luxury Fragrances | Bin Irfan Fragrance";
+    document.title = "Shop All Luxury Fragrances | Bin Irfan Fragrances";
     window.scrollTo(0, 0);
 
     const genderParam = searchParams.get('gender');

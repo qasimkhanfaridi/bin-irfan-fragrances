@@ -33,7 +33,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, links }
               <div className="w-11 h-11 rounded-full border-2 border-brand-gold overflow-hidden shadow-sm bg-white flex-shrink-0">
                 <img
                   src="/brand/logo.jpg"
-                  alt="Official Bin Irfan Fragrance Logo"
+                  alt="Official Bin Irfan Fragrances Logo"
                   className="w-full h-full object-cover"
                 />
               </div>
