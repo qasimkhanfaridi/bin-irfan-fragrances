@@ -50,13 +50,13 @@ export const AboutPage: React.FC = () => {
             </h2>
           </div>
           <p>
-            Founded in Rawalpindi, Pakistan, <strong>Bin Irfan Fragrance</strong> began with a clear mission: fragrance connoisseurs across Pakistan deserve authentic 35% Extrait concentration, multi-layered projection, and pure ingredients without synthetic alcohol harshness or inflated designer markups.
+            Founded in Rawalpindi, Pakistan, <strong>Bin Irfan Fragrances</strong> began with a clear mission: fragrance connoisseurs across Pakistan deserve authentic 35% Extrait concentration, multi-layered projection, and pure ingredients without synthetic alcohol harshness or inflated designer markups.
           </p>
           <p>
             We specialize in crafting artisanal impressions and signature luxury formulations—infusing ultra-high percentages of French and Arabian fragrance oils with aged agarwood, velvety Damascus rose, and pristine Mediterranean citrus chords.
           </p>
           <p>
-            Every flacon is hand-filled, macerated for maximum longevity, and presented in our signature luxury gift packaging with nationwide Cash on Delivery.
+            Every flacon is hand-filled, macerated for maximum longevity, and presented in our signature luxury gift packaging with Same-Day Express Delivery in Rawalpindi &amp; Islamabad and fast nationwide courier shipping.
           </p>
           <div className="pt-3 space-y-2">
             <div className="flex items-center gap-3 text-xs text-brand-slate-800 font-medium">
@@ -118,7 +118,7 @@ export const AboutPage: React.FC = () => {
           </div>
           <h3 className="font-serif text-xl font-bold text-brand-slate-900">Direct Pakistan Delivery</h3>
           <p className="text-xs text-brand-slate-500 leading-relaxed">
-            Direct dispatch with Cash on Delivery nationwide. Fast 2–4 business days delivery to Karachi, Lahore, Islamabad, Peshawar, Rawalpindi, and every corner of Pakistan.
+            Same-Day Express Delivery across Rawalpindi &amp; Islamabad, and fast 2–3 business days courier delivery to Karachi, Lahore, Peshawar, Multan, and all corners of Pakistan on 100% advance payment.
           </p>
         </div>
       </div>

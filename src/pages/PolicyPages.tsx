@@ -16,22 +16,26 @@ export const PolicyPages: React.FC = () => {
       content: (
         <div className="space-y-4 text-xs sm:text-sm text-brand-slate-600 leading-relaxed font-light">
           <p>
-            At <strong>Bin Irfan Fragrance</strong>, every artisanal perfume flacon and bundle is packaged in custom protective cushioning to ensure pristine arrival at your doorstep anywhere in Pakistan.
+            At <strong>Bin Irfan Fragrances</strong>, every artisanal perfume flacon and bundle is packaged in custom protective cushioning to ensure pristine arrival at your doorstep anywhere in Pakistan.
           </p>
           <h3 className="font-serif text-lg font-bold text-brand-slate-900 pt-2">Delivery Timelines</h3>
           <ul className="list-disc pl-5 space-y-1.5">
-            <li><strong>Rawalpindi & Islamabad:</strong> 1 – 2 business days.</li>
-            <li><strong>Lahore, Peshawar, Faisalabad & Gujranwala:</strong> 2 – 3 business days.</li>
-            <li><strong>Karachi, Multan & Sindh:</strong> 2 – 4 business days.</li>
-            <li><strong>Balochistan, KPK remote & Gilgit-Baltistan:</strong> 3 – 5 business days.</li>
+            <li><strong>Rawalpindi &amp; Islamabad:</strong> <strong>Same-Day Express Delivery</strong> for orders confirmed before 5:00 PM via local express rider.</li>
+            <li><strong>Lahore, Peshawar, Faisalabad &amp; Gujranwala:</strong> 2 – 3 business days via express courier.</li>
+            <li><strong>Karachi, Multan &amp; Sindh:</strong> 2 – 3 business days.</li>
+            <li><strong>Balochistan, KPK remote &amp; Gilgit-Baltistan:</strong> 3 – 5 business days.</li>
           </ul>
+          <h3 className="font-serif text-lg font-bold text-brand-slate-900 pt-2">Payment Policy (100% Advance Payment)</h3>
+          <p>
+            Bin Irfan Fragrances operates strictly on an <strong>Advance Payment</strong> basis (Bank Transfer, EasyPaisa, JazzCash, or Raast). We <strong>do not offer Cash on Delivery (COD)</strong>. Advance payment allows us to reserve genuine flacons, prevent transit refusal, and deploy immediate same-day local riders in Rawalpindi &amp; Islamabad.
+          </p>
           <h3 className="font-serif text-lg font-bold text-brand-slate-900 pt-2">Shipping Charges</h3>
           <p>
             Complimentary <strong>Free Shipping</strong> is provided nationwide on all orders totaling <strong>₨ 5,000</strong> or higher. For orders under ₨ 5,000, a flat standard courier fee of ₨ 250 applies.
           </p>
-          <h3 className="font-serif text-lg font-bold text-brand-slate-900 pt-2">Courier Partners</h3>
+          <h3 className="font-serif text-lg font-bold text-brand-slate-900 pt-2">Courier &amp; Express Partners</h3>
           <p>
-            We partner with reliable courier services (TCS, Leopards, M&P, Trax) offering door-to-door tracking and Cash on Delivery (COD).
+            We utilize dedicated local express riders for Rawalpindi &amp; Islamabad same-day deliveries and trusted courier partners (TCS, Leopards, Trax) for nationwide tracking and delivery.
           </p>
         </div>
       )

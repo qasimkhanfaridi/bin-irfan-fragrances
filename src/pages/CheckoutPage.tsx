@@ -29,11 +29,12 @@ export const CheckoutPage: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Direct WhatsApp Checkout | Bin Irfan Fragrance";
+    document.title = "Advance Payment Checkout | Bin Irfan Fragrances";
   }, []);
 
   const shippingFee = cartTotalPKR >= 5000 || cart.length === 0 ? 0 : 250;
   const grandTotal = cartTotalPKR + shippingFee;
+  const isTwinCities = /rawalpindi|islamabad|rwp|isb/i.test(formData.city.trim());
 
   const handleWhatsAppCheckout = (e: React.FormEvent) => {
     e.preventDefault();
@@ -48,22 +49,28 @@ export const CheckoutPage: React.FC = () => {
       i => `• ${i.product.name} (${i.size}) × ${i.quantity} = ${formatPrice(i.pricePKR * i.quantity)}`
     ).join('\n');
 
-    let msg = `👑 *NEW ORDER — BIN IRFAN FRAGRANCE*\n`;
+    let msg = `👑 *NEW ORDER — BIN IRFAN FRAGRANCES*\n`;
     msg += `-----------------------------------------\n`;
     msg += `*Order Reference:* ${orderRef}\n`;
     msg += `*Customer:* ${formData.fullName.trim()}\n`;
     msg += `*WhatsApp/Phone:* ${formData.phone.trim()}\n`;
     msg += `*City:* ${formData.city.trim()}\n`;
     msg += `*Delivery Address:* ${formData.address.trim()}\n`;
+    if (isTwinCities) {
+      msg += `*Delivery Priority:* ⚡ Same-Day Express Delivery (Rawalpindi & Islamabad)\n`;
+    } else {
+      msg += `*Delivery Priority:* Nationwide Express Courier (2–3 Days)\n`;
+    }
     if (formData.notes.trim()) {
       msg += `*Instructions:* ${formData.notes.trim()}\n`;
     }
     msg += `\n*Items Ordered:*\n${itemsList}\n\n`;
     msg += `*Subtotal:* ${formatPrice(cartTotalPKR)}\n`;
     msg += `*Shipping:* ${shippingFee === 0 ? 'FREE (Orders over ₨ 5,000)' : formatPrice(shippingFee)}\n`;
-    msg += `*Total Amount (COD):* ${formatPrice(grandTotal)}\n`;
+    msg += `*Total Payable:* ${formatPrice(grandTotal)}\n`;
+    msg += `*Payment Mode:* 100% Advance Payment (Bank Transfer / EasyPaisa / JazzCash)\n`;
     msg += `-----------------------------------------\n`;
-    msg += `Please confirm my order and courier dispatch. Thank you!`;
+    msg += `I am sharing my advance payment screenshot for instant order verification & dispatch. Thank you!`;
 
     const waUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
 
@@ -75,6 +82,7 @@ export const CheckoutPage: React.FC = () => {
       address: formData.address,
       items: [...cart],
       total: grandTotal,
+      isTwinCities: isTwinCities,
       waUrl: waUrl
     });
 
@@ -89,8 +97,8 @@ export const CheckoutPage: React.FC = () => {
     return (
       <div className="min-h-screen bg-brand-light-bg py-16 px-4 sm:px-6 max-w-xl mx-auto text-center space-y-6">
         <SEOHead
-          title="Order Confirmed | Bin Irfan Fragrance"
-          description="Your order has been placed with Bin Irfan Fragrance. Track courier dispatch and Cash on Delivery updates."
+          title="Order Placed — Advance Payment Verification | Bin Irfan Fragrances"
+          description="Your order has been placed with Bin Irfan Fragrances. Please submit your advance payment screenshot on WhatsApp to confirm immediate dispatch."
           canonicalPath="/checkout"
         />
         <div className="w-20 h-20 mx-auto rounded-full bg-emerald-50 border-2 border-emerald-500 flex items-center justify-center text-emerald-600 shadow-soft">
@@ -105,8 +113,29 @@ export const CheckoutPage: React.FC = () => {
             Thank You, {completedOrder.name}!
           </h1>
           <p className="text-xs sm:text-sm text-brand-slate-600 max-w-md mx-auto">
-            Your order details have been forwarded to the official <strong>Bin Irfan Fragrance</strong> concierge (+92 321 5186400) for instant dispatch confirmation.
+            Your order details have been forwarded to the official <strong>Bin Irfan Fragrances</strong> concierge (+92 321 5186400).
           </p>
+        </div>
+
+        {/* Advance Payment Notice Box */}
+        <div className="p-4 rounded-2xl bg-amber-50 border border-amber-200 text-left text-xs space-y-2">
+          <div className="flex items-center gap-2 text-amber-900 font-bold">
+            <Sparkles className="w-4 h-4 text-amber-600" />
+            <span>Next Step: Complete Advance Payment</span>
+          </div>
+          <p className="text-[11px] text-amber-800 leading-relaxed">
+            Please transfer <strong>{formatPrice(completedOrder.total)}</strong> via EasyPaisa, JazzCash, or Bank Transfer and send the screenshot to our WhatsApp (+92 321 5186400).
+          </p>
+          <div className="p-2.5 bg-white rounded-xl border border-amber-200/60 font-mono text-[11px] text-slate-800 space-y-1">
+            <p><strong>EasyPaisa / JazzCash:</strong> 0321 5186400</p>
+            <p><strong>Account Title:</strong> Bin Irfan Fragrances</p>
+            <p><strong>Bank Account:</strong> Inquire on WhatsApp for IBAN / Raast</p>
+          </div>
+          {completedOrder.isTwinCities && (
+            <p className="text-[11px] text-emerald-800 font-semibold">
+              ⚡ <strong>Same-Day Delivery:</strong> Once payment is confirmed, local rider will deliver today in Rawalpindi / Islamabad!
+            </p>
+          )}
         </div>
 
         {/* Order Receipt Box */}
@@ -118,7 +147,7 @@ export const CheckoutPage: React.FC = () => {
 
           <div className="flex justify-between border-b border-brand-slate-100 pb-2.5">
             <span className="text-brand-slate-500">Payment Mode:</span>
-            <span className="font-bold text-emerald-600">Cash on Delivery (COD)</span>
+            <span className="font-bold text-amber-700">100% Advance Payment</span>
           </div>
 
           <div className="flex justify-between border-b border-brand-slate-100 pb-2.5">
@@ -138,7 +167,7 @@ export const CheckoutPage: React.FC = () => {
           </div>
 
           <div className="flex justify-between pt-1 font-bold">
-            <span className="text-brand-slate-900">Total Payable (COD):</span>
+            <span className="text-brand-slate-900">Total Payable:</span>
             <span className="font-serif text-xl text-brand-blue-900">
               {formatPrice(completedOrder.total)}
             </span>
@@ -153,7 +182,7 @@ export const CheckoutPage: React.FC = () => {
             className="w-full py-4 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-widest transition-all flex items-center justify-center gap-2 shadow-md"
           >
             <MessageCircle className="w-5 h-5" />
-            <span>Open WhatsApp Chat (+92 321 5186400)</span>
+            <span>Open WhatsApp &amp; Send Payment Receipt</span>
           </a>
 
           <Link
@@ -217,8 +246,8 @@ export const CheckoutPage: React.FC = () => {
                 <MapPin className="w-5 h-5 text-brand-blue-600" />
                 <span>Delivery Address in Pakistan</span>
               </h3>
-              <span className="text-xs text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full font-bold">
-                Cash on Delivery
+              <span className="text-xs text-amber-800 bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded-full font-bold">
+                100% Advance Payment
               </span>
             </div>
 
@@ -259,13 +288,24 @@ export const CheckoutPage: React.FC = () => {
                   <input
                     type="text"
                     required
-                    placeholder="e.g. Lahore, Karachi, Islamabad..."
+                    placeholder="e.g. Rawalpindi, Islamabad, Lahore..."
                     value={formData.city}
                     onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                     className="w-full bg-brand-light-bg border border-brand-slate-200 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-slate-900 placeholder-brand-slate-400 focus:border-brand-blue-500 outline-none"
                   />
                 </div>
               </div>
+
+              {/* Dynamic Same-Day Delivery Callout for Rawalpindi / Islamabad */}
+              {isTwinCities && (
+                <div className="p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200/80 text-emerald-900 text-xs flex items-center gap-3 animate-fade-in">
+                  <Sparkles className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                  <div>
+                    <span className="font-bold block">⚡ Same-Day Delivery Active for Rawalpindi &amp; Islamabad!</span>
+                    <span className="text-[11px] text-emerald-700">Orders verified before 5:00 PM are dispatched today via local express rider.</span>
+                  </div>
+                </div>
+              )}
 
               <div>
                 <label className="text-xs font-bold uppercase tracking-wider text-brand-slate-700 block mb-1.5">
@@ -292,6 +332,34 @@ export const CheckoutPage: React.FC = () => {
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                   className="w-full bg-brand-light-bg border border-brand-slate-200 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-slate-900 placeholder-brand-slate-400 focus:border-brand-blue-500 outline-none"
                 />
+              </div>
+
+              {/* Advance Payment Instructions Box */}
+              <div className="p-4 rounded-2xl bg-brand-blue-50/80 border border-brand-blue-200/70 space-y-2 text-xs">
+                <div className="flex items-center gap-2 text-brand-blue-900 font-bold">
+                  <ShieldCheck className="w-4 h-4 text-brand-blue-700" />
+                  <span>100% Advance Payment Policy (No Cash on Delivery)</span>
+                </div>
+                <p className="text-brand-slate-600 leading-relaxed text-[11px]">
+                  To guarantee fast express routing and same-day rider dispatch in Rawalpindi &amp; Islamabad, all orders require advance payment.
+                </p>
+                <div className="p-3 bg-white rounded-xl border border-brand-blue-100 space-y-1.5 text-[11px] text-brand-slate-800">
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold text-brand-slate-500">EasyPaisa / JazzCash:</span>
+                    <span className="font-mono font-bold text-brand-blue-900">0321 5186400</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold text-brand-slate-500">Account Title:</span>
+                    <span className="font-bold text-brand-blue-900">Bin Irfan Fragrances</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold text-brand-slate-500">Bank Transfer / Raast:</span>
+                    <span className="text-brand-slate-700 font-medium">Provided on WhatsApp concierge</span>
+                  </div>
+                </div>
+                <p className="text-[10px] text-brand-blue-800 font-medium">
+                  📸 After clicking below, send your transfer screenshot on WhatsApp for instant confirmation.
+                </p>
               </div>
             </div>
           </div>
@@ -333,13 +401,13 @@ export const CheckoutPage: React.FC = () => {
                 <span className="font-bold text-brand-slate-900">{formatPrice(cartTotalPKR)}</span>
               </div>
               <div className="flex justify-between">
-                <span>Nationwide Courier:</span>
+                <span>{isTwinCities ? 'Same-Day Express Rider:' : 'Nationwide Courier:'}</span>
                 <span className="font-bold text-brand-blue-700">
                   {shippingFee === 0 ? 'FREE' : formatPrice(shippingFee)}
                 </span>
               </div>
               <div className="flex justify-between text-base font-bold pt-3 border-t border-brand-slate-200 text-brand-slate-900">
-                <span>Total Payable (COD):</span>
+                <span>Total Payable (Advance):</span>
                 <span className="font-serif text-2xl text-brand-blue-900">{formatPrice(grandTotal)}</span>
               </div>
             </div>
@@ -356,10 +424,10 @@ export const CheckoutPage: React.FC = () => {
             <div className="text-[11px] text-center text-brand-slate-500 space-y-1.5 pt-1">
               <p className="flex items-center justify-center gap-1.5 text-emerald-700 font-semibold">
                 <CheckCircle2 className="w-3.5 h-3.5" />
-                <span>Orders arrive in 2–4 business days with Cash on Delivery</span>
+                <span>⚡ Same-Day Delivery in Rwp/Isb • 100% Advance Payment</span>
               </p>
               <p className="text-[10px] text-brand-slate-400">
-                Official Concierge: +92 321 5186400
+                Official WhatsApp Concierge: +92 321 5186400
               </p>
             </div>
           </div>

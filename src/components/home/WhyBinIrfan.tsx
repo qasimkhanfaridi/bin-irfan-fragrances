@@ -20,8 +20,8 @@ export const WhyBinIrfan: React.FC = () => {
     },
     {
       icon: ShieldCheck,
-      title: 'NATIONWIDE COD & EXCHANGE',
-      description: 'Delivered directly to your doorstep across Pakistan in 2–4 business days with Cash on Delivery and a 7-day hassle-free exchange policy.'
+      title: 'SAME-DAY DISPATCH & ADVANCE PAYMENT',
+      description: 'Same-day express rider delivery across Rawalpindi & Islamabad, and 2–3 day fast nationwide courier. Secure 100% advance payment via Bank Transfer, EasyPaisa, or JazzCash.'
     }
   ];
 

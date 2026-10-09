@@ -115,6 +115,6 @@ export interface OrderRecord {
   subtotal: number;
   shipping: number;
   total: number;
-  paymentMethod: 'cod' | 'whatsapp' | 'card';
+  paymentMethod: 'advance' | 'whatsapp' | 'card' | 'cod';
   status: 'Pending' | 'Confirmed' | 'Dispatched' | 'Delivered' | 'Cancelled';
 }

@@ -10,8 +10,8 @@ export const getSiteUrl = (): string => {
 export const DEFAULT_SEO = {
   siteName: 'Bin Irfan Fragrances',
   title: 'Bin Irfan Fragrances | Handcrafted 35% Extrait De Parfum & Perfumes Rawalpindi',
-  description: 'Official Bin Irfan Fragrances atelier located at Dhoke Chiragh Deen, Rawalpindi. Handcrafted 35% Extrait de Parfum flacons, luxury perfume bundles, 14+ hour long-lasting projection, and nationwide Cash on Delivery (COD).',
-  keywords: 'Bin Irfan Fragrances, perfume shop Rawalpindi, perfumes in Rawalpindi, Dhoke Chiragh Deen perfume, buy perfume Pakistan, Black Oud perfume, Extrait de Parfum Pakistan, long lasting perfumes Rawalpindi, Islamabad fragrance, designer impressions Pakistan, cash on delivery perfume, best fragrance for men, luxury women perfume, order perfume online',
+  description: 'Official Bin Irfan Fragrances atelier located at Dhoke Chiragh Deen, Rawalpindi. Handcrafted 35% Extrait de Parfum flacons, Same-Day Express Delivery in Rawalpindi & Islamabad, 100% Advance Payment (Bank Transfer, EasyPaisa, JazzCash), and fast nationwide shipping.',
+  keywords: 'Bin Irfan Fragrances, same day perfume delivery Rawalpindi, same day delivery Islamabad, perfume shop Rawalpindi, perfumes in Rawalpindi, advance payment perfume Pakistan, Dhoke Chiragh Deen perfume, buy perfume Pakistan, Black Oud perfume, Extrait de Parfum Pakistan, long lasting perfumes Rawalpindi, Islamabad fragrance, designer impressions Pakistan, luxury perfume Rawalpindi, order perfume online Pakistan',
   defaultImage: '/brand/logo.jpg',
   storeAddress: {
     streetAddress: 'H3X9+8X4, Dhoke Chiragh Deen',
@@ -48,7 +48,7 @@ export const getStoreSchema = (siteUrl = getSiteUrl()) => {
           'Bin Irfan Perfumes Rawalpindi',
           'بن عرفان پرفیومز'
         ],
-        disambiguatingDescription: 'Bin Irfan Fragrances is an independent artisanal luxury perfume atelier in Dhoke Chiragh Deen, Rawalpindi, specializing exclusively in 35% Extrait De Parfum flacons and royal attars. Not affiliated with Bin Irfan clothing or garments in Satellite Town.',
+        disambiguatingDescription: 'Bin Irfan Fragrances is an independent artisanal luxury perfume atelier in Dhoke Chiragh Deen, Rawalpindi, offering same-day delivery in Rawalpindi & Islamabad and specializing exclusively in 35% Extrait De Parfum flacons and royal attars on 100% advance payment. Not affiliated with Bin Irfan clothing or garments in Satellite Town.',
         url: siteUrl,
         logo: `${siteUrl}/brand/logo.jpg`,
         image: `${siteUrl}/brand/logo.jpg`,
@@ -57,7 +57,7 @@ export const getStoreSchema = (siteUrl = getSiteUrl()) => {
         email: DEFAULT_SEO.contact.email,
         priceRange: 'PKR 2,450 - PKR 8,500',
         currenciesAccepted: 'PKR',
-        paymentAccepted: 'Cash on Delivery, Bank Transfer, EasyPaisa, JazzCash',
+        paymentAccepted: 'Bank Transfer, EasyPaisa, JazzCash, Raast (Advance Payment Only)',
         address: {
           '@type': 'PostalAddress',
           streetAddress: DEFAULT_SEO.storeAddress.streetAddress,
@@ -200,8 +200,8 @@ export const getProductSchema = (product: Product, siteUrl = getSiteUrl()) => {
             },
             transitTime: {
               '@type': 'QuantitativeValue',
-              minValue: 2,
-              maxValue: 4,
+              minValue: 0,
+              maxValue: 3,
               unitCode: 'DAY'
             }
           }
@@ -232,6 +232,6 @@ export const getOrderTrackingSchema = (siteUrl = getSiteUrl()) => {
       name: 'Pakistan'
     },
     termsOfService: `${siteUrl}/policies/shipping`,
-    description: 'Track your Bin Irfan Fragrances parcel delivery and Cash on Delivery courier status across Pakistan with real-time updates and direct WhatsApp support.'
+    description: 'Track your Bin Irfan Fragrances parcel delivery and courier status across Pakistan with real-time updates and direct WhatsApp support.'
   };
 };

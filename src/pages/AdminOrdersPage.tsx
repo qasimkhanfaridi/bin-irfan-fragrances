@@ -193,7 +193,7 @@ export const AdminOrdersPage: React.FC = () => {
             <span className="font-serif text-2xl font-bold text-brand-blue-900">
               ₨ {totalRevenue.toLocaleString()}
             </span>
-            <span className="text-xs text-emerald-600 font-bold">100% COD / Web</span>
+            <span className="text-xs text-amber-700 font-bold">100% Advance / Web</span>
           </div>
         </div>
 
@@ -412,7 +412,7 @@ export const AdminOrdersPage: React.FC = () => {
 
               {/* Total & Payment */}
               <div className="flex justify-between items-center pt-1 font-bold text-sm">
-                <span>TOTAL COD CASH TO COLLECT:</span>
+                <span>TOTAL ADVANCE AMOUNT:</span>
                 <span className="font-serif text-lg text-emerald-700">₨ {selectedOrder.total.toLocaleString()}</span>
               </div>
 

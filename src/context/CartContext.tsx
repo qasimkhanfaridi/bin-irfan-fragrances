@@ -109,17 +109,23 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const generateCartWhatsAppLink = (customerName: string = '', customerCity: string = ''): string => {
     if (cart.length === 0) {
-      return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Assalam-o-Alaikum Bin Irfan Fragrances, I would like to place an order via Cash on Delivery.")}`;
+      return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Assalam-o-Alaikum Bin Irfan Fragrances, I would like to place an order via Advance Payment.")}`;
     }
     let itemsText = cart.map(i => `• ${i.product.name} (${i.size}) × ${i.quantity} = ${formatPrice(i.pricePKR * i.quantity)}`).join('\n');
-    let msg = `*BIN IRFAN FRAGRANCES — NEW ORDER (COD)*\n\nAssalam-o-Alaikum,\nI would like to confirm my order:\n\n${itemsText}\n\n*Total Amount:* ${formatPrice(cartTotalPKR)}`;
+    let msg = `*BIN IRFAN FRAGRANCES — NEW ORDER*\n\nAssalam-o-Alaikum,\nI would like to confirm my order:\n\n${itemsText}\n\n*Total Amount:* ${formatPrice(cartTotalPKR)}`;
     if (customerName) {
       msg += `\n*Customer Name:* ${customerName}`;
     }
     if (customerCity) {
       msg += `\n*City / Delivery Address:* ${customerCity}`;
+      const isTwinCities = /rawalpindi|islamabad|rwp|isb/i.test(customerCity);
+      if (isTwinCities) {
+        msg += `\n*Delivery Option:* ⚡ Same-Day Express Delivery (Rawalpindi & Islamabad)`;
+      } else {
+        msg += `\n*Delivery Option:* Nationwide Express Courier (2–3 Days)`;
+      }
     }
-    msg += `\n*Payment Mode:* Cash on Delivery (COD)\n\nPlease confirm dispatch details. Thank you!`;
+    msg += `\n*Payment Mode:* Advance Payment (Bank Transfer / EasyPaisa / JazzCash)\n\nPlease share payment transfer details so I can send the confirmation screenshot. Thank you!`;
     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
   };
 

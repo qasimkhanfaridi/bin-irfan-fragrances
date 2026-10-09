@@ -216,8 +216,8 @@ export const CartDrawer: React.FC = () => {
                 </a>
               </div>
 
-              <p className="text-[10px] text-center text-brand-slate-400 pt-1">
-                🔒 Safe & Secure Checkout • Cash on Delivery Available
+              <p className="text-[10px] text-center text-brand-slate-500 pt-1">
+                ⚡ Same-Day Delivery in Rawalpindi &amp; Islamabad • Advance Payment Only
               </p>
             </div>
           )}

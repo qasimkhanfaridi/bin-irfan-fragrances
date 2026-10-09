@@ -6,7 +6,7 @@ export const FAQPage: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Frequently Asked Questions | Bin Irfan Fragrance";
+    document.title = "Frequently Asked Questions | Bin Irfan Fragrances";
   }, []);
 
   const faqs = [
@@ -19,8 +19,12 @@ export const FAQPage: React.FC = () => {
       a: 'Because of our high pure-oil formulation, our perfumes average 12 to 16+ hours on skin, and frequently 24+ hours on fabrics and clothing. Richer compositions like Royal Trio and Aventus Intense offer heavy sillage that commands the room without being synthetic.'
     },
     {
-      q: 'Do you offer Cash on Delivery (COD) across Pakistan?',
-      a: 'Yes! We provide Cash on Delivery across all cities, towns, and villages throughout Pakistan (Karachi, Lahore, Islamabad, Rawalpindi, Peshawar, Multan, Faisalabad, Quetta, and beyond). Orders typically arrive within 2 to 4 business days.'
+      q: 'Do you offer Cash on Delivery (COD)? What is your payment policy?',
+      a: 'Bin Irfan Fragrances operates exclusively on 100% Advance Payment (Bank Transfer, EasyPaisa, JazzCash, or Raast). We do NOT offer Cash on Delivery. Advance payment ensures genuine orders and enables our dedicated express riders to deliver same-day in Rawalpindi and Islamabad.'
+    },
+    {
+      q: 'How fast is delivery? Is same-day delivery available?',
+      a: 'Yes! In Rawalpindi and Islamabad, we offer Same-Day Express Delivery for orders confirmed before 5:00 PM via local express rider. For all other cities across Pakistan (Karachi, Lahore, Peshawar, Faisalabad, Multan, etc.), parcels arrive within 2 to 3 business days via express tracked couriers.'
     },
     {
       q: 'How do I place an order directly on WhatsApp?',

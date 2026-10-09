@@ -247,7 +247,7 @@ export const CartPage: React.FC = () => {
 
               <div className="pt-2 text-center text-[11px] text-brand-slate-500 flex items-center justify-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                <span>Cash on Delivery • 100% Authentic Extrait Guarantee</span>
+                <span>⚡ Same-Day Delivery in Rwp/Isb • 100% Advance Payment</span>
               </div>
             </div>
           </div>

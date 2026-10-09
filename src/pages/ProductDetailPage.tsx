@@ -94,8 +94,8 @@ export const ProductDetailPage: React.FC = () => {
     <div className="min-h-screen bg-brand-light-bg pt-6 pb-24 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <SEOHead
         title={`${product.name} — 35% Extrait De Parfum`}
-        description={`Buy ${product.name} by Bin Irfan Fragrance. ${product.shortDescription || product.tagline} Handcrafted 35% concentration Extrait with 14+ hour longevity. Cash on Delivery across Pakistan.`}
-        keywords={`${product.name}, buy ${product.name} Pakistan, Bin Irfan ${product.name}, ${product.fragranceFamily}, long lasting perfume Pakistan, cash on delivery`}
+        description={`Buy ${product.name} by Bin Irfan Fragrances. ${product.shortDescription || product.tagline} Handcrafted 35% concentration Extrait with 14+ hour longevity. Same-Day Delivery in Rawalpindi & Islamabad on Advance Payment.`}
+        keywords={`${product.name}, buy ${product.name} Pakistan, Bin Irfan ${product.name}, ${product.fragranceFamily}, same day perfume delivery Rawalpindi, perfume Islamabad, advance payment`}
         image={product.image}
         canonicalPath={`/product/${product.slug}`}
         type="product"
@@ -203,8 +203,8 @@ export const ProductDetailPage: React.FC = () => {
           <div className="grid grid-cols-3 gap-3 pt-2 text-center text-xs text-brand-slate-600">
             <div className="p-3.5 rounded-2xl bg-white border border-brand-slate-200/80 shadow-soft">
               <Truck className="w-5 h-5 text-brand-blue-600 mx-auto mb-1.5" />
-              <span className="text-[11px] block font-bold text-brand-slate-800">Nationwide COD</span>
-              <span className="text-[10px] text-brand-slate-400">Cash on Delivery</span>
+              <span className="text-[11px] block font-bold text-brand-slate-800">Same-Day Express</span>
+              <span className="text-[10px] text-brand-slate-400">Rawalpindi &amp; Islamabad</span>
             </div>
             <div className="p-3.5 rounded-2xl bg-white border border-brand-slate-200/80 shadow-soft">
               <Award className="w-5 h-5 text-brand-gold-dark mx-auto mb-1.5" />
@@ -403,10 +403,16 @@ export const ProductDetailPage: React.FC = () => {
               </a>
             </div>
 
-            {/* Free shipping trigger hint */}
-            <p className="text-center text-[11px] text-brand-slate-500 pt-1">
-              🚚 <strong>Free express delivery</strong> across Pakistan on orders over ₨ 5,000
-            </p>
+            {/* Same-day & Advance payment guarantee box */}
+            <div className="rounded-2xl bg-brand-blue-50/70 border border-brand-blue-100 p-3 text-center space-y-1 mt-1">
+              <p className="text-[11px] text-brand-blue-900 font-semibold flex items-center justify-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-brand-gold" />
+                <span><strong>Same-Day Express Delivery</strong> in Rawalpindi &amp; Islamabad (Orders before 5 PM)</span>
+              </p>
+              <p className="text-[10px] text-brand-slate-600">
+                100% Advance Payment (EasyPaisa / JazzCash / Bank) • Free shipping over ₨ 5,000
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -584,7 +590,7 @@ export const ProductDetailPage: React.FC = () => {
               "Packaging matches international luxury houses."
             </p>
             <p className="text-xs text-brand-slate-600 leading-relaxed font-light">
-              The presentation box with the Bin Irfan medallion looks stunning on my vanity dresser. Extremely fast COD delivery.
+              The presentation box with the Bin Irfan medallion looks stunning on my vanity dresser. Extremely fast same-day delivery in Islamabad.
             </p>
             <div className="pt-2 border-t border-brand-slate-100 flex items-center justify-between text-[11px]">
               <span className="font-medium text-brand-slate-800">Fatima Z. — Islamabad</span>

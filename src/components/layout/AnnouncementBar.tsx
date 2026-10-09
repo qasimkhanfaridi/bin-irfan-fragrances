@@ -15,11 +15,11 @@ export const AnnouncementBar: React.FC = () => {
         <div className="flex items-center gap-2 overflow-hidden text-[10px] sm:text-xs truncate">
           <span className="flex items-center gap-1.5 font-medium tracking-wide truncate">
             <Sparkles className="w-3.5 h-3.5 text-brand-gold flex-shrink-0" />
-            <span className="hidden sm:inline truncate">Free Delivery over ₨ 5,000 across Pakistan</span>
-            <span className="sm:hidden truncate">Free Delivery over ₨ 5,000</span>
+            <span className="hidden sm:inline truncate">⚡ Same-Day Express Delivery in Rawalpindi &amp; Islamabad • Advance Payment Only • Free Shipping over ₨ 5,000</span>
+            <span className="sm:hidden truncate">⚡ Same-Day Delivery (Rwp / Isb) • Advance Payment</span>
           </span>
-          <span className="hidden md:inline-block text-white/40">•</span>
-          <span className="hidden md:flex items-center gap-1 text-brand-blue-light text-[11px]">
+          <span className="hidden lg:inline-block text-white/40">•</span>
+          <span className="hidden lg:flex items-center gap-1 text-brand-blue-light text-[11px]">
             <ShieldCheck className="w-3.5 h-3.5 text-brand-gold flex-shrink-0" />
             <span>35% Pure Extrait De Parfum</span>
           </span>

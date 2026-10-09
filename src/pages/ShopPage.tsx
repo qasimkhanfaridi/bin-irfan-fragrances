@@ -103,8 +103,8 @@ export const ShopPage: React.FC = () => {
     <div className="min-h-screen py-10 sm:py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <SEOHead
         title="Shop All Luxury Fragrances & Extrait De Parfum"
-        description="Browse the complete Bin Irfan Fragrance collection. Handcrafted 35% concentration Extrait de Parfum flacons, royal oud, woody, oriental and aquatic perfumes with Cash on Delivery across Pakistan."
-        keywords="shop perfumes online Pakistan, Bin Irfan collection, buy Extrait de parfum, fragrance catalogue Pakistan, perfume COD"
+        description="Browse the complete Bin Irfan Fragrances collection. Handcrafted 35% concentration Extrait de Parfum flacons with Same-Day Delivery in Rawalpindi & Islamabad on 100% Advance Payment."
+        keywords="shop perfumes online Pakistan, Bin Irfan Fragrances collection, buy Extrait de parfum Rawalpindi, fragrance catalogue Pakistan, advance payment perfume"
         canonicalPath="/shop"
       />
       

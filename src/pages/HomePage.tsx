@@ -21,7 +21,7 @@ export const HomePage: React.FC = () => {
     <div className="space-y-0">
       <SEOHead
         title="Bin Irfan Fragrances | Luxury Extrait De Parfum & Perfumes Rawalpindi, Pakistan"
-        description="Official Bin Irfan Fragrances store. Handcrafted 35% Extrait de Parfum flacons, luxury perfume bundles, long-lasting impressions, and fast nationwide Cash on Delivery (COD) across Pakistan."
+        description="Official Bin Irfan Fragrances store. Handcrafted 35% Extrait de Parfum flacons, luxury perfume bundles, Same-Day Express Delivery in Rawalpindi & Islamabad on 100% Advance Payment, and fast nationwide shipping."
         canonicalPath="/"
         schema={getStoreSchema()}
       />

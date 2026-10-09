@@ -21,7 +21,7 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
     url: `${siteUrl}/perfume-shop-rawalpindi`,
     priceRange: 'PKR 2,450 - PKR 8,500',
     currenciesAccepted: 'PKR',
-    paymentAccepted: 'Cash on Delivery, Bank Transfer',
+    paymentAccepted: 'Bank Transfer, EasyPaisa, JazzCash, Raast (Advance Payment Only)',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'H3X9+8X4, Dhoke Chiragh Deen',
@@ -53,9 +53,9 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-brand-light-bg text-brand-slate-900">
       <SEOHead
-        title="Perfume Shop in Rawalpindi | Bin Irfan Fragrances Studio & COD"
-        description="Official Bin Irfan Fragrances studio in Dhoke Chiragh Deen, Rawalpindi (Plus Code H3X9+8X4). 35% Extrait De Parfum flacons, Cash on Delivery across Rawalpindi & Islamabad."
-        keywords="perfume shop in Rawalpindi, perfumes in Rawalpindi, best perfumes in Rawalpindi, Dhoke Chiragh Deen perfume, Bin Irfan Fragrances Rawalpindi, perfumes Saddar Rawalpindi, Bahria Town Rawalpindi perfumes, cash on delivery perfumes Islamabad Rawalpindi"
+        title="Perfume Shop in Rawalpindi | Same-Day Delivery in Rawalpindi & Islamabad"
+        description="Official Bin Irfan Fragrances studio in Dhoke Chiragh Deen, Rawalpindi (Plus Code H3X9+8X4). 35% Extrait De Parfum flacons, Same-Day Express Delivery across Rawalpindi & Islamabad on 100% Advance Payment."
+        keywords="perfume shop in Rawalpindi, perfumes in Rawalpindi, same day perfume delivery Rawalpindi, same day delivery Islamabad, best perfumes in Rawalpindi, Dhoke Chiragh Deen perfume, Bin Irfan Fragrances Rawalpindi, advance payment perfumes Islamabad Rawalpindi"
         canonicalPath="/perfume-shop-rawalpindi"
         schema={localBusinessSchema}
       />
@@ -203,10 +203,10 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
               <span>Express Twin-Cities Delivery</span>
             </div>
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-slate-900">
-              Cash on Delivery in Rawalpindi &amp; Islamabad
+              Same-Day Express Delivery in Rawalpindi &amp; Islamabad
             </h2>
             <p className="text-sm text-brand-slate-500 max-w-2xl mx-auto">
-              Enjoy lightning-fast dispatch directly from our local Rawalpindi studio to your doorstep. Free delivery on orders over ₨ 5,000.
+              Enjoy lightning-fast same-day express rider dispatch directly from our local Rawalpindi studio to your doorstep for orders placed before 5:00 PM on 100% advance payment. Free delivery on orders over ₨ 5,000.
             </p>
           </div>
 
@@ -316,19 +316,19 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
 
           <div className="p-5 rounded-2xl bg-white border border-brand-slate-200 shadow-soft">
             <h4 className="font-serif font-bold text-brand-slate-900 text-sm">
-              Is Cash on Delivery available in Rawalpindi and Islamabad?
+              Do you offer Cash on Delivery (COD) in Rawalpindi or Islamabad?
             </h4>
             <p className="text-xs text-brand-slate-600 mt-2 leading-relaxed">
-              Yes. 100% Cash on Delivery (COD) is available across all sectors of Rawalpindi and Islamabad. You pay the courier upon inspecting your parcel at your doorstep.
+              No. Bin Irfan Fragrances operates strictly on 100% Advance Payment (Bank Transfer, EasyPaisa, JazzCash, or Raast). Advance payment ensures authentic orders and enables instant routing via local express riders without courier delays.
             </p>
           </div>
 
           <div className="p-5 rounded-2xl bg-white border border-brand-slate-200 shadow-soft">
             <h4 className="font-serif font-bold text-brand-slate-900 text-sm">
-              How long does local delivery take within the Twin Cities?
+              How long does local delivery take within Rawalpindi &amp; Islamabad?
             </h4>
             <p className="text-xs text-brand-slate-600 mt-2 leading-relaxed">
-              Orders confirmed before 2:00 PM are typically dispatched the same day or within 24 hours. Local riders deliver across Rawalpindi and Islamabad within 24 to 48 hours.
+              We offer Same-Day Express Delivery! If you confirm your order and send your advance payment screenshot before 5:00 PM, our dedicated rider delivers your luxury flacons to your doorstep that very evening.
             </p>
           </div>
         </div>

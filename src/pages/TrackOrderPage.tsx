@@ -62,8 +62,8 @@ export const TrackOrderPage: React.FC = () => {
     <div className="min-h-screen bg-brand-light-bg py-12 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto space-y-12">
       <SEOHead
         title="Track Your Order & Courier Status"
-        description="Check real-time delivery status for your Bin Irfan Fragrance Cash on Delivery order. Nationwide courier dispatch via Trax & TCS across Karachi, Lahore, Islamabad, and Rawalpindi."
-        keywords="track perfume order, Bin Irfan order status, perfume courier tracking Pakistan, COD order status, TCS perfume delivery, Trax express Pakistan"
+        description="Check real-time delivery status for your Bin Irfan Fragrances order. Same-day express delivery in Rawalpindi & Islamabad and nationwide courier dispatch via Trax & TCS."
+        keywords="track perfume order, Bin Irfan order status, perfume courier tracking Pakistan, same day delivery Rawalpindi, TCS perfume delivery, Trax express Pakistan"
         canonicalPath="/track-order"
         schema={getOrderTrackingSchema()}
       />
@@ -146,7 +146,7 @@ export const TrackOrderPage: React.FC = () => {
               <div className="text-xs text-brand-slate-600 space-y-1">
                 <p><strong>Customer:</strong> {recentOrder.customerName}</p>
                 <p><strong>Destination:</strong> {recentOrder.city}</p>
-                <p><strong>Total (COD):</strong> ₨ {recentOrder.total.toLocaleString()}</p>
+                <p><strong>Total (Advance Paid):</strong> ₨ {recentOrder.total.toLocaleString()}</p>
               </div>
             </div>
           ) : (
@@ -243,9 +243,9 @@ export const TrackOrderPage: React.FC = () => {
           <div className="w-10 h-10 rounded-xl bg-brand-blue-50 text-brand-blue-600 flex items-center justify-center">
             <ShieldCheck className="w-5 h-5" />
           </div>
-          <h3 className="font-serif font-bold text-brand-slate-900 text-sm">Safe Doorstep COD</h3>
+          <h3 className="font-serif font-bold text-brand-slate-900 text-sm">Verified Advance Dispatch</h3>
           <p className="text-xs text-brand-slate-500 leading-relaxed">
-            Pay Cash on Delivery only when your parcel arrives in pristine condition in our rigid protective gift packaging.
+            All orders are processed and dispatched via same-day express rider (Rawalpindi &amp; Islamabad) or trusted courier upon advance payment verification.
           </p>
         </div>
 

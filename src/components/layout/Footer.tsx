@@ -141,12 +141,12 @@ export const Footer: React.FC = () => {
               <li>
                 <Link to="/perfume-shop-rawalpindi" className="hover:text-white transition-colors flex items-center gap-1.5">
                   <MapPin className="w-3.5 h-3.5 text-brand-gold" />
-                  <span>Rawalpindi Studio &amp; COD</span>
+                  <span>Rawalpindi Studio (Same-Day)</span>
                 </Link>
               </li>
               <li>
                 <Link to="/policies/shipping" className="hover:text-white transition-colors">
-                  Shipping & Delivery (2–4 Days)
+                  Shipping &amp; Delivery (Same-Day Rwp/Isb)
                 </Link>
               </li>
               <li>

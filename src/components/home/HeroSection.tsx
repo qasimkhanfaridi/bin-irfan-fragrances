@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles, ArrowRight, ShieldCheck, Award, Gift, CheckCircle2 } from 'lucide-react';
+import { Sparkles, ArrowRight, ShieldCheck, Award, Gift, CheckCircle2, Zap } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   return (
@@ -67,8 +67,13 @@ export const HeroSection: React.FC = () => {
               </div>
               <span className="text-brand-blue-light hidden sm:inline">•</span>
               <div className="flex items-center gap-1.5">
+                <Zap className="w-4 h-4 text-brand-gold" />
+                <span>⚡ Same-Day Delivery (Rwp &amp; Isb)</span>
+              </div>
+              <span className="text-brand-blue-light hidden sm:inline">•</span>
+              <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>Cash on Delivery across Pakistan</span>
+                <span>100% Advance Payment</span>
               </div>
             </div>
           </div>
