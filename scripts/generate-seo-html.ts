@@ -7,6 +7,7 @@ import {
   getPrerenderPages,
   type PrerenderPage
 } from '../src/config/prerenderMeta';
+import { postProcessDistHtml } from './html-postprocess';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.join(__dirname, '..', 'dist');
@@ -41,6 +42,12 @@ const applyPageToHtml = (template: string, page: PrerenderPage, siteUrl: string)
     /<link rel="canonical" href="[^"]*"/,
     `<link rel="canonical" href="${canonicalUrl}"`
   );
+  if (!html.includes('rel="sitemap"')) {
+    html = html.replace(
+      /<link rel="canonical" href="[^"]*" \/>/,
+      `$&\n    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />`
+    );
+  }
   html = setTagContent(
     html,
     /<meta property="og:title" content="[^"]*"/,
@@ -99,11 +106,11 @@ const applyPageToHtml = (template: string, page: PrerenderPage, siteUrl: string)
 
   html = setTagContent(
     html,
-    /<div id="root">[\s\S]*?<\/div>\s*<script type="module"/,
-    `<div id="root">${page.bodyHtml}\n    </div>\n    <script type="module"`
+    /<div id="root">[\s\S]*<\/div>(?=\s*<\/body>)/,
+    `<div id="root">${page.bodyHtml}\n    </div>`
   );
 
-  return html;
+  return postProcessDistHtml(html);
 };
 
 const main = () => {

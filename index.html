@@ -5,12 +5,25 @@
     <link rel="icon" type="image/jpeg" href="/brand/logo.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="70vgBD4UETc7xXlKyY2naHXZvkacukhA61BRBKASS4s" />
-    <title>Bin Irfan Fragrances | Luxury Extrait De Parfum &amp; Perfumes in Rawalpindi, Pakistan</title>
+    <title>Bin Irfan Fragrances | Perfume Atelier Rawalpindi — Luxury Extrait De Parfum Pakistan</title>
     <meta name="description" content="Official Bin Irfan Fragrances atelier located at Dhoke Chiragh Deen, Rawalpindi. Handcrafted 35% Extrait De Parfum flacons, Same-Day Express Delivery in Rawalpindi &amp; Islamabad, 100% Advance Payment &amp; fast nationwide shipping." />
     <meta name="keywords" content="Bin Irfan Fragrances, same day perfume delivery Rawalpindi, same day delivery Islamabad, perfume shop Rawalpindi, perfumes in Rawalpindi, Dhoke Chiragh Deen perfume, buy perfume Pakistan, Black Oud perfume, Extrait de Parfum Pakistan, long lasting perfumes Rawalpindi, advance payment perfume Pakistan, best fragrance for men" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="theme-color" content="#132742" />
+    <style id="critical-css">
+      html { background-color: #F8FAFC; color: #1E293B; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        background-color: #F8FAFC;
+      }
+      #root { min-height: 100vh; }
+    </style>
     <link rel="canonical" href="https://www.binirfanfragrances.com/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <meta name="application-name" content="Bin Irfan Fragrances" />
     
     <!-- Local SEO Geo Meta Tags (Rawalpindi, Punjab, Pakistan) -->
     <meta name="geo.region" content="PK-PB" />
@@ -29,10 +42,12 @@
     <meta name="twitter:description" content="Discover handcrafted 35% Extrait de Parfum flacons and exclusive bundles. Same-Day Delivery in Rawalpindi &amp; Islamabad on 100% Advance Payment." />
     <meta name="twitter:image" content="https://www.binirfanfragrances.com/brand/logo.jpg" />
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts (non-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
 
     <!-- Schema.org JSON-LD Structured Data for Orders & Google Merchant -->
     <script id="schema-jsonld" type="application/ld+json">
@@ -40,9 +55,11 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "OnlineStore",
+          "@type": "PerfumeStore",
           "@id": "https://www.binirfanfragrances.com/#store",
           "name": "Bin Irfan Fragrances",
+          "alternateName": ["Bin Irfan Fragrances Rawalpindi", "Bin Irfan Perfume Atelier"],
+          "disambiguatingDescription": "Independent perfume and attar atelier in Dhoke Chiragh Deen, Rawalpindi. Not affiliated with Bin Irfan clothing shops on 5th Road or Raja Bazaar.",
           "url": "https://www.binirfanfragrances.com",
           "logo": "https://www.binirfanfragrances.com/brand/logo.jpg",
           "image": "https://www.binirfanfragrances.com/brand/logo.jpg",
@@ -79,6 +96,19 @@
               "closes": "23:30"
             }
           ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.binirfanfragrances.com/#website",
+          "url": "https://www.binirfanfragrances.com",
+          "name": "Bin Irfan Fragrances",
+          "description": "Perfume atelier Rawalpindi — 35% Extrait de Parfum, attars, same-day delivery Rawalpindi and Islamabad.",
+          "publisher": { "@id": "https://www.binirfanfragrances.com/#store" },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.binirfanfragrances.com/shop?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
         }
       ]
     }

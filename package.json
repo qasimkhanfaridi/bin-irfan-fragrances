@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && tsx scripts/generate-sitemap.ts && vite build && tsx scripts/generate-seo-html.ts",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "indexnow": "tsx scripts/submit-indexnow.ts"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",

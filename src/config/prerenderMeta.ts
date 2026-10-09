@@ -86,7 +86,7 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
 
   pages.push({
     path: '',
-    title: 'Bin Irfan Fragrances | Luxury Extrait De Parfum & Perfumes Rawalpindi, Pakistan',
+    title: 'Bin Irfan Fragrances | Perfume Atelier Rawalpindi — Luxury Extrait De Parfum Pakistan',
     description: DEFAULT_SEO.description,
     keywords: DEFAULT_SEO.keywords,
     ogType: 'website',
