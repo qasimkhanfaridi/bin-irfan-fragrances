@@ -41,7 +41,7 @@ export const BundlesShowcaseSection: React.FC = () => {
               >
                 {/* Image Container with Badges */}
                 <div className="relative aspect-square w-full bg-brand-blue-soft/30 overflow-hidden">
-                  <Link to={`/shop/${bundle.slug}`} className="block w-full h-full">
+                  <Link to={`/product/${bundle.slug}`} className="block w-full h-full">
                     <img
                       src={bundle.image}
                       alt={bundle.name}
@@ -74,7 +74,7 @@ export const BundlesShowcaseSection: React.FC = () => {
                       {bundle.category === 'discovery-set' ? 'Travel Discovery Set' : 'Luxury Perfume Pack'}
                     </span>
 
-                    <Link to={`/shop/${bundle.slug}`}>
+                    <Link to={`/product/${bundle.slug}`}>
                       <h3 className="font-serif text-lg font-bold text-brand-blue-deep group-hover:text-brand-blue transition-colors leading-snug">
                         {bundle.name}
                       </h3>

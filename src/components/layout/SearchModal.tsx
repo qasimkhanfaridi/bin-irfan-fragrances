@@ -98,7 +98,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
               {filtered.map(product => (
                 <Link
                   key={product.id}
-                  to={`/shop/${product.slug}`}
+                  to={`/product/${product.slug}`}
                   onClick={onClose}
                   className="flex items-center justify-between p-3.5 rounded-2xl bg-brand-light-bg/50 border border-brand-slate-200/80 hover:border-brand-blue-300 hover:bg-brand-blue-50/50 transition-all group"
                 >

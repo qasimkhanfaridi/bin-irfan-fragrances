@@ -48,6 +48,13 @@
       ]
     }
   ],
+  "redirects": [
+    {
+      "source": "/shop/:slug",
+      "destination": "/product/:slug",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

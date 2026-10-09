@@ -66,7 +66,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
         {/* Image Container with Hover Quick Actions */}
         <div className="relative w-full aspect-square bg-brand-blue-soft/30 overflow-hidden flex items-center justify-center">
-          <Link to={`/shop/${product.slug}`} className="w-full h-full block">
+          <Link to={`/product/${product.slug}`} className="w-full h-full block">
             <img
               src={product.image}
               alt={product.name}
@@ -120,7 +120,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             </div>
 
             {/* Product Title */}
-            <Link to={`/shop/${product.slug}`} className="block group-hover:text-brand-blue transition-colors">
+            <Link to={`/product/${product.slug}`} className="block group-hover:text-brand-blue transition-colors">
               <h3 className="font-serif text-base sm:text-lg font-bold text-brand-blue-deep leading-snug">
                 {product.name}
               </h3>

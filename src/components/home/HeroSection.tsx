@@ -109,7 +109,7 @@ export const HeroSection: React.FC = () => {
                     </h3>
                   </div>
                   <Link
-                    to="/shop/black-oud"
+                    to="/product/black-oud"
                     className="px-4 py-2 rounded-xl bg-brand-blue-dark hover:bg-brand-blue-navy text-white text-[11px] font-bold tracking-wider uppercase transition-colors shadow-xs"
                   >
                     Explore Scent

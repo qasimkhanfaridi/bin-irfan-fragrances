@@ -119,7 +119,7 @@ export const CartDrawer: React.FC = () => {
                     <div>
                       <div className="flex items-start justify-between gap-2">
                         <Link
-                          to={`/shop/${item.product.slug}`}
+                          to={`/product/${item.product.slug}`}
                           onClick={closeDrawer}
                           className="font-serif text-sm font-bold text-brand-slate-900 hover:text-brand-blue-600 truncate block transition-colors"
                         >

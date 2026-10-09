@@ -110,7 +110,7 @@ export const CartPage: React.FC = () => {
                     />
                     <div>
                       <Link
-                        to={`/shop/${item.product.slug}`}
+                        to={`/product/${item.product.slug}`}
                         className="font-serif text-lg font-bold text-brand-slate-900 hover:text-brand-blue-600 transition-colors"
                       >
                         {item.product.name}

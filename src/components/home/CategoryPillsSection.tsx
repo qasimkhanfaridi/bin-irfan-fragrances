@@ -35,7 +35,7 @@ export const CategoryPillsSection: React.FC = () => {
     },
     {
       label: 'Explorer Discovery Kit',
-      path: '/shop/explorer-discovery-kit',
+      path: '/product/explorer-discovery-kit',
       icon: Compass,
       badge: '5x10ml',
       activeColor: 'bg-white hover:bg-brand-blue-soft text-brand-blue-dark'
