@@ -24,7 +24,7 @@ export const PRODUCTS: Product[] = [
       { size: '100ml', pricePKR: 5950, compareAtPKR: 7000, sku: 'BIF-BO-100' }
     ],
     image: '/products/black_oud.jpg',
-    gallery: ['/products/black_oud.jpg', '/products/box_packaging.jpg', '/products/royal_amber.jpg'],
+    gallery: ['/products/black_oud.jpg', '/products/box_packaging.jpg', '/products/prestige_couples_duo.jpg'],
     rating: 4.9,
     reviewsCount: 142,
     isBestSeller: true,
