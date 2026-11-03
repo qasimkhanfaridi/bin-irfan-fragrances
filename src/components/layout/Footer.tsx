@@ -144,9 +144,9 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/perfume-shop-rawalpindi" className="hover:text-white transition-colors flex items-center gap-1.5">
+                <Link to="/perfume-shop-rawalpindi" className="hover:text-white transition-colors flex items-center gap-1.5" title="Best Perfume Shop in Rawalpindi">
                   <MapPin className="w-3.5 h-3.5 text-brand-gold" />
-                  <span>Rawalpindi Studio (Same-Day)</span>
+                  <span>Best Perfume Shop Rawalpindi</span>
                 </Link>
               </li>
               <li>

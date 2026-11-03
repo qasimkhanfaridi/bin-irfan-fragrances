@@ -166,14 +166,14 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
     },
     {
       path: 'perfume-shop-rawalpindi',
-      title: 'Perfume Shop in Rawalpindi | Same-Day Delivery Rawalpindi & Islamabad',
+      title: 'Best Perfume Shop in Rawalpindi | 35% Extrait De Parfum | Bin Irfan Fragrances',
       description:
-        'Visit Bin Irfan Fragrances studio at Dhoke Chiragh Deen, Rawalpindi (H3X9+8X4). 35% Extrait De Parfum with same-day express delivery across Rawalpindi & Islamabad.',
+        'Looking for the best perfume shops in Rawalpindi? Bin Irfan Fragrances in Dhoke Chiragh Deen (H3X9+8X4) crafts luxury 35% Extrait De Parfum with 14+ hour projection and same-day delivery across Rawalpindi & Islamabad.',
       keywords:
-        'perfume shop Rawalpindi, perfumes in Rawalpindi, same day perfume delivery Rawalpindi, Dhoke Chiragh Deen perfume',
-      heading: 'Perfume shop in Rawalpindi',
+        'best perfume shops in rawalpindi, best perfume shop in rawalpindi, best perfumes in rawalpindi, perfume shop in rawalpindi, perfume stores rawalpindi saddar, buy perfumes rawalpindi, dhoke chiragh deen perfume, Bin Irfan Fragrances rawalpindi',
+      heading: 'Best Perfume Shop in Rawalpindi | Luxury 35% Extrait Atelier',
       intro:
-        'Physical studio: H3X9+8X4, Dhoke Chiragh Deen, Rawalpindi 46000. WhatsApp orders +92 321 5186400. Not affiliated with Bin Irfan Clothing on 5th Road Satellite Town.'
+        'Official studio: H3X9+8X4, Dhoke Chiragh Deen, Rawalpindi 46000. WhatsApp orders +92 321 5186400. Express same-day delivery across Rawalpindi & Islamabad on 100% advance payment.'
     },
     {
       path: 'about',

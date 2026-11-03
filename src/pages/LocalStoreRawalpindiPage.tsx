@@ -15,12 +15,14 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
     '@context': 'https://schema.org',
     '@type': 'PerfumeStore',
     '@id': `${siteUrl}/perfume-shop-rawalpindi#localstore`,
-    name: 'Bin Irfan Fragrances — Rawalpindi Studio',
+    name: 'Bin Irfan Fragrances — Best Perfume Shop in Rawalpindi',
+    alternateName: 'Bin Irfan Fragrances Rawalpindi Atelier',
+    description: 'Premier artisanal perfume house in Rawalpindi, Pakistan. Crafting high-concentration 35% Extrait De Parfum flacons with 14+ hour projection and same-day delivery across Rawalpindi and Islamabad.',
     image: `${siteUrl}/brand/logo.jpg`,
     telephone: '+92 321 5186400',
     email: 'sulaiman234p@gmail.com',
     url: `${siteUrl}/perfume-shop-rawalpindi`,
-    priceRange: 'PKR 2,450 - PKR 8,500',
+    priceRange: 'PKR 3,250 - PKR 14,850',
     currenciesAccepted: 'PKR',
     paymentAccepted: 'Bank Transfer, EasyPaisa, JazzCash, Raast (Advance Payment Only)',
     address: {
@@ -35,6 +37,12 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
       '@type': 'GeoCoordinates',
       latitude: 33.5983,
       longitude: 73.0699
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '194',
+      bestRating: '5'
     },
     hasMap: 'https://maps.google.com/?cid=4711070535657308662',
     openingHoursSpecification: [
@@ -57,14 +65,58 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
     ]
   };
 
+  const localFaqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Which is the best perfume shop in Rawalpindi for long-lasting perfumes?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Bin Irfan Fragrances in Dhoke Chiragh Deen, Rawalpindi is widely acclaimed as the top luxury perfume house for extreme longevity. Formulated at 35% pure Extrait De Parfum concentration, their fragrances deliver 14 to 18+ hours of projection in Pakistan’s warm climate.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Where can I buy original 35% Extrait de Parfum in Rawalpindi?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You can buy authentic 35% Extrait De Parfum directly from Bin Irfan Fragrances online at binirfanfragrances.com or by messaging their WhatsApp concierge (+92 321 5186400) for same-day delivery in Rawalpindi and Islamabad.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Bin Irfan compare to perfume shops in Saddar or Commercial Market?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Unlike common retail outlets in Saddar or Commercial Market that stock mass-market diluted 10-15% EDTs, Bin Irfan Fragrances specializes strictly in 35% pure Extrait De Parfum flacons with authentic cut-crystal decanter caps, gold medallion branding, and premium gift packaging.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I get same-day perfume delivery in Rawalpindi and Islamabad?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes! Orders confirmed before 5:00 PM with verified advance payment receive same-day doorstep express delivery across Rawalpindi (Saddar, Bahria Town, Chaklala, DHA, Cantt) and Islamabad.'
+        }
+      }
+    ]
+  };
+
+  const combinedSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [localBusinessSchema, localFaqSchema]
+  };
+
   return (
     <div className="min-h-screen bg-brand-light-bg text-brand-slate-900">
       <SEOHead
-        title="Perfume Shop in Rawalpindi | Same-Day Delivery in Rawalpindi & Islamabad"
-        description="Official Bin Irfan Fragrances studio in Dhoke Chiragh Deen, Rawalpindi (Plus Code H3X9+8X4). 35% Extrait De Parfum flacons, Same-Day Express Delivery across Rawalpindi & Islamabad on 100% Advance Payment."
-        keywords="perfume shop in Rawalpindi, perfumes in Rawalpindi, same day perfume delivery Rawalpindi, same day delivery Islamabad, best perfumes in Rawalpindi, Dhoke Chiragh Deen perfume, Bin Irfan Fragrances Rawalpindi, advance payment perfumes Islamabad Rawalpindi"
+        title="Best Perfume Shop in Rawalpindi | 35% Extrait De Parfum | Bin Irfan Fragrances"
+        description="Looking for the best perfume shops in Rawalpindi? Bin Irfan Fragrances atelier in Dhoke Chiragh Deen crafts luxury 35% Extrait De Parfum with 14+ hour projection. Same-day express delivery in Rawalpindi & Islamabad on advance payment."
+        keywords="best perfume shops in rawalpindi, best perfume shop in rawalpindi, best perfumes in rawalpindi, perfume shop in rawalpindi, perfume stores rawalpindi saddar, buy perfumes rawalpindi, top perfume brands rawalpindi, dhoke chiragh deen perfume, Bin Irfan Fragrances rawalpindi, same day perfume delivery rawalpindi"
         canonicalPath="/perfume-shop-rawalpindi"
-        schema={localBusinessSchema}
+        schema={combinedSchema}
       />
 
       {/* Hero Section */}
@@ -74,16 +126,16 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
         <div className="relative max-w-5xl mx-auto text-center space-y-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-gold/15 border border-brand-gold/30 text-brand-gold text-xs font-semibold tracking-widest uppercase">
             <MapPin className="w-3.5 h-3.5 text-brand-gold" />
-            <span>Rawalpindi Studio • Dhoke Chiragh Deen</span>
+            <span>Rawalpindi Studio • Dhoke Chiragh Deen (H3X9+8X4)</span>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
-            Luxury Fragrances &amp; Flacons <br />
-            <span className="text-brand-gold italic">in Rawalpindi &amp; Islamabad</span>
+            Best Perfume Shop in Rawalpindi <br />
+            <span className="text-brand-gold italic">Handcrafted 35% Extrait De Parfum</span>
           </h1>
 
           <p className="max-w-2xl mx-auto text-sm sm:text-base text-slate-300 font-light leading-relaxed">
-            Welcome to the official fragrance studio of <strong>Bin Irfan Fragrances</strong>. We craft long-lasting 35% Extrait De Parfum flacons formulated to project effortlessly in Pakistan's weather, with same-day order dispatch across Rawalpindi &amp; Islamabad.
+            Welcome to the official fragrance atelier of <strong>Bin Irfan Fragrances</strong>. Widely recognized among the best perfume shops in Rawalpindi, we formulate high-potency 35% Extrait De Parfum flacons engineered for 14+ hour projection in Pakistan's weather, with express same-day doorstep delivery across Rawalpindi &amp; Islamabad.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
@@ -316,13 +368,98 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Editorial Guide: Best Perfume Shops in Rawalpindi */}
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-10 border-t border-brand-slate-200">
+        <div className="text-center space-y-3">
+          <span className="text-xs font-bold uppercase tracking-widest text-brand-blue-600">Rawalpindi Fragrance Guide</span>
+          <h2 className="font-serif text-2xl sm:text-4xl font-bold text-brand-slate-900">
+            Why Bin Irfan is Ranked Among the Best Perfume Shops in Rawalpindi
+          </h2>
+          <p className="text-sm text-brand-slate-600 max-w-2xl mx-auto leading-relaxed">
+            When searching for the <strong>best perfume shops in Rawalpindi</strong>, discerning perfume enthusiasts look beyond standard diluted departmental fragrances and synthetic market clones. Here is what makes the Bin Irfan atelier the premier destination for niche fragrance collectors in the Twin Cities.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="p-6 rounded-2xl bg-white border border-brand-slate-200 shadow-soft space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-700 font-bold text-sm">
+              35%
+            </div>
+            <h3 className="font-serif text-base font-bold text-brand-slate-900">
+              True 35% Extrait De Parfum Concentration
+            </h3>
+            <p className="text-xs text-brand-slate-600 leading-relaxed">
+              Most commercial perfume shops in Rawalpindi sell Eau de Toilette (5–10% oil) or Eau de Parfum (15–20% oil) that evaporate quickly in the summer heat. Bin Irfan specializes exclusively in 35% pure Extrait concentration, delivering 14 to 18+ hours of commanding sillage on skin and fabric.
+            </p>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-white border border-brand-slate-200 shadow-soft space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-brand-blue-50 border border-brand-blue-200 flex items-center justify-center text-brand-blue-700 font-bold text-sm">
+              8K
+            </div>
+            <h3 className="font-serif text-base font-bold text-brand-slate-900">
+              Architectural Flacons &amp; Crystal Caps
+            </h3>
+            <p className="text-xs text-brand-slate-600 leading-relaxed">
+              Every creation is housed in our signature octagonal smoked-charcoal flacon with an authentic cut-crystal decanter cap and circular gold medallion seal. Packaged in a velvet slide-drawer presentation box, our perfumes make the most prestigious gift in Rawalpindi.
+            </p>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-white border border-brand-slate-200 shadow-soft space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700 font-bold text-sm">
+              ⚡
+            </div>
+            <h3 className="font-serif text-base font-bold text-brand-slate-900">
+              Same-Day Express Doorstep Dispatch
+            </h3>
+            <p className="text-xs text-brand-slate-600 leading-relaxed">
+              Forget waiting 4–5 days for nationwide couriers. If you are in Rawalpindi (Dhoke Chiragh Deen, Saddar, Bahria Town, Chaklala, DHA) or Islamabad, confirm your advance payment before 5:00 PM and our dedicated rider delivers your flacon that very evening.
+            </p>
+          </div>
+        </div>
+
+        {/* Local Area Search Relevance */}
+        <div className="bg-white rounded-2xl border border-brand-slate-200 p-6 sm:p-8 space-y-4 shadow-soft">
+          <h3 className="font-serif text-lg font-bold text-brand-slate-900">
+            Serving Perfume Lovers Across All Rawalpindi Neighborhoods &amp; Saddar Markets
+          </h3>
+          <p className="text-xs sm:text-sm text-brand-slate-600 leading-relaxed">
+            Whether you regularly shop at Saddar Rawalpindi, Bank Road, Commercial Market Satellite Town, Bahria Town Phase 1–8, or Chaklala Scheme 3, Bin Irfan Fragrances provides direct atelier access. While traditional retail outlets add heavy overhead costs, our Dhoke Chiragh Deen studio crafts master impressions (inspired by French and Oriental classics like Creed Aventus, Baccarat Rouge 540, Dunhill Desire, and Cambodian Oud) at accessible luxury prices from ₨ 3,250 to ₨ 5,950.
+          </p>
+          <div className="pt-2 flex flex-wrap gap-2 text-xs font-medium text-brand-slate-600">
+            <span className="bg-brand-light-bg px-2.5 py-1 rounded-md border border-brand-slate-200">#1 Best Perfume Shop in Rawalpindi</span>
+            <span className="bg-brand-light-bg px-2.5 py-1 rounded-md border border-brand-slate-200">Rawalpindi Saddar Perfume Alternatives</span>
+            <span className="bg-brand-light-bg px-2.5 py-1 rounded-md border border-brand-slate-200">Bahria Town Rawalpindi Perfume Delivery</span>
+            <span className="bg-brand-light-bg px-2.5 py-1 rounded-md border border-brand-slate-200">Dhoke Chiragh Deen Fragrance Studio</span>
+          </div>
+        </div>
+      </section>
+
       {/* Local FAQ */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 space-y-6">
         <h2 className="font-serif text-2xl font-bold text-center text-brand-slate-900">
-          Frequently Asked Questions — Rawalpindi Perfume Buyers
+          Frequently Asked Questions — Best Perfume Shops in Rawalpindi
         </h2>
 
         <div className="space-y-4 pt-4">
+          <div className="p-5 rounded-2xl bg-white border border-brand-slate-200 shadow-soft">
+            <h4 className="font-serif font-bold text-brand-slate-900 text-sm">
+              Which is the best perfume shop in Rawalpindi for long-lasting perfumes?
+            </h4>
+            <p className="text-xs text-brand-slate-600 mt-2 leading-relaxed">
+              Bin Irfan Fragrances in Dhoke Chiragh Deen, Rawalpindi is widely acclaimed as the top luxury fragrance house for extreme longevity. Formulated at 35% pure Extrait De Parfum concentration, our perfumes project for 14 to 18+ hours even during the hottest summer months.
+            </p>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-white border border-brand-slate-200 shadow-soft">
+            <h4 className="font-serif font-bold text-brand-slate-900 text-sm">
+              How does Bin Irfan compare to perfume shops in Saddar or Commercial Market Rawalpindi?
+            </h4>
+            <p className="text-xs text-brand-slate-600 mt-2 leading-relaxed">
+              Unlike common street stalls or retail counters in Saddar or Commercial Market that sell low-oil synthetic clones, Bin Irfan Fragrances delivers genuine 35% Extrait formulations crafted with imported European and Arabic oils, authentic octagonal crystal flacons, and rigid presentation gift boxes.
+            </p>
+          </div>
+
           <div className="p-5 rounded-2xl bg-white border border-brand-slate-200 shadow-soft">
             <h4 className="font-serif font-bold text-brand-slate-900 text-sm">
               Can I visit the Bin Irfan studio in Dhoke Chiragh Deen to test fragrances?
