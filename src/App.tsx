@@ -40,12 +40,12 @@ export const App: React.FC = () => {
       <WishlistProvider>
         <Router>
           <AnalyticsRouteTracker />
-          <div className="flex flex-col min-h-screen bg-brand-light-bg text-brand-slate-900 selection:bg-brand-blue-600 selection:text-white pb-20 lg:pb-0">
+          <div className="flex flex-col min-h-screen w-full max-w-full overflow-x-hidden bg-brand-light-bg text-brand-slate-900 selection:bg-brand-blue-600 selection:text-white pb-20 lg:pb-0">
             <AnnouncementBar />
             <Navbar />
             <CartDrawer />
             
-            <main className="flex-grow">
+            <main className="flex-grow w-full max-w-full overflow-x-hidden">
               <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/shop" element={<ShopPage />} />

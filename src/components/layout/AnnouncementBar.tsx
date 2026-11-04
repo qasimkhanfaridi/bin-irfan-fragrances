@@ -8,8 +8,8 @@ export const AnnouncementBar: React.FC = () => {
   const { currency, setCurrency, whatsappNumber } = useCart();
 
   return (
-    <div className="bg-brand-blue-dark text-white border-b border-brand-blue-medium/30 text-xs py-1.5 px-3 sm:px-6">
-      <div className="max-w-7xl mx-auto flex items-center justify-between gap-2 flex-nowrap">
+    <div className="bg-brand-blue-dark text-white border-b border-brand-blue-medium/30 text-xs py-1.5 px-3 sm:px-6 w-full max-w-full overflow-x-hidden">
+      <div className="max-w-7xl mx-auto flex items-center justify-between gap-2 flex-nowrap min-w-0">
         
         {/* Left message (clean on mobile, expanded on desktop) */}
         <div className="flex items-center gap-2 overflow-hidden text-[10px] sm:text-xs truncate">

@@ -155,13 +155,13 @@ export const IslamabadDeliveryPage: React.FC = () => {
 
                 <div className="flex flex-wrap items-center gap-3">
                   <a
-                    href="https://wa.me/923165312301?text=Hello%20Bin%20Irfan%20Fragrances,%20I%20would%20like%20to%20place%20an%20express%20Islamabad%20perfume%20delivery%20order."
+                    href="https://wa.me/923215186400?text=Hello%20Bin%20Irfan%20Fragrances,%20I%20would%20like%20to%20place%20an%20express%20Islamabad%20perfume%20delivery%20order."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs sm:text-sm font-semibold transition-colors flex items-center gap-2 shadow-xs"
                   >
                     <PhoneCall className="w-4 h-4" />
-                    <span>WhatsApp Express Order (+92 316 5312301)</span>
+                    <span>WhatsApp Express Order (+92 321 5186400)</span>
                   </a>
                   <Link
                     to="/shop"

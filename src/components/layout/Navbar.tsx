@@ -28,27 +28,27 @@ export const Navbar: React.FC = () => {
   }, [location.pathname, location.search]);
 
   const navLinks = [
-    { label: 'Shop All', path: '/shop' },
-    { label: "Men's", path: '/mens-perfumes' },
-    { label: "Women's", path: '/womens-perfumes' },
-    { label: 'Oud & Extrait', path: '/oud-perfumes' },
-    { label: 'Gift Sets', path: '/perfume-gift-sets' },
-    { label: 'Rawalpindi Studio', path: '/perfume-shop-rawalpindi' },
-    { label: 'Islamabad Delivery', path: '/perfume-delivery-islamabad' },
-    { label: 'Guides', path: '/guides' }
+    { label: 'Shop All', shortLabel: 'Shop', path: '/shop' },
+    { label: "Men's", shortLabel: "Men", path: '/mens-perfumes' },
+    { label: "Women's", shortLabel: "Women", path: '/womens-perfumes' },
+    { label: 'Oud & Extrait', shortLabel: 'Oud', path: '/oud-perfumes' },
+    { label: 'Gift Sets', shortLabel: 'Gifts', path: '/perfume-gift-sets' },
+    { label: 'Rawalpindi Studio', shortLabel: 'Studio', path: '/perfume-shop-rawalpindi' },
+    { label: 'Islamabad Delivery', shortLabel: 'Islamabad', path: '/perfume-delivery-islamabad' },
+    { label: 'Guides', shortLabel: 'Guides', path: '/guides' }
   ];
 
   return (
     <>
       <header
-        className={`sticky top-0 z-40 w-full transition-all duration-300 ${
+        className={`sticky top-0 z-40 w-full max-w-full overflow-x-clip transition-all duration-300 ${
           isScrolled
             ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-brand-blue-soft py-2.5 sm:py-3'
             : 'bg-white/90 backdrop-blur-sm border-b border-brand-blue-soft/80 py-3 sm:py-4'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between gap-2 sm:gap-4 flex-nowrap w-full">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full">
+          <div className="flex items-center justify-between gap-2 xl:gap-3 flex-nowrap w-full min-w-0">
             
             {/* Left: Mobile Hamburger & Brand Logo with Official Medallion */}
             <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
@@ -82,20 +82,21 @@ export const Navbar: React.FC = () => {
             </div>
 
             {/* Center: Desktop Navigation Links (xl+) */}
-            <nav className="hidden xl:flex items-center gap-5 2xl:gap-7 flex-shrink-0">
+            <nav className="hidden xl:flex items-center gap-2.5 xl:gap-3.5 2xl:gap-6 flex-shrink min-w-0">
               {navLinks.map((link) => {
                 const isActive = (location.pathname + location.search) === link.path;
                 return (
                   <Link
                     key={link.path}
                     to={link.path}
-                    className={`text-xs 2xl:text-sm tracking-[0.14em] uppercase font-semibold transition-colors relative py-1 whitespace-nowrap ${
+                    className={`text-[11px] xl:text-xs 2xl:text-sm tracking-[0.08em] xl:tracking-[0.1em] 2xl:tracking-[0.14em] uppercase font-semibold transition-colors relative py-1 whitespace-nowrap ${
                       isActive
                         ? 'text-brand-blue-dark font-bold'
                         : 'text-brand-slate/85 hover:text-brand-blue-dark'
                     }`}
                   >
-                    {link.label}
+                    <span className="hidden 2xl:inline">{link.label}</span>
+                    <span className="2xl:hidden">{link.shortLabel}</span>
                     {isActive && (
                       <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-brand-blue-medium via-brand-blue-dark to-brand-blue-medium rounded-full" />
                     )}
@@ -105,7 +106,7 @@ export const Navbar: React.FC = () => {
             </nav>
 
             {/* Right: Action Icons & WhatsApp */}
-            <div className="flex items-center gap-1.5 sm:gap-2.5 flex-shrink-0">
+            <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
               
               {/* Search Icon */}
               <button
@@ -135,12 +136,12 @@ export const Navbar: React.FC = () => {
                 href={`https://wa.me/${whatsappNumber}?text=Hello%20Bin%20Irfan%20Fragrance,%20I%20would%20like%20to%20place%20an%20order!`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden lg:flex items-center gap-1.5 px-2.5 2xl:px-3 py-1.5 rounded-full border border-emerald-300 bg-emerald-50 text-emerald-800 text-xs font-semibold hover:bg-emerald-100 transition-all whitespace-nowrap shadow-xs"
+                className="hidden 2xl:flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-emerald-300 bg-emerald-50 text-emerald-800 text-xs font-semibold hover:bg-emerald-100 transition-all whitespace-nowrap shadow-xs"
                 title="Direct WhatsApp Order (+92 321 5186400)"
               >
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse flex-shrink-0" />
                 <MessageCircle className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
-                <span className="hidden 2xl:inline">WhatsApp Order</span>
+                <span>WhatsApp Order</span>
               </a>
 
               {/* Cart Drawer Trigger */}
@@ -157,7 +158,6 @@ export const Navbar: React.FC = () => {
                   </span>
                 )}
               </button>
-
             </div>
 
           </div>
