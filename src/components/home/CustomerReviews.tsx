@@ -61,8 +61,8 @@ export const CustomerReviews: React.FC = () => {
         </div>
       </div>
 
-      {/* Reviews Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* Reviews Grid: 1 col on mobile, 2 on sm, 4 on lg */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         {displayReviews.map((rev) => (
           <div
             key={rev.id}

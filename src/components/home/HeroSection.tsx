@@ -22,8 +22,8 @@ export const HeroSection: React.FC = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="font-serif text-4xl sm:text-6xl xl:text-7xl font-bold tracking-tight text-brand-blue-deep leading-[1.12]">
-              <span className="block text-2xl sm:text-3xl xl:text-4xl font-sans font-bold text-brand-gold uppercase tracking-wider mb-2">
+            <h1 className="font-serif text-3xl sm:text-5xl xl:text-6xl font-bold tracking-tight text-brand-blue-deep leading-[1.15]">
+              <span className="block text-xl sm:text-2xl xl:text-3xl font-sans font-bold text-brand-gold uppercase tracking-wider mb-2">
                 Bin Irfan Fragrances
               </span>
               A Scent That <br />
@@ -31,49 +31,46 @@ export const HeroSection: React.FC = () => {
             </h1>
 
             {/* Supporting Text */}
-            <p className="text-base sm:text-lg text-brand-slate/85 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              Discover distinctive fragrances crafted to leave a lasting impression. Formulated with high-potency oil extracts for 12+ hour sillage, regal sophistication, and effortless compliments.
+            <p className="text-sm sm:text-base lg:text-lg text-brand-slate/85 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+              Discover distinctive fragrances crafted to leave a lasting impression. Formulated with high-potency oil extracts for 14+ hour sillage, regal sophistication, and effortless compliments.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-2">
               <Link
                 to="/shop"
-                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-blue-dark hover:bg-brand-blue-navy text-white font-bold text-xs uppercase tracking-widest transition-all shadow-soft-blue flex items-center justify-center gap-2 group"
+                className="w-full sm:w-auto px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl bg-brand-blue-dark hover:bg-brand-blue-navy text-white font-bold text-xs uppercase tracking-widest transition-all shadow-soft-blue flex items-center justify-center gap-2 group"
               >
                 <span>SHOP ALL FRAGRANCES</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
 
               <Link
-                to="/shop?category=bundle"
-                className="w-full sm:w-auto px-7 py-4 rounded-xl bg-white hover:bg-brand-blue-soft border border-brand-blue-medium/40 hover:border-brand-blue text-brand-blue-dark font-bold text-xs uppercase tracking-widest transition-all shadow-xs flex items-center justify-center gap-2"
+                to="/perfume-gift-sets"
+                className="w-full sm:w-auto px-6 py-3.5 sm:px-7 sm:py-4 rounded-xl bg-white hover:bg-brand-blue-soft border border-brand-blue-medium/40 hover:border-brand-blue text-brand-blue-dark font-bold text-xs uppercase tracking-widest transition-all shadow-xs flex items-center justify-center gap-2"
               >
                 <Gift className="w-4 h-4 text-brand-gold" />
-                <span>EXPLORE BUNDLES (SAVE UP TO 25%)</span>
+                <span>EXPLORE BUNDLES (SAVE 25%)</span>
               </Link>
             </div>
 
-            {/* Trust Badges */}
-            <div className="pt-6 border-t border-brand-blue-soft flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6 text-xs text-brand-slate/80 font-medium">
-              <div className="flex items-center gap-1.5">
-                <Award className="w-4 h-4 text-brand-gold" />
-                <span>35% Pure Extrait De Parfum</span>
+            {/* Trust Badges: Clean 2x2 Grid on Mobile, Flex on Desktop */}
+            <div className="pt-5 border-t border-brand-blue-soft grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-6 text-[11px] sm:text-xs text-brand-slate/85 font-medium">
+              <div className="flex items-center gap-1.5 p-2 sm:p-0 bg-white/70 sm:bg-transparent rounded-xl border border-brand-blue-soft sm:border-0 shadow-xs sm:shadow-none">
+                <Award className="w-3.5 h-3.5 text-brand-gold shrink-0" />
+                <span>35% Pure Extrait</span>
               </div>
-              <span className="text-brand-blue-light hidden sm:inline">•</span>
-              <div className="flex items-center gap-1.5">
-                <ShieldCheck className="w-4 h-4 text-brand-blue-dark" />
-                <span>12+ Hour Beast Projection</span>
+              <div className="flex items-center gap-1.5 p-2 sm:p-0 bg-white/70 sm:bg-transparent rounded-xl border border-brand-blue-soft sm:border-0 shadow-xs sm:shadow-none">
+                <ShieldCheck className="w-3.5 h-3.5 text-brand-blue-dark shrink-0" />
+                <span>14+ Hour Sillage</span>
               </div>
-              <span className="text-brand-blue-light hidden sm:inline">•</span>
-              <div className="flex items-center gap-1.5">
-                <Zap className="w-4 h-4 text-brand-gold" />
-                <span>⚡ Same-Day Delivery (Rwp &amp; Isb)</span>
+              <div className="flex items-center gap-1.5 p-2 sm:p-0 bg-white/70 sm:bg-transparent rounded-xl border border-brand-blue-soft sm:border-0 shadow-xs sm:shadow-none">
+                <Zap className="w-3.5 h-3.5 text-brand-gold shrink-0" />
+                <span>Same-Day RWP &amp; ISB</span>
               </div>
-              <span className="text-brand-blue-light hidden sm:inline">•</span>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>100% Advance Payment</span>
+              <div className="flex items-center gap-1.5 p-2 sm:p-0 bg-white/70 sm:bg-transparent rounded-xl border border-brand-blue-soft sm:border-0 shadow-xs sm:shadow-none">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                <span>Advance Payment</span>
               </div>
             </div>
           </div>

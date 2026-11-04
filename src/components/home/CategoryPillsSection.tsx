@@ -57,9 +57,9 @@ export const CategoryPillsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-6 border-y border-brand-blue-soft bg-white/70 backdrop-blur-sm sticky top-[60px] sm:top-[70px] z-30 shadow-xs">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center gap-2.5 overflow-x-auto no-scrollbar py-1 scroll-smooth">
+    <section className="py-3 sm:py-4 border-y border-brand-blue-soft bg-white/80 backdrop-blur-md sticky top-[56px] sm:top-[68px] z-30 shadow-xs">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center gap-2 sm:gap-2.5 overflow-x-auto no-scrollbar py-0.5 scroll-smooth overscroll-x-contain">
           {categories.map((cat, idx) => {
             const Icon = cat.icon;
             return (

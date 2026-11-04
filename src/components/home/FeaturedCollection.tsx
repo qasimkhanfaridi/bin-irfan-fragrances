@@ -22,13 +22,13 @@ export const FeaturedCollection: React.FC = () => {
           </p>
         </div>
 
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Cards Grid: 1 col on small mobile, 2 on sm, 4 on lg */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {COLLECTIONS.map((col) => (
             <Link
               key={col.id}
               to={`/shop?collection=${col.id}`}
-              className="group relative rounded-3xl overflow-hidden border border-brand-blue-soft bg-white flex flex-col justify-between p-6 transition-all duration-500 hover:border-brand-blue/50 shadow-luxury-card hover:shadow-luxury-hover min-h-[380px]"
+              className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-brand-blue-soft bg-white flex flex-col justify-between p-5 sm:p-6 transition-all duration-500 hover:border-brand-blue/50 shadow-luxury-card hover:shadow-luxury-hover min-h-[260px] sm:min-h-[360px]"
             >
               {/* Background Image with Overlay */}
               <div className="absolute inset-0 z-0">

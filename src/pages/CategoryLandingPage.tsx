@@ -186,7 +186,7 @@ export const CategoryLandingPage: React.FC<CategoryLandingPageProps> = ({ slugOv
           </div>
 
           {categoryProducts.length > 0 ? (
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
               {categoryProducts.map(product => (
                 <ProductCard key={product.id} product={product} />
               ))}
@@ -228,7 +228,7 @@ export const CategoryLandingPage: React.FC<CategoryLandingPageProps> = ({ slugOv
                   </p>
                 </div>
               </div>
-              <div className="flex items-center gap-2 shrink-0">
+              <div className="flex flex-wrap items-center gap-2 w-full sm:w-auto">
                 <Link
                   to="/perfume-shop-rawalpindi"
                   className="px-3.5 py-2 text-xs font-semibold text-brand-blue-dark bg-white border border-brand-blue-soft rounded-xl hover:bg-brand-blue-soft transition-colors"

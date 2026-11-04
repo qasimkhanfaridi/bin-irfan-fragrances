@@ -13,7 +13,7 @@ export const MobileStickyBar: React.FC = () => {
   }
 
   return (
-    <aside aria-label="Mobile Navigation Bar" className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg border-t border-brand-slate-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] px-3 py-2 lg:hidden">
+    <aside aria-label="Mobile Navigation Bar" className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg border-t border-brand-slate-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] px-3 pt-2 pb-[calc(0.5rem+env(safe-area-inset-bottom,0px))] lg:hidden">
       <div className="max-w-md mx-auto flex items-center justify-between gap-2">
         {/* Catalog */}
         <Link
