@@ -13,8 +13,11 @@ const pages = getPrerenderPages(SITE_URL).filter(p => !p.robots?.includes('noind
 const priorityFor = (pathSeg: string): string => {
   if (!pathSeg) return '1.0';
   if (pathSeg === 'shop') return '0.95';
-  if (pathSeg.startsWith('product/')) return '0.9';
   if (pathSeg === 'perfume-shop-rawalpindi') return '0.95';
+  if (pathSeg === 'perfume-delivery-islamabad') return '0.95';
+  if (pathSeg === 'online-perfume-store-pakistan') return '0.95';
+  if (pathSeg.startsWith('product/')) return '0.9';
+  if (pathSeg.endsWith('-perfumes') || pathSeg.endsWith('-fragrances') || pathSeg === 'extrait-de-parfum' || pathSeg === 'perfume-gift-sets') return '0.9';
   if (pathSeg.startsWith('guides')) return '0.85';
   if (pathSeg.startsWith('policies/')) return '0.5';
   return '0.8';

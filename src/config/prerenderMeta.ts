@@ -1,5 +1,6 @@
 import { PRODUCTS } from '../data/products';
 import { GUIDES } from '../data/guides';
+import { CATEGORIES } from '../data/categories';
 import { DEFAULT_SEO, getProductSchema, getStoreSchema } from './seo';
 import { getArticleSchema } from './guideSchema';
 
@@ -14,7 +15,7 @@ export type PrerenderPage = {
   robots?: string;
   ogType?: 'website' | 'product' | 'article';
   image?: string;
-  schema?: Record<string, unknown>;
+  schema?: Record<string, unknown> | Array<Record<string, unknown>>;
   bodyHtml: string;
 };
 
@@ -39,17 +40,23 @@ const shell = (heading: string, subheading: string, mainHtml: string): string =>
         <nav style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px; padding-top: 16px; border-top: 1px solid #e2e8f0; font-size: 14px;">
           <a href="/">Home</a>
           <a href="/shop">Shop</a>
+          <a href="/mens-perfumes">Men's Perfumes</a>
+          <a href="/womens-perfumes">Women's Perfumes</a>
+          <a href="/oud-perfumes">Oud Perfumes</a>
+          <a href="/extrait-de-parfum">Extrait De Parfum</a>
           <a href="/perfume-shop-rawalpindi">Rawalpindi Studio</a>
+          <a href="/perfume-delivery-islamabad">Islamabad Delivery</a>
+          <a href="/online-perfume-store-pakistan">Pakistan Store</a>
+          <a href="/guides">Guides</a>
           <a href="/contact">Contact</a>
           <a href="/faq">FAQ</a>
-          <a href="/guides">Guides</a>
         </nav>
       </main>`;
 
 const FAQ_ITEMS = [
   {
     q: 'What is the concentration of Bin Irfan Fragrances?',
-    a: 'All Bin Irfan fragrances are Extrait de Parfum at approximately 30–35% perfume oil concentration.'
+    a: 'All Bin Irfan fragrances are Extrait de Parfum at approximately 35% pure perfume oil concentration.'
   },
   {
     q: 'Do you offer Cash on Delivery (COD)?',
@@ -84,6 +91,7 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
     )} From Rs. ${minPrice.toLocaleString('en-PK')} PKR.</li>`;
   }).join('\n            ');
 
+  // Homepage
   pages.push({
     path: '',
     title: 'Bin Irfan Fragrances | Perfume Atelier Rawalpindi — Luxury Extrait De Parfum Pakistan',
@@ -103,6 +111,7 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
     )
   });
 
+  // Shop Page
   pages.push({
     path: 'shop',
     title: 'Shop All Luxury Fragrances & Extrait De Parfum',
@@ -121,6 +130,7 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
     )
   });
 
+  // Product Detail Pages
   for (const product of PRODUCTS) {
     const minPrice = Math.min(...product.variants.map(v => v.pricePKR));
     const imageUrl = product.image.startsWith('http') ? product.image : product.image;
@@ -142,6 +152,78 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
               product.name
             )} Extrait De Parfum by Bin Irfan Fragrances" width="480" loading="lazy" /></p>
             <p><a href="/shop">← Back to shop</a></p>
+          </section>`
+      )
+    });
+  }
+
+  // 10 Search-Optimized Category Landing Pages
+  for (const category of CATEGORIES) {
+    const categoryProducts = PRODUCTS.filter(category.filterFn);
+    const catProductListHtml = categoryProducts.map(p => {
+      const minPrice = Math.min(...p.variants.map(v => v.pricePKR));
+      return `<li><a href="/product/${p.slug}"><strong>${escapeHtml(p.name)}</strong></a> — ${escapeHtml(p.shortDescription)} <strong>Rs. ${minPrice.toLocaleString('en-PK')} PKR</strong></li>`;
+    }).join('\n              ');
+
+    const catFaqHtml = category.faqs.map(f => `<dt><strong>${escapeHtml(f.question)}</strong></dt><dd>${escapeHtml(f.answer)}</dd>`).join('\n              ');
+
+    const itemListSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: category.name,
+      description: category.metaDescription,
+      url: `${siteUrl}/${category.slug}`,
+      numberOfItems: categoryProducts.length,
+      itemListElement: categoryProducts.map((p, idx) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        item: {
+          '@type': 'Product',
+          name: p.name,
+          url: `${siteUrl}/product/${p.slug}`,
+          image: p.image.startsWith('http') ? p.image : `${siteUrl}${p.image}`,
+          description: p.description,
+          offers: {
+            '@type': 'Offer',
+            priceCurrency: 'PKR',
+            price: Math.min(...p.variants.map(v => v.pricePKR)),
+            availability: 'https://schema.org/InStock'
+          }
+        }
+      }))
+    };
+
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: category.faqs.map(f => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: f.answer
+        }
+      }))
+    };
+
+    pages.push({
+      path: category.slug,
+      title: category.metaTitle,
+      description: category.metaDescription,
+      keywords: category.keywords,
+      ogType: 'website',
+      schema: [itemListSchema, faqSchema],
+      bodyHtml: shell(
+        category.h1,
+        category.tagline,
+        `<section>
+            ${category.introParagraphs.map(p => `<p>${escapeHtml(p)}</p>`).join('')}
+            <h2>Available ${escapeHtml(category.name)}</h2>
+            <ul>${catProductListHtml}</ul>
+            <h2>${escapeHtml(category.buyingGuideHeading)}</h2>
+            ${category.buyingGuideParagraphs.map(p => `<p>${escapeHtml(p)}</p>`).join('')}
+            <h2>Frequently Asked Questions</h2>
+            <dl>${catFaqHtml}</dl>
           </section>`
       )
     });
@@ -172,6 +254,28 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
       heading: 'Best Perfume Shop in Rawalpindi | Luxury 35% Extrait Atelier',
       intro:
         'Official studio: H3X9+8X4, Dhoke Chiragh Deen, Rawalpindi 46000. WhatsApp orders +92 321 5186400. Express same-day delivery across Rawalpindi & Islamabad on 100% advance payment.'
+    },
+    {
+      path: 'perfume-delivery-islamabad',
+      title: 'Same-Day Perfume Delivery in Islamabad | 35% Extrait — Bin Irfan Fragrances',
+      description:
+        'Order handcrafted 35% Extrait de Parfum with same-day express rider delivery across Islamabad (Sectors F, G, H, I, Blue Area, Bahria, DHA). Dispatched from our Dhoke Chiragh Deen studio.',
+      keywords:
+        'perfume delivery Islamabad, buy perfume online Islamabad, best perfume shop Islamabad, luxury perfumes Islamabad, same day fragrance delivery Islamabad, mens perfume Islamabad',
+      heading: 'Same-Day Perfume Delivery in Islamabad | Express Twin-Cities Rider',
+      intro:
+        'Dispatched directly from our Dhoke Chiragh Deen studio to all Islamabad sectors. Same-day delivery for orders verified before 5:00 PM on 100% advance payment.'
+    },
+    {
+      path: 'online-perfume-store-pakistan',
+      title: 'Buy Perfumes Online in Pakistan | 35% Extrait De Parfum — Bin Irfan',
+      description:
+        'Shop Pakistan highest-concentration 35% Extrait De Parfum perfumes online. Featuring Black Oud, Creed Aventus, Sauvage, and Baccarat Rouge. Express insured courier delivery nationwide.',
+      keywords:
+        'buy perfume online Pakistan, best online perfume store Pakistan, luxury perfumes Pakistan, long lasting perfumes in Pakistan, mens perfumes Pakistan, extrait de parfum Pakistan, perfume prices in Pakistan',
+      heading: 'Buy Long-Lasting Luxury Perfumes Online in Pakistan',
+      intro:
+        'Handcrafted 35% Extrait de Parfum compounded with Grasse absolutes. Tracked courier transit to Lahore, Karachi, Peshawar, Multan, Faisalabad, and 150+ cities across Pakistan.'
     },
     {
       path: 'about',

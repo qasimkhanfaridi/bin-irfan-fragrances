@@ -29,13 +29,13 @@ export const Navbar: React.FC = () => {
 
   const navLinks = [
     { label: 'Shop All', path: '/shop' },
-    { label: "Men's", path: '/shop?gender=men' },
-    { label: "Women's", path: '/shop?gender=women' },
-    { label: 'Best Sellers', path: '/shop?filter=bestsellers' },
-    { label: 'Bundles & Sets', path: '/shop?category=bundle' },
+    { label: "Men's", path: '/mens-perfumes' },
+    { label: "Women's", path: '/womens-perfumes' },
+    { label: 'Oud & Extrait', path: '/oud-perfumes' },
+    { label: 'Gift Sets', path: '/perfume-gift-sets' },
     { label: 'Rawalpindi Studio', path: '/perfume-shop-rawalpindi' },
-    { label: 'Our Story', path: '/about' },
-    { label: 'Boutique', path: '/contact' }
+    { label: 'Islamabad Delivery', path: '/perfume-delivery-islamabad' },
+    { label: 'Guides', path: '/guides' }
   ];
 
   return (

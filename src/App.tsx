@@ -21,6 +21,9 @@ import { PolicyPages } from './pages/PolicyPages';
 import { AdminOrdersPage } from './pages/AdminOrdersPage';
 import { TrackOrderPage } from './pages/TrackOrderPage';
 import { LocalStoreRawalpindiPage } from './pages/LocalStoreRawalpindiPage';
+import { IslamabadDeliveryPage } from './pages/IslamabadDeliveryPage';
+import { NationalStorePakistanPage } from './pages/NationalStorePakistanPage';
+import { CategoryLandingPage } from './pages/CategoryLandingPage';
 import { GuidesIndexPage } from './pages/GuidesIndexPage';
 import { GuideArticlePage } from './pages/GuideArticlePage';
 import { MobileStickyBar } from './components/layout/MobileStickyBar';
@@ -50,6 +53,8 @@ export const App: React.FC = () => {
                 <Route path="/product/:slug" element={<ProductDetailPage />} />
                 <Route path="/collections" element={<CollectionsPage />} />
                 <Route path="/perfume-shop-rawalpindi" element={<LocalStoreRawalpindiPage />} />
+                <Route path="/perfume-delivery-islamabad" element={<IslamabadDeliveryPage />} />
+                <Route path="/online-perfume-store-pakistan" element={<NationalStorePakistanPage />} />
                 <Route path="/packaging" element={<PackagingPage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
@@ -62,18 +67,38 @@ export const App: React.FC = () => {
                 <Route path="/admin" element={<AdminOrdersPage />} />
                 <Route path="/admin/orders" element={<AdminOrdersPage />} />
                 <Route path="/policies/:type" element={<PolicyPages />} />
+
+                {/* 10 Dedicated Search-Optimized Category Pages */}
+                <Route path="/mens-perfumes" element={<CategoryLandingPage slugOverride="mens-perfumes" />} />
+                <Route path="/womens-perfumes" element={<CategoryLandingPage slugOverride="womens-perfumes" />} />
+                <Route path="/unisex-perfumes" element={<CategoryLandingPage slugOverride="unisex-perfumes" />} />
+                <Route path="/oud-perfumes" element={<CategoryLandingPage slugOverride="oud-perfumes" />} />
+                <Route path="/extrait-de-parfum" element={<CategoryLandingPage slugOverride="extrait-de-parfum" />} />
+                <Route path="/luxury-perfumes" element={<CategoryLandingPage slugOverride="luxury-perfumes" />} />
+                <Route path="/long-lasting-perfumes" element={<CategoryLandingPage slugOverride="long-lasting-perfumes" />} />
+                <Route path="/perfume-gift-sets" element={<CategoryLandingPage slugOverride="perfume-gift-sets" />} />
+                <Route path="/fresh-fragrances" element={<CategoryLandingPage slugOverride="fresh-fragrances" />} />
+                <Route path="/woody-fragrances" element={<CategoryLandingPage slugOverride="woody-fragrances" />} />
                 
-                {/* Local Rawalpindi & Twin-Cities SEO Shortcuts */}
+                {/* Local Rawalpindi & Twin-Cities SEO Aliases */}
                 <Route path="/perfumes-in-rawalpindi" element={<Navigate to="/perfume-shop-rawalpindi" replace />} />
                 <Route path="/perfume-rawalpindi" element={<Navigate to="/perfume-shop-rawalpindi" replace />} />
                 <Route path="/rawalpindi" element={<Navigate to="/perfume-shop-rawalpindi" replace />} />
+                <Route path="/perfumes-in-islamabad" element={<Navigate to="/perfume-delivery-islamabad" replace />} />
+                <Route path="/perfume-islamabad" element={<Navigate to="/perfume-delivery-islamabad" replace />} />
+                <Route path="/islamabad" element={<Navigate to="/perfume-delivery-islamabad" replace />} />
 
-                {/* Scent Family & Category Fast Redirects */}
-                <Route path="/men" element={<Navigate to="/shop?gender=men" replace />} />
-                <Route path="/women" element={<Navigate to="/shop?gender=women" replace />} />
-                <Route path="/unisex" element={<Navigate to="/shop?gender=unisex" replace />} />
-                <Route path="/oud" element={<Navigate to="/shop?family=Woody%20%26%20Oud" replace />} />
-                <Route path="/gift-sets" element={<Navigate to="/shop?category=bundle" replace />} />
+                {/* National Store Aliases */}
+                <Route path="/buy-perfumes-online-pakistan" element={<Navigate to="/online-perfume-store-pakistan" replace />} />
+                <Route path="/perfumes-pakistan" element={<Navigate to="/online-perfume-store-pakistan" replace />} />
+                <Route path="/perfume-prices-pakistan" element={<Navigate to="/online-perfume-store-pakistan" replace />} />
+
+                {/* Scent Family & Category Fast Redirects to Canonical SEO Categories */}
+                <Route path="/men" element={<Navigate to="/mens-perfumes" replace />} />
+                <Route path="/women" element={<Navigate to="/womens-perfumes" replace />} />
+                <Route path="/unisex" element={<Navigate to="/unisex-perfumes" replace />} />
+                <Route path="/oud" element={<Navigate to="/oud-perfumes" replace />} />
+                <Route path="/gift-sets" element={<Navigate to="/perfume-gift-sets" replace />} />
                 <Route path="/best-sellers" element={<Navigate to="/shop?filter=bestsellers" replace />} />
                 <Route path="/delivery-information" element={<Navigate to="/policies/shipping" replace />} />
 

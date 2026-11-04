@@ -88,29 +88,29 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/shop?gender=men" className="hover:text-white transition-colors">
-                  Men's Collection
+                <Link to="/mens-perfumes" className="hover:text-white transition-colors">
+                  Men's Perfumes
                 </Link>
               </li>
               <li>
-                <Link to="/shop?gender=women" className="hover:text-white transition-colors">
-                  Women's Fragrances
+                <Link to="/womens-perfumes" className="hover:text-white transition-colors">
+                  Women's Perfumes
                 </Link>
               </li>
               <li>
-                <Link to="/shop?category=bundle" className="hover:text-white transition-colors flex items-center gap-1.5 text-brand-blue-light font-semibold">
-                  <span>Bundles & Gift Sets</span>
+                <Link to="/oud-perfumes" className="hover:text-white transition-colors">
+                  Oud &amp; Extrait Collection
+                </Link>
+              </li>
+              <li>
+                <Link to="/perfume-gift-sets" className="hover:text-white transition-colors flex items-center gap-1.5 text-brand-blue-light font-semibold">
+                  <span>Bundles &amp; Gift Sets</span>
                   <span className="text-[10px] bg-brand-blue-dark px-1.5 py-0.5 rounded text-white">Save 25%</span>
                 </Link>
               </li>
               <li>
-                <Link to="/product/explorer-discovery-kit" className="hover:text-white transition-colors">
-                  Explorer Discovery Kit (5x10ml)
-                </Link>
-              </li>
-              <li>
-                <Link to="/shop?filter=bestsellers" className="hover:text-white transition-colors">
-                  The Signature Picks
+                <Link to="/online-perfume-store-pakistan" className="hover:text-white transition-colors text-amber-300 font-semibold">
+                  Buy Perfumes Online Pakistan
                 </Link>
               </li>
             </ul>
@@ -119,13 +119,30 @@ export const Footer: React.FC = () => {
           {/* Col 3: Customer Care & Policies */}
           <div className="space-y-4">
             <h3 className="font-serif text-sm uppercase tracking-widest text-white font-bold">
-              Client Care
+              Client Care &amp; Hubs
             </h3>
             <ul className="space-y-2.5 text-sm">
               <li>
                 <Link to="/track-order" className="text-brand-gold hover:text-white transition-colors font-semibold flex items-center gap-1.5">
                   <span>Track Order / Courier Status</span>
                   <span className="text-[10px] bg-brand-gold/20 text-brand-gold px-1.5 py-0.5 rounded border border-brand-gold/30">Live</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/perfume-shop-rawalpindi" className="hover:text-white transition-colors flex items-center gap-1.5" title="Best Perfume Shop in Rawalpindi">
+                  <MapPin className="w-3.5 h-3.5 text-brand-gold" />
+                  <span>Rawalpindi Studio (Dhoke Chiragh Deen)</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/perfume-delivery-islamabad" className="hover:text-white transition-colors flex items-center gap-1.5" title="Same-Day Perfume Delivery Islamabad">
+                  <MapPin className="w-3.5 h-3.5 text-emerald-400" />
+                  <span>Same-Day Islamabad Delivery</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/guides" className="hover:text-white transition-colors">
+                  Fragrance Knowledge Centre
                 </Link>
               </li>
               <li>
@@ -139,24 +156,8 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/guides" className="hover:text-white transition-colors">
-                  Perfume Guides &amp; Tips
-                </Link>
-              </li>
-              <li>
-                <Link to="/perfume-shop-rawalpindi" className="hover:text-white transition-colors flex items-center gap-1.5" title="Best Perfume Shop in Rawalpindi">
-                  <MapPin className="w-3.5 h-3.5 text-brand-gold" />
-                  <span>Best Perfume Shop Rawalpindi</span>
-                </Link>
-              </li>
-              <li>
                 <Link to="/policies/shipping" className="hover:text-white transition-colors">
-                  Shipping &amp; Delivery (Same-Day Rwp/Isb)
-                </Link>
-              </li>
-              <li>
-                <Link to="/policies/returns" className="hover:text-white transition-colors">
-                  Returns & 7-Day Exchange
+                  Shipping Policy (Advance Payment)
                 </Link>
               </li>
               <li>
