@@ -81,7 +81,7 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
     const minPrice = Math.min(...p.variants.map(v => v.pricePKR));
     return `<li><a href="/product/${p.slug}"><strong>${escapeHtml(p.name)}</strong></a> — ${escapeHtml(
       p.shortDescription
-    )} From PKR ${minPrice.toLocaleString('en-PK')}.</li>`;
+    )} From Rs. ${minPrice.toLocaleString('en-PK')} PKR.</li>`;
   }).join('\n            ');
 
   pages.push({
@@ -137,9 +137,7 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
         product.tagline,
         `<section>
             <p>${escapeHtml(product.description)}</p>
-            <p><strong>Fragrance family:</strong> ${escapeHtml(product.fragranceFamily)} · <strong>From PKR ${minPrice.toLocaleString(
-              'en-PK'
-            )}</strong></p>
+            <p><strong>Fragrance family:</strong> ${escapeHtml(product.fragranceFamily)} · <strong>Rs. ${minPrice.toLocaleString('en-PK')} PKR</strong></p>
             <p><img src="${escapeHtml(product.image)}" alt="${escapeHtml(
               product.name
             )} Extrait De Parfum by Bin Irfan Fragrances" width="480" loading="lazy" /></p>
@@ -216,7 +214,7 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
       path: 'policies/shipping',
       title: 'Shipping & Delivery Policy',
       description:
-        'Same-day delivery Rawalpindi & Islamabad. Nationwide courier 2–3 days. Free shipping over ₨5,000. Advance payment only.',
+        'Same-day delivery Rawalpindi & Islamabad. Nationwide courier 2–3 days. Free shipping over Rs. 5,000. Advance payment only.',
       heading: 'Shipping & delivery',
       intro: 'Delivery timelines, courier partners, and advance payment policy.'
     },

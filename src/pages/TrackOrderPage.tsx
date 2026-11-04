@@ -147,7 +147,7 @@ export const TrackOrderPage: React.FC = () => {
               <div className="text-xs text-brand-slate-600 space-y-1">
                 <p><strong>Customer:</strong> {recentOrder.customerName}</p>
                 <p><strong>Destination:</strong> {recentOrder.city}</p>
-                <p><strong>Total (Advance Paid):</strong> ₨ {recentOrder.total.toLocaleString()}</p>
+                <p><strong>Total (Advance Paid):</strong> Rs. {recentOrder.total.toLocaleString()}</p>
               </div>
             </div>
           ) : (

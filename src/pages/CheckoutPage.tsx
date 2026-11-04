@@ -66,7 +66,7 @@ export const CheckoutPage: React.FC = () => {
     }
     msg += `\n*Items Ordered:*\n${itemsList}\n\n`;
     msg += `*Subtotal:* ${formatPrice(cartTotalPKR)}\n`;
-    msg += `*Shipping:* ${shippingFee === 0 ? 'FREE (Orders over ₨ 5,000)' : formatPrice(shippingFee)}\n`;
+    msg += `*Shipping:* ${shippingFee === 0 ? 'FREE (Orders over Rs. 5,000)' : formatPrice(shippingFee)}\n`;
     msg += `*Total Payable:* ${formatPrice(grandTotal)}\n`;
     msg += `*Payment Mode:* 100% Advance Payment (Bank Transfer / EasyPaisa / JazzCash)\n`;
     msg += `-----------------------------------------\n`;

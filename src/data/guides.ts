@@ -67,7 +67,7 @@ export const GUIDES: GuideArticle[] = [
       {
         heading: 'Nationwide courier (Karachi, Lahore, Peshawar & more)',
         paragraphs: [
-          'Outside Rawalpindi–Islamabad, parcels ship via tracked couriers and usually arrive in 2–3 business days. Free nationwide shipping applies on orders over ₨ 5,000.',
+          'Outside Rawalpindi–Islamabad, parcels ship via tracked couriers and usually arrive in 2–3 business days. Free nationwide shipping applies on orders over Rs. 5,000.',
           'You can track status via our track-order page or message WhatsApp with your order reference.'
         ]
       },

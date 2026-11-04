@@ -191,7 +191,7 @@ export const AdminOrdersPage: React.FC = () => {
           <span className="text-xs text-brand-slate-500 uppercase tracking-wider font-semibold">Total Revenue (PKR)</span>
           <div className="flex items-baseline justify-between mt-2">
             <span className="font-serif text-2xl font-bold text-brand-blue-900">
-              ₨ {totalRevenue.toLocaleString()}
+              Rs. {totalRevenue.toLocaleString()}
             </span>
             <span className="text-xs text-amber-700 font-bold">100% Advance / Web</span>
           </div>
@@ -294,7 +294,7 @@ export const AdminOrdersPage: React.FC = () => {
                       )}
                     </td>
                     <td className="py-3.5 px-4 font-serif font-bold text-brand-slate-900">
-                      ₨ {order.total.toLocaleString()}
+                      Rs. {order.total.toLocaleString()}
                     </td>
                     <td className="py-3.5 px-4 uppercase text-[10px] font-semibold text-brand-slate-500">
                       {order.paymentMethod}
@@ -405,7 +405,7 @@ export const AdminOrdersPage: React.FC = () => {
                 {selectedOrder.items.map((it, idx) => (
                   <div key={idx} className="flex justify-between">
                     <span>• {it.productName} ({it.size}) × {it.quantity}</span>
-                    <span className="font-bold">₨ {(it.price * it.quantity).toLocaleString()}</span>
+                    <span className="font-bold">Rs. {(it.price * it.quantity).toLocaleString()}</span>
                   </div>
                 ))}
               </div>
@@ -413,7 +413,7 @@ export const AdminOrdersPage: React.FC = () => {
               {/* Total & Payment */}
               <div className="flex justify-between items-center pt-1 font-bold text-sm">
                 <span>TOTAL ADVANCE AMOUNT:</span>
-                <span className="font-serif text-lg text-emerald-700">₨ {selectedOrder.total.toLocaleString()}</span>
+                <span className="font-serif text-lg text-emerald-700">Rs. {selectedOrder.total.toLocaleString()}</span>
               </div>
 
               {selectedOrder.notes && (

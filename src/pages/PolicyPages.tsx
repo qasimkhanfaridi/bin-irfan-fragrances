@@ -32,7 +32,7 @@ export const PolicyPages: React.FC = () => {
           </p>
           <h3 className="font-serif text-lg font-bold text-brand-slate-900 pt-2">Shipping Charges</h3>
           <p>
-            Complimentary <strong>Free Shipping</strong> is provided nationwide on all orders totaling <strong>₨ 5,000</strong> or higher. For orders under ₨ 5,000, a flat standard courier fee of ₨ 250 applies.
+            Complimentary <strong>Free Shipping</strong> is provided nationwide on all orders totaling <strong>Rs. 5,000</strong> or higher. For orders under Rs. 5,000, a flat standard courier fee of Rs. 250 applies.
           </p>
           <h3 className="font-serif text-lg font-bold text-brand-slate-900 pt-2">Courier &amp; Express Partners</h3>
           <p>
@@ -104,7 +104,7 @@ export const PolicyPages: React.FC = () => {
   const policySeo: Record<string, { description: string }> = {
     shipping: {
       description:
-        'Same-day delivery Rawalpindi & Islamabad. Nationwide courier 2–3 days. Free shipping over ₨5,000. Advance payment only at Bin Irfan Fragrances.'
+        'Same-day delivery Rawalpindi & Islamabad. Nationwide courier 2–3 days. Free shipping over Rs. 5,000. Advance payment only at Bin Irfan Fragrances.'
     },
     returns: {
       description: 'Exchange within 7 days for damaged or incorrect Bin Irfan Fragrances orders.'

@@ -276,7 +276,7 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
               Same-Day Express Delivery in Rawalpindi &amp; Islamabad
             </h2>
             <p className="text-sm text-brand-slate-500 max-w-2xl mx-auto">
-              Enjoy lightning-fast same-day express rider dispatch directly from our local Rawalpindi studio to your doorstep for orders placed before 5:00 PM on 100% advance payment. Free delivery on orders over ₨ 5,000.
+              Enjoy lightning-fast same-day express rider dispatch directly from our local Rawalpindi studio to your doorstep for orders placed before 5:00 PM on 100% advance payment. Free delivery on orders over Rs. 5,000.
             </p>
           </div>
 
@@ -424,7 +424,7 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
             Serving Perfume Lovers Across All Rawalpindi Neighborhoods &amp; Saddar Markets
           </h3>
           <p className="text-xs sm:text-sm text-brand-slate-600 leading-relaxed">
-            Whether you regularly shop at Saddar Rawalpindi, Bank Road, Commercial Market Satellite Town, Bahria Town Phase 1–8, or Chaklala Scheme 3, Bin Irfan Fragrances provides direct atelier access. While traditional retail outlets add heavy overhead costs, our Dhoke Chiragh Deen studio crafts master impressions (inspired by French and Oriental classics like Creed Aventus, Baccarat Rouge 540, Dunhill Desire, and Cambodian Oud) at accessible luxury prices from ₨ 3,250 to ₨ 5,950.
+            Whether you regularly shop at Saddar Rawalpindi, Bank Road, Commercial Market Satellite Town, Bahria Town Phase 1–8, or Chaklala Scheme 3, Bin Irfan Fragrances provides direct atelier access. While traditional retail outlets add heavy overhead costs, our Dhoke Chiragh Deen studio crafts master impressions (inspired by French and Oriental classics like Creed Aventus, Baccarat Rouge 540, Dunhill Desire, and Cambodian Oud) at accessible luxury prices from Rs. 3,250 to Rs. 5,950.
           </p>
           <div className="pt-2 flex flex-wrap gap-2 text-xs font-medium text-brand-slate-600">
             <span className="bg-brand-light-bg px-2.5 py-1 rounded-md border border-brand-slate-200">#1 Best Perfume Shop in Rawalpindi</span>

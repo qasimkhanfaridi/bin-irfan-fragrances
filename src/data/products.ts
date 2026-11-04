@@ -387,7 +387,7 @@ export const PRODUCTS: Product[] = [
     category: 'bundle',
     bundleItems: ['Black Oud (100ml)', 'Creed Aventus (100ml)', 'Dunhill Desire (100ml)'],
     savingsPercentage: 20,
-    badge: 'Save ₨ 3,650 • Best Value'
+    badge: 'Save Rs. 3,650 • Best Value'
   },
 
   // 12. Explorer Discovery Kit
@@ -459,7 +459,7 @@ export const PRODUCTS: Product[] = [
     category: 'bundle',
     bundleItems: ['Black Oud (50ml)', 'Baccarat Rouge 540 (50ml)'],
     savingsPercentage: 18,
-    badge: 'Save ₨ 1,550 • Couples Choice'
+    badge: 'Save Rs. 1,550 • Couples Choice'
   },
 
   // 14. Summer Fresh Aquatic Duo
@@ -493,6 +493,6 @@ export const PRODUCTS: Product[] = [
     category: 'bundle',
     bundleItems: ['Paradise (50ml)', 'Blue Night (50ml)'],
     savingsPercentage: 20,
-    badge: 'Save ₨ 1,550 • Summer Special'
+    badge: 'Save Rs. 1,550 • Summer Special'
   }
 ];

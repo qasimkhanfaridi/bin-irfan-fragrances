@@ -419,7 +419,7 @@ const ProductDetailView: React.FC<{ product: Product }> = ({ product }) => {
                 <span><strong>Same-Day Express Delivery</strong> in Rawalpindi &amp; Islamabad (Orders before 5 PM)</span>
               </p>
               <p className="text-[10px] text-brand-slate-600">
-                100% Advance Payment (EasyPaisa / JazzCash / Bank) • Free shipping over ₨ 5,000
+                100% Advance Payment (EasyPaisa / JazzCash / Bank) • Free shipping over Rs. 5,000
               </p>
             </div>
           </div>

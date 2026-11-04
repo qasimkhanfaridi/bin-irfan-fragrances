@@ -21,7 +21,7 @@ interface CartContextType {
 }
 
 const CURRENCIES: Record<CurrencyCode, CurrencyConfig> = {
-  PKR: { code: 'PKR', symbol: '₨', rate: 1, label: 'PKR (₨)' },
+  PKR: { code: 'PKR', symbol: 'Rs.', rate: 1, label: 'PKR (Rs.)' },
   USD: { code: 'USD', symbol: '$', rate: 0.0036, label: 'USD ($)' },
   AED: { code: 'AED', symbol: 'AED', rate: 0.013, label: 'AED (د.إ)' }
 };
@@ -90,7 +90,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const cfg = CURRENCIES[currency];
     const converted = Math.round(pricePKR * cfg.rate);
     if (currency === 'PKR') {
-      return `₨ ${pricePKR.toLocaleString()}`;
+      return `Rs. ${pricePKR.toLocaleString()}`;
     }
     if (currency === 'USD') {
       return `$${(pricePKR * cfg.rate).toFixed(2)}`;
