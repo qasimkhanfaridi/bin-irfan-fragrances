@@ -45,16 +45,59 @@ export const PolicyPages: React.FC = () => {
       title: 'Returns & Exchange Policy',
       icon: RotateCcw,
       content: (
-        <div className="space-y-4 text-xs sm:text-sm text-brand-slate-600 leading-relaxed font-light">
+        <div className="space-y-5 text-xs sm:text-sm text-brand-slate-600 leading-relaxed font-light">
           <p>
-            We take immense pride in our pure Extrait de Parfum formulations. If your product arrives damaged, defective, or incorrect, we offer a hassle-free exchange within <strong>7 days</strong> of delivery.
+            At <strong>Bin Irfan Fragrances</strong>, customer satisfaction and transparency are at the core of our artisanal atelier. We accept returns and exchanges for both <strong>defective and non-defective</strong> products to provide complete peace of mind.
           </p>
-          <h3 className="font-serif text-lg font-bold text-brand-slate-900 pt-2">Exchange Eligibility</h3>
-          <ul className="list-disc pl-5 space-y-1.5">
-            <li>The item must be reported within 7 days of receiving the package.</li>
-            <li>Due to hygiene and the volatile nature of luxury fragrance oils, opened or heavily sprayed bottles cannot be returned for a cash refund unless proven defective by our quality team.</li>
-            <li>To initiate an exchange, simply message our boutique on WhatsApp at +92 321 5186400 with a photo/video of the issue.</li>
-          </ul>
+
+          {/* Quick Compliance Summary Card for Google Merchant Center & Customers */}
+          <div className="p-4 rounded-2xl bg-brand-light-bg border border-brand-blue-soft shadow-xs text-xs space-y-2">
+            <h4 className="font-serif text-sm font-bold text-brand-slate-900 flex items-center gap-2">
+              <RotateCcw className="w-4 h-4 text-brand-blue-dark" />
+              <span>Return Policy Summary (Pakistan)</span>
+            </h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 text-slate-700">
+              <div><strong>Country Covered:</strong> Pakistan</div>
+              <div><strong>Returns Accepted:</strong> Defective and Non-Defective products</div>
+              <div><strong>Exchanges Accepted:</strong> Yes, full product exchanges supported</div>
+              <div><strong>Item Condition:</strong> New and slightly used (tested)</div>
+              <div><strong>Return Window:</strong> 1 to 7 days from delivery date</div>
+              <div><strong>Return Method:</strong> By mail / tracked courier to atelier</div>
+              <div><strong>Return Shipping Fee:</strong> Customer responsibility (Free for transit damaged items)</div>
+              <div><strong>Restocking Fees:</strong> No cost (0% restocking fee)</div>
+              <div><strong>Refund Processing Time:</strong> 3 business days following inspection</div>
+            </div>
+          </div>
+
+          <h3 className="font-serif text-base sm:text-lg font-bold text-brand-slate-900 pt-2">1. Return Window &amp; Condition</h3>
+          <p>
+            Customers may initiate a return or exchange within <strong>1 day</strong> of delivery receipt (and up to 7 days). We accept items in <strong>new or slightly used (test sprayed)</strong> condition with original caps, boxes, and packaging intact.
+          </p>
+
+          <h3 className="font-serif text-base sm:text-lg font-bold text-brand-slate-900 pt-2">2. Defective, Damaged or Incorrect Products</h3>
+          <p>
+            If a flacon arrives damaged in transit, leaking, or with an atomizer defect, contact our WhatsApp concierge (+92 321 5186400 / +92 316 5312301) with a photo/video within 24 hours. We dispatch an immediate 100% free replacement at zero cost to you.
+          </p>
+
+          <h3 className="font-serif text-base sm:text-lg font-bold text-brand-slate-900 pt-2">3. Non-Defective Products &amp; Exchanges</h3>
+          <p>
+            If you ordered a fragrance and wish to return or exchange it for a different scent family, you may return the bottle by mail. Return shipping is the customer's responsibility. There are <strong>no restocking fees</strong> charged.
+          </p>
+
+          <h3 className="font-serif text-base sm:text-lg font-bold text-brand-slate-900 pt-2">4. Return Method (By Mail / Courier)</h3>
+          <p>
+            Securely repackage the flacon in its original protective packaging and dispatch via your preferred courier service (TCS, Leopard, PostEx, or Trax) to our flagship studio:
+          </p>
+          <div className="p-3 bg-white rounded-xl border border-slate-200 text-xs text-slate-800 font-mono">
+            <strong>Bin Irfan Fragrances Atelier</strong><br />
+            Dhoke Chiragh Deen, Rawalpindi 46000, Punjab, Pakistan<br />
+            Phone / WhatsApp: +92 321 5186400 / +92 316 5312301
+          </div>
+
+          <h3 className="font-serif text-base sm:text-lg font-bold text-brand-slate-900 pt-2">5. Refund Processing Time</h3>
+          <p>
+            Once your returned parcel is received and inspected at our atelier, your refund will be processed within <strong>3 business days</strong> via your original payment channel (Bank Transfer, EasyPaisa, JazzCash, or Raast).
+          </p>
         </div>
       )
     },

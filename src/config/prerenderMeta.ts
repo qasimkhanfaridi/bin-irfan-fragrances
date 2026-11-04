@@ -324,10 +324,23 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
     },
     {
       path: 'policies/returns',
-      title: 'Returns & Exchange Policy',
-      description: 'Exchange within 7 days for damaged or incorrect Bin Irfan Fragrances orders.',
-      heading: 'Returns & exchanges',
-      intro: 'Quality guarantee and exchange process for damaged shipments.'
+      title: 'Returns & Exchange Policy | 3-Day Refund & Exchange — Bin Irfan Fragrances',
+      description: 'Returns and exchanges accepted for defective and non-defective perfumes (new and slightly used) within 1 to 7 days by mail. 0% restocking fee. Refunds processed in 3 business days.',
+      heading: 'Returns & Exchange Policy',
+      intro: 'Returns accepted for defective and non-defective products within 1 to 7 days by mail across Pakistan. No restocking fees. 3-day refund processing.',
+      extra: `<section>
+        <p>Bin Irfan Fragrances accepts returns and exchanges for both <strong>defective and non-defective</strong> products in Pakistan.</p>
+        <ul>
+          <li><strong>Product Condition:</strong> New and slightly used (test sprayed) with original packaging.</li>
+          <li><strong>Return Window:</strong> Notice within 1 day (up to 7 days) of delivery.</li>
+          <li><strong>Exchanges:</strong> Accepted for any alternate fragrance or bottle.</li>
+          <li><strong>Method:</strong> By mail / tracked courier to Dhoke Chiragh Deen, Rawalpindi.</li>
+          <li><strong>Return Shipping:</strong> Customer responsibility for standard change-of-mind returns; atelier covers damaged items.</li>
+          <li><strong>Restocking Fee:</strong> No cost (0% fee).</li>
+          <li><strong>Refund Processing Time:</strong> 3 business days via original payment method (Bank Transfer, EasyPaisa, JazzCash, Raast).</li>
+        </ul>
+        <p>Studio Address for Returns: Dhoke Chiragh Deen, Rawalpindi 46000, Punjab, Pakistan. WhatsApp: +92 321 5186400 / +92 316 5312301.</p>
+      </section>`
     },
     {
       path: 'policies/privacy',
