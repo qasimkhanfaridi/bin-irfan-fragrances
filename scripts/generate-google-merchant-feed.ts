@@ -21,7 +21,7 @@ for (const product of PRODUCTS) {
   for (const variant of product.variants) {
     const id = `${product.id}-${variant.size.toLowerCase()}`;
     const title = `${product.name} — 35% Extrait De Parfum (${variant.size})`;
-    const description = `${product.shortDescription} Handcrafted luxury 35% Extrait De Parfum formulation by Bin Irfan Fragrances. 14 to 18 hours longevity in Pakistan climate. Same-day delivery in Rawalpindi & Islamabad; tracked courier nationwide across Pakistan. 100% advance payment via Bank Transfer, JazzCash, EasyPaisa, or Raast.`;
+    const description = `${product.shortDescription} Handcrafted luxury 35% Extrait De Parfum formulation by Bin Irfan Fragrances. Formulated for long-lasting sillage in Pakistan's subcontinental climate. Same-day delivery in Rawalpindi & Islamabad; tracked courier nationwide across Pakistan. 100% advance payment via Bank Transfer, JazzCash, EasyPaisa, or Raast.`;
     const link = `${SITE_URL}/product/${product.slug}`;
     const imageLink = product.image.startsWith('http') ? product.image : `${SITE_URL}${product.image}`;
     const price = `${variant.pricePKR} PKR`;

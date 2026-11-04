@@ -52,7 +52,7 @@ export const IslamabadDeliveryPage: React.FC = () => {
     },
     {
       question: "Can I test perfumes before purchasing in Islamabad?",
-      answer: "We offer the Explorer Discovery Kit (5 x 5ml spray vials) which lets you sample five distinct olfactory families in the comfort of your home. Alternatively, you are welcome to visit our Dhoke Chiragh Deen studio in Rawalpindi for complimentary olfactory consultations."
+      answer: "We offer the Explorer Discovery Kit (5 x 10ml spray vials) which lets you sample five distinct olfactory families in the comfort of your home. Alternatively, you are welcome to visit our Dhoke Chiragh Deen studio in Rawalpindi for complimentary olfactory consultations."
     }
   ];
 
@@ -64,7 +64,7 @@ export const IslamabadDeliveryPage: React.FC = () => {
     provider: {
       '@type': 'PerfumeStore',
       name: 'Bin Irfan Fragrances',
-      telephone: '+923165312301',
+      telephone: '+923215186400',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Dhoke Chiragh Deen',
@@ -143,7 +143,7 @@ export const IslamabadDeliveryPage: React.FC = () => {
                   Luxury 35% Extrait De Parfum Delivered to Your Doorstep in Islamabad
                 </h1>
                 <p className="text-base sm:text-lg text-slate-600 font-medium mb-6">
-                  Experience artisanal, 14–18 hour longevity fragrances formulated for the capital's discerning tastemakers. Express twin-cities dispatch from our Dhoke Chiragh Deen studio.
+                  Experience artisanal 35% Extrait De Parfum formulated for long-lasting performance and deep sillage for the capital's discerning tastemakers. Express twin-cities dispatch from our Dhoke Chiragh Deen studio.
                 </p>
 
                 <div className="p-4 rounded-2xl bg-amber-50/80 border border-amber-200/80 text-xs sm:text-sm text-amber-900 mb-6 flex items-start gap-3">
@@ -199,7 +199,7 @@ export const IslamabadDeliveryPage: React.FC = () => {
                       <Sparkles className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
                       <div>
                         <strong className="text-slate-900 block">35% Extrait Oil Formulation</strong>
-                        <span className="text-slate-500">Guaranteed 14–18 hour projection in subcontinental weather.</span>
+                        <span className="text-slate-500">Formulated for rich sillage and long-lasting all-day performance in subcontinental weather.</span>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">

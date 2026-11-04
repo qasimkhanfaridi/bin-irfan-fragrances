@@ -14,11 +14,11 @@ export const FAQPage: React.FC = () => {
   const faqs = [
     {
       q: 'What is the concentration of Bin Irfan Fragrances?',
-      a: 'All Bin Irfan fragrances are formulated as Extrait de Parfum with approximately 30% to 35% pure French perfume oil concentration. This is significantly richer and longer-lasting than standard Eau de Toilette (5-10%) or standard Eau de Parfum (15-20%).'
+      a: 'All Bin Irfan fragrances are formulated as Extrait de Parfum with an industry-leading 35% pure perfume oil concentration. This is significantly richer and longer-lasting than standard Eau de Toilette (5-10%) or standard Eau de Parfum (15-20%).'
     },
     {
       q: 'How long do your fragrances project and last?',
-      a: 'Because of our high pure-oil formulation, our perfumes average 12 to 16+ hours on skin, and frequently 24+ hours on fabrics and clothing. Richer compositions like Royal Trio and Aventus Intense offer heavy sillage that commands the room without being synthetic.'
+      a: 'Because of our concentrated 35% pure-oil formulation, our perfumes deliver extended all-day performance on skin and fabrics. Richer compositions offer deep sillage that endures throughout the day without harsh synthetic sharpness.'
     },
     {
       q: 'Do you offer Cash on Delivery (COD)? What is your payment policy?',

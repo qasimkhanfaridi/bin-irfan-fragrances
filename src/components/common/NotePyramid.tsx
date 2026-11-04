@@ -68,7 +68,7 @@ export const NotePyramid: React.FC<NotePyramidProps> = ({ topNotes, heartNotes, 
             <Compass className="w-4 h-4 text-brand-gold" />
             <span>Base Notes</span>
           </div>
-          <p className="text-[11px] text-brand-slate-500 mb-3">Lasting sillage 8 - 16+ hours</p>
+          <p className="text-[11px] text-brand-slate-500 mb-3">Enduring sillage &amp; deep drydown</p>
           <ul className="space-y-1.5">
             {baseNotes.map(n => (
               <li key={n} className="text-xs font-semibold text-brand-slate-800 flex items-center gap-2">

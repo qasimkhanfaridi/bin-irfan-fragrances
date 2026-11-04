@@ -103,7 +103,7 @@ const ProductDetailView: React.FC<{ product: Product }> = ({ product }) => {
     <div className="min-h-screen bg-brand-light-bg pt-6 pb-24 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <SEOHead
         title={`${product.name} — 35% Extrait De Parfum`}
-        description={`Buy ${product.name} by Bin Irfan Fragrances. ${product.shortDescription || product.tagline} Handcrafted 35% concentration Extrait with 14+ hour longevity. Same-Day Delivery in Rawalpindi & Islamabad on Advance Payment.`}
+        description={`Buy ${product.name} by Bin Irfan Fragrances. ${product.shortDescription || product.tagline} Handcrafted 35% concentration Extrait with long-lasting sillage. Same-Day Delivery in Rawalpindi & Islamabad on Advance Payment.`}
         keywords={`${product.name}, buy ${product.name} Pakistan, Bin Irfan ${product.name}, ${product.fragranceFamily}, same day perfume delivery Rawalpindi, perfume Islamabad, advance payment`}
         image={product.image}
         canonicalPath={`/product/${product.slug}`}
@@ -634,6 +634,54 @@ const ProductDetailView: React.FC<{ product: Product }> = ({ product }) => {
         </div>
       </div>
 
+      {/* Product Specific FAQ & Quality Guarantees */}
+      <div className="pt-12 border-t border-brand-slate-200 space-y-6">
+        <div>
+          <h3 className="font-serif text-2xl sm:text-3xl font-bold text-brand-slate-900">
+            Frequently Asked Questions — {product.name}
+          </h3>
+          <p className="text-xs text-brand-slate-500 mt-1">Key information regarding formulation, delivery, and authenticity</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="p-5 rounded-2xl bg-white border border-brand-slate-200/80 shadow-soft space-y-2">
+            <h4 className="font-serif text-sm font-bold text-brand-slate-900">
+              What fragrance concentration is {product.name}?
+            </h4>
+            <p className="text-xs text-brand-slate-600 leading-relaxed font-light">
+              {product.name} is handcrafted as a pure Extrait de Parfum at 35% fragrance oil concentration. This provides deeper projection and all-day sillage that significantly outlasts standard 10–15% Eau de Toilette sprays.
+            </p>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-white border border-brand-slate-200/80 shadow-soft space-y-2">
+            <h4 className="font-serif text-sm font-bold text-brand-slate-900">
+              How does delivery work in Rawalpindi, Islamabad &amp; nationwide?
+            </h4>
+            <p className="text-xs text-brand-slate-600 leading-relaxed font-light">
+              Orders in Rawalpindi and Islamabad confirmed before 5:00 PM with verified advance payment receive same-day doorstep express delivery. For Karachi, Lahore, and nationwide Pakistan, packages arrive in 2–3 business days via tracked couriers (TCS / Leopard / PostEx).
+            </p>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-white border border-brand-slate-200/80 shadow-soft space-y-2">
+            <h4 className="font-serif text-sm font-bold text-brand-slate-900">
+              What payment methods are accepted?
+            </h4>
+            <p className="text-xs text-brand-slate-600 leading-relaxed font-light">
+              To ensure batch freshness and instant routing, all orders operate strictly on 100% advance payment via Bank Transfer (Meezan, HBL, Alfalah), EasyPaisa, JazzCash, or Raast instant QR transfer.
+            </p>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-white border border-brand-slate-200/80 shadow-soft space-y-2">
+            <h4 className="font-serif text-sm font-bold text-brand-slate-900">
+              What if the bottle is damaged during courier transit?
+            </h4>
+            <p className="text-xs text-brand-slate-600 leading-relaxed font-light">
+              Every flacon is encased in custom crush-resistant shock-absorbing luxury packaging. In the rare event of transit leakage or damage, we provide an immediate 100% free replacement upon receiving an unboxing photo/video within 24 hours.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Related Scents */}
       <div className="pt-12 border-t border-brand-slate-200 space-y-8">
         <div className="flex items-center justify-between">
@@ -651,7 +699,7 @@ const ProductDetailView: React.FC<{ product: Product }> = ({ product }) => {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {relatedProducts.map(p => (
             <ProductCard key={p.id} product={p} />
           ))}

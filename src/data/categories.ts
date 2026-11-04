@@ -27,12 +27,12 @@ export const CATEGORIES: CategoryData[] = [
     slug: 'mens-perfumes',
     name: "Men's Perfumes",
     metaTitle: "Best Men's Perfumes in Pakistan | 35% Extrait De Parfum — Bin Irfan",
-    metaDescription: "Discover handcrafted men's perfumes in Pakistan with 35% Extrait concentration. Featuring Black Oud, Creed Aventus, Sauvage, and Dunhill Desire with 14+ hour longevity. Same-day delivery in Rawalpindi & Islamabad.",
+    metaDescription: "Discover handcrafted men's perfumes in Pakistan with 35% Extrait concentration. Featuring Black Oud, Creed Aventus, Sauvage, and Dunhill Desire with long-lasting sillage. Same-day delivery in Rawalpindi & Islamabad.",
     keywords: "mens perfumes Pakistan, best perfumes for men in Pakistan, long lasting mens perfume Rawalpindi, buy mens perfume online Pakistan, male fragrance Islamabad",
     h1: "Handcrafted Men's Extrait De Parfum in Pakistan",
     tagline: "Commanding, long-lasting fragrances engineered for executive presence and social evenings",
     introParagraphs: [
-      "Bin Irfan Fragrances formulates concentrated Extrait de Parfum flacons specifically tailored for men navigating Pakistan's demanding subcontinental climate. While standard retail Eau de Toilette (EDT) formulations evaporate within three to four hours, our 35% perfume oil concentration anchors rich base notes like Assam agarwood, birch smoke, Tuscan leather, and French oakmoss for 14 to 18 hours of continuous presence.",
+      "Bin Irfan Fragrances formulates concentrated Extrait de Parfum flacons specifically tailored for men navigating Pakistan's demanding subcontinental climate. While standard retail Eau de Toilette (EDT) formulations evaporate within three to four hours, our 35% perfume oil concentration anchors rich base notes like Assam agarwood, birch smoke, Tuscan leather, and French oakmoss for extended, day-long presence and projection.",
       "Whether you are heading to an executive boardroom meeting in Islamabad, a formal evening dinner in Rawalpindi, or an upscale weekend gathering, our masculine fragrance portfolio delivers authoritative sillage without sharp synthetic alcohol harshness."
     ],
     buyingGuideHeading: "How to Choose the Right Men's Perfume for Your Lifestyle",
@@ -43,7 +43,7 @@ export const CATEGORIES: CategoryData[] = [
     faqs: [
       {
         question: "How long do Bin Irfan men's perfumes last on skin and clothes?",
-        answer: "Because we formulate at 35% Extrait De Parfum concentration (compared to 15% in standard Eau de Parfum), our men's fragrances typically project for 6 to 8 hours and remain clearly noticeable on skin for 14 to 18+ hours, lasting on fabrics until laundered."
+        answer: "Because we formulate at 35% Extrait De Parfum concentration (compared to 15% in standard Eau de Parfum), our men's fragrances typically project cleanly for hours and remain noticeable on skin throughout the entire day, lasting on fabrics until laundered."
       },
       {
         question: "Can I get same-day delivery of men's perfumes in Rawalpindi or Islamabad?",
@@ -83,7 +83,7 @@ export const CATEGORIES: CategoryData[] = [
       },
       {
         question: "Are these fragrances suitable for bridal and wedding wear?",
-        answer: "Yes, both Baccarat Rouge 540 and Velvet Rose are among the most requested bridal choices across Rawalpindi and Islamabad due to their 16+ hour longevity and regal sillage."
+        answer: "Yes, both Baccarat Rouge 540 and Velvet Rose are among the most requested bridal choices across Rawalpindi and Islamabad due to their enduring longevity and regal sillage."
       }
     ],
     relatedCategorySlugs: ['luxury-perfumes', 'extrait-de-parfum', 'perfume-gift-sets'],
@@ -179,7 +179,7 @@ export const CATEGORIES: CategoryData[] = [
       },
       {
         question: "How many sprays of 35% Extrait should I apply?",
-        answer: "Because our concentration is exceptionally potent, 2 to 3 sprays are more than enough for 14+ hours of noticeable projection."
+        answer: "Because our concentration is exceptionally potent, 2 to 3 sprays are more than enough for all-day noticeable projection."
       }
     ],
     relatedCategorySlugs: ['luxury-perfumes', 'long-lasting-perfumes', 'mens-perfumes'],
@@ -229,13 +229,13 @@ export const CATEGORIES: CategoryData[] = [
     tagline: "Formulated with 35% oil concentration to outlast subcontinental humidity and long days",
     introParagraphs: [
       "Pakistan's extreme temperatures and humidity represent the ultimate torture test for fine fragrances. Standard commercial perfumes often dissipate within hours due to high alcohol evaporation rates.",
-      "Bin Irfan Fragrances formulates every flacon with dense, non-volatile base accords—including aged ambergris, cured tobacco sap, dark leather, and agarwood—guaranteeing 14 to 18+ hours of continuous performance on skin and days on clothing."
+      "Bin Irfan Fragrances formulates every flacon with dense, non-volatile base accords—including aged ambergris, cured tobacco sap, dark leather, and agarwood—engineered for extended all-day performance on skin and fabric."
     ],
-    buyingGuideHeading: "Our Top Beast-Mode Performers Ranked",
+    buyingGuideHeading: "Our Top Long-Lasting Fragrances Ranked",
     buyingGuideParagraphs: [
-      "1. Black Oud (16–18+ Hours): Dense Assam agarwood, cistus labdanum, and smoked birch.",
-      "2. Baccarat Rouge 540 (16–18+ Hours): Mineral ambergris resin and spun caramelized amberwood with nuclear scent trail.",
-      "3. Tobacco Vanille (14–18 Hours): Cured Virginia tobacco leaves and creamy Madagascar vanilla."
+      "1. Black Oud: Dense Assam agarwood, cistus labdanum, and smoked birch for deep, enduring evening sillage.",
+      "2. Baccarat Rouge 540: Mineral ambergris resin and spun caramelized amberwood with a magnetic scent trail.",
+      "3. Tobacco Vanille: Cured tobacco leaves and creamy Madagascar vanilla with warm enveloping sillage."
     ],
     faqs: [
       {

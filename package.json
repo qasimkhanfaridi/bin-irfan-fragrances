@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && tsx scripts/generate-sitemap.ts && tsx scripts/generate-google-merchant-feed.ts && vite build && tsx scripts/generate-seo-html.ts",
+    "test:seo": "tsx scripts/validate-seo.ts",
     "preview": "vite preview",
     "generate:flacons": "node scripts/pipeline/generate_flacon_suite.cjs",
     "indexnow": "tsx scripts/submit-indexnow.ts"

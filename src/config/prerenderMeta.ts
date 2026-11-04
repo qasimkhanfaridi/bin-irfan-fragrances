@@ -248,12 +248,18 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
       path: 'perfume-shop-rawalpindi',
       title: 'Best Perfume Shop in Rawalpindi | 35% Extrait De Parfum | Bin Irfan Fragrances',
       description:
-        'Looking for the best perfume shops in Rawalpindi? Bin Irfan Fragrances in Dhoke Chiragh Deen (H3X9+8X4) crafts luxury 35% Extrait De Parfum with 14+ hour projection and same-day delivery across Rawalpindi & Islamabad.',
+        'Looking for the best perfume shops in Rawalpindi? Bin Irfan Fragrances in Dhoke Chiragh Deen (H3X9+8X4) crafts luxury 35% Extrait De Parfum with long-lasting sillage and same-day delivery across Rawalpindi & Islamabad.',
       keywords:
         'best perfume shops in rawalpindi, best perfume shop in rawalpindi, best perfumes in rawalpindi, perfume shop in rawalpindi, perfume stores rawalpindi saddar, buy perfumes rawalpindi, dhoke chiragh deen perfume, Bin Irfan Fragrances rawalpindi',
+      schema: getStoreSchema(siteUrl),
       heading: 'Best Perfume Shop in Rawalpindi | Luxury 35% Extrait Atelier',
       intro:
-        'Official studio: H3X9+8X4, Dhoke Chiragh Deen, Rawalpindi 46000. WhatsApp orders +92 321 5186400. Express same-day delivery across Rawalpindi & Islamabad on 100% advance payment.'
+        'Official studio: H3X9+8X4, Dhoke Chiragh Deen, Rawalpindi 46000. WhatsApp orders +92 321 5186400. Express same-day delivery across Rawalpindi & Islamabad on 100% advance payment.',
+      extra: `<section>
+        <h2>Artisanal Fragrance Atelier in Dhoke Chiragh Deen</h2>
+        <p>Bin Irfan Fragrances operates an artisanal fragrance studio at Plus Code H3X9+8X4, Dhoke Chiragh Deen, Rawalpindi 46000. Located minutes from Murree Road, Saddar Cantt, and Old Airport Road, we compound 35% Extrait De Parfum with enduring sillage.</p>
+        <p>Studio visits and fragrance consultations are available by appointment via WhatsApp (+92 321 5186400). Express rider dispatch serves Saddar, Bahria Town Phase 1–8, DHA Phase 1–2, Satellite Town, Chaklala Scheme 3, and Westridge.</p>
+      </section>`
     },
     {
       path: 'perfume-delivery-islamabad',
@@ -264,7 +270,17 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
         'perfume delivery Islamabad, buy perfume online Islamabad, best perfume shop Islamabad, luxury perfumes Islamabad, same day fragrance delivery Islamabad, mens perfume Islamabad',
       heading: 'Same-Day Perfume Delivery in Islamabad | Express Twin-Cities Rider',
       intro:
-        'Dispatched directly from our Dhoke Chiragh Deen studio to all Islamabad sectors. Same-day delivery for orders verified before 5:00 PM on 100% advance payment.'
+        'Dispatched directly from our Dhoke Chiragh Deen studio to all Islamabad sectors. Same-day delivery for orders verified before 5:00 PM on 100% advance payment.',
+      extra: `<section>
+        <h2>Islamabad Same-Day Express Delivery Coverage</h2>
+        <p>Bin Irfan Fragrances provides dedicated evening rider delivery across Islamabad directly from our Dhoke Chiragh Deen atelier in Rawalpindi.</p>
+        <ul>
+          <li><strong>Zone 1 — Core Sectors:</strong> Sector F (F-6, F-7, F-8, F-10, F-11), Sector G (G-6, G-7, G-8, G-9, G-10, G-11), Blue Area, E-7.</li>
+          <li><strong>Zone 2 — Institutional & Commercial:</strong> Sector H (H-8, H-9, H-12 NUST), Sector I (I-8 Markaz, I-9, I-10).</li>
+          <li><strong>Zone 3 — Southern Islamabad:</strong> DHA Phase 2, Bahria Enclave, Bahria Town, Gulberg Greens, PWD, and Media Town.</li>
+        </ul>
+        <p><strong>Timing & Cutoff:</strong> Orders verified by 5:00 PM are dispatched for same-day delivery between 6:30 PM and 9:30 PM. 100% advance payment required via Bank Transfer, JazzCash, EasyPaisa, or Raast. Contact WhatsApp: +92 321 5186400.</p>
+      </section>`
     },
     {
       path: 'online-perfume-store-pakistan',
@@ -275,7 +291,17 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
         'buy perfume online Pakistan, best online perfume store Pakistan, luxury perfumes Pakistan, long lasting perfumes in Pakistan, mens perfumes Pakistan, extrait de parfum Pakistan, perfume prices in Pakistan',
       heading: 'Buy Long-Lasting Luxury Perfumes Online in Pakistan',
       intro:
-        'Handcrafted 35% Extrait de Parfum compounded with Grasse absolutes. Tracked courier transit to Lahore, Karachi, Peshawar, Multan, Faisalabad, and 150+ cities across Pakistan.'
+        'Handcrafted 35% Extrait de Parfum compounded with high-potency fragrance oils. Tracked courier transit to Lahore, Karachi, Peshawar, Multan, Faisalabad, and 150+ cities across Pakistan.',
+      extra: `<section>
+        <h2>Nationwide Fragrance Logistics Across Pakistan</h2>
+        <p>Bin Irfan Fragrances ships 35% Extrait De Parfum flacons nationwide using premier courier partners (TCS, Leopard Courier, PostEx, Trax).</p>
+        <ul>
+          <li><strong>Punjab & KPK:</strong> Lahore, Faisalabad, Multan, Gujranwala, Sialkot, Peshawar, Abbottabad (1–2 business days).</li>
+          <li><strong>Sindh:</strong> Karachi, Hyderabad, Sukkur (2–3 business days).</li>
+          <li><strong>Balochistan & Gilgit-Baltistan:</strong> Quetta, Gwadar, Gilgit, Skardu (3–4 business days).</li>
+        </ul>
+        <p>Every bottle is individually sealed and bubble-wrapped in shock-absorbing fluted boxes with 100% transit leak protection guarantee. WhatsApp: +92 321 5186400.</p>
+      </section>`
     },
     {
       path: 'about',
@@ -339,7 +365,7 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
           <li><strong>Restocking Fee:</strong> No cost (0% fee).</li>
           <li><strong>Refund Processing Time:</strong> 3 business days via original payment method (Bank Transfer, EasyPaisa, JazzCash, Raast).</li>
         </ul>
-        <p>Studio Address for Returns: Dhoke Chiragh Deen, Rawalpindi 46000, Punjab, Pakistan. WhatsApp: +92 321 5186400 / +92 316 5312301.</p>
+        <p>Studio Address for Returns: Dhoke Chiragh Deen, Rawalpindi 46000, Punjab, Pakistan. WhatsApp: +92 321 5186400.</p>
       </section>`
     },
     {

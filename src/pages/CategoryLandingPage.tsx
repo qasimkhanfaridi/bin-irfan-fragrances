@@ -154,7 +154,7 @@ export const CategoryLandingPage: React.FC<CategoryLandingPageProps> = ({ slugOv
                 </div>
                 <div className="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-brand-blue-soft shadow-xs text-xs">
                   <ShieldCheck className="w-4 h-4 text-brand-gold shrink-0" />
-                  <span className="text-slate-700 font-medium">14-18 Hour Guaranteed Longevity</span>
+                  <span className="text-slate-700 font-medium">Long-Lasting 35% Extrait Sillage</span>
                 </div>
                 <div className="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-brand-blue-soft shadow-xs text-xs">
                   <Truck className="w-4 h-4 text-emerald-600 shrink-0" />

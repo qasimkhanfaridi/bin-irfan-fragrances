@@ -19,5 +19,21 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+# AI Search & Conversational Agents
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
 # Sitemap declaration
 Sitemap: https://www.binirfanfragrances.com/sitemap.xml

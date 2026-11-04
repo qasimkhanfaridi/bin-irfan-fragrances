@@ -76,7 +76,7 @@ export const PolicyPages: React.FC = () => {
 
           <h3 className="font-serif text-base sm:text-lg font-bold text-brand-slate-900 pt-2">2. Defective, Damaged or Incorrect Products</h3>
           <p>
-            If a flacon arrives damaged in transit, leaking, or with an atomizer defect, contact our WhatsApp concierge (+92 321 5186400 / +92 316 5312301) with a photo/video within 24 hours. We dispatch an immediate 100% free replacement at zero cost to you.
+            If a flacon arrives damaged in transit, leaking, or with an atomizer defect, contact our WhatsApp concierge (+92 321 5186400) with a photo/video within 24 hours. We dispatch an immediate 100% free replacement at zero cost to you.
           </p>
 
           <h3 className="font-serif text-base sm:text-lg font-bold text-brand-slate-900 pt-2">3. Non-Defective Products &amp; Exchanges</h3>
@@ -91,7 +91,7 @@ export const PolicyPages: React.FC = () => {
           <div className="p-3 bg-white rounded-xl border border-slate-200 text-xs text-slate-800 font-mono">
             <strong>Bin Irfan Fragrances Atelier</strong><br />
             Dhoke Chiragh Deen, Rawalpindi 46000, Punjab, Pakistan<br />
-            Phone / WhatsApp: +92 321 5186400 / +92 316 5312301
+            Phone / WhatsApp: +92 321 5186400
           </div>
 
           <h3 className="font-serif text-base sm:text-lg font-bold text-brand-slate-900 pt-2">5. Refund Processing Time</h3>

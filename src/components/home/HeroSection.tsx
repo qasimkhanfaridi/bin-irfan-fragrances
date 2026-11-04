@@ -32,7 +32,7 @@ export const HeroSection: React.FC = () => {
 
             {/* Supporting Text */}
             <p className="text-sm sm:text-base lg:text-lg text-brand-slate/85 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              Discover distinctive fragrances crafted to leave a lasting impression. Formulated with high-potency oil extracts for 14+ hour sillage, regal sophistication, and effortless compliments.
+              Discover distinctive fragrances crafted to leave a lasting impression. Formulated with high-potency oil extracts for long-lasting sillage, regal sophistication, and effortless compliments.
             </p>
 
             {/* CTAs */}
@@ -62,7 +62,7 @@ export const HeroSection: React.FC = () => {
               </div>
               <div className="flex items-center gap-1.5 p-2 sm:p-0 bg-white/70 sm:bg-transparent rounded-xl border border-brand-blue-soft sm:border-0 shadow-xs sm:shadow-none">
                 <ShieldCheck className="w-3.5 h-3.5 text-brand-blue-dark shrink-0" />
-                <span>14+ Hour Sillage</span>
+                <span>Long-Lasting Sillage</span>
               </div>
               <div className="flex items-center gap-1.5 p-2 sm:p-0 bg-white/70 sm:bg-transparent rounded-xl border border-brand-blue-soft sm:border-0 shadow-xs sm:shadow-none">
                 <Zap className="w-3.5 h-3.5 text-brand-gold shrink-0" />

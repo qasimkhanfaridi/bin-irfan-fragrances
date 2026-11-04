@@ -60,7 +60,7 @@ export const NationalStorePakistanPage: React.FC = () => {
     name: 'Bin Irfan Fragrances Online Store Pakistan',
     url: `${siteUrl}/online-perfume-store-pakistan`,
     description: 'Pakistan premier online boutique for handcrafted 35% Extrait de Parfum flacons and discovery sets.',
-    telephone: '+923165312301',
+    telephone: '+923215186400',
     currenciesAccepted: 'PKR',
     paymentAccepted: 'Bank Transfer, EasyPaisa, JazzCash, Raast',
     priceRange: 'PKR 1,500 - PKR 10,500',
@@ -123,12 +123,12 @@ export const NationalStorePakistanPage: React.FC = () => {
                 Buy Long-Lasting Luxury Perfumes Online in Pakistan
               </h1>
               <p className="text-base sm:text-lg text-slate-600 font-medium mb-6">
-                Engineered with 35% pure fragrance oil for 14 to 18 hours of undeniable projection in Pakistan's climate. Dispatched securely nationwide with full tracking.
+                Handcrafted with 35% pure fragrance oil concentration for rich all-day projection in Pakistan's climate. Dispatched securely nationwide with full tracking.
               </p>
 
               <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed mb-8">
                 <p>
-                  Finding genuine, long-lasting luxury perfumes in Pakistan without paying exorbitant import markups or risking counterfeit watered-down bottles has long been a frustration for fragrance lovers. Bin Irfan Fragrances was founded to solve this dilemma: we source premium essential absolutes from Grasse and Assam, compounding them at an uncompromising 35% concentration right in our Rawalpindi laboratory.
+                  Finding genuine, long-lasting luxury perfumes in Pakistan without paying exorbitant import markups or risking diluted bottles has long been a frustration for fragrance lovers. Bin Irfan Fragrances was founded to solve this dilemma: we select premium fragrance compounds and dense fixatives, compounding them at an uncompromising 35% concentration right in our Rawalpindi atelier.
                 </p>
                 <p>
                   From Karachi's coastal humidity to Lahore's dry summers and Islamabad's crisp winters, our Extrait flacons hold their true olfactory structure without turning sour or fading into skin scents.
@@ -144,8 +144,8 @@ export const NationalStorePakistanPage: React.FC = () => {
                 </div>
                 <div className="p-3 bg-white rounded-xl border border-brand-blue-soft shadow-xs text-center">
                   <Clock className="w-4 h-4 text-brand-blue mx-auto mb-1.5" />
-                  <span className="text-xs font-bold text-slate-900 block">14–18 Hours</span>
-                  <span className="text-[10px] text-slate-500">Subcontinental Hold</span>
+                  <span className="text-xs font-bold text-slate-900 block">Extended Hold</span>
+                  <span className="text-[10px] text-slate-500">Day-Long Sillage</span>
                 </div>
                 <div className="p-3 bg-white rounded-xl border border-brand-blue-soft shadow-xs text-center">
                   <Truck className="w-4 h-4 text-emerald-600 mx-auto mb-1.5" />

@@ -183,6 +183,15 @@ export const getProductSchema = (product: Product, siteUrl = getSiteUrl()) => {
           '@type': 'Organization',
           name: 'Bin Irfan Fragrances'
         },
+        hasMerchantReturnPolicy: {
+          '@type': 'MerchantReturnPolicy',
+          applicableCountry: 'PK',
+          returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+          merchantReturnDays: 7,
+          returnMethod: 'https://schema.org/ReturnByMail',
+          returnFees: 'https://schema.org/FreeReturn',
+          refundType: 'https://schema.org/FullRefund'
+        },
         shippingDetails: {
           '@type': 'OfferShippingDetails',
           shippingRate: {

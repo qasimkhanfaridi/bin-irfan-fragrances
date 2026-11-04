@@ -62,7 +62,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, isOpen,
           </div>
           <div className="mt-4 flex items-center gap-2 text-xs text-brand-blue-dark font-medium">
             <ShieldCheck className="w-4 h-4 text-brand-blue" />
-            <span>Pure Extrait De Parfum • Guaranteed 12+ Hour Sillage</span>
+            <span>Pure Extrait De Parfum • Long-Lasting Sillage</span>
           </div>
         </div>
 

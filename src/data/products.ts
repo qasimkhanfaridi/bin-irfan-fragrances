@@ -68,7 +68,7 @@ export const PRODUCTS: Product[] = [
     collectionId: 'signature-collection',
     gender: 'men',
     category: 'perfume',
-    impressionNote: 'Artisanal impression formulated by Bin Irfan Fragrances. Independent creation inspired by the olfactory style of classic British red aromatics.'
+    impressionNote: 'Independent artisanal impression handcrafted by Bin Irfan Fragrances. Inspired by the olfactory style of classic red aromatics. Bin Irfan Fragrances is not affiliated with, endorsed by, or associated with third-party trademark holders.'
   },
 
   // 3. Paradise (Featuring new crystal sapphire photography)
@@ -139,7 +139,7 @@ export const PRODUCTS: Product[] = [
     collectionId: 'signature-collection',
     gender: 'men',
     category: 'perfume',
-    impressionNote: 'Artisanal master impression by Bin Irfan Fragrances. Inspired by classic French imperial aromatic compositions.'
+    impressionNote: 'Independent artisanal impression handcrafted by Bin Irfan Fragrances. Inspired by the chypre-fruity character of Creed Aventus. Bin Irfan Fragrances has no commercial affiliation with, authorization from, or endorsement by the original trademark owner.'
   },
 
   // 5. Baccarat Rouge 540
@@ -154,8 +154,8 @@ export const PRODUCTS: Product[] = [
     description: 'An ethereal creation that floats around the wearer like a golden halo. Bin Irfan’s impression delivers the hypnotic sweetness of caramelized amberwood, Egyptian grandiflorum jasmine, and precious saffron, resulting in an intoxicating trail that turns heads endlessly.',
     scentCharacter: 'Ethereal, Luminous, Sweet Amber, Magnetic',
     bestFor: ['Luxury Soirees', 'Romantic Dinners', 'Special Occasions', 'All Seasons'],
-    longevity: '14 - 18 Hours',
-    projection: 'Nuclear / Scent Trail King',
+    longevity: '12 - 16 Hours',
+    projection: 'Heavy & Luminous Sillage',
     topNotes: ['Saffron Blossom', 'Bitter Almond from Morocco', 'Blood Orange Zest'],
     heartNotes: ['Egyptian Jasmine Grandiflorum', 'Warm Cedarwood'],
     baseNotes: ['Ambergris Resin', 'Mineral Woods', 'Spun Sugar', 'Cashmere Musk'],
@@ -175,7 +175,7 @@ export const PRODUCTS: Product[] = [
     collectionId: 'luxury-collection',
     gender: 'women',
     category: 'perfume',
-    impressionNote: 'Artisanal impression formulated by Bin Irfan Fragrances. Independent creation inspired by French crystal perfumery.'
+    impressionNote: 'Independent artisanal impression handcrafted by Bin Irfan Fragrances. Inspired by the amber-floral character of Baccarat Rouge 540. Not affiliated with, sponsored by, or endorsed by Maison Francis Kurkdjian.'
   },
 
   // 6. Sauvage
@@ -210,7 +210,7 @@ export const PRODUCTS: Product[] = [
     collectionId: 'fresh-collection',
     gender: 'men',
     category: 'perfume',
-    impressionNote: 'Artisanal impression by Bin Irfan Fragrances. Inspired by classic French fresh-spicy aromatic perfumery.'
+    impressionNote: 'Independent artisanal impression handcrafted by Bin Irfan Fragrances. Inspired by the fresh-spicy aromatic profile of Dior Sauvage. Not affiliated with, endorsed by, or sponsored by Parfums Christian Dior.'
   },
 
   // 7. Tobacco Vanille
@@ -245,7 +245,7 @@ export const PRODUCTS: Product[] = [
     collectionId: 'signature-collection',
     gender: 'unisex',
     category: 'perfume',
-    impressionNote: 'Artisanal luxury impression formulated by Bin Irfan Fragrances.'
+    impressionNote: 'Independent artisanal impression handcrafted by Bin Irfan Fragrances. Inspired by the warm tobacco-vanilla profile of Tom Ford Tobacco Vanille. Bin Irfan Fragrances has no association, authorization, or affiliation with Tom Ford Beauty.'
   },
 
   // 8. Blue Night
@@ -346,7 +346,8 @@ export const PRODUCTS: Product[] = [
     accentColor: '#9C1D36',
     collectionId: 'luxury-collection',
     gender: 'women',
-    category: 'perfume'
+    category: 'perfume',
+    impressionNote: 'Independent artisanal impression handcrafted by Bin Irfan Fragrances. Inspired by the dark floral-oriental character of Velvet Rose & Oud by Jo Malone London. Bin Irfan Fragrances has no affiliation with or endorsement from the original trademark owner.'
   },
 
   // ----------------------------------------------------
@@ -387,7 +388,8 @@ export const PRODUCTS: Product[] = [
     category: 'bundle',
     bundleItems: ['Black Oud (100ml)', 'Creed Aventus (100ml)', 'Dunhill Desire (100ml)'],
     savingsPercentage: 20,
-    badge: 'Save Rs. 3,650 • Best Value'
+    badge: 'Save Rs. 3,650 • Best Value',
+    impressionNote: 'Curated collector bundle of Bin Irfan handcrafted 35% Extrait flacons. Independent artisanal impressions.'
   },
 
   // 12. Explorer Discovery Kit

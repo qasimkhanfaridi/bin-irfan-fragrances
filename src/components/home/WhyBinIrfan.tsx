@@ -6,7 +6,7 @@ export const WhyBinIrfan: React.FC = () => {
     {
       icon: Award,
       title: '35% EXTRAIT DE PARFUM',
-      description: 'Formulated with ultra-high pure fragrance oil concentrations, delivering 12–16+ hours of projection that outlasts standard department store EDTs.'
+      description: 'Formulated with high-concentration 35% pure perfume oils, delivering enduring sillage and presence that outlasts standard department store EDTs.'
     },
     {
       icon: PackageCheck,
@@ -16,7 +16,7 @@ export const WhyBinIrfan: React.FC = () => {
     {
       icon: Flame,
       title: 'PRECIOUS RAW ESSENCES',
-      description: 'Carefully sourced French floral absolutes, aged Cambodian agarwood, and velvety ambers, masterfully macerated for maximum olfactory depth.'
+      description: 'Carefully selected perfume compounds, fine wood extracts, and velvety ambers, masterfully macerated for balanced olfactory depth.'
     },
     {
       icon: ShieldCheck,

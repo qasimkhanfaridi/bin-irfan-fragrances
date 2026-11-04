@@ -33,7 +33,7 @@ export const GUIDES: GuideArticle[] = [
       {
         heading: 'When Extrait is worth it',
         paragraphs: [
-          'Choose Extrait if you want one or two sprays for 12–16+ hours, prefer richer oud or oriental profiles, or order less often but expect stronger performance per bottle.',
+          'Choose Extrait if you want one or two sprays for all-day performance, prefer richer oud or oriental profiles, or order less often but expect stronger presence per bottle.',
           'If you are new to a scent, start with our Explorer Discovery Set (5×10ml) to test families before committing to a 50ml or 100ml flacon.'
         ]
       },
@@ -60,7 +60,7 @@ export const GUIDES: GuideArticle[] = [
       {
         heading: 'Twin cities express delivery',
         paragraphs: [
-          'Orders confirmed before 5:00 PM with verified advance payment qualify for same-day express rider delivery across Rawalpindi and Islamabad. Our studio is in Dhoke Chiragh Deen, so local dispatch is fast once payment is confirmed on WhatsApp (+92 316 5312301).',
+          'Orders confirmed before 5:00 PM with verified advance payment qualify for same-day express rider delivery across Rawalpindi and Islamabad. Our studio is in Dhoke Chiragh Deen, so local dispatch is fast once payment is confirmed on WhatsApp (+92 321 5186400).',
           'We do not offer Cash on Delivery (COD). Advance payment (Bank Transfer, EasyPaisa, JazzCash, or Raast) reserves your flacon and triggers dispatch.'
         ]
       },
@@ -83,7 +83,7 @@ export const GUIDES: GuideArticle[] = [
     slug: 'best-long-lasting-oud-perfumes-men',
     title: 'Best Long-Lasting Oud Perfumes for Men (35% Extrait)',
     description:
-      'Guide to woody and oud Extrait de Parfum for men in Pakistan — Black Oud and signature impressions with 14+ hour performance from Bin Irfan Fragrances Rawalpindi.',
+      'Guide to woody and oud Extrait de Parfum for men in Pakistan — Black Oud and signature impressions with long-lasting all-day performance from Bin Irfan Fragrances Rawalpindi.',
     keywords:
       'oud perfume Pakistan, best oud for men Rawalpindi, long lasting oud fragrance, Black Oud perfume',
     published: '2026-10-09',
@@ -136,13 +136,13 @@ export const GUIDES: GuideArticle[] = [
         heading: 'Why Concentration Matters: 35% Extrait vs. Retail EDTs',
         paragraphs: [
           'Most commercial retail counters in Rawalpindi stock mass-produced Eau de Toilette (5–10% oil) or standard Eau de Parfum (15–20% oil). In summer heat and monsoon humidity, alcohol-heavy formulations evaporate within 2–3 hours.',
-          'At Bin Irfan Fragrances (located in Dhoke Chiragh Deen, Rawalpindi), every creation is blended at a commanding 35% pure Extrait De Parfum concentration. This delivers 14 to 18+ hours of projection, ensuring your sillage remains powerful through evening gatherings and full working days.'
+          'At Bin Irfan Fragrances (located in Dhoke Chiragh Deen, Rawalpindi), every creation is blended at a commanding 35% pure Extrait De Parfum concentration. This delivers rich, long-lasting projection, ensuring your sillage remains noticeable through evening gatherings and full working days.'
         ]
       },
       {
         heading: 'Comparing Rawalpindi Perfume Locations: Saddar vs. Niche Ateliers',
         paragraphs: [
-          'Rawalpindi Saddar offers numerous stalls and attar shops, but authenticity and consistency vary wildly, with many synthetic clones producing harsh chemical openings.',
+          'While commercial street markets and bazaars offer broad varieties of casual attars, oil concentrations and olfactory transitions vary widely.',
           'Niche artisanal ateliers like Bin Irfan Fragrances formulate master olfactory impressions with smooth top-to-base transitions. Each flacon is an architectural octagonal glass masterpiece topped with a cut-crystal decanter cap and circular gold medallion seal, offering the prestige of luxury niche houses at accessible local pricing (PKR 3,250 – PKR 5,950).'
         ]
       },
@@ -150,7 +150,7 @@ export const GUIDES: GuideArticle[] = [
         heading: 'Same-Day Delivery Across Rawalpindi & Islamabad',
         paragraphs: [
           'A key advantage of buying from a local Rawalpindi atelier is immediacy. Bin Irfan Fragrances offers same-day express rider delivery across all Rawalpindi sectors (Saddar, Bahria Town, Chaklala Scheme 3, DHA, Westridge, Satellite Town) and Islamabad for orders confirmed before 5:00 PM on 100% advance payment.',
-          'Browse our online catalog, order via WhatsApp (+92 316 5312301), and experience the top-rated local perfume house in Rawalpindi today.'
+          'Browse our online catalog, order via WhatsApp (+92 321 5186400), and experience the top-rated local perfume house in Rawalpindi today.'
         ]
       }
     ]
@@ -176,7 +176,7 @@ export const GUIDES: GuideArticle[] = [
       {
         heading: 'Step 2 — Checkout & WhatsApp',
         paragraphs: [
-          'Open checkout, enter name, phone, city, and full delivery address. Submit to open a pre-filled WhatsApp message to our official line +92 316 5312301 with your order summary and reference.'
+          'Open checkout, enter name, phone, city, and full delivery address. Submit to open a pre-filled WhatsApp message to our official line +92 321 5186400 with your order summary and reference.'
         ]
       },
       {
@@ -192,7 +192,7 @@ export const GUIDES: GuideArticle[] = [
   // 6. How to Make Perfume Last 14+ Hours in Pakistan's Heat
   {
     slug: 'how-to-make-perfume-last-14-hours-pakistan',
-    title: 'How to Make Perfume Last 14+ Hours in Pakistan’s Climate',
+    title: 'How to Make Perfume Last All Day in Pakistan’s Climate',
     description:
       'Expert techniques to maximize perfume longevity in extreme heat and humidity. Why moisturizing, pulse points, and 35% Extrait concentration deliver all-day projection.',
     keywords:
@@ -206,7 +206,7 @@ export const GUIDES: GuideArticle[] = [
         heading: 'The Science of Perfume Evaporation in Subcontinental Weather',
         paragraphs: [
           'In temperatures exceeding 35°C, volatile aromatic molecules evaporate up to three times faster than in temperate European climates. Dry skin also absorbs perfume oils rapidly, leaving behind only faint traces.',
-          'To achieve a guaranteed 14 to 18-hour sillage, you need both a concentrated oil formulation (such as Bin Irfan’s 35% Extrait) and proper skin preparation techniques.'
+          'To achieve rich, all-day sillage, you need both a concentrated oil formulation (such as Bin Irfan’s 35% Extrait) and proper skin preparation techniques.'
         ]
       },
       {
@@ -297,7 +297,7 @@ export const GUIDES: GuideArticle[] = [
         ]
       },
       {
-        heading: 'Base Notes (Hours 4 to 18+)',
+        heading: 'Base Notes (Hour 4 Through End of Day)',
         paragraphs: [
           'Base notes are heavy, dense fixatives that bind the fragrance to your skin. Composed of Assam agarwood, ambergris crystals, oakmoss, tonka bean, and Madagascar vanilla, these are the notes that people remember and smell on your coat the following morning.'
         ]

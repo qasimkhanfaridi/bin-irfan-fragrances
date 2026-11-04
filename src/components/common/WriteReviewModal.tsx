@@ -34,7 +34,7 @@ export const WriteReviewModal: React.FC<WriteReviewModalProps> = ({
   const [hoverRating, setHoverRating] = useState(0);
   const [author, setAuthor] = useState('');
   const [location, setLocation] = useState('');
-  const [longevity, setLongevity] = useState('14+ Hours (All Day)');
+  const [longevity, setLongevity] = useState('All Day (10–14 Hours)');
   const [title, setTitle] = useState('');
   const [comment, setComment] = useState('');
   const [submitted, setSubmitted] = useState(false);
@@ -186,7 +186,7 @@ export const WriteReviewModal: React.FC<WriteReviewModalProps> = ({
                 onChange={(e) => setLongevity(e.target.value)}
                 className="w-full text-xs px-3.5 py-2.5 rounded-xl border border-brand-slate-200 focus:border-brand-blue-600 outline-none bg-white"
               >
-                <option value="14+ Hours (All Day)">14+ Hours (Beast projection in Pakistani weather)</option>
+                <option value="All Day (10–14 Hours)">All Day (10–14 Hours • Excellent performance)</option>
                 <option value="10-12 Hours (Strong)">10–12 Hours (Solid office to evening)</option>
                 <option value="8-10 Hours (Moderate)">8–10 Hours (Comfortable everyday sillage)</option>
               </select>
