@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles, Gift, Flame, Compass, Heart, Layers } from 'lucide-react';
+import { Sparkles, Gift, Flame, Compass, Heart, Layers, MapPin, Truck } from 'lucide-react';
 
 export const CategoryPillsSection: React.FC = () => {
   const categories = [
@@ -12,39 +12,46 @@ export const CategoryPillsSection: React.FC = () => {
       activeColor: 'bg-brand-blue-dark text-white'
     },
     {
-      label: "Men's Collection",
-      path: '/shop?gender=men',
+      label: "Men's Perfumes",
+      path: '/mens-perfumes',
       icon: Flame,
-      badge: 'Popular',
+      badge: '35% Extrait',
       activeColor: 'bg-white hover:bg-brand-blue-soft text-brand-blue-dark'
     },
     {
-      label: "Women's Collection",
-      path: '/shop?gender=women',
+      label: "Women's Perfumes",
+      path: '/womens-perfumes',
       icon: Heart,
-      badge: 'Elegant',
+      badge: 'Luxury',
+      activeColor: 'bg-white hover:bg-brand-blue-soft text-brand-blue-dark'
+    },
+    {
+      label: 'Oud & Extrait',
+      path: '/oud-perfumes',
+      icon: Layers,
+      badge: 'Royal Assorted',
       activeColor: 'bg-white hover:bg-brand-blue-soft text-brand-blue-dark'
     },
     {
       label: 'Bundles & Gift Sets',
-      path: '/shop?category=bundle',
+      path: '/perfume-gift-sets',
       icon: Gift,
       badge: 'Save 25%',
       highlight: true,
       activeColor: 'bg-brand-blue-soft hover:bg-brand-blue-light/50 text-brand-blue-dark'
     },
     {
-      label: 'Explorer Discovery Kit',
-      path: '/product/explorer-discovery-kit',
-      icon: Compass,
-      badge: '5x10ml',
+      label: 'Islamabad Express Delivery',
+      path: '/perfume-delivery-islamabad',
+      icon: Truck,
+      badge: 'Same-Day',
       activeColor: 'bg-white hover:bg-brand-blue-soft text-brand-blue-dark'
     },
     {
-      label: 'Signature Oud Series',
-      path: '/shop?family=Woody+%26+Oud',
-      icon: Layers,
-      badge: 'Royal',
+      label: 'Rawalpindi Studio',
+      path: '/perfume-shop-rawalpindi',
+      icon: MapPin,
+      badge: 'Dhoke Chiragh Deen',
       activeColor: 'bg-white hover:bg-brand-blue-soft text-brand-blue-dark'
     }
   ];
