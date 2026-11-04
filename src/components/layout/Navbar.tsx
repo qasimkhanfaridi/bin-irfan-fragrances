@@ -28,27 +28,27 @@ export const Navbar: React.FC = () => {
   }, [location.pathname, location.search]);
 
   const navLinks = [
-    { label: 'Shop All', shortLabel: 'Shop', path: '/shop' },
-    { label: "Men's", shortLabel: "Men", path: '/mens-perfumes' },
-    { label: "Women's", shortLabel: "Women", path: '/womens-perfumes' },
-    { label: 'Oud & Extrait', shortLabel: 'Oud', path: '/oud-perfumes' },
-    { label: 'Gift Sets', shortLabel: 'Gifts', path: '/perfume-gift-sets' },
-    { label: 'Rawalpindi Studio', shortLabel: 'Studio', path: '/perfume-shop-rawalpindi' },
-    { label: 'Islamabad Delivery', shortLabel: 'Islamabad', path: '/perfume-delivery-islamabad' },
-    { label: 'Guides', shortLabel: 'Guides', path: '/guides' }
+    { label: 'Shop All Fragrances', desktopLabel: 'Shop All', path: '/shop' },
+    { label: "Men's Perfumes", desktopLabel: "Men's", path: '/mens-perfumes' },
+    { label: "Women's Perfumes", desktopLabel: "Women's", path: '/womens-perfumes' },
+    { label: 'Oud & Extrait', desktopLabel: 'Oud', path: '/oud-perfumes' },
+    { label: 'Bundles & Gift Sets', desktopLabel: 'Gift Sets', path: '/perfume-gift-sets' },
+    { label: 'Rawalpindi Studio', desktopLabel: 'Studio', path: '/perfume-shop-rawalpindi' },
+    { label: 'Islamabad Delivery', desktopLabel: 'Islamabad', path: '/perfume-delivery-islamabad' },
+    { label: 'Fragrance Guides', desktopLabel: 'Guides', path: '/guides' }
   ];
 
   return (
     <>
       <header
-        className={`sticky top-0 z-40 w-full max-w-full overflow-x-clip transition-all duration-300 ${
+        className={`sticky top-0 z-40 w-full max-w-full transition-all duration-300 ${
           isScrolled
             ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-brand-blue-soft py-2.5 sm:py-3'
-            : 'bg-white/90 backdrop-blur-sm border-b border-brand-blue-soft/80 py-3 sm:py-4'
+            : 'bg-white/95 backdrop-blur-sm border-b border-brand-blue-soft/80 py-3 sm:py-3.5'
         }`}
       >
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full">
-          <div className="flex items-center justify-between gap-2 xl:gap-3 flex-nowrap w-full min-w-0">
+          <div className="flex items-center justify-between gap-3 sm:gap-6 flex-nowrap w-full">
             
             {/* Left: Mobile Hamburger & Brand Logo with Official Medallion */}
             <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
@@ -82,21 +82,20 @@ export const Navbar: React.FC = () => {
             </div>
 
             {/* Center: Desktop Navigation Links (xl+) */}
-            <nav className="hidden xl:flex items-center gap-2.5 xl:gap-3.5 2xl:gap-6 flex-shrink min-w-0">
+            <nav className="hidden xl:flex items-center justify-center gap-2 xl:gap-3.5 2xl:gap-6 flex-shrink-0">
               {navLinks.map((link) => {
                 const isActive = (location.pathname + location.search) === link.path;
                 return (
                   <Link
                     key={link.path}
                     to={link.path}
-                    className={`text-[11px] xl:text-xs 2xl:text-sm tracking-[0.08em] xl:tracking-[0.1em] 2xl:tracking-[0.14em] uppercase font-semibold transition-colors relative py-1 whitespace-nowrap ${
+                    className={`text-xs 2xl:text-sm tracking-[0.08em] 2xl:tracking-[0.12em] uppercase font-semibold transition-colors relative py-1 whitespace-nowrap ${
                       isActive
                         ? 'text-brand-blue-dark font-bold'
                         : 'text-brand-slate/85 hover:text-brand-blue-dark'
                     }`}
                   >
-                    <span className="hidden 2xl:inline">{link.label}</span>
-                    <span className="2xl:hidden">{link.shortLabel}</span>
+                    <span>{link.desktopLabel}</span>
                     {isActive && (
                       <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-brand-blue-medium via-brand-blue-dark to-brand-blue-medium rounded-full" />
                     )}
@@ -106,7 +105,7 @@ export const Navbar: React.FC = () => {
             </nav>
 
             {/* Right: Action Icons & WhatsApp */}
-            <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
+            <div className="flex items-center gap-1.5 sm:gap-2.5 flex-shrink-0">
               
               {/* Search Icon */}
               <button

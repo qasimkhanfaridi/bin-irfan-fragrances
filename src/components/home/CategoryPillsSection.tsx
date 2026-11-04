@@ -57,7 +57,7 @@ export const CategoryPillsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-3 sm:py-4 border-y border-brand-blue-soft bg-white/80 backdrop-blur-md sticky top-[56px] sm:top-[68px] z-30 shadow-xs w-full max-w-full overflow-hidden">
+    <section className="py-3 sm:py-4 border-y border-brand-blue-soft bg-white/95 backdrop-blur-md relative z-10 shadow-xs w-full max-w-full overflow-hidden">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex items-center gap-2 sm:gap-2.5 overflow-x-auto no-scrollbar py-0.5 scroll-smooth overscroll-x-contain">
           {categories.map((cat, idx) => {
