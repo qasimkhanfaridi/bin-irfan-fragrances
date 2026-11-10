@@ -38,12 +38,6 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
       latitude: 33.5983,
       longitude: 73.0699
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '194',
-      bestRating: '5'
-    },
     hasMap: 'https://maps.google.com/?cid=4711070535657308662',
     openingHoursSpecification: [
       {

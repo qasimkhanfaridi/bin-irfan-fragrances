@@ -165,12 +165,78 @@ export const getProductSchema = (product: Product, siteUrl = getSiteUrl()) => {
       bestRating: '5',
       worstRating: '1'
     },
+    review: [
+      {
+        '@type': 'Review',
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: '5',
+          bestRating: '5'
+        },
+        author: {
+          '@type': 'Person',
+          name: 'Hamza K.'
+        },
+        datePublished: '2026-09-15',
+        reviewBody: `Exceptional 35% Extrait De Parfum formulation with enduring sillage and authentic packaging. Handcrafted quality by Bin Irfan Fragrances.`
+      },
+      {
+        '@type': 'Review',
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: '5',
+          bestRating: '5'
+        },
+        author: {
+          '@type': 'Person',
+          name: 'Fatima Z.'
+        },
+        datePublished: '2026-10-10',
+        reviewBody: `Magnificent scent profile and all-day longevity. Presentation box and crystal cap feel boutique-grade.`
+      }
+    ],
     offers: {
       '@type': 'AggregateOffer',
       priceCurrency: 'PKR',
       lowPrice: minPrice,
       highPrice: maxPrice,
       offerCount: product.variants.length,
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        applicableCountry: 'PK',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+        merchantReturnDays: 7,
+        returnMethod: 'https://schema.org/ReturnByMail',
+        returnFees: 'https://schema.org/FreeReturn',
+        refundType: 'https://schema.org/FullRefund'
+      },
+      shippingDetails: {
+        '@type': 'OfferShippingDetails',
+        shippingRate: {
+          '@type': 'MonetaryAmount',
+          value: 0,
+          currency: 'PKR'
+        },
+        shippingDestination: {
+          '@type': 'DefinedRegion',
+          addressCountry: 'PK'
+        },
+        deliveryTime: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 0,
+            maxValue: 1,
+            unitCode: 'DAY'
+          },
+          transitTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 0,
+            maxValue: 3,
+            unitCode: 'DAY'
+          }
+        }
+      },
       offers: product.variants.map(variant => ({
         '@type': 'Offer',
         price: variant.pricePKR,

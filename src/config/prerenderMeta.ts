@@ -177,19 +177,8 @@ export function getPrerenderPages(siteUrl = SITE_URL): PrerenderPage[] {
       itemListElement: categoryProducts.map((p, idx) => ({
         '@type': 'ListItem',
         position: idx + 1,
-        item: {
-          '@type': 'Product',
-          name: p.name,
-          url: `${siteUrl}/product/${p.slug}`,
-          image: p.image.startsWith('http') ? p.image : `${siteUrl}${p.image}`,
-          description: p.description,
-          offers: {
-            '@type': 'Offer',
-            priceCurrency: 'PKR',
-            price: Math.min(...p.variants.map(v => v.pricePKR)),
-            availability: 'https://schema.org/InStock'
-          }
-        }
+        name: `${p.name} — 35% Extrait De Parfum`,
+        url: `${siteUrl}/product/${p.slug}`
       }))
     };
 

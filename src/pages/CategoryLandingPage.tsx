@@ -36,27 +36,8 @@ export const CategoryLandingPage: React.FC<CategoryLandingPageProps> = ({ slugOv
     itemListElement: categoryProducts.map((product, index) => ({
       '@type': 'ListItem',
       position: index + 1,
-      item: {
-        '@type': 'Product',
-        name: product.name,
-        url: `${siteUrl}/product/${product.id}`,
-        image: product.image.startsWith('http') ? product.image : `${siteUrl}${product.image}`,
-        description: product.description,
-        brand: {
-          '@type': 'Brand',
-          name: 'Bin Irfan Fragrances'
-        },
-        offers: {
-          '@type': 'Offer',
-          priceCurrency: 'PKR',
-          price: Math.min(...product.variants.map(v => v.pricePKR)),
-          availability: 'https://schema.org/InStock',
-          seller: {
-            '@type': 'Organization',
-            name: 'Bin Irfan Fragrances'
-          }
-        }
-      }
+      name: `${product.name} — 35% Extrait De Parfum`,
+      url: `${siteUrl}/product/${product.slug}`
     }))
   };
 

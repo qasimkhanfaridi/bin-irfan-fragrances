@@ -77,6 +77,15 @@ for (const pSlug of productDirs) {
   if (!html.includes('MerchantReturnPolicy')) {
     throw new Error(`FAIL: Missing MerchantReturnPolicy in product/${pSlug}`);
   }
+  if (!html.includes('shippingDetails') && !html.includes('OfferShippingDetails')) {
+    throw new Error(`FAIL: Missing shippingDetails in product/${pSlug}`);
+  }
+  if (!html.includes('"@type": "Review"') && !html.includes('"@type":"Review"')) {
+    throw new Error(`FAIL: Missing Review schema in product/${pSlug}`);
+  }
+  if (!html.includes('aggregateRating') && !html.includes('AggregateRating')) {
+    throw new Error(`FAIL: Missing aggregateRating in product/${pSlug}`);
+  }
   if (!html.includes(`<link rel="canonical" href="https://www.binirfanfragrances.com/product/${pSlug}"`)) {
     throw new Error(`FAIL: Missing canonical link in product/${pSlug}`);
   }
@@ -94,7 +103,10 @@ if (!localRwpHtml.includes('Dhoke Chiragh Deen') || !localRwpHtml.includes('H3X9
 if (!localRwpHtml.includes('PerfumeStore')) {
   throw new Error('FAIL: Rawalpindi page missing PerfumeStore schema');
 }
-console.log('✅ PASS: Rawalpindi Studio landing page verified with local landmarks, Plus Code & PerfumeStore schema');
+if (localRwpHtml.includes('aggregateRating') || localRwpHtml.includes('AggregateRating')) {
+  throw new Error('FAIL: Rawalpindi PerfumeStore should NOT contain aggregateRating (prevents GSC Review Snippet error)');
+}
+console.log('✅ PASS: Rawalpindi Studio landing page verified with local landmarks, Plus Code & PerfumeStore schema (0 self-serving review errors)');
 
 const isbHtml = fs.readFileSync(path.join(distDir, 'perfume-delivery-islamabad', 'index.html'), 'utf8');
 if (!isbHtml.includes('Blue Area') || !isbHtml.includes('Sector F')) {
