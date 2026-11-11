@@ -62,14 +62,18 @@
 
 @layer utilities {
   .text-gold-gradient {
+    color: #9A741E;
     background: linear-gradient(135deg, #B88E3E 0%, #D4AF37 50%, #9A741E 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .text-blue-gradient {
+    color: #1E3A5F;
     background: linear-gradient(135deg, #1E3A5F 0%, #3B72A2 50%, #5B8FB9 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 

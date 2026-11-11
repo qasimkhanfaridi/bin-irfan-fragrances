@@ -147,7 +147,7 @@ export const LocalStoreRawalpindiPage: React.FC = () => {
               href="https://maps.google.com/?cid=4711070535657308662"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-xs sm:text-sm uppercase tracking-wider transition-all backdrop-blur-sm"
+              className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-white border border-slate-600 font-semibold text-xs sm:text-sm uppercase tracking-wider transition-all shadow-md"
             >
               <Navigation className="w-4 h-4 text-brand-gold" />
               <span>Get Studio Directions</span>

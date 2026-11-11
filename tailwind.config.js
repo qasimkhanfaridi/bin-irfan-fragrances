@@ -16,9 +16,19 @@ export default {
     extend: {
       colors: {
         brand: {
-          // Soft Luxury Blue Spectrum (Clean, Light, Elegant)
+          // Soft Luxury Blue Spectrum (Clean, Light, Elegant, Full Scale)
           blue: {
-            DEFAULT: '#5B8FB9',      // Soft luxury azure blue
+            DEFAULT: '#1E3A5F',      // Classic luxury navy slate
+            50: '#F0F6FB',
+            100: '#E2EEF8',
+            200: '#C7DEF0',
+            300: '#9BC1E3',
+            400: '#7EA8CF',
+            500: '#5B8FB9',
+            600: '#1E3A5F',          // High-contrast primary action navy (>10:1 on white text)
+            700: '#162840',
+            800: '#0F2035',
+            900: '#081220',
             soft: '#F0F6FB',         // Ultra-soft icy blue tint for section backgrounds
             ice: '#E6F0F8',          // Pale soft blue for card hover/borders
             light: '#C7DEF0',        // Sky powder blue for light badges
@@ -32,9 +42,11 @@ export default {
             DEFAULT: '#FFFFFF',
             surface: '#F8FAFC',      // Crisp porcelain surface
             card: '#FFFFFF',         // Bright clean card
+            bg: '#F8FAFC',           // Porcelain background alias
             border: 'rgba(91, 143, 185, 0.18)',
             borderStrong: 'rgba(30, 58, 95, 0.25)'
           },
+          'light-bg': '#F8FAFC',
           // Prestige Champagne Gold accents from original Bin Irfan logo
           gold: {
             DEFAULT: '#C5A059',
@@ -43,11 +55,21 @@ export default {
             dark: '#9A741E',
             glow: 'rgba(212, 175, 55, 0.25)'
           },
-          // Slate typography colors for clean readability
+          // Complete Slate typography colors for clean readability across all screens
           slate: {
             DEFAULT: '#1E293B',
-            muted: '#64748B',
-            light: '#94A3B8'
+            50: '#F8FAFC',
+            100: '#F1F5F9',
+            200: '#E2E8F0',
+            300: '#CBD5E1',
+            400: '#64748B',          // Adjusted to darker slate for WCAG contrast
+            500: '#475569',          // High-readability secondary text
+            600: '#334155',          // High-contrast body text (>7:1 on white)
+            700: '#1E293B',          // Deep slate for bold labels
+            800: '#0F172A',          // Near-black for important badges
+            900: '#0A0F1D',          // Pure dark slate for headings & dark buttons
+            muted: '#475569',
+            light: '#64748B'
           },
           // Emerald for WhatsApp & COD trust badges
           emerald: {
